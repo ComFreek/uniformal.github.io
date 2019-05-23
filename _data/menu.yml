@@ -22,8 +22,6 @@
       url: '/doc/setup/sbt.html'
     - title: 'Developing MMT'
       url: '/doc/setup/devel.html'
-    - title: 'License for Using MMT'
-      url: '/doc/setup/license.html'
     - title: 'Docker Image'
       url: '/doc/setup/docker.html'
 
@@ -171,3 +169,13 @@
 
 - title: 'Contributed Articles'
   url: '/doc/contribs'
+
+- title: 'Legal'
+  url: '/doc/legal/'
+  items:
+    - title: 'MMT License'
+      url: '/doc/legal/license.html'
+    - title: 'The Uniformal Association'
+      url: '/doc/legal/association.html'
+    - title: 'Contributor Licensing Agreement Text'
+      url: '/doc/legal/cla_text.html'
