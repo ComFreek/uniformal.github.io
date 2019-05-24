@@ -26,4 +26,21 @@ We are committed to accomodate any reasonable need.
 <!-- This heading is linked from the CLA and must not be renamed -->
 <h2 id="cla-submission">Contributor License Agreement</h2>
 
-TBD
+The [CLA Text](/doc/legal/cla_text.html) is a legal agreement that allows us to achieve the requirements stated above. 
+Any contributor to MMT should sign the CLA. 
+
+In short, by signing the CLA:
+
+- The contributor retains copyright. 
+- The contributor licenses copyright, patent and other rights to the Uniformal Foundation. 
+- The contributor gives the Uniformal Foundation the right to relicense MMT as long as an [OSI licensed](https://opensource.org/licenses) copy of MMT remains. 
+
+The CLA can be signed digitally using a GitHub account. 
+
+To sign the CLA:
+
+1. Go to [https://cla.kwarc.info/Uniformal/MMT](https://cla.kwarc.info/Uniformal/MMT)
+2. Login with your GitHub account
+3. Sign the CLA and fill out the required fields
+
+When making a pull request, a bot will check that all contributors to the PR have signed the CLA. 

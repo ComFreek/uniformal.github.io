@@ -13,6 +13,14 @@ To make this document effective, please sign it electronically using the instruc
 This is a legally binding document, so please read it carefully before agreeing to it.
 The Agreement may cover more than one software project managed by Us.
 
+#### TL;DR
+
+If you sign this CLA then You:
+
+- You own and retain your copyright. 
+- You license copyright, patent and other rights to Us. 
+- You give us the right to relicense MMT as long as an [OSI licensed](https://opensource.org/licenses) copy of MMT remains. 
+
 ## 1. Definitions 
 
 "You" means the individual who Submits a Contribution to Us.
