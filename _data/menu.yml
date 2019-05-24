@@ -175,7 +175,7 @@
   items:
     - title: 'MMT License'
       url: '/doc/legal/license.html'
-    - title: 'The Uniformal Association'
-      url: '/doc/legal/association.html'
+    - title: 'The Uniformal Foundation'
+      url: '/doc/legal/foundation.html'
     - title: 'Contributor Licensing Agreement Text'
       url: '/doc/legal/cla_text.html'

@@ -6,7 +6,7 @@ title: MMT Contributor License Agreement
 # MMT Contributor License Agreement
 
 Thank you for your interest in contributing to MMT and related projects. 
-"Us" or "We" in the following refers to the Uniformal Association. 
+"Us" or "We" in the following refers to [The Uniformal Foundation](/doc/legal/foundation.html). 
 
 This contributor agreement ("Agreement") documents the rights granted by contributors to Us. 
 To make this document effective, please sign it electronically using the instructions at [https://uniformal.github.io/doc/legal/#cla-submission](/doc/legal/#cla-submission).
