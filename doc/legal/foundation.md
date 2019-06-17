@@ -29,7 +29,9 @@ The Uniformal Foundation takes decisions by democratic votes at the annual busin
 4. approves and terminates membership,
 5. approves and reviews MMT licensing decisions by the SC. 
 
-The business meeting is called by the SC at least once a year. The SC prepares an agenda and announces it at least one week before the business meeting.
+The business meeting is a public online meeting, all members have a single vote. 
+The business meeting is called by the SC at least once a year. 
+The SC prepares an agenda and announces it at least one week before the business meeting.
 Any three members of the Uniformal Foundation can request an extraordinary business meetings, which must be convened by the SC within one month. 
 
 ### 4.  Steering Committee (SC)
