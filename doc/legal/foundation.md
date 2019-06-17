@@ -23,7 +23,7 @@ Membership can be teriminated by the member by a simple request to the SC or by 
 
 The Uniformal Foundation takes decisions by democratic votes at the annual business meeting. It 
 
-1. decides on charter changes (the SC has a veto right) 
+1. decides on charter changes (all members of the SC have an individual veto right) 
 2. receives reports and exculpates the SC and the treasurer,
 3. elects or confirms SC members,
 4. approves and terminates membership,
@@ -34,7 +34,7 @@ Any three members of the Uniformal Foundation can request an extraordinary busin
 
 ### 4.  Steering Committee (SC)
 The SC consists of 
-* Florian Rabe (the main developer) 
+* Florian Rabe (the main MMT developer) 
 * Michael Kohlhase (head of the KWARC group) 
 * one elected member of the Uniformal Foundation
 
