@@ -23,25 +23,29 @@ Membership can be teriminated by the member by a simple request to the SC or by 
 
 The Uniformal Foundation takes decisions by democratic votes at the annual business meeting. It 
 
-1. decides on charter changes,
+1. decides on charter changes (the SC has a veto right) 
 2. receives reports and exculpates the SC and the treasurer,
-3. elects or confirms SC members.
-4. approves and terminates membership.
-5. approves and reviews MMT licensing decisions by the SC 
+3. elects or confirms SC members,
+4. approves and terminates membership,
+5. approves and reviews MMT licensing decisions by the SC. 
 
 The business meeting is called by the SC at least once a year. The SC prepares an agenda and announces it at least one week before the business meeting.
 Any three members of the Uniformal Foundation can request an extraordinary business meetings, which must be convened by the SC within one month. 
 
 ### 4.  Steering Committee (SC)
-The SC consists of three elected members of the Uniformal Foundation.
+The SC consists of 
+* Florian Rabe (the main developer) 
+* Michael Kohlhase (head of the KWARC group) 
+* one elected member of the Uniformal Foundation
+
 It elects amoungst themselves a secretary that communicates the SC decisions to the memberhip and documents them.
 The SC  takes the decisions of the Uniformal Foundation between business meetings.
-The SC must inform the membership of licensing decisions immediately.  
+The SC informs the membership of licensing decisions immediately.  
 Unless good reasons prevents this, it consults the membership on licensing decisions beforehand.  
-The term of office of SC members is the period between business meetings, i.e. the business meeting must elect and confirm the SC every time. 
+The term of office of the elected SC members is the period between business meetings, i.e. the business meeting must elect and confirm the SC every time. 
 
 ## Current Steering Committee
 
-1. NN (Secretary)
-2. NN
+1. Florian Rabe
+2. Michael Kohlhase (secretary)
 3. NN
