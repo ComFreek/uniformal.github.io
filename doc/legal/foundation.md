@@ -15,11 +15,13 @@ The Uniformal Foundation represents the community of MMT developers and users an
 
 ### 1. Membership
 
-The SC keeps a membership roster. Any contributor to or user of the MMT ecosystem -- in the form of code or content -- can apply for membership. 
+The SC keeps a membership roster. Any contributor to or user of the MMT ecosystem -- in the form of code or content -- can apply for membership.
 Membership applications are decided by the SC.
-Membership can be teriminated by the member's request to the SC or by decision by the SC.
+Membership can be terminated by the member's request to the SC or by decision by the SC.
 
-The SC convenes a members' meeting (MM) at least annually. The MM may take place online using synchronous or asynchronous communciation.
+The SC maintains a mailing list of all members.
+
+The SC convenes a members' meeting (MM) at least annually. The MM should take the form of a retreat or workshop but may also take place online if expedient.
 
 The SC informs the MM and the MM advises the SC on all issues.
 
