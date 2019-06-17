@@ -11,44 +11,33 @@ For simplicity, it is currently not a formally registered legal entity, but coul
 ## Charter
 
 ### 0.  Purpose
-The Uniformal Foundation represents the community of MMT developers and users and deals with licensing issues for the MMT system. 
+The Uniformal Foundation represents the community of MMT developers and users and deals with strategic decisions about the MMT system, in particular its licensing.
 
-### 2. Membership
+### 1. Membership
 
-The Uniformal Foundation keeps a membership roster. Any contributor to the MMT ecosystem -- in the form of code or content -- can apply for membership. 
-Membership applications are decided by the steering committee, and subject to confirmation by the business meeting.
-Membership can be teriminated by the member by a simple request to the SC or by the 
+The SC keeps a membership roster. Any contributor to or user of the MMT ecosystem -- in the form of code or content -- can apply for membership. 
+Membership applications are decided by the SC.
+Membership can be teriminated by the member's request to the SC or by decision by the SC.
 
-### 3. Governance
+The SC convenes a members' meeting (MM) at least annually. The MM may take place online using synchronous or asynchronous communciation.
 
-The Uniformal Foundation takes decisions by democratic votes at the annual business meeting. It 
+The SC informs the MM and the MM advises the SC on all issues.
 
-1. decides on charter changes (all members of the SC have an individual veto right) 
-2. receives reports and exculpates the SC and the treasurer,
-3. elects or confirms SC members,
-4. approves and terminates membership,
-5. approves and reviews MMT licensing decisions by the SC. 
+In particular, the MM
+1. approves charter changes proposed by the SC,
+2. approves licensing decisions proposed by the SC,
+3. elects additional SC members.
 
-The business meeting is a public online meeting, all members have a single vote. 
-The business meeting is called by the SC at least once a year. 
-The SC prepares an agenda and announces it at least one week before the business meeting.
-Any three members of the Uniformal Foundation can request an extraordinary business meetings, which must be convened by the SC within one month. 
+All members have one vote at the MM, and the MM decides by majority vote.
 
-### 4.  Steering Committee (SC)
+### 2.  Steering Committee (SC)
+
+The SC takes all decisions of the Uniformal Foundation except for those that must be made or approved by the MM.
+Whenever feasible, it seeks the advice of the members before making decisions, and it communicates all decisions to the members swiftly.
+
+All SC decisions are made unanimously.
+
 The SC consists of 
-* Florian Rabe (the main MMT developer) 
+* Florian Rabe (the main MMT developer)
 * Michael Kohlhase (head of the KWARC group) 
-* one elected member of the Uniformal Foundation
-
-It elects amoungst themselves a secretary that communicates the SC decisions to the memberhip and documents them.
-The SC takes the decisions of the Uniformal Foundation between business meetings. 
-This mostly concerns MMT licensing questions, such decisions have to be unanimous in the SC. 
-The SC informs the membership of licensing decisions immediately.  
-Unless good reasons prevents this, it consults the membership on licensing decisions beforehand.  
-The term of office of the elected SC members is the period between business meetings, i.e. the business meeting must elect and confirm the SC every time. 
-
-## Current Steering Committee
-
-1. Florian Rabe
-2. Michael Kohlhase (secretary)
-3. NN
+* one member elected by the MM for a term of 2 years
