@@ -39,7 +39,8 @@ The SC consists of
 * one elected member of the Uniformal Foundation
 
 It elects amoungst themselves a secretary that communicates the SC decisions to the memberhip and documents them.
-The SC  takes the decisions of the Uniformal Foundation between business meetings.
+The SC takes the decisions of the Uniformal Foundation between business meetings. 
+This mostly concerns MMT licensing questions, such decisions have to be unanimous in the SC. 
 The SC informs the membership of licensing decisions immediately.  
 Unless good reasons prevents this, it consults the membership on licensing decisions beforehand.  
 The term of office of the elected SC members is the period between business meetings, i.e. the business meeting must elect and confirm the SC every time. 
