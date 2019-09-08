@@ -1,0 +1,584 @@
+<!doctype html>
+<html lang="en">
+	<!-- This is the layout used for all pages in the wiki-style documentation.
+        The wiki files must have "layout: doc" in their front matter.
+        This file can use page.NAME to refer to variables declared in the front matter
+        and content to refer to the body of the md file.
+   -->
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!--
+      Do not use base tag: <base href="/uniformal.github.io/" />
+      Since otherwise we could not keep links in the documentation relative anymore - without a hassle at least.
+      We would always have to prepend doc/ or something.
+
+      Hence, use e.g. `/uniformal.github.io/lib/css/bootstrap.min.css` to refer to assets in this file only.
+    -->
+    <link rel="icon" href="https://comfreek.github.io/uniformal.github.io/favicon.ico">
+
+    <title>MMT - Symbol Declarations</title>
+
+    <link href="https://comfreek.github.io/uniformal.github.io/lib/css/bootstrap.min.css" rel="stylesheet" />
+	  <link href="https://comfreek.github.io/uniformal.github.io/lib/css/doc.css" rel="stylesheet" />
+		<link href="https://comfreek.github.io/uniformal.github.io/lib/css/pygments-default.css" rel="stylesheet" />
+	
+  </head>
+  <body>
+	
+<nav class="navbar navbar-expand navbar-dark site-header" site-header >
+    <div class="container">
+        <a class="navbar-brand" href="/">
+            <img src="https://comfreek.github.io/uniformal.github.io/lib/css/img/logo_dark.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+            The MMT Language and System
+        </a>
+    </div>
+</nav>
+
+	
+		<div class="container-fluid main">
+			<div class="row">
+				<div class="col-12 col-md-3 col-xl-2">
+					<ul class="nav flex-column">
+						
+
+
+<div class="list-group">
+  
+    
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/"
+    
+>
+    Overview
+</a>
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/setup/">
+    Setting up MMT
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/tutorials/">
+    Tutorials
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/philosophy/">
+    The Philosophy behind MMT
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable active" href="https://comfreek.github.io/uniformal.github.io/doc/language/">
+    The MMT Language
+</a>
+
+
+
+
+    <div class="list-group">
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/language/uris.html"
+    
+>
+    MMT URIs
+</a>
+
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/language/namespaces.html"
+    
+>
+    Documents and Namespaces
+</a>
+
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/language/modules.html"
+    
+>
+    Modules
+</a>
+
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action active"
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/language/declarations.html"
+    
+>
+    Symbol Declarations
+</a>
+
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/language/objects.html"
+    
+>
+    Terms
+</a>
+
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/language/delimiters.html"
+    
+>
+    Structural Delimiters
+</a>
+
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/language/informal.html"
+    
+>
+    Flexiformal Representations
+</a>
+
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/language/literals.html"
+    
+>
+    Generic Literals
+</a>
+
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/language/overloading.html"
+    
+>
+    Overloading
+</a>
+
+        
+    </div>
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/archives/">
+    MMT-Archives
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/api/">
+    The MMT API
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/applications/">
+    Applications and Projects based on MMT
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/development/">
+    Development
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/community/"
+    
+>
+    Community & Communication
+</a>
+
+  
+    
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/contribs"
+    
+>
+    Contributed Articles
+</a>
+
+  
+</div>
+					</ul>
+				</div>
+				<div class="col-12 col-md-9 col-xl-8 content">
+					<h2>Symbol Declarations</h2>
+					<hr />
+	
+					<p>Symbol declarations occur in <a href="modules.html">modules</a> and are <a href="delimiters.html">delimited</a> by the symbol <img src="/uniformal.github.io/doc/img/RS.png" alt="`\RS`" />. The most important symbols are <strong>constants</strong> and <strong>theory inclusions</strong> (which are special cases of <strong>structures</strong>).</p>
+
+<h3 id="constants">Constants</h3>
+<p>Constants are symbols that have a name and several optional <em>components</em>, namely</p>
+
+<ul>
+  <li>a <em>type</em> (which is a <a href="objects.html">term</a>),</li>
+  <li>a <em>definition</em> (which is also a term),</li>
+  <li>a <em>notation</em>,</li>
+  <li>zero or more <em>roles</em> and</li>
+  <li>zero or more <em>aliases</em>.</li>
+</ul>
+
+<p>Examples for constants include mathematical constants, functions, axioms, theorems and inference rules. Their concrete syntax is</p>
+
+<p><img src="/uniformal.github.io/doc/img/constant.png" alt="`&lt;name&gt; @ &lt;alias&gt; \US : &lt;type&gt; \US = &lt;definition&gt; \US # &lt;notation&gt; \US role &lt;role&gt; \RS`" /></p>
+
+<p>The order of the object-level components is arbitrary. They are seperated by the object-<a href="delimiters.html">delimiter</a> <img src="/uniformal.github.io/doc/img/US.png" alt="`\US`" />, the constant declaration itself is delimited by <img src="/uniformal.github.io/doc/img/RS.png" alt="`\RS`" />. Aliases are simply <em>alternative names</em> that can be used to refer to the constant and are useful e.g. in structures (see below).</p>
+
+<ul>
+  <li>If a constant has a declared type <code class="highlighter-rouge">t</code>, then the term <code class="highlighter-rouge">t</code> has to be <em>inhabitable</em> (see <em>???</em>).</li>
+  <li>If a constant has a definition but no declared type, its type is inferred from the definition.</li>
+  <li>If a constant has both a type and a definition, the definition has to type-check against the given type, i.e. the judgment <code class="highlighter-rouge">|- &lt;definition&gt; : &lt;type&gt;</code> has to hold.</li>
+  <li>Constants without either a type or a definition (assuming no additional type checking rules) are basically semantically void and thus uninteresting.</li>
+</ul>
+
+<h4 id="notations">Notations</h4>
+
+<p>A notation is an arbitrary sequence of <em>tokens</em>, optionally followed by <code class="highlighter-rouge">prec &lt;precedence&gt;</code>.</p>
+
+<ul>
+  <li>Tokens are either a string, or a number representing an argument position of the constant.</li>
+  <li><code class="highlighter-rouge">&lt;precedence&gt;</code> is an arbitrary integer signifying the precedence (i.e. binding strength) of the notation.</li>
+</ul>
+
+<p>This allows for almost arbitrary notation definitions.</p>
+
+<blockquote>
+  <p><strong>Example:</strong> The notation for an infix operation <code class="highlighter-rouge">+</code> could be given by
+<code class="highlighter-rouge"># 1 + 2 prec 10</code>. If a notation for a multiplication has a <em>higher</em> precedence (and thus a higher <em>binding strength</em>), e.g. <code class="highlighter-rouge"># 1 ⋅ 2 prec 15</code>, we can omit parentheses according to standard mathematical convention, so the expression <code class="highlighter-rouge">a + b ⋅ c</code> would be correctly parsed as <code class="highlighter-rouge">a + (b ⋅ c)</code>.</p>
+</blockquote>
+
+<p>Argument positions not given in a notation are assumed to be <strong>implicit</strong>, i.e. they have to be inferrable during type checking. This can be the case, if <em>dependent</em> type constructors are in scope, e.g. <em>dependent products</em>.</p>
+
+<blockquote>
+  <p><strong>Example:</strong> A constant <code class="highlighter-rouge">c</code> with type 
+<img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cprod_%7Ba%3AA%7DF%28a%29%5Cto%20B" alt="`\prod_{a:A}F(a)\to B`" />
+takes two arguments: an <code class="highlighter-rouge">a:A</code> and some <code class="highlighter-rouge">x:F(a)</code>. Obviously, the second argument depends on the first, which allows MMT to infer the first argument from the second. So <code class="highlighter-rouge">c</code> could have a notation <code class="highlighter-rouge"># c 2</code> omitting the first argument.</p>
+</blockquote>
+
+<h4 id="roles">Roles</h4>
+
+<p>Roles serve as metadata-like annotations to constants. In most situations they are simply ignored. The following list of roles have some special meaning:</p>
+
+<ul>
+  <li><code class="highlighter-rouge">role Eq</code> indicates that the constant represents an equality that can be used for rewriting.</li>
+  <li><code class="highlighter-rouge">role Judgment</code> indicates that the constant is a <em>Curry-Howard</em>-style operator mapping propositions to types - as such, occurences of the symbol indicate theorems or axioms.</li>
+  <li><code class="highlighter-rouge">role Simplify</code> requires the type of the constant to be of the form <code class="highlighter-rouge">⊦ f(g(a)) ≐ b</code>, where <code class="highlighter-rouge">⊦</code> has role <code class="highlighter-rouge">Judgment</code> and <code class="highlighter-rouge">≐</code> has role <code class="highlighter-rouge">Eq</code>. This induces a rewrite rule, that simplifies instances of the left side of the equation to the right side during type checking.</li>
+</ul>
+
+<h3 id="importsinheritance-between-theories">Imports/Inheritance between Theories</h3>
+
+<p>Large MMT theories are usually built modularly from smaller ones.
+The central declaration is that of an import between two theories.
+Similar to the ML module system, MMT supports unnamed imports, called <strong>includes</strong> and named imports, called <strong>structures</strong>.</p>
+
+<p>Both make the contents of some theory <code class="highlighter-rouge">&lt;domain&gt;</code> available to the current one.
+Structures may additionally modify the imported theory, most importantly by instantiating constants with concrete values in the importing theory.</p>
+
+<h4 id="includes">Includes</h4>
+
+<p>The syntax for a <strong>theory inclusion</strong>  is</p>
+
+<p><img src="/uniformal.github.io/doc/img/include.png" alt="`include &lt;domain&gt; \RS`" /></p>
+
+<p>The include-relation between theories generates a partial order.
+In particular, includes are composed transitively, and including the same theory twice is redundant.</p>
+
+<h4 id="structures">Structures</h4>
+
+<p>The syntax for structures is</p>
+
+<p><img src="/uniformal.github.io/doc/img/structure.png" alt="`structure &lt;name&gt; : &lt;domain&gt; = &lt;declarations&gt; \GS`" /></p>
+
+<p>, where <code class="highlighter-rouge">&lt;declarations&gt;</code> is a sequence of declarations.</p>
+
+<ul>
+  <li>Even though structures are declarations, they have a <a href="modules.html">module</a> body and are thus delimited by the module <a href="delimiters.html">delimiter</a> <img src="/uniformal.github.io/doc/img/GS.png" alt="`\GS`" /> instead of the declaration delimiter <img src="/uniformal.github.io/doc/img/RS.png" alt="`\RS`" />.</li>
+  <li>Simple includes are still delimited with <img src="/uniformal.github.io/doc/img/RS.png" alt="`\RS`" />.</li>
+  <li>The name of each declaration in a structure has to correspond to the name of a declaration in the <code class="highlighter-rouge">&lt;domain&gt;</code>.</li>
+  <li>Components (aliases, types, definitions etc.) explicitely given in a structure <em>override</em> the corresponding component of the declaration in the <code class="highlighter-rouge">&lt;domain&gt;</code>, all other components are inherited from the latter. In particular, structures can introduce definitions for (not necessarily) previously undefined constants, in which case the (new) definition has to have the (induced/old) type of the constant. It is recommended to <em>never override the type</em> of a symbol in a structure.</li>
+  <li>The full <a href="../api/uris.html">URI</a> of an induced declaration <code class="highlighter-rouge">&lt;declname&gt;</code> in a structure <code class="highlighter-rouge">&lt;struct&gt;</code> in a module <code class="highlighter-rouge">&lt;mod&gt;</code> is <code class="highlighter-rouge">&lt;mod&gt; ? &lt;struct&gt; / &lt;declname&gt;</code>. It is this declaration, that is visible from the outside and can be used in subsequent (to the structure) declarations. In contrast, the URI <code class="highlighter-rouge">&lt;mod&gt; / &lt;struct&gt; ? &lt;declname&gt;</code> refers to the plain declaration as declared <em>directly in the structure</em>, i.e. without inheritance. The latter should never be used outside of the <a href="../api/">API</a> and is invisible to declarations outside of the structure.</li>
+  <li>Unlike simple includes, multiple <em>named structures</em> with the same <code class="highlighter-rouge">&lt;domain&gt;</code> are <strong>not</strong> redundant. Each structure introduces fresh (possibly modified) copies of the declarations in the domain.</li>
+  <li>The limit of the previous point is the <a href="modules.html#theories"><em>meta theory</em></a> of the domain. If two structures <code class="highlighter-rouge">s1</code>,<code class="highlighter-rouge">s2</code> have corresponding domains <code class="highlighter-rouge">dom1</code>,<code class="highlighter-rouge">dom2</code> with the same meta theory <code class="highlighter-rouge">meta</code>, then <em>everything in the dependency closure of <code class="highlighter-rouge">meta</code></em> will be included exactly once.</li>
+</ul>
+
+<p>Implementation note: Because includes and structures are often treated exactly the same way, the MMT system represents an include as a structure with empty body and the induced name <code class="highlighter-rouge">[&lt;domain&gt;]</code>. API-wise this corresponds to having an <a href="https://uniformal.github.io/apidoc/info/kwarc/mmt/api/MPath.html">MPath</a> referencing a module (e.g. a theory) and then taking a <a href="https://uniformal.github.io/apidoc/info/kwarc/mmt/api/ComplexStep.html">ComplexStep</a> to refer to the inclusion: <code class="highlighter-rouge">MPath ? ComplexStep(MPath)</code>.</p>
+
+<p><strong>Example</strong></p>
+
+<p>Let us assume, we have a theory <code class="highlighter-rouge">Monoid</code> with a constant <code class="highlighter-rouge">G</code> for the domain of a monoid, <code class="highlighter-rouge">op</code> for the monoid operation, <code class="highlighter-rouge">unit</code> for the unit of the monoid and the usual axioms. The latter might be included in (and extended by) a theory <code class="highlighter-rouge">AbelianGroup</code> adding the additional axioms. then we can use structures to form a theory <code class="highlighter-rouge">Ring</code>, using the theory <code class="highlighter-rouge">Monoid</code> for multiplication and <code class="highlighter-rouge">AbelianGroup</code> for addition. If we use includes, like this</p>
+
+<p><img src="/uniformal.github.io/doc/img/ringwrong.png" alt="`theory Rings = include ?Monoid \RS include ?AbelianGroup \RS \GS`" /></p>
+
+<p>the (transitively twice) included instances of <code class="highlighter-rouge">Monoid</code> will be identified, defeating the purpose. As mentioned above, named structures prevent that, and allow us to additionally</p>
+
+<ul>
+  <li>identify the two instances of the domain <code class="highlighter-rouge">G</code>,</li>
+  <li>give new aliases to the instances of <code class="highlighter-rouge">op</code> (e.g. <code class="highlighter-rouge">plus</code> and <code class="highlighter-rouge">times</code>) and of <code class="highlighter-rouge">unit</code> (e.g. <code class="highlighter-rouge">zero</code> and <code class="highlighter-rouge">one</code>) and</li>
+  <li>give the instances of <code class="highlighter-rouge">op</code> new desired notations.</li>
+</ul>
+
+<p>Thus, the correct theory <code class="highlighter-rouge">Ring</code> could look like this:</p>
+
+<p><img src="/uniformal.github.io/doc/img/ringright.png" alt="`theory Rings = R : type \RS // domain of the ring \RS structure addition : ?AbelianGroup = G = R \RS op @ plus \US # 1 + 2 prec 10 \RS unit @ zero \RS \GS structure multiplication: ?Monoid = G = R \RS op @ times \US # 1 \cdot 2 prec 10 \RS unit @ one \RS \GS \GS`" /></p>
+
+<p>All the monoid/group axioms are imported via the structures and are thus available for the respective new symbols. If <code class="highlighter-rouge">Monoid</code> and <code class="highlighter-rouge">AbelianGroup</code> have the same meta theory (e.g. <code class="highlighter-rouge">first_order_logic</code>), then all symbols imported via that (e.g. quantifiers, logical connectives etc.) are identified across the two structures.</p>
+
+<h4 id="derived-declarations">Derived Declarations</h4>
+
+<p>Derived declarations are declarations, which are not interpreted directly but elaborated into external declarations by a <a href="/uniformal.github.io/doc/language/structuralfeatures.html">structural feature</a>. Their syntax and semantics is defined by the corresponding structural feature.</p>
+
+<h3 id="rules">Rules</h3>
+
+<p>Rules are special Scala objects that can be declared in an MMT theory Thy to change the semantics of Thy-terms.
+For example,</p>
+
+<ul>
+  <li>all typing rules for the toplevel meta-theory</li>
+  <li>lexing rules for user-defined <a href="literals.html">literals</a></li>
+</ul>
+
+<p>are provided as rules.</p>
+
+<p>Users typically do not need to use rules except when designing their own type systems outside logical frameworks.</p>
+
+<p>To declare a rule, just write <code class="highlighter-rouge">rule PATH</code> inside Thy, where <code class="highlighter-rouge">PATH</code> is the MMT URI of a Scala object on the current class path - MMT will dynamically load the Scala object and use it in all Thy-algorithms.</p>
+
+				</div>
+			</div>
+		</div>
+	
+
+
+	<div class="container">
+		<footer class="container">
+
+    <hr />
+    <p>
+        MMT is developed and maintained mostly by <a href="http://kwarc.info/frabe/" target="_blank">Florian Rabe</a>. <br />
+        
+        This page is hosted via github pages and can be edited <a href="https://github.com/UniFormal/uniformal.github.io/edit/master/doc/language/declarations.md" target="_blank">directly in the browser</a>. <br/>
+    </p>
+</footer>
+	</div>
+
+    <script src="https://comfreek.github.io/uniformal.github.io/lib/js/jquery-3.3.1.min.js"></script>
+    <script src="https://comfreek.github.io/uniformal.github.io/lib/js/bootstrap.min.js"></script>
+		<script src="https://comfreek.github.io/uniformal.github.io/lib/js/doc.js"></script>
+		<script src="https://comfreek.github.io/uniformal.github.io/lib/js/api.js"></script>
+	
+  </body>
+</html>

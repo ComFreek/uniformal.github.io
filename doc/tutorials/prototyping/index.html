@@ -1,0 +1,524 @@
+<!doctype html>
+<html lang="en">
+	<!-- This is the layout used for all pages in the wiki-style documentation.
+        The wiki files must have "layout: doc" in their front matter.
+        This file can use page.NAME to refer to variables declared in the front matter
+        and content to refer to the body of the md file.
+   -->
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!--
+      Do not use base tag: <base href="/uniformal.github.io/" />
+      Since otherwise we could not keep links in the documentation relative anymore - without a hassle at least.
+      We would always have to prepend doc/ or something.
+
+      Hence, use e.g. `/uniformal.github.io/lib/css/bootstrap.min.css` to refer to assets in this file only.
+    -->
+    <link rel="icon" href="https://comfreek.github.io/uniformal.github.io/favicon.ico">
+
+    <title>MMT - Language Design in MMT</title>
+
+    <link href="https://comfreek.github.io/uniformal.github.io/lib/css/bootstrap.min.css" rel="stylesheet" />
+	  <link href="https://comfreek.github.io/uniformal.github.io/lib/css/doc.css" rel="stylesheet" />
+		<link href="https://comfreek.github.io/uniformal.github.io/lib/css/pygments-default.css" rel="stylesheet" />
+	
+  </head>
+  <body>
+	
+<nav class="navbar navbar-expand navbar-dark site-header" site-header >
+    <div class="container">
+        <a class="navbar-brand" href="/">
+            <img src="https://comfreek.github.io/uniformal.github.io/lib/css/img/logo_dark.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+            The MMT Language and System
+        </a>
+    </div>
+</nav>
+
+	
+		<div class="container-fluid main">
+			<div class="row">
+				<div class="col-12 col-md-3 col-xl-2">
+					<ul class="nav flex-column">
+						
+
+
+<div class="list-group">
+  
+    
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/"
+    
+>
+    Overview
+</a>
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/setup/">
+    Setting up MMT
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable active" href="https://comfreek.github.io/uniformal.github.io/doc/tutorials/">
+    Tutorials
+</a>
+
+
+
+
+    <div class="list-group">
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action active"
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/tutorials/prototyping/"
+    
+>
+    Language Design in MMT
+</a>
+
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/tutorials/applications/getting-started"
+    
+>
+    Getting Started as an MMT API user
+</a>
+
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/tutorials/applications/application-development"
+    
+>
+    Application Development with MMT
+</a>
+
+        
+            
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/tutorials/jedit/">
+    Writing MMT Documents with jEdit
+</a>
+
+
+
+
+
+        
+    </div>
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/philosophy/">
+    The Philosophy behind MMT
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/language/">
+    The MMT Language
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/archives/">
+    MMT-Archives
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/api/">
+    The MMT API
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/applications/">
+    Applications and Projects based on MMT
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/development/">
+    Development
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/community/"
+    
+>
+    Community & Communication
+</a>
+
+  
+    
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/contribs"
+    
+>
+    Contributed Articles
+</a>
+
+  
+</div>
+					</ul>
+				</div>
+				<div class="col-12 col-md-9 col-xl-8 content">
+					<h2>Language Design in MMT</h2>
+					<hr />
+	
+					<p>In this tutorial, we build an implementation of first-order logic (FOL) in MMT.
+The complete files built interactively in this tutorial can be found at https://gl.mathhub.info/MMT/examples/tree/master/source/tutorial (which is automatically cloned when installing MMT).</p>
+
+<p>It assumes that</p>
+
+<ul>
+  <li>MMT has been <a href="../../setup">installed</a>,</li>
+  <li>archives are placed in some folder, which is refered to as <code class="highlighter-rouge">CONTENT</code>,<span class="detail">The MMT installer should take care of this </span></li>
+  <li><a href="../../applications/jedit">jEdit</a> is used for editing mmt files.<span class="detail">Other editors will work but might make editing awkward.</span></li>
+</ul>
+
+<h3 id="define-a-meta-logic">Define a Meta-Logic</h3>
+
+<p>Actually, we will skip this step for now because only advanced users need to define their own meta-logic.</p>
+
+<p>Instead, we can choose one of the meta-logics already defined in MMT.
+The most important example is the logical framework LF, whose MMT URI is
+<code class="highlighter-rouge">http://cds.omdoc.org/urtheories?LF</code>.</p>
+
+<p>This theory is defined in the archive MMT/urtheories, which is automatically cloned into the folder CONTENT when setting up MMT.</p>
+
+<div class="detail">
+  <p>Other important meta-logics defined in this archive include</p>
+
+  <ul>
+    <li><code class="highlighter-rouge">http://cds.omdoc.org/urtheories?PLF</code> extends LF with shallow polymorphism</li>
+    <li><code class="highlighter-rouge">http://cds.omdoc.org/urtheories?LFModulo</code>, which extends LF with a rewrite system</li>
+  </ul>
+
+  <p>These can also be combined.</p>
+</div>
+
+<p>For FOL, LF is sufficient as a meta-logic.</p>
+
+<h3 id="define-the-formal-system-in-an-appropriate-meta-logic">Define the Formal System in an Appropriate Meta-Logic</h3>
+
+<p>We create a new file <code class="highlighter-rouge">fol.mmt</code>, in which we will define FOL.</p>
+
+<h4 id="creating-the-file">Creating the File</h4>
+
+<p>It does not matter where this file is located.
+But to allow for running MMT build targets over it later, it is convenient to place it in a new MMT archive:</p>
+
+<ul>
+  <li>create a folder <code class="highlighter-rouge">CONTENT/myarchive</code></li>
+  <li>
+    <p>create a file <code class="highlighter-rouge">MANIFEST.MF</code> in it containing (at least) the lines</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>id: myarchive
+narration-base: http://mydomain.org/myarchive
+</code></pre></div>    </div>
+  </li>
+  <li>and create a file <code class="highlighter-rouge">source/fol.mmt</code> in it</li>
+</ul>
+
+<p><span class="detail">The id is some string that is used to refer to the archive. The narration base is some URI that is used as the default namespace for forming unique identifiers for the content of the archive.</span></p>
+
+<h4 id="create-a-theory-for-fol">Create a Theory for FOL</h4>
+
+<p>Open the file in jEdit and create an empty theory:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>namespace http://mydomain.org/mmt-example [GS]
+
+theory FOL : http://cds.omdoc.org/urtheories?LF =
+
+[GS]
+</code></pre></div></div>
+
+<p>Here</p>
+
+<ul>
+  <li>The <code class="highlighter-rouge">namespace</code> declaration defines a unique namespace (a URI) for our example.<span class="detail">The URI does not have to be a URL, i.e., it does not have to point to a physical location. It only acts as a unique identifier.</span></li>
+  <li>The <code class="highlighter-rouge">theory</code> introduces an MMT theory called <code class="highlighter-rouge">FOL</code> with meta-theory <code class="highlighter-rouge">http://cds.omdoc.org/urtheories?LF</code>.<span class="detail">Alternatively, we can write <code class="highlighter-rouge">ur:?LF</code> because the namespace prefix definition <code class="highlighter-rouge">import ur http://cds.omdoc.org/urtheories [GS]</code> is implicitly present.</span></li>
+  <li><code class="highlighter-rouge">[GS]</code> refers to ASCII 29, the toplevel <a href="../../language/delimiters.html">delimiter</a> used by MMT.
+In jEdit, it can be inserted via the symbol button for it or by typing <code class="highlighter-rouge">jGS </code>.</li>
+</ul>
+
+<h4 id="define-the-syntax-and-semantics-of-fol">Define the Syntax and Semantics of FOL</h4>
+
+<p>From this point on forwards, defining a language proceeds according to LF.</p>
+
+<p>The details of doing so are given in the self-documenting mmt files in the archive <code class="highlighter-rouge">CONTENT/MMT/examples</code>, which has been cloned automatically when setting up MMT.</p>
+
+<p>It contains the full definition of <code class="highlighter-rouge">FOL</code> in the file <code class="highlighter-rouge">tutorial/1-sfol.mmt</code>.
+To complete this step of the tutorial, copy over the declarations in this file step by step.
+(Note that this tutorial makes you use a different namespace than the that file. That’s important to make sure all declarations have unique URIs.)</p>
+
+<p>To insert Unicode symbols, you can use LaTeX commands with j instead of .
+For example, <code class="highlighter-rouge">jrightarrow</code> inserts <code class="highlighter-rouge">\rightarrow</code>. <span class="detail">And because that one is so important, <code class="highlighter-rouge">jra</code> is a shortcut for it.</span>
+The complete list of preconfigured abbreviations can be found in the section <code class="highlighter-rouge">Abbreviations</code> of the jEdit settings.</p>
+
+<h4 id="view-the-logic-in-the-browser">View the Logic in the Browser</h4>
+
+<p>We can start the MMT web server from within jEdit to view our definition in the browser:</p>
+
+<ul>
+  <li>go to the jEdit plugin called <code class="highlighter-rouge">console</code></li>
+  <li>choose <code class="highlighter-rouge">mmt</code> as the console language</li>
+  <li>type <code class="highlighter-rouge">server on 8080</code> in the console (or some other port number)</li>
+  <li>point your browser to <a href="http://localhost:8080?http://mydomain.org/mmt-example?FOL">http://localhost:8080?http://mydomain.org/mmt-example?FOL</a></li>
+</ul>
+
+<h4 id="build-and-serve-the-archive">Build and Serve the Archive</h4>
+
+<p>To build your archive, use the command <code class="highlighter-rouge">build myarchive mmt-omdoc fol.mmt</code>. This will build all <code class="highlighter-rouge">mmt</code> files in your archive and convert them into <code class="highlighter-rouge">omdoc</code> (which is the XML format that MMT uses internally, corresponding to the binary files produced by a compiler).
+The <code class="highlighter-rouge">omdoc</code> files are put into the folders <code class="highlighter-rouge">narration</code> (one <code class="highlighter-rouge">omdoc</code> file per source file) and <code class="highlighter-rouge">content</code> (one <code class="highlighter-rouge">omdoc</code> file per module in those source files).
+Additionally, index files for fast querying are placed in the folder <code class="highlighter-rouge">relational</code>.</p>
+
+<p>You can build the archive from within jEdit (by using the jEdit console as above).</p>
+
+<p>Alternatively, you can build it directly from the MMT shell without involving jEdit.
+Start the shell by running <code class="highlighter-rouge">mmt.jar</code>.
+Then type</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>build myarchive mmt-omdoc fol.mmt
+server on 8081
+</code></pre></div></div>
+
+<p><span class="detail">The shell is completely independent from jEdit (but works with the same archives). Therefore, we use a different port number above.</span></p>
+
+<p>Eventually, you can leave the shell by typing <code class="highlighter-rouge">exit</code>.</p>
+
+<h3 id="use-fol-to-build-a-small-algebra-library">Use FOL to Build a Small Algebra Library</h3>
+
+<p>We can now apply our defined system to formalize some knowledge.
+We pick algebra as an example.</p>
+
+<h4 id="formalize-the-library">Formalize the Library</h4>
+
+<p>Create a file <code class="highlighter-rouge">algebra.mmt</code> in your archive and put</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>namespace http://mydomain.org/mmt-example [GS]
+
+theory Semigroup : ?FOL =
+
+[GS]
+</code></pre></div></div>
+
+<p>This creates a new theory for semigroups, this time using our new theory <code class="highlighter-rouge">FOL</code> as the meta-theory.
+<span class="detail">Because both theories are in the same namespace, we can use a relative URI to refer to <code class="highlighter-rouge">http://mydomain.org/mmt-example</code>.</span></p>
+
+<p>As for <code class="highlighter-rouge">FOL</code>, we do not give the details of the formalization here.
+Instead, we refer to the self-documenting file <code class="highlighter-rouge">tutorial/2-algebra.mmt</code> in the archive <code class="highlighter-rouge">CONTENT/MMT/examples</code>.</p>
+
+<h4 id="build-and-serve-the-library">Build and Serve the Library</h4>
+
+<p>Like before, you can now</p>
+
+<ul>
+  <li>build the library using <code class="highlighter-rouge">build myarchive mmt-omdoc algebra.mmt</code></li>
+  <li>serve it using <code class="highlighter-rouge">server on 8081</code>.</li>
+</ul>
+
+				</div>
+			</div>
+		</div>
+	
+
+
+	<div class="container">
+		<footer class="container">
+
+    <hr />
+    <p>
+        MMT is developed and maintained mostly by <a href="http://kwarc.info/frabe/" target="_blank">Florian Rabe</a>. <br />
+        
+        This page is hosted via github pages and can be edited <a href="https://github.com/UniFormal/uniformal.github.io/edit/master/doc/tutorials/prototyping/index.md" target="_blank">directly in the browser</a>. <br/>
+    </p>
+</footer>
+	</div>
+
+    <script src="https://comfreek.github.io/uniformal.github.io/lib/js/jquery-3.3.1.min.js"></script>
+    <script src="https://comfreek.github.io/uniformal.github.io/lib/js/bootstrap.min.js"></script>
+		<script src="https://comfreek.github.io/uniformal.github.io/lib/js/doc.js"></script>
+		<script src="https://comfreek.github.io/uniformal.github.io/lib/js/api.js"></script>
+	
+  </body>
+</html>

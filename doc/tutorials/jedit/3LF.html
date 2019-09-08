@@ -1,0 +1,536 @@
+<!doctype html>
+<html lang="en">
+	<!-- This is the layout used for all pages in the wiki-style documentation.
+        The wiki files must have "layout: doc" in their front matter.
+        This file can use page.NAME to refer to variables declared in the front matter
+        and content to refer to the body of the md file.
+   -->
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!--
+      Do not use base tag: <base href="/uniformal.github.io/" />
+      Since otherwise we could not keep links in the documentation relative anymore - without a hassle at least.
+      We would always have to prepend doc/ or something.
+
+      Hence, use e.g. `/uniformal.github.io/lib/css/bootstrap.min.css` to refer to assets in this file only.
+    -->
+    <link rel="icon" href="https://comfreek.github.io/uniformal.github.io/favicon.ico">
+
+    <title>MMT - 3 - LF and Judgments-as-Types</title>
+
+    <link href="https://comfreek.github.io/uniformal.github.io/lib/css/bootstrap.min.css" rel="stylesheet" />
+	  <link href="https://comfreek.github.io/uniformal.github.io/lib/css/doc.css" rel="stylesheet" />
+		<link href="https://comfreek.github.io/uniformal.github.io/lib/css/pygments-default.css" rel="stylesheet" />
+	
+  </head>
+  <body>
+	
+<nav class="navbar navbar-expand navbar-dark site-header" site-header >
+    <div class="container">
+        <a class="navbar-brand" href="/">
+            <img src="https://comfreek.github.io/uniformal.github.io/lib/css/img/logo_dark.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+            The MMT Language and System
+        </a>
+    </div>
+</nav>
+
+	
+		<div class="container-fluid main">
+			<div class="row">
+				<div class="col-12 col-md-3 col-xl-2">
+					<ul class="nav flex-column">
+						
+
+
+<div class="list-group">
+  
+    
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/"
+    
+>
+    Overview
+</a>
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/setup/">
+    Setting up MMT
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable active" href="https://comfreek.github.io/uniformal.github.io/doc/tutorials/">
+    Tutorials
+</a>
+
+
+
+
+    <div class="list-group">
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/tutorials/prototyping/"
+    
+>
+    Language Design in MMT
+</a>
+
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/tutorials/applications/getting-started"
+    
+>
+    Getting Started as an MMT API user
+</a>
+
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/tutorials/applications/application-development"
+    
+>
+    Application Development with MMT
+</a>
+
+        
+            
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable active" href="https://comfreek.github.io/uniformal.github.io/doc/tutorials/jedit/">
+    Writing MMT Documents with jEdit
+</a>
+
+
+
+
+    <div class="list-group">
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/tutorials/jedit/1archives.html"
+    
+>
+    1 - Creating Archives
+</a>
+
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/tutorials/jedit/2theories.html"
+    
+>
+    2 - A First Theory
+</a>
+
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action active"
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/tutorials/jedit/3LF.html"
+    
+>
+    3 - LF and Judgments-as-Types
+</a>
+
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/tutorials/jedit/4natded.html"
+    
+>
+    4 - Natural Deduction for Intuitionistic Propositional Logic
+</a>
+
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/tutorials/jedit/5structures.html"
+    
+>
+    5 - Structures, Lambda, Pi and Implicit Arguments
+</a>
+
+        
+    </div>
+
+
+        
+    </div>
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/philosophy/">
+    The Philosophy behind MMT
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/language/">
+    The MMT Language
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/archives/">
+    MMT-Archives
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/api/">
+    The MMT API
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/applications/">
+    Applications and Projects based on MMT
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/development/">
+    Development
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/community/"
+    
+>
+    Community & Communication
+</a>
+
+  
+    
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/contribs"
+    
+>
+    Contributed Articles
+</a>
+
+  
+</div>
+					</ul>
+				</div>
+				<div class="col-12 col-md-9 col-xl-8 content">
+					<h2>3 - LF and Judgments-as-Types</h2>
+					<hr />
+	
+					<p><a href="2theories.html">&lt; 2 - A First Theory</a></p>
+
+<p>LF is a logical framework based on the dependently typed lambda calculus with two universes, <code class="highlighter-rouge">type</code> and <code class="highlighter-rouge">kind</code>. If you know what this means, you can safely skip this section.</p>
+
+<p>A thorough description of both LF’s abstract formalization as well as how to use it in practice can be found in <a href="https://github.com/florian-rabe/Teaching/blob/master/logic/notes_logic.pdf">Part V here</a>.</p>
+
+<h3 id="lfs-lambda-calculus">LF’s lambda calculus</h3>
+
+<p>As seen in the previous section, LF declares a symbol <code class="highlighter-rouge">type</code>, which is a <em>universe</em>. LF has a second universe <code class="highlighter-rouge">kind</code>. Their behaviour is governed by the following rules:</p>
+
+<ul>
+  <li><code class="highlighter-rouge">kind</code> is a <em>universe</em>. That means: <code class="highlighter-rouge">kind</code> is <em>inhabitable</em> (may occur as a type of constants) and every symbol <code class="highlighter-rouge">c</code> with type <code class="highlighter-rouge">kind</code> is also inhabitable.</li>
+  <li><code class="highlighter-rouge">type</code> is a universe as well.</li>
+  <li><code class="highlighter-rouge">type:kind</code>, i.e. <code class="highlighter-rouge">type</code> has type <code class="highlighter-rouge">kind</code>.</li>
+</ul>
+
+<p>We can mostly ignore <code class="highlighter-rouge">kind</code>, since it rarely comes into play. For most purposes, we are only interested in types.</p>
+
+<p>LF has a single <em>type constructor</em>, that allows us to construct new types from existing ones, namely the <em>dependent product type</em> <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cprod" alt="`\prod`" />. Its behaviour is governed by the following <em>formation rule</em>:</p>
+
+<blockquote>
+  <p>If <code class="highlighter-rouge">A:type</code> and <code class="highlighter-rouge">B(x)</code> is inhabitable for any <code class="highlighter-rouge">x:A</code>, then <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cprod_%7Bx%3AA%7DB%28x%29" alt="`\prod_{x:A}B(x)`" /> has type <code class="highlighter-rouge">type</code></p>
+</blockquote>
+
+<p><img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cprod_%7Bx%3AA%7DB%28x%29" alt="`\prod_{x:A}B(x)`" /> is the type of functions, that take an element <code class="highlighter-rouge">a:A</code> and return an element <code class="highlighter-rouge">b:B(a)</code>. Note, that the <em>return type</em> of the function may depend on the <em>argument</em>. If <code class="highlighter-rouge">B</code> does <strong>not</strong> depend on the argument, we get the <em>simple</em> function type we already used:</p>
+
+<blockquote>
+  <p>If <code class="highlighter-rouge">B</code> does not depend on <code class="highlighter-rouge">x</code>, then <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20A%5Cto%20B%20%3A%3D%20%5Cprod_%7Bx%3AA%7DB" alt="`A\to B := \prod_{x:A}B(x)`" />.</p>
+</blockquote>
+
+<p>Next, we need a way to construct elements of these function types. This is done using the <code class="highlighter-rouge">λ</code>-operator, which is governed by the following <em>introduction rule</em>:</p>
+
+<blockquote>
+  <p>If <code class="highlighter-rouge">A:type</code> and <code class="highlighter-rouge">t(x):B(x)</code> for any <code class="highlighter-rouge">x:A</code>, then <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Clambda%5C%3B%20x%3AA.%5C%3B%20t%28x%29" alt="`\lambda x:A. t(x)`" /> has type <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cprod_%7Bx%3AA%7DB%28x%29" alt="`\prod_{x:A}B(x)`" />.</p>
+</blockquote>
+
+<p>So <code class="highlighter-rouge">λ</code> allows us to construct functions out of terms. Of course, functions are useless if we can’t apply them. The behaviour of function applications is governed by this <em>elimination rule</em>:</p>
+
+<blockquote>
+  <p>If <code class="highlighter-rouge">f</code> has type <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20%5Cprod_%7Bx%3AA%7DB%28x%29" alt="`\prod_{x:A}B(x)`" /> and <code class="highlighter-rouge">a:A</code>, then <code class="highlighter-rouge">f a</code> has type <code class="highlighter-rouge">B(a)</code> (where <code class="highlighter-rouge">B(a)</code> is the result of substituting <code class="highlighter-rouge">x</code> by <code class="highlighter-rouge">a</code> in <code class="highlighter-rouge">B(x)</code>)</p>
+</blockquote>
+
+<p>Additional <em>computation rules</em> make sure, that e.g. <code class="highlighter-rouge">λ x. (f x)</code> is the same as <code class="highlighter-rouge">λ y. (f y)</code>, which is the same as <code class="highlighter-rouge">f</code>, etc., but those rules are intuitive enough to not require much explanation.</p>
+
+<h3 id="judgments-as-types">Judgments-as-Types</h3>
+
+<p>LF is a <em>logical framework</em>, i.e., it is intended to allow for conveniently specifying the syntax and proof theories of various logics. This might be surprising, given that LF only provides dependent function types. This is where the <em>judgments-as-types</em>-paradigm comes into play. It is based on the observation, that there is a natural correspondence between the <em>judgments</em> of a logic (e.g. “<code class="highlighter-rouge">φ</code> holds”, or in symbols : <code class="highlighter-rouge">⊦ φ</code>) and some associated type <code class="highlighter-rouge">A</code> being <em>inhabited</em> (i.e. there is some <code class="highlighter-rouge">a</code> with <code class="highlighter-rouge">a:A</code>):</p>
+
+<ul>
+  <li>We introduce a type <code class="highlighter-rouge">o</code> for the expressions of our logic,</li>
+  <li>we associate every judgment <code class="highlighter-rouge">J</code> with a type <code class="highlighter-rouge">⊦J</code>,</li>
+  <li>we interpret the type <code class="highlighter-rouge">TJ</code> as the type of <em>proofs</em> that the judgment <code class="highlighter-rouge">J</code> holds,</li>
+  <li>correspondingly we can “prove” the judgment <code class="highlighter-rouge">J</code> by constructing an element of the type <code class="highlighter-rouge">⊦J</code>.</li>
+  <li>The <em>syntax</em> of our logic thus reduces to functions, that construct new propositions from atomic propositions - i.e. new elements of the type <code class="highlighter-rouge">o</code> from declared elements of <code class="highlighter-rouge">o</code>,</li>
+  <li>The <em>proof theory</em> of our logic corresponds to constructing elements of the judgment types <code class="highlighter-rouge">⊦J</code> (for some judgment <code class="highlighter-rouge">J</code>).</li>
+</ul>
+
+<p>The last point is worth looking at more closely: Usually, proof rules are denoted in the form of:</p>
+
+<p><img src="https://latex.codecogs.com/gif.latex?%5Cdfrac%7B%5Cvdash%20%5Cphi_1%2C%20...%2C%20%5Cvdash%5Cphi_n%7D%7B%5Cvdash%5Cphi%7D" alt="`\dfrac{\vdash \phi_1, ..., \vdash\phi_n}{\vdash\phi}`" /></p>
+
+<p>, which translates to:</p>
+
+<blockquote>
+  <p><strong>If</strong> (judgment <code class="highlighter-rouge">φ_1</code> is provable <strong>and</strong> … <strong>and</strong> judgment <code class="highlighter-rouge">φ_n</code> is provable), <strong>then</strong> judgment <code class="highlighter-rouge">φ</code> is provable.</p>
+</blockquote>
+
+<p>, where a <em>context</em> is a list of assumptions. Since the judgments correspond to types, such a rule translates to a <em>function</em> taking proofs of the <em>premises</em> as arguments and returning a proof of the <em>conclusion</em>, i.e.</p>
+
+<p><img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Cprod_%7Bp_1%3A%5Cvdash%5Cphi_1%7D...%5Cprod_%7Bp_n%3A%5Cvdash%5Cphi_n%7D%5Cvdash%5Cphi" alt="`\prod_{p_1:\vdash\phi_1}...\prod_{p_n:\vdash\phi_n}\vdash\phi`" /></p>
+
+<hr />
+
+<p>In the case of propositional logic, we have a single judgment for every proposition <code class="highlighter-rouge">φ:prop</code>, namely the judgment <code class="highlighter-rouge">⊦ φ</code> that <code class="highlighter-rouge">φ</code> holds. Correspondingly, we declared the function <code class="highlighter-rouge">proof</code>, that maps a proposition <code class="highlighter-rouge">φ</code> to the associated type of proofs <code class="highlighter-rouge">⊦ φ</code>. The syntax we have already taken care of, by declaring the connectives as functions on the type <code class="highlighter-rouge">prop</code>.</p>
+
+<p>In the next section we will use dependend function types to implement the rules of the <em>natural deduction</em> calculus as functions, that yield elements of the proof types <code class="highlighter-rouge">⊦ φ</code>.</p>
+
+<hr />
+
+<p><a href="4natded.html">&gt; 4 - Natural Deduction for Intuitionistic Propositional Logic</a></p>
+
+				</div>
+			</div>
+		</div>
+	
+
+
+	<div class="container">
+		<footer class="container">
+
+    <hr />
+    <p>
+        MMT is developed and maintained mostly by <a href="http://kwarc.info/frabe/" target="_blank">Florian Rabe</a>. <br />
+        
+        This page is hosted via github pages and can be edited <a href="https://github.com/UniFormal/uniformal.github.io/edit/master/doc/tutorials/jedit/3LF.md" target="_blank">directly in the browser</a>. <br/>
+    </p>
+</footer>
+	</div>
+
+    <script src="https://comfreek.github.io/uniformal.github.io/lib/js/jquery-3.3.1.min.js"></script>
+    <script src="https://comfreek.github.io/uniformal.github.io/lib/js/bootstrap.min.js"></script>
+		<script src="https://comfreek.github.io/uniformal.github.io/lib/js/doc.js"></script>
+		<script src="https://comfreek.github.io/uniformal.github.io/lib/js/api.js"></script>
+	
+  </body>
+</html>

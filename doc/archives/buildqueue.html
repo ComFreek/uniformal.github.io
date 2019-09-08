@@ -1,0 +1,399 @@
+<!doctype html>
+<html lang="en">
+	<!-- This is the layout used for all pages in the wiki-style documentation.
+        The wiki files must have "layout: doc" in their front matter.
+        This file can use page.NAME to refer to variables declared in the front matter
+        and content to refer to the body of the md file.
+   -->
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!--
+      Do not use base tag: <base href="/uniformal.github.io/" />
+      Since otherwise we could not keep links in the documentation relative anymore - without a hassle at least.
+      We would always have to prepend doc/ or something.
+
+      Hence, use e.g. `/uniformal.github.io/lib/css/bootstrap.min.css` to refer to assets in this file only.
+    -->
+    <link rel="icon" href="https://comfreek.github.io/uniformal.github.io/favicon.ico">
+
+    <title>MMT - The Build Queue</title>
+
+    <link href="https://comfreek.github.io/uniformal.github.io/lib/css/bootstrap.min.css" rel="stylesheet" />
+	  <link href="https://comfreek.github.io/uniformal.github.io/lib/css/doc.css" rel="stylesheet" />
+		<link href="https://comfreek.github.io/uniformal.github.io/lib/css/pygments-default.css" rel="stylesheet" />
+	
+  </head>
+  <body>
+	
+<nav class="navbar navbar-expand navbar-dark site-header" site-header >
+    <div class="container">
+        <a class="navbar-brand" href="/">
+            <img src="https://comfreek.github.io/uniformal.github.io/lib/css/img/logo_dark.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+            The MMT Language and System
+        </a>
+    </div>
+</nav>
+
+	
+		<div class="container-fluid main">
+			<div class="row">
+				<div class="col-12 col-md-3 col-xl-2">
+					<ul class="nav flex-column">
+						
+
+
+<div class="list-group">
+  
+    
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/"
+    
+>
+    Overview
+</a>
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/setup/">
+    Setting up MMT
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/tutorials/">
+    Tutorials
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/philosophy/">
+    The Philosophy behind MMT
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/language/">
+    The MMT Language
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable active" href="https://comfreek.github.io/uniformal.github.io/doc/archives/">
+    MMT-Archives
+</a>
+
+
+
+
+    <div class="list-group">
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/archives/building.html"
+    
+>
+    The Build System
+</a>
+
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/archives/oaf.html"
+    
+>
+    The OAF Project
+</a>
+
+        
+            
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/archives/Mathhub">
+    Installing and Publishing Archives using MathHub
+</a>
+
+
+
+
+
+        
+    </div>
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/api/">
+    The MMT API
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/applications/">
+    Applications and Projects based on MMT
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/development/">
+    Development
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/community/"
+    
+>
+    Community & Communication
+</a>
+
+  
+    
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/contribs"
+    
+>
+    Contributed Articles
+</a>
+
+  
+</div>
+					</ul>
+				</div>
+				<div class="col-12 col-md-9 col-xl-8 content">
+					<h2>The Build Queue</h2>
+					<hr />
+	
+					<p>The build queue is an advanced implementation of [building], which uses multi-threading, which is now the default build manager.</p>
+
+<p>If MMT was started with a server (i.e. by command “server on 8080”), the build queue can be observed on the page “http://localhost:8080/buildqueue.html”.</p>
+
+<p>The page starts with a box to control the refresh rate. Periodic refresh is needed to observe the changing queue state. Initially or after reloading the browser page the queue data is updated from the server every second.
+After every 20 refreshes the time between refreshes doubles to avoid too much traffic for the page when it is merely left open. Reload the page to get full speed again. Press “get current state” to update the queue data without changing the refresh rate.</p>
+
+<p>Below the refresh box and the queue length follows the actual build queue that should get empty after some time. The top entry (if any) should be the currently “running” job. The queue length is at most a hundred or 50 for even longer queues. For such long queues the number of remaining queue elements is shown at the bottom of the queue.</p>
+
+<p>Below the build queue is a list of blocked jobs whose dependencies could not be found.
+These jobs are processed nevertheless after the actual build queue became empty. Usually
+dependencies (that can be found) are simply inserted into the build queue automatically before the requested job.</p>
+
+<p>At the end all finished jobs processed via the queue are shown (at most 200) with there result information.
+(After more than 200 jobs the bottom 100 jobs are removed.)</p>
+
+<h3 id="queue-entries">Queue Entries</h3>
+
+<p>For a queue entry usually only the relative name within an archive is shown, the target in parenthesis and the list of dependencies in square brackets. For directory tasks also the group and repository name separated by a slash are shown.</p>
+
+<p>The top queue entry may be shown with a leading “running” string.</p>
+
+<h3 id="blocked-entries">Blocked Entries</h3>
+
+<p>Blocked entries are those whose dependencies could not be computed. They are displayed like queue entries with their missing dependencies.</p>
+
+<h3 id="finished-entries">Finished Entries</h3>
+
+<p>Finished entries have been processed via the queue. They are shown with their build result possibly including a list of provided modules. More recently finished entries are shown nearer to the top.</p>
+
+<h3 id="clearing-the-queue">Clearing the Queue</h3>
+
+<p>By clicking on “clear queue” all entries are removed. Only a running job cannot be stopped and must be cleared from the finished list by clicking “clear queue” again.</p>
+
+<h3 id="pausing-builds">Pausing builds</h3>
+
+<p>By clicking on “pause” the building is suspended. This allows to observe or fine tune the queued jobs before clicking on “continue” again.</p>
+
+<h3 id="rebuilding">Rebuilding</h3>
+
+<p>By selecting a target, an update level, an archive and clicking “make” new tasks for the whole archive can be submitted. The default update level is “build on change” so that only minimal work is done to make an archive up-to-date. It is also possible to type in a particular file name, however, if this file name does not exist or is not applicable for a certain target, nothing will happen. Maybe “pause” building to see which tasks get queued.</p>
+
+<p>Note that if no archive is selected all archives will be made! It is also possible to clean archives, but this will not be noticeable until rebuilding again. After each “make” action the update level will switch back to “build on change” to avoid too many accidental changes.</p>
+
+				</div>
+			</div>
+		</div>
+	
+
+
+	<div class="container">
+		<footer class="container">
+
+    <hr />
+    <p>
+        MMT is developed and maintained mostly by <a href="http://kwarc.info/frabe/" target="_blank">Florian Rabe</a>. <br />
+        
+        This page is hosted via github pages and can be edited <a href="https://github.com/UniFormal/uniformal.github.io/edit/master/doc/archives/buildqueue.md" target="_blank">directly in the browser</a>. <br/>
+    </p>
+</footer>
+	</div>
+
+    <script src="https://comfreek.github.io/uniformal.github.io/lib/js/jquery-3.3.1.min.js"></script>
+    <script src="https://comfreek.github.io/uniformal.github.io/lib/js/bootstrap.min.js"></script>
+		<script src="https://comfreek.github.io/uniformal.github.io/lib/js/doc.js"></script>
+		<script src="https://comfreek.github.io/uniformal.github.io/lib/js/api.js"></script>
+	
+  </body>
+</html>

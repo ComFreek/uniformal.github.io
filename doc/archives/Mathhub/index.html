@@ -1,0 +1,393 @@
+<!doctype html>
+<html lang="en">
+	<!-- This is the layout used for all pages in the wiki-style documentation.
+        The wiki files must have "layout: doc" in their front matter.
+        This file can use page.NAME to refer to variables declared in the front matter
+        and content to refer to the body of the md file.
+   -->
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!--
+      Do not use base tag: <base href="/uniformal.github.io/" />
+      Since otherwise we could not keep links in the documentation relative anymore - without a hassle at least.
+      We would always have to prepend doc/ or something.
+
+      Hence, use e.g. `/uniformal.github.io/lib/css/bootstrap.min.css` to refer to assets in this file only.
+    -->
+    <link rel="icon" href="https://comfreek.github.io/uniformal.github.io/favicon.ico">
+
+    <title>MMT - Installing and Publishing Archives with MathHub.info</title>
+
+    <link href="https://comfreek.github.io/uniformal.github.io/lib/css/bootstrap.min.css" rel="stylesheet" />
+	  <link href="https://comfreek.github.io/uniformal.github.io/lib/css/doc.css" rel="stylesheet" />
+		<link href="https://comfreek.github.io/uniformal.github.io/lib/css/pygments-default.css" rel="stylesheet" />
+	
+  </head>
+  <body>
+	
+<nav class="navbar navbar-expand navbar-dark site-header" site-header >
+    <div class="container">
+        <a class="navbar-brand" href="/">
+            <img src="https://comfreek.github.io/uniformal.github.io/lib/css/img/logo_dark.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+            The MMT Language and System
+        </a>
+    </div>
+</nav>
+
+	
+		<div class="container-fluid main">
+			<div class="row">
+				<div class="col-12 col-md-3 col-xl-2">
+					<ul class="nav flex-column">
+						
+
+
+<div class="list-group">
+  
+    
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/"
+    
+>
+    Overview
+</a>
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/setup/">
+    Setting up MMT
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/tutorials/">
+    Tutorials
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/philosophy/">
+    The Philosophy behind MMT
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/language/">
+    The MMT Language
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable active" href="https://comfreek.github.io/uniformal.github.io/doc/archives/">
+    MMT-Archives
+</a>
+
+
+
+
+    <div class="list-group">
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/archives/building.html"
+    
+>
+    The Build System
+</a>
+
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/archives/oaf.html"
+    
+>
+    The OAF Project
+</a>
+
+        
+            
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable active" href="https://comfreek.github.io/uniformal.github.io/doc/archives/Mathhub">
+    Installing and Publishing Archives using MathHub
+</a>
+
+
+
+
+    <div class="list-group">
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/archives/Mathhub/lmh.html"
+    
+>
+    The Local MathHub Tool (LMH)
+</a>
+
+        
+    </div>
+
+
+        
+    </div>
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/api/">
+    The MMT API
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/applications/">
+    Applications and Projects based on MMT
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/development/">
+    Development
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/community/"
+    
+>
+    Community & Communication
+</a>
+
+  
+    
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/contribs"
+    
+>
+    Contributed Articles
+</a>
+
+  
+</div>
+					</ul>
+				</div>
+				<div class="col-12 col-md-9 col-xl-8 content">
+					<h2>Installing and Publishing Archives with MathHub.info</h2>
+					<hr />
+	
+					<p><a href="http://mathhub.info">MathHub.info</a> is portal for active mathematical documents and
+archive for flexiformal mathematics. It hosts most MMT content in the form of
+<a href="archives">math archives</a> and makes it accessible to human readers in the
+form of active documents.</p>
+
+<p>MathHub stores its contents in the GitLab repository http://gl.mathhub.info and provides
+mathematical knowledge management services and presentations via
+<a href="http://mmt.mathhub.info">a dedicated MMT process</a>.</p>
+
+<p>The <a href="https://github.com/MathHubInfo/Documentation/wiki">MathHub Wiki</a> gives details about the
+system.</p>
+
+<p>Archives can be installed and updated from as well as published to Mathhub using 
+the <a href="lmh.html">Local Mathhub Tool (LMH)</a>. In addition Mathhub hosts an 
+<a href="doc/applications/server.html">MMT-server</a> and an instance of 
+<a href="doc/applications/tgview.html">TGView</a> to explore and visualize archives.</p>
+
+
+				</div>
+			</div>
+		</div>
+	
+
+
+	<div class="container">
+		<footer class="container">
+
+    <hr />
+    <p>
+        MMT is developed and maintained mostly by <a href="http://kwarc.info/frabe/" target="_blank">Florian Rabe</a>. <br />
+        
+        This page is hosted via github pages and can be edited <a href="https://github.com/UniFormal/uniformal.github.io/edit/master/doc/archives/Mathhub/index.md" target="_blank">directly in the browser</a>. <br/>
+    </p>
+</footer>
+	</div>
+
+    <script src="https://comfreek.github.io/uniformal.github.io/lib/js/jquery-3.3.1.min.js"></script>
+    <script src="https://comfreek.github.io/uniformal.github.io/lib/js/bootstrap.min.js"></script>
+		<script src="https://comfreek.github.io/uniformal.github.io/lib/js/doc.js"></script>
+		<script src="https://comfreek.github.io/uniformal.github.io/lib/js/api.js"></script>
+	
+  </body>
+</html>

@@ -1,0 +1,521 @@
+<!doctype html>
+<html lang="en">
+	<!-- This is the layout used for all pages in the wiki-style documentation.
+        The wiki files must have "layout: doc" in their front matter.
+        This file can use page.NAME to refer to variables declared in the front matter
+        and content to refer to the body of the md file.
+   -->
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!--
+      Do not use base tag: <base href="/uniformal.github.io/" />
+      Since otherwise we could not keep links in the documentation relative anymore - without a hassle at least.
+      We would always have to prepend doc/ or something.
+
+      Hence, use e.g. `/uniformal.github.io/lib/css/bootstrap.min.css` to refer to assets in this file only.
+    -->
+    <link rel="icon" href="https://comfreek.github.io/uniformal.github.io/favicon.ico">
+
+    <title>MMT - Details on Building using SBT</title>
+
+    <link href="https://comfreek.github.io/uniformal.github.io/lib/css/bootstrap.min.css" rel="stylesheet" />
+	  <link href="https://comfreek.github.io/uniformal.github.io/lib/css/doc.css" rel="stylesheet" />
+		<link href="https://comfreek.github.io/uniformal.github.io/lib/css/pygments-default.css" rel="stylesheet" />
+	
+  </head>
+  <body>
+	
+<nav class="navbar navbar-expand navbar-dark site-header" site-header >
+    <div class="container">
+        <a class="navbar-brand" href="/">
+            <img src="https://comfreek.github.io/uniformal.github.io/lib/css/img/logo_dark.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+            The MMT Language and System
+        </a>
+    </div>
+</nav>
+
+	
+		<div class="container-fluid main">
+			<div class="row">
+				<div class="col-12 col-md-3 col-xl-2">
+					<ul class="nav flex-column">
+						
+
+
+<div class="list-group">
+  
+    
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/"
+    
+>
+    Overview
+</a>
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable active" href="https://comfreek.github.io/uniformal.github.io/doc/setup/">
+    Setting up MMT
+</a>
+
+
+
+
+    <div class="list-group">
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/setup/jedit.html"
+    
+>
+    Details on Setting up jEdit
+</a>
+
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/setup/running.html"
+    
+>
+    Details on Running MMT
+</a>
+
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/setup/configure.html"
+    
+>
+    Configuring MMT
+</a>
+
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/setup/repo.html"
+    
+>
+    The Structure of the MMT Repository
+</a>
+
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action active"
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/setup/sbt.html"
+    
+>
+    Details on Building with SBT
+</a>
+
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/setup/devel.html"
+    
+>
+    Developing MMT
+</a>
+
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/setup/license.html"
+    
+>
+    License for Using MMT
+</a>
+
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/setup/docker.html"
+    
+>
+    Docker Image
+</a>
+
+        
+    </div>
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/tutorials/">
+    Tutorials
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/philosophy/">
+    The Philosophy behind MMT
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/language/">
+    The MMT Language
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/archives/">
+    MMT-Archives
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/api/">
+    The MMT API
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/applications/">
+    Applications and Projects based on MMT
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/development/">
+    Development
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/community/"
+    
+>
+    Community & Communication
+</a>
+
+  
+    
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/contribs"
+    
+>
+    Contributed Articles
+</a>
+
+  
+</div>
+					</ul>
+				</div>
+				<div class="col-12 col-md-9 col-xl-8 content">
+					<h2>Details on Building using SBT</h2>
+					<hr />
+	
+					<p>The primary way to build MMT is via the <a href="http://www.scala-sbt.org/">Scala Build Tool (SBT)</a>.
+Building using SBT is only needed if you want to develop MMT or want to build from sources.
+If you develop in an <a href="develop.html">IDE</a>, it will automatically for you. Then you only need to use SBT to test your changes before committing.</p>
+
+<p>SBT has to be installed separately but that is straightforward.
+We test with SBT 1.1.1 or higher.</p>
+
+<p>SBT must be called from within the <code class="highlighter-rouge">src</code> folder of the MMT repository, which contains the <code class="highlighter-rouge">build.sbt</code> file.</p>
+
+<h3 id="short-instructions">Short Instructions</h3>
+
+<p>Within sbt, run <code class="highlighter-rouge">mmt/deploy</code>. That compiles the sources, packages them into a jar file, and produces the self-contained file <code class="highlighter-rouge">deploy/mmt.jar</code>, from which MMT can be run with plain Java.</p>
+
+<h3 id="detailed-instructions">Detailed Instructions</h3>
+
+<p>sbt commands are of the form <code class="highlighter-rouge">sbt PROJECT/TARGET</code>:</p>
+
+<ul>
+  <li><code class="highlighter-rouge">PROJECT</code> is the MMT subproject corresponding to the subfolders, MMT consists of multiple independently maintained subprojects that are defined in the <code class="highlighter-rouge">build.sbt</code> file and correspond to subfolders of the <code class="highlighter-rouge">src</code> folder. Example subprojects are <code class="highlighter-rouge">api</code>, <code class="highlighter-rouge">lf</code>, <code class="highlighter-rouge">jedit</code>, etc.</li>
+  <li><code class="highlighter-rouge">TARGET</code> is the operation to perform, most importantly <code class="highlighter-rouge">deploy</code>.</li>
+</ul>
+
+<p>For convenience, there is a special wrapper project <code class="highlighter-rouge">mmt</code> that depends on the most important subprojects so that <code class="highlighter-rouge">sbt mmt/deploy</code> builds all projects and bundles them into a self-contained jar.
+All jar files are stored in the <code class="highlighter-rouge">deploy</code> folder.
+That folder also contains all dependencies, but these are bundled automatically in the big jar file.</p>
+
+<h3 id="known-issues">Known Issues</h3>
+
+<p>If sbt runs out of memory, give it about 2G of JVM heap space. There are various ways to configure that, e.g., with an environment variable SBT_OPTS=”-Xmx2G”.</p>
+
+<h3 id="editing-the-buildsbt-file">Editing the build.sbt File</h3>
+
+<h4 id="target-definitions">TARGET definitions</h4>
+
+<p>TARGETs are declared as values of type TaskKey, and defined via</p>
+
+<ul>
+  <li><code class="highlighter-rouge">t := SCALA-CODE</code></li>
+  <li><code class="highlighter-rouge">t &lt;&lt;= SBT-TARGET</code></li>
+</ul>
+
+<h4 id="calling-targets">Calling targets</h4>
+
+<p><code class="highlighter-rouge">sbt PROJECT/TARGET</code></p>
+
+<p>If PROJECT is omitted, TARGET is run on all projects in dependency order. 
+If projects have dependencies, sbt never uses the deployed jars.</p>
+
+<p><em>pre-defined TARGETs</em></p>
+
+<ul>
+  <li><code class="highlighter-rouge">compile</code>: compiles in <code class="highlighter-rouge">PROJECT/target/classes</code></li>
+  <li><code class="highlighter-rouge">package</code>: compile; then produce relative (non-assembled) jar in <code class="highlighter-rouge">PROJECT/target/</code></li>
+  <li><code class="highlighter-rouge">assembly</code>: package including all dependent jars to <code class="highlighter-rouge">PROJECT/target/</code></li>
+  <li><code class="highlighter-rouge">test</code>: compiles and runs tests</li>
+</ul>
+
+<p><em>our custom TARGETs:</em></p>
+
+<ul>
+  <li><code class="highlighter-rouge">deploy</code>: package; then move to deploy folder</li>
+  <li>declared globally as TaskKey</li>
+  <li>defined via <code class="highlighter-rouge">deploy &lt;&lt;= CODE</code> in <code class="highlighter-rouge">settings</code></li>
+</ul>
+
+<p><code class="highlighter-rouge">sbt TARGET</code></p>
+
+<p><em>custom global TARGETs</em></p>
+
+<ul>
+  <li><code class="highlighter-rouge">cleandoc</code>: remove files</li>
+  <li><code class="highlighter-rouge">apidoc</code>: <code class="highlighter-rouge">cleandoc</code>, then <code class="highlighter-rouge">unidoc</code> (part of sbt); then <code class="highlighter-rouge">postProcessApi</code></li>
+</ul>
+
+<h4 id="defining-individual-projects">Defining individual projects</h4>
+
+<ul>
+  <li>define <code class="highlighter-rouge">&lt;folder&gt; (project in ...)</code></li>
+  <li>define dependencies (<code class="highlighter-rouge">dependsOn</code>)</li>
+  <li>reuse common settings (<code class="highlighter-rouge">settings(...)</code>)</li>
+  <li>may add project-specific settings (<code class="highlighter-rouge">settings(...)</code>)
+    <ul>
+      <li>non-standard source folder (<code class="highlighter-rouge">scalaSource in TARGET</code>)</li>
+      <li>external dependencies (for us usually official Scala libraries) (<code class="highlighter-rouge">libraryDependencies</code>)</li>
+      <li>resources to be copied into jar (<code class="highlighter-rouge">resourceDirectory</code>)</li>
+      <li>libraries to be added to classpath during compilation (<code class="highlighter-rouge">unmanagedJars</code>)</li>
+      <li>override definitions of custom targets (e.g., <code class="highlighter-rouge">deploy &lt;&lt;=</code>)</li>
+    </ul>
+  </li>
+</ul>
+
+				</div>
+			</div>
+		</div>
+	
+
+
+	<div class="container">
+		<footer class="container">
+
+    <hr />
+    <p>
+        MMT is developed and maintained mostly by <a href="http://kwarc.info/frabe/" target="_blank">Florian Rabe</a>. <br />
+        
+        This page is hosted via github pages and can be edited <a href="https://github.com/UniFormal/uniformal.github.io/edit/master/doc/setup/sbt.md" target="_blank">directly in the browser</a>. <br/>
+    </p>
+</footer>
+	</div>
+
+    <script src="https://comfreek.github.io/uniformal.github.io/lib/js/jquery-3.3.1.min.js"></script>
+    <script src="https://comfreek.github.io/uniformal.github.io/lib/js/bootstrap.min.js"></script>
+		<script src="https://comfreek.github.io/uniformal.github.io/lib/js/doc.js"></script>
+		<script src="https://comfreek.github.io/uniformal.github.io/lib/js/api.js"></script>
+	
+  </body>
+</html>

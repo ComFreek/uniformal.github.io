@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="en">
+	<!-- This is the layout used for all pages in the wiki-style documentation.
+        The wiki files must have "layout: doc" in their front matter.
+        This file can use page.NAME to refer to variables declared in the front matter
+        and content to refer to the body of the md file.
+   -->
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!--
+      Do not use base tag: <base href="/uniformal.github.io/" />
+      Since otherwise we could not keep links in the documentation relative anymore - without a hassle at least.
+      We would always have to prepend doc/ or something.
+
+      Hence, use e.g. `/uniformal.github.io/lib/css/bootstrap.min.css` to refer to assets in this file only.
+    -->
+    <link rel="icon" href="https://comfreek.github.io/uniformal.github.io/favicon.ico">
+
+    <title>MMT - Concrete code examples to create URIs/refer to things</title>
+
+    <link href="https://comfreek.github.io/uniformal.github.io/lib/css/bootstrap.min.css" rel="stylesheet" />
+	  <link href="https://comfreek.github.io/uniformal.github.io/lib/css/doc.css" rel="stylesheet" />
+		<link href="https://comfreek.github.io/uniformal.github.io/lib/css/pygments-default.css" rel="stylesheet" />
+	
+  </head>
+  <body>
+	
+<nav class="navbar navbar-expand navbar-dark site-header" site-header >
+    <div class="container">
+        <a class="navbar-brand" href="/">
+            <img src="https://comfreek.github.io/uniformal.github.io/lib/css/img/logo_dark.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+            The MMT Language and System
+        </a>
+    </div>
+</nav>
+
+	
+		<div class="container-fluid main">
+			<div class="row">
+				<div class="col-12 col-md-3 col-xl-2">
+					<ul class="nav flex-column">
+						
+
+
+<div class="list-group">
+  
+    
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/"
+    
+>
+    Overview
+</a>
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/setup/">
+    Setting up MMT
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/tutorials/">
+    Tutorials
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/philosophy/">
+    The Philosophy behind MMT
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/language/">
+    The MMT Language
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/archives/">
+    MMT-Archives
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/api/">
+    The MMT API
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/applications/">
+    Applications and Projects based on MMT
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/development/">
+    Development
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/community/"
+    
+>
+    Community & Communication
+</a>
+
+  
+    
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/contribs"
+    
+>
+    Contributed Articles
+</a>
+
+  
+</div>
+					</ul>
+				</div>
+				<div class="col-12 col-md-9 col-xl-8 content">
+					<h2>Concrete code examples to create URIs/refer to things</h2>
+					<hr />
+	
+					<ul>
+  <li>
+    <p><strong>Rationale</strong>: existing documentation describes all the different things MMT has (documents, modules, symbols) very well, but lacks concrete examples to form URIs to refer to them. E.g. I spent one hour creating an URI refering to an inclusion within a theory.\</p>
+  </li>
+  <li>
+    <p>All code blocks should be self-contained, simply copy-pastable.</p>
+  </li>
+  <li>
+    <p>Preferably alternative terminology or concrete instance names (consider theories <em>are</em> specific modules) should be named as well.</p>
+  </li>
+</ul>
+
+<h3 id="refer-to-archives">Refer to archives</h3>
+
+<h3 id="refer-to-documents-mmt-files">Refer to documents (“MMT files”)</h3>
+
+<h3 id="refer-to-modules-theories-or-views">Refer to modules (“theories or views”)</h3>
+
+<h3 id="refer-to-inclusions-include-xyz">Refer to inclusions (“include XYZ”)</h3>
+
+<div class="language-scala highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">val</span> <span class="n">archive</span> <span class="k">=</span> <span class="nc">DPath</span><span class="o">(</span><span class="nc">URI</span><span class="o">(</span><span class="s">"http://cds.omdoc.org/examples"</span><span class="o">))</span>
+<span class="k">val</span> <span class="n">baseTheoryPath</span> <span class="k">=</span> <span class="n">archive</span> <span class="o">?</span> <span class="s">"TheoryBeingIncluded"</span>
+<span class="k">val</span> <span class="n">includingTheoryPath</span> <span class="k">=</span> <span class="n">archive</span> <span class="o">?</span> <span class="s">"TheoryIncludingIt"</span>
+<span class="k">val</span> <span class="n">inclusionSymbol</span> <span class="k">=</span> <span class="n">theory</span> <span class="o">?</span> <span class="nc">ComplexStep</span><span class="o">(</span><span class="n">baseTheoryPath</span><span class="o">)</span>
+
+<span class="c1">// http://cds.omdoc.org/examples?TheoryBeingIncluded[http://cds.omdoc.org/examples?TheoryBeingIncluded]
+</span></code></pre></div></div>
+<p>Note: you cannot simply construct the path by the naive approach <code class="highlighter-rouge">archive ? baseTheoryPath ? ("[" + includingTheoryPath + "]")</code> as that would escape the square brackets by ???.</p>
+
+<h3 id="refer-to-structures">Refer to structures</h3>
+
+<h3 id="refer-to-things-within-a-structure">Refer to things within a structure</h3>
+
+<p>Also elaborating the difference between <code class="highlighter-rouge">? structure / blah</code> and <code class="highlighter-rouge">&lt;mpath&gt; / structure ? blah</code> as highlighted in the other document concerning URIs.</p>
+
+				</div>
+			</div>
+		</div>
+	
+
+
+	<div class="container">
+		<footer class="container">
+
+    <hr />
+    <p>
+        MMT is developed and maintained mostly by <a href="http://kwarc.info/frabe/" target="_blank">Florian Rabe</a>. <br />
+        
+        This page is hosted via github pages and can be edited <a href="https://github.com/UniFormal/uniformal.github.io/edit/master/doc/contribs/uri-examples.md" target="_blank">directly in the browser</a>. <br/>
+    </p>
+</footer>
+	</div>
+
+    <script src="https://comfreek.github.io/uniformal.github.io/lib/js/jquery-3.3.1.min.js"></script>
+    <script src="https://comfreek.github.io/uniformal.github.io/lib/js/bootstrap.min.js"></script>
+		<script src="https://comfreek.github.io/uniformal.github.io/lib/js/doc.js"></script>
+		<script src="https://comfreek.github.io/uniformal.github.io/lib/js/api.js"></script>
+	
+  </body>
+</html>

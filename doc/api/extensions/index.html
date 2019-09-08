@@ -1,0 +1,515 @@
+<!doctype html>
+<html lang="en">
+	<!-- This is the layout used for all pages in the wiki-style documentation.
+        The wiki files must have "layout: doc" in their front matter.
+        This file can use page.NAME to refer to variables declared in the front matter
+        and content to refer to the body of the md file.
+   -->
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!--
+      Do not use base tag: <base href="/uniformal.github.io/" />
+      Since otherwise we could not keep links in the documentation relative anymore - without a hassle at least.
+      We would always have to prepend doc/ or something.
+
+      Hence, use e.g. `/uniformal.github.io/lib/css/bootstrap.min.css` to refer to assets in this file only.
+    -->
+    <link rel="icon" href="https://comfreek.github.io/uniformal.github.io/favicon.ico">
+
+    <title>MMT - Extensions</title>
+
+    <link href="https://comfreek.github.io/uniformal.github.io/lib/css/bootstrap.min.css" rel="stylesheet" />
+	  <link href="https://comfreek.github.io/uniformal.github.io/lib/css/doc.css" rel="stylesheet" />
+		<link href="https://comfreek.github.io/uniformal.github.io/lib/css/pygments-default.css" rel="stylesheet" />
+	
+  </head>
+  <body>
+	
+<nav class="navbar navbar-expand navbar-dark site-header" site-header >
+    <div class="container">
+        <a class="navbar-brand" href="/">
+            <img src="https://comfreek.github.io/uniformal.github.io/lib/css/img/logo_dark.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+            The MMT Language and System
+        </a>
+    </div>
+</nav>
+
+	
+		<div class="container-fluid main">
+			<div class="row">
+				<div class="col-12 col-md-3 col-xl-2">
+					<ul class="nav flex-column">
+						
+
+
+<div class="list-group">
+  
+    
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/"
+    
+>
+    Overview
+</a>
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/setup/">
+    Setting up MMT
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/tutorials/">
+    Tutorials
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/philosophy/">
+    The Philosophy behind MMT
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/language/">
+    The MMT Language
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/archives/">
+    MMT-Archives
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable active" href="https://comfreek.github.io/uniformal.github.io/doc/api/">
+    The MMT API
+</a>
+
+
+
+
+    <div class="list-group">
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/api/controller.html"
+    
+>
+    The Controller
+</a>
+
+        
+            
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/api/syntax/">
+    Data Structures for the MMT Language
+</a>
+
+
+
+
+
+        
+            
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/api/queries.html">
+    Queries
+</a>
+
+
+
+
+
+        
+            
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable active" href="https://comfreek.github.io/uniformal.github.io/doc/api/extensions/">
+    Extensions
+</a>
+
+
+
+
+    <div class="list-group">
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/api/extensions/processors.html"
+    
+>
+    Processors
+</a>
+
+        
+    </div>
+
+
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/api/log.html"
+    
+>
+    Logging
+</a>
+
+        
+            
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/api/checking/">
+    Checking Judgements
+</a>
+
+
+
+
+
+        
+    </div>
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/applications/">
+    Applications and Projects based on MMT
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/development/">
+    Development
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/community/"
+    
+>
+    Community & Communication
+</a>
+
+  
+    
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/contribs"
+    
+>
+    Contributed Articles
+</a>
+
+  
+</div>
+					</ul>
+				</div>
+				<div class="col-12 col-md-9 col-xl-8 content">
+					<h2>Extensions</h2>
+					<hr />
+	
+					<p>The MMT API provides a number of extension interfaces that permit injecting code for customizing the behavior of MMT algorithms.
+All extensions are persistent and have full access to the MMT <a href="../controller.html">controller</a>.
+All extensions inherit from <a href="apidoc://info.kwarc.mmt.api.frontend.Extension"><code class="highlighter-rouge">info.kwarc.mmt.api.frontend.Extension</code></a> and can be studied by browsing the known abstract subclasses in the <a href="https://uniformal.github.io/apidoc/index.html">API documentation</a>.</p>
+
+<p>The API also includes numerous concrete extensions.
+Some of these are loaded by default, some are loaded on demand, some can be added manually at run time.</p>
+
+<h3 id="loading-extensions">Loading Extensions</h3>
+
+<p>Users load extensions with a <a href="../../applications/shell.html">shell command</a>.
+Programmers load them using the appropriate method of the <a href="apidoc://info.kwarc.mmt.api.frontend.ExtensionManager"><code class="highlighter-rouge">frontend.ExtensionManager</code></a>, which maintains all loaded extensions.</p>
+
+<h3 id="writing-extensions">Writing Extensions</h3>
+
+<p>To write an extension, simply subclass the desired extension interface in Java or Scala.
+The subclass must have a single constructor that takes no arguments.
+It may override the <code class="highlighter-rouge">start</code> and <code class="highlighter-rouge">destroy</code> methods to perform arbitrary code during initialization and destruction.
+The former also receives a list of strings as arguments, which users can pass when registering the extension.</p>
+
+<h3 id="extension-interfaces">Extension Interfaces</h3>
+
+<p>There is a wide variety of extension interfaces.
+They are documented in the respective API documentation pages, which are linked here.</p>
+
+<p>Therefore, this page only gives an overview of their functionality:</p>
+
+<ul>
+  <li>
+    <p><a href="apidoc://info.kwarc.mmt.api.archives.BuildTarget"><code class="highlighter-rouge">archives.BuildTarget</code></a> allow building MMT archives. The MMT <a href="../../applications/building.html">build manager</a> is generic and can be used for any build processes.
+2 special cases are most important:</p>
+
+    <ul>
+      <li><a href="apidoc://info.kwarc.mmt.api.archives.BuildTarget"><code class="highlighter-rouge">archives.Importer</code>s</a> convert external formats into MMT’s data structures.</li>
+      <li><a href="apidoc://info.kwarc.mmt.api.archives.BuildTarget"><code class="highlighter-rouge">archives.'Exporter</code>s</a> convert MMT content into external formats.</li>
+    </ul>
+  </li>
+  <li>
+    <p>MMT breaks the main processing pipeline of any formal language implementation into the following phases</p>
+
+    <ul>
+      <li><a href="apidoc://info.kwarc.mmt.api.parser.Parser"><code class="highlighter-rouge">parser.Parser</code>s</a> convert character streams into MMT data structures. This includes at least lexing, parsing, and management of notations, but may included full-fledged type-checking.</li>
+      <li><a href="apidoc://info.kwarc.mmt.api.checking.Checker"><code class="highlighter-rouge">checking.Checker</code>s</a> analyze and transform the MMT data structures returned by parsing. This includes type-checking and inference of omitted parts (often called reconstruction, elaboration, refinement).</li>
+      <li><a href="apidoc://info.kwarc.mmt.api.checking.Interpreter"><code class="highlighter-rouge">checking.Interpreter</code>s</a> bundles parsing and checking into a single step, often by combining the available parsers and checkers.</li>
+      <li><a href="apidoc://info.kwarc.mmt.api.uom.Simplifier"><code class="highlighter-rouge">uom.Simplifier</code>s</a> perform computations and rewriting as well as transforming content by elaboration. These are often intertwined with checking.</li>
+      <li><a href="apidoc://info.kwarc.mmt.api.presentation.Presenter"><code class="highlighter-rouge">presentation.Presenter</code>s</a> transform MMT data structures into human-oriented formats, such as the original syntax or HTML.</li>
+    </ul>
+
+    <p>Further steps in this pipeline that are designed but not maturely realized yet include theorem proving, code generation, and execution and compilation of programs.</p>
+
+    <p>Each of these steps is actually split into two interfaces: one for the structural levels and one for objects (see <a href="../../language/index.html">central concepts</a> for the difference).
+That allows combining, e.g., MMT’s default object parser with a new structure parser.</p>
+  </li>
+  <li>
+    <p>Functionality-driven extensions</p>
+
+    <ul>
+      <li><a href="apidoc://info.kwarc.mmt.api.frontend.ChangeListener"><code class="highlighter-rouge">frontend.ChangeListener</code>s</a> add general purpose change-listening functionality. The methods of these extensions are called when MMT content is added, updated, etc.</li>
+      <li><a href="apidoc://info.kwarc.mmt.api.web.ServerExtension"><code class="highlighter-rouge">web.ServerExtension</code>s</a> allow using MMT as a very convenient web framework by adding interface functins to the <a href="../../applications/server.html">HTTP server</a>. Each extension has a <code class="highlighter-rouge">key</code> and serves requests to the URL <code class="highlighter-rouge">/:key</code>.</li>
+    </ul>
+  </li>
+  <li>
+    <p>Various extensions for fine-grained customization:</p>
+
+    <ul>
+      <li>
+        <p><a href="apidoc://info.kwarc.mmt.api.frontend.Plugin"><code class="highlighter-rouge">frontend.Plugin</code>s</a> add language-specific functionality and are automatically loaded when the respective MMT theory is loaded.</p>
+      </li>
+      <li>
+        <p><a href="apidoc://info.kwarc.mmt.api.parser.ParserExtension"><code class="highlighter-rouge">parser.ParserExtension</code></a> adds new keywords to MMT’s <a href="../../language/">native text syntax</a>. The MMT parser will relegate processing of declarations to the appropriate extension based on the keyword.</p>
+      </li>
+      <li>
+        <p><a href="apidoc://info.kwarc.mmt.api.ontology.QueryExtension"><code class="highlighter-rouge">ontology.QueryExtension</code></a> adds a new atomic function to the MMT <a href="../queries.html">query language</a>.</p>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+				</div>
+			</div>
+		</div>
+	
+
+
+	<div class="container">
+		<footer class="container">
+
+    <hr />
+    <p>
+        MMT is developed and maintained mostly by <a href="http://kwarc.info/frabe/" target="_blank">Florian Rabe</a>. <br />
+        
+        This page is hosted via github pages and can be edited <a href="https://github.com/UniFormal/uniformal.github.io/edit/master/doc/api/extensions/index.md" target="_blank">directly in the browser</a>. <br/>
+    </p>
+</footer>
+	</div>
+
+    <script src="https://comfreek.github.io/uniformal.github.io/lib/js/jquery-3.3.1.min.js"></script>
+    <script src="https://comfreek.github.io/uniformal.github.io/lib/js/bootstrap.min.js"></script>
+		<script src="https://comfreek.github.io/uniformal.github.io/lib/js/doc.js"></script>
+		<script src="https://comfreek.github.io/uniformal.github.io/lib/js/api.js"></script>
+	
+  </body>
+</html>

@@ -1,0 +1,604 @@
+<!doctype html>
+<html lang="en">
+	<!-- This is the layout used for all pages in the wiki-style documentation.
+        The wiki files must have "layout: doc" in their front matter.
+        This file can use page.NAME to refer to variables declared in the front matter
+        and content to refer to the body of the md file.
+   -->
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!--
+      Do not use base tag: <base href="/uniformal.github.io/" />
+      Since otherwise we could not keep links in the documentation relative anymore - without a hassle at least.
+      We would always have to prepend doc/ or something.
+
+      Hence, use e.g. `/uniformal.github.io/lib/css/bootstrap.min.css` to refer to assets in this file only.
+    -->
+    <link rel="icon" href="https://comfreek.github.io/uniformal.github.io/favicon.ico">
+
+    <title>MMT - Processors</title>
+
+    <link href="https://comfreek.github.io/uniformal.github.io/lib/css/bootstrap.min.css" rel="stylesheet" />
+	  <link href="https://comfreek.github.io/uniformal.github.io/lib/css/doc.css" rel="stylesheet" />
+		<link href="https://comfreek.github.io/uniformal.github.io/lib/css/pygments-default.css" rel="stylesheet" />
+	
+  </head>
+  <body>
+	
+<nav class="navbar navbar-expand navbar-dark site-header" site-header >
+    <div class="container">
+        <a class="navbar-brand" href="/">
+            <img src="https://comfreek.github.io/uniformal.github.io/lib/css/img/logo_dark.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+            The MMT Language and System
+        </a>
+    </div>
+</nav>
+
+	
+		<div class="container-fluid main">
+			<div class="row">
+				<div class="col-12 col-md-3 col-xl-2">
+					<ul class="nav flex-column">
+						
+
+
+<div class="list-group">
+  
+    
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/"
+    
+>
+    Overview
+</a>
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/setup/">
+    Setting up MMT
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/tutorials/">
+    Tutorials
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/philosophy/">
+    The Philosophy behind MMT
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/language/">
+    The MMT Language
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/archives/">
+    MMT-Archives
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable active" href="https://comfreek.github.io/uniformal.github.io/doc/api/">
+    The MMT API
+</a>
+
+
+
+
+    <div class="list-group">
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/api/controller.html"
+    
+>
+    The Controller
+</a>
+
+        
+            
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/api/syntax/">
+    Data Structures for the MMT Language
+</a>
+
+
+
+
+
+        
+            
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/api/queries.html">
+    Queries
+</a>
+
+
+
+
+
+        
+            
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable active" href="https://comfreek.github.io/uniformal.github.io/doc/api/extensions/">
+    Extensions
+</a>
+
+
+
+
+    <div class="list-group">
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action active"
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/api/extensions/processors.html"
+    
+>
+    Processors
+</a>
+
+        
+    </div>
+
+
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/api/log.html"
+    
+>
+    Logging
+</a>
+
+        
+            
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/api/checking/">
+    Checking Judgements
+</a>
+
+
+
+
+
+        
+    </div>
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/applications/">
+    Applications and Projects based on MMT
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/development/">
+    Development
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/community/"
+    
+>
+    Community & Communication
+</a>
+
+  
+    
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/contribs"
+    
+>
+    Contributed Articles
+</a>
+
+  
+</div>
+					</ul>
+				</div>
+				<div class="col-12 col-md-9 col-xl-8 content">
+					<h2>Processors</h2>
+					<hr />
+	
+					<p>MMT uses several abstractions for processing content.
+Implementations can be provided as <a href="index.html">extensions</a> and are chosen based on appropriate identifiers (e.g., the format to which a parser is applicable).</p>
+
+<p>Each abstraction comes with at least one main implementation, which is parametrized by a set of <em>rules</em>.
+This allows a second (simpler but less flexible) way to customize MMT by supplying a different set of rules.
+The type of rule depends on the processor (e.g., notations for a parser).</p>
+
+<p>All processors are divided into three kinds. One kind handles structure (e.g., declarations) and one objects. The third kind pairs up a structure and an object processor.</p>
+
+<table>
+    <tr>
+        <td />
+        <td />
+        <th colspan="4">abstract interface</th>
+        <th colspan="3">main implementation(s)</th>
+    </tr>
+    <tr>
+        <th>process</th>
+        <th>level</th>
+        <th>class (extends)</th>
+        <th>identified by</th>
+        <th>input</th>
+        <th>output</th>
+        <th>class</th>
+        <th>parametrized by set of</th>
+        <th>identifier</th>
+    </tr>
+    <tr>
+        <th rowspan="3">parsing</th>
+        <td>objects</td>
+        <td><a href="apidoc://info.kwarc.mmt.api.parser.ObjectParser">ObjectParser</a></td>
+        <td></td>
+        <td>string with some extra data</td>
+        <td>object</td>
+        <td><a href="apidoc://info.kwarc.mmt.api.parser.NotationBasedParser">NotationBasedParser</a></td>
+        <td>notations in scope</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>structure</td>
+        <td><a href="apidoc://info.kwarc.mmt.api.parser.StructureParser">StructureParser</a></td>
+        <td></td>
+        <td>stream with some extra data</td>
+        <td>document</td>
+        <td><a href="apidoc://info.kwarc.mmt.api.parser.KeywordBasedParser">KeywordBasedParser</a></td>
+        <td>keyword handlers</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>both</td>
+        <td><a href="apidoc://info.kwarc.mmt.api.parser.Parser">Parser</a></td>
+        <td>input format</td>
+        <td></td>
+        <td></td>
+        <td colspan="2"><pre>new KeywordBasedParser(new NotationBasedParser)</pre></td>
+        <td>"mmt"</td>
+    </tr>
+    <tr>
+        <th rowspan="3">checking</th>
+        <td>objects</td>
+        <td><a href="apidoc://info.kwarc.mmt.api.checking.ObjectChecker">ObjectChecker</a></td>
+        <td></td>
+        <td>object with unknown parts</td>
+        <td>object with unknown parts inferred</td>
+        <td><a href="apidoc://info.kwarc.mmt.api.checking.RuleBasedChecker">RuleBasedChecker</a></td>
+        <td>typing rules in scope</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>structure</td>
+        <td><a href="apidoc://info.kwarc.mmt.api.checking.StructureChecker">StructureChecker</a></td>
+        <td></td>
+        <td>structural element</td>
+        <td>nothing</td>
+        <td><a href="apidoc://info.kwarc.mmt.api.checking.MMTStructureChecker">MMTStructureChecker</a></td>
+        <td>not parametrized</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>both</td>
+        <td><a href="apidoc://info.kwarc.mmt.api.checking.Checker">Checker</a></td>
+        <td>id</td>
+        <td></td>
+        <td></td>
+        <td colspan="2"><pre>new MMTStructureChecker(new RuleBasedChecker)</pre></td>
+        <td>"mmt"</td>
+    </tr>
+    <tr>
+        <th rowspan="3">simplification</th>
+        <td>objects</td>
+        <td><a href="apidoc://info.kwarc.mmt.api.uom.ObjectSimplifier">ObjectSimplifier</a></td>
+        <td></td>
+        <td>object</td>
+        <td>simplified object</td>
+        <td><a href="apidoc://info.kwarc.mmt.api.uom.RuleBasedSimplifier">RuleBasedSimplifier</a></td>
+        <td>simplification rules in scope</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>structure</td>
+        <td><a href="apidoc://info.kwarc.mmt.api.uom.StructureSimplifier">StructureSimplifier</a></td>
+        <td></td>
+        <td>structural element</td>
+        <td>list of declarations</td>
+        <td><a href="apidoc://info.kwarc.mmt.api.uom.ElaborationBasedSimplifier">ElaborationBasedSimplifier</a></td>
+        <td>structural features in scope</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>both</td>
+        <td><a href="apidoc://info.kwarc.mmt.api.checking.Checker">Simplifier</a></td>
+        <td>id</td>
+        <td></td>
+        <td></td>
+        <td colspan="2"><pre>new ElaborationBasedSimplifier(new RuleBasedSimplifier)</pre></td>
+        <td>"mmt"</td>
+    </tr>
+    <tr>
+        <th>interpretation</th>
+        <td></td>
+        <td><a href="apidoc://info.kwarc.mmt.api.checking.Interpreter">Interpreter</a> (<a href="apidoc://info.kwarc.mmt.api.archives.Importer">Importer</a>)</td>
+        <td>input format</td><td colspan="2">triple of parser, checker, and simplifier</td>
+        <td colspan="2">
+<pre>
+new TwoStepInterpreter(
+  new KeywordBasedParser(new NotationBasedParser),
+  new MMTStructureChecker(new RuleBasedChecker),
+  new ElaborationBasedSimplifier(new RuleBasedSimplifier)
+)</pre></td>
+        <td>"mmt"</td>
+    </tr>
+    <tr>
+        <th rowspan="3">presentation</th>
+        <td>objects</td>
+        <td><a href="apidoc://info.kwarc.mmt.api.presentation.ObjectPresenter">ObjectPresenter</a></td>
+        <td></td>
+        <td>object</td>
+        <td>according to format</td>
+        <td><a href="apidoc://info.kwarc.mmt.api.presentation.NotationBasedPresenter">NotationBasedPresenter</a> <a href="apidoc://info.kwarc.mmt.api.presentation.MathMLPresenter">MathMLPresenter</a></td>
+        <td>notations in scope</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>structure</td>
+        <td><a href="apidoc://info.kwarc.mmt.api.presentation.StructurePresenter">StructurePresenter</a></td>
+        <td></td>
+        <td>structural element</td>
+        <td>according to format</td>
+        <td><a href="apidoc://info.kwarc.mmt.api.presentation.MMTStructurePresenter">MMTStructurePresenter</a> <a href="apidoc://info.kwarc.mmt.api.presentation.HTMLPresenter">HTMLPresenter</a></td>
+        <td>not parametrized</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>both</td>
+        <td><a href="apidoc://info.kwarc.mmt.api.presentation.Presenter">Presenter</a> (<a href="apidoc://info.kwarc.mmt.api.archives.Exporter">Exporter</a>)</td>
+        <td>output format</td>
+        <td></td>
+        <td></td>
+        <td colspan="2">
+<pre>
+new MMTStructurePresenter(new NotationBasedPresenter)
+new HTMLPresenter(new MathMLPresenter)</pre></td>
+        <td>"present-text-notations"<br />"html"</td>
+    </tr>
+</table>
+
+				</div>
+			</div>
+		</div>
+	
+
+
+	<div class="container">
+		<footer class="container">
+
+    <hr />
+    <p>
+        MMT is developed and maintained mostly by <a href="http://kwarc.info/frabe/" target="_blank">Florian Rabe</a>. <br />
+        
+        This page is hosted via github pages and can be edited <a href="https://github.com/UniFormal/uniformal.github.io/edit/master/doc/api/extensions/processors.md" target="_blank">directly in the browser</a>. <br/>
+    </p>
+</footer>
+	</div>
+
+    <script src="https://comfreek.github.io/uniformal.github.io/lib/js/jquery-3.3.1.min.js"></script>
+    <script src="https://comfreek.github.io/uniformal.github.io/lib/js/bootstrap.min.js"></script>
+		<script src="https://comfreek.github.io/uniformal.github.io/lib/js/doc.js"></script>
+		<script src="https://comfreek.github.io/uniformal.github.io/lib/js/api.js"></script>
+	
+  </body>
+</html>

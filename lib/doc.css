@@ -1,0 +1,124 @@
+/****** general rules ******/
+
+body {
+   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+   font-size: 14px;
+   line-height: 1.42857143;
+   color: #333;
+}
+
+/* header and footer */
+
+div.header {
+  text-align: center;
+}
+
+div.footer {
+  text-align: center;
+  font-size: small;
+}
+
+/****** menu sidebar ******/
+
+div.menu {
+  height: 100%;
+  width: 25vw;
+  overflow: auto;
+  border-right: 1px solid #eee;
+}
+
+div.menu a {
+  color: #337ab7;
+  text-decoration: none;
+}
+
+div.menu li > a.active {
+   color: black;
+}
+
+div.menu li > a.expandable:after {
+  content: "◂"; 
+}
+div.menu li > a.expandable.active:after {
+  content: "▾"; 
+}
+
+div.menu ul.hidden {
+  display: none;
+}
+
+div.menu a:focus, div.menu a:hover {
+  text-decoration: underline;
+}
+
+.menu li {
+   list-style: none;
+   padding: 0px;
+}
+
+.menu .bullet {
+   margin: 0 1em;
+   color: blue;
+}
+
+/****** central content ******/
+
+tr.content {
+  vertical-align: top;
+}
+
+div.content {
+  width: 50vw;
+  text-align: justify;
+}
+
+/* external links hack */
+div.content a[href*="//"]:not([href*="uniformal.github.io"]) {
+  color: green;
+}
+
+table, th, td {
+  padding: 5px;
+  text-align: left;
+  /* border: 1px solid black; */
+}
+
+blockquote {
+  background: #f9f9f9;
+  border-left: 10px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+
+blockquote p {
+  display: inline;
+  font-size: small;
+}
+
+/* inline `back-ticked` fragments */
+code {
+  padding: 2px 4px;
+  font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
+  font-size: 90%;
+  color: #c7254e;
+  background-color: #f9f2f4;
+  border-radius: 4px;
+}
+
+/* details that pop up when hovered on */
+.detail {
+  background-color: lightgray;
+  font-size: 0pt;
+}
+
+.detail:hover {
+   display: show;
+   font-size: initial;
+}
+
+.detail::before {
+   content: "[note]";
+   font-size: initial;
+   color: blue;
+}

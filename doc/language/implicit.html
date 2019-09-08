@@ -1,0 +1,526 @@
+<!doctype html>
+<html lang="en">
+	<!-- This is the layout used for all pages in the wiki-style documentation.
+        The wiki files must have "layout: doc" in their front matter.
+        This file can use page.NAME to refer to variables declared in the front matter
+        and content to refer to the body of the md file.
+   -->
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!--
+      Do not use base tag: <base href="/uniformal.github.io/" />
+      Since otherwise we could not keep links in the documentation relative anymore - without a hassle at least.
+      We would always have to prepend doc/ or something.
+
+      Hence, use e.g. `/uniformal.github.io/lib/css/bootstrap.min.css` to refer to assets in this file only.
+    -->
+    <link rel="icon" href="https://comfreek.github.io/uniformal.github.io/favicon.ico">
+
+    <title>MMT - Includes and Implicit Morphisms</title>
+
+    <link href="https://comfreek.github.io/uniformal.github.io/lib/css/bootstrap.min.css" rel="stylesheet" />
+	  <link href="https://comfreek.github.io/uniformal.github.io/lib/css/doc.css" rel="stylesheet" />
+		<link href="https://comfreek.github.io/uniformal.github.io/lib/css/pygments-default.css" rel="stylesheet" />
+	
+  </head>
+  <body>
+	
+<nav class="navbar navbar-expand navbar-dark site-header" site-header >
+    <div class="container">
+        <a class="navbar-brand" href="/">
+            <img src="https://comfreek.github.io/uniformal.github.io/lib/css/img/logo_dark.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+            The MMT Language and System
+        </a>
+    </div>
+</nav>
+
+	
+		<div class="container-fluid main">
+			<div class="row">
+				<div class="col-12 col-md-3 col-xl-2">
+					<ul class="nav flex-column">
+						
+
+
+<div class="list-group">
+  
+    
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/"
+    
+>
+    Overview
+</a>
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/setup/">
+    Setting up MMT
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/tutorials/">
+    Tutorials
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/philosophy/">
+    The Philosophy behind MMT
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable active" href="https://comfreek.github.io/uniformal.github.io/doc/language/">
+    The MMT Language
+</a>
+
+
+
+
+    <div class="list-group">
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/language/uris.html"
+    
+>
+    MMT URIs
+</a>
+
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/language/namespaces.html"
+    
+>
+    Documents and Namespaces
+</a>
+
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/language/modules.html"
+    
+>
+    Modules
+</a>
+
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/language/declarations.html"
+    
+>
+    Symbol Declarations
+</a>
+
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/language/objects.html"
+    
+>
+    Terms
+</a>
+
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/language/delimiters.html"
+    
+>
+    Structural Delimiters
+</a>
+
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/language/informal.html"
+    
+>
+    Flexiformal Representations
+</a>
+
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/language/literals.html"
+    
+>
+    Generic Literals
+</a>
+
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/language/overloading.html"
+    
+>
+    Overloading
+</a>
+
+        
+    </div>
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/archives/">
+    MMT-Archives
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/api/">
+    The MMT API
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/applications/">
+    Applications and Projects based on MMT
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/development/">
+    Development
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/community/"
+    
+>
+    Community & Communication
+</a>
+
+  
+    
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/contribs"
+    
+>
+    Contributed Articles
+</a>
+
+  
+</div>
+					</ul>
+				</div>
+				<div class="col-12 col-md-9 col-xl-8 content">
+					<h2>Includes and Implicit Morphisms</h2>
+					<hr />
+	
+					<h1 id="includes">Includes</h1>
+
+<p>A theory T may contain an include declaration of S.
+The basic intuition is that this makes the identity map a well-formed morphism from S to T, i.e., everything true in S is also true in T.</p>
+
+<p>In the simplest case, an include declaration can be understood as follows: the flattening of T contains a copy of all declarations of S.</p>
+
+<p>In the implementation, by te way, this flattening is not computed: copying included declarations would lead to a size explosion. Instead, MMT computes for every theory which theories it includes. That corresponds to taking the transitive closure of the include-relation.</p>
+
+<h1 id="includes-are-implicit-morphisms">Includes are implicit morphisms</h1>
+
+<p>Includes are a special case of implicit morphisms.
+In addition to the usual theory graph, MMT maintains a subgraph containing only certain edges, in particular all inclusions.
+The paths in this graph are the implicit morphisms.
+If there is an implicit morphism m from S to T, all names c of S can be used in T as an abbreviation of m(c).
+Similarly, every morphism out of T can be treated as a morphism out of S by composing with m.
+This happens automatically, i.e., the user does not have to refer to m, hence the name <em>implicit</em> morphisms.</p>
+
+<p>Of course, this only works if m is uniuqe, i.e., there may at most 1 implicit morphism between any two theories.
+In other words, the subgraph of implicit morphisms must commute.</p>
+
+<p>A number of examples are given in the research paper on implicit morphisms.</p>
+
+<h1 id="includes-can-have-a-definiens">Includes can have a definiens</h1>
+
+<p>A powerful feature of MMT is that there are more implicit morphisms.
+Includes can be <strong>defined</strong>, i.e., T can have an include of S with definiens m, where m must be a morphism from S to T.
+In this case, the flattening of T contains all declarations of S but with definitions as provided by m. 
+In programming language terms, we can understand undefined includes as inheritance and defined includes as delegation.
+The latter states that T also implements the interface of S, but the implementations are not given individually; instead, all S-operations are uniformly delegated to the object m, which already implements S.</p>
+
+<p>From the perspective of implicit morphism, a defined include just means that m becomes an implicit morphism.
+Vice versa, implicit morphisms can induce defined includes:
+Assume we declare an undefined include from S in T when there already is an implicit morphism m.
+At first sight, that may look like a violation of the commutativity condition. But it works out fine - the new include simply acquires m as its definiens.</p>
+
+<p>Defined includes are particularly relevant in structures and views l from T to U where T contains an undefined include from S.
+Instead of defining assignments individually for all declarations of S, l can simply include an existing morphism from S to U. This is done by declaring a defined include of S in l.</p>
+
+<h1 id="views-an-also-be-implicit">Views an also be implicit</h1>
+
+<p>Thus, from the perspective of T, an implicit morphism m out of S and a defined includes of S with definiens m are equivalent. 
+However, implicit morphisms are even more powerful: we can add implicit morphisms into T even from the outside, i.e., when T has already been defined.
+Specifically, we can give any structure or view the additional keyword <em>implicit</em>.</p>
+
+<p>A very common situation is that T is strong enough to implement the interface of S.
+We can accomplish that by defining a view v from S to T.
+In programming language terms, v is an adapter that turns implementations of T into implementations of S.
+But by declaring that v to an implicit view, we can eliminate the need to manually apply the adapter: MMT applies it automatically.</p>
+
+<p>Another way to think of that is that the implicit view v extends the interface of T from the outside.
+Later on, anybody who uses T can use it as if T included S.</p>
+
+<p>Note that the author of v may be different from the author of T. She may not even have access rights to change T.
+But by declaring an implicit view, she can create essentially the same effect as if she had changed T.</p>
+
+<h1 id="theories-can-realize-other-theories-like-views">Theories can realize other theories like views</h1>
+
+<p>Declaring an implicit v view from S to T can be cumbersome if v and T are written together.
+For example, it requires naming v even though the name will never be used directly later on.</p>
+
+<p>In that case, a better solution is for T to double as a view from S to itself.
+In that case, the body of T contains all the assignments that would otherwise be placed into the body of v.
+Inside T, they behave like normal (defined) constants.
+Additionally, we put the declaration <em>realize S</em> before those assignments.
+This can be seen as a postulated include: we promise that at the end of T, the identity map will be a well-formed morphism from S to T (which requires T to contain the same as a view out of S, namely a definition for every name in the interface of S).</p>
+
+<p>In programming language terms, realizations can be seen as interface implementations.
+For example, MMT’s includes and realizations roughly correspond to Java’s <em>extends</em> and <em>implements</em> declarations and to ML’s signature inclusions and signature type ascriptions.</p>
+
+<p>In most situations, realizations behave in the same way as includes.
+In particualr, realizations are also implicit morphisms.
+However, while an include induces an implicit morphism immediately, a realization only does so at the end of the containing theory.</p>
+
+<p>Like includes, realizations can also be defined.
+Here, we promise a realization and provide its witness directly.
+That is essentially the same as declaring a defined include.
+Therefore, defined realizations usually make no sense in user syntax.
+(They may be generated, however, during flattening when multiple realizations are composed.)</p>
+
+				</div>
+			</div>
+		</div>
+	
+
+
+	<div class="container">
+		<footer class="container">
+
+    <hr />
+    <p>
+        MMT is developed and maintained mostly by <a href="http://kwarc.info/frabe/" target="_blank">Florian Rabe</a>. <br />
+        
+        This page is hosted via github pages and can be edited <a href="https://github.com/UniFormal/uniformal.github.io/edit/master/doc/language/implicit.md" target="_blank">directly in the browser</a>. <br/>
+    </p>
+</footer>
+	</div>
+
+    <script src="https://comfreek.github.io/uniformal.github.io/lib/js/jquery-3.3.1.min.js"></script>
+    <script src="https://comfreek.github.io/uniformal.github.io/lib/js/bootstrap.min.js"></script>
+		<script src="https://comfreek.github.io/uniformal.github.io/lib/js/doc.js"></script>
+		<script src="https://comfreek.github.io/uniformal.github.io/lib/js/api.js"></script>
+	
+  </body>
+</html>

@@ -1,0 +1,517 @@
+<!doctype html>
+<html lang="en">
+	<!-- This is the layout used for all pages in the wiki-style documentation.
+        The wiki files must have "layout: doc" in their front matter.
+        This file can use page.NAME to refer to variables declared in the front matter
+        and content to refer to the body of the md file.
+   -->
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!--
+      Do not use base tag: <base href="/uniformal.github.io/" />
+      Since otherwise we could not keep links in the documentation relative anymore - without a hassle at least.
+      We would always have to prepend doc/ or something.
+
+      Hence, use e.g. `/uniformal.github.io/lib/css/bootstrap.min.css` to refer to assets in this file only.
+    -->
+    <link rel="icon" href="https://comfreek.github.io/uniformal.github.io/favicon.ico">
+
+    <title>MMT - Modules</title>
+
+    <link href="https://comfreek.github.io/uniformal.github.io/lib/css/bootstrap.min.css" rel="stylesheet" />
+	  <link href="https://comfreek.github.io/uniformal.github.io/lib/css/doc.css" rel="stylesheet" />
+		<link href="https://comfreek.github.io/uniformal.github.io/lib/css/pygments-default.css" rel="stylesheet" />
+	
+  </head>
+  <body>
+	
+<nav class="navbar navbar-expand navbar-dark site-header" site-header >
+    <div class="container">
+        <a class="navbar-brand" href="/">
+            <img src="https://comfreek.github.io/uniformal.github.io/lib/css/img/logo_dark.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+            The MMT Language and System
+        </a>
+    </div>
+</nav>
+
+	
+		<div class="container-fluid main">
+			<div class="row">
+				<div class="col-12 col-md-3 col-xl-2">
+					<ul class="nav flex-column">
+						
+
+
+<div class="list-group">
+  
+    
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/"
+    
+>
+    Overview
+</a>
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/setup/">
+    Setting up MMT
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/tutorials/">
+    Tutorials
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/philosophy/">
+    The Philosophy behind MMT
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable active" href="https://comfreek.github.io/uniformal.github.io/doc/language/">
+    The MMT Language
+</a>
+
+
+
+
+    <div class="list-group">
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/language/uris.html"
+    
+>
+    MMT URIs
+</a>
+
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/language/namespaces.html"
+    
+>
+    Documents and Namespaces
+</a>
+
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action active"
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/language/modules.html"
+    
+>
+    Modules
+</a>
+
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/language/declarations.html"
+    
+>
+    Symbol Declarations
+</a>
+
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/language/objects.html"
+    
+>
+    Terms
+</a>
+
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/language/delimiters.html"
+    
+>
+    Structural Delimiters
+</a>
+
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/language/informal.html"
+    
+>
+    Flexiformal Representations
+</a>
+
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/language/literals.html"
+    
+>
+    Generic Literals
+</a>
+
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/language/overloading.html"
+    
+>
+    Overloading
+</a>
+
+        
+    </div>
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/archives/">
+    MMT-Archives
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/api/">
+    The MMT API
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/applications/">
+    Applications and Projects based on MMT
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/development/">
+    Development
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/community/"
+    
+>
+    Community & Communication
+</a>
+
+  
+    
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/contribs"
+    
+>
+    Contributed Articles
+</a>
+
+  
+</div>
+					</ul>
+				</div>
+				<div class="col-12 col-md-9 col-xl-8 content">
+					<h2>Modules</h2>
+					<hr />
+	
+					<p>Modules occur in <a href="namespaces.html">documents</a> level, contain <a href="declarations.html">declarations</a> and have an associated <a href="../api/uris.html">MMT URI</a> of the form <code class="highlighter-rouge">&lt;NAMESPACE&gt;?&lt;NAME&gt;</code>, with the namespace of the current document. Modules are <a href="delimiters.html">delimited</a> with the symbol <img src="../img/img/GS.png" alt="`\GS`" /></p>
+
+<h3 id="theories">Theories</h3>
+
+<p>Theories are simply named groups of <a href="declarations.html">declarations</a>. Examples for theories are first-order or higher-order theories, logics, type theories, logical frameworks. Their conrete syntax is</p>
+
+<p><img src="../img/img/theory.png" alt="`theory &lt;name&gt; : &lt;metatheory&gt; = &lt;body&gt; \GS`" /></p>
+
+<p>where <code class="highlighter-rouge">&lt;body&gt;</code> is a sequence of declarations. The context available to any specific declaration is everything provided by previous declarations, specifically <a href="declarations.html#structures">theory inclusions</a> and everything provided by the meta theory.</p>
+
+<p>The <strong>meta theory</strong> statement is optional and behaves like a <a href="declarations.html#structures">theory inclusion</a>.</p>
+
+<p>Theories can be <em>nested</em>, like this:</p>
+
+<p><img src="../img/img/nestedtheory.png" alt="`theory &lt;outer&gt; : &lt;metatheory1&gt; =	&lt;previousbody&gt; theory &lt;inner&gt; : &lt;metatheory2&gt; =	&lt;innerbody&gt;	\GS	&lt;laterbody&gt; \GS`" /></p>
+
+<p>in which case the visible context of both the inner theory as well as <code class="highlighter-rouge">&lt;laterbody&gt;</code> is <code class="highlighter-rouge">&lt;previousbody&gt;</code>, i.e. the inner theory can see all previous declarations of the outer theory, but at no point can the outer theory see inside the inner theory (unless explicitely <a href="declarations.html#structures">included</a>).</p>
+
+<h3 id="views">Views</h3>
+
+<p>Given two theories <code class="highlighter-rouge">A</code> and <code class="highlighter-rouge">B</code>, a <strong>view</strong> from <code class="highlighter-rouge">A</code> to <code class="highlighter-rouge">B</code> maps all <a href="declarations.html">declarations</a> in <code class="highlighter-rouge">A</code> to expressions over symbols in <code class="highlighter-rouge">B</code>, while preserving <em>typing judgments</em>. i.e. if <code class="highlighter-rouge">|- a : tpA</code> in <code class="highlighter-rouge">A</code> and <code class="highlighter-rouge">v:A-&gt;B</code> is a view, then <code class="highlighter-rouge">|- v(a) : v(tpA)</code>. Hence, views are <em>truth preserving</em>. <code class="highlighter-rouge">A</code> is the <em>domain</em> of <code class="highlighter-rouge">v</code> and <code class="highlighter-rouge">B</code> is the <em>codomain</em>.</p>
+
+<p>Their conrete syntax is</p>
+
+<p><img src="../img/img/view.png" alt="`view &lt;name&gt; : &lt;domain&gt; -&gt; &lt;codomain&gt; = &lt;assignments&gt; \GS`" /></p>
+
+<p>where <code class="highlighter-rouge">&lt;assignments&gt;</code> is a list of assignment declarations. Their syntax looks like this:</p>
+
+<p><img src="../img/img/assignment.png" alt="`&lt;name&gt; = &lt;term&gt; \RS`" /></p>
+
+<p>In assignments, <code class="highlighter-rouge">&lt;name&gt;</code> has to be a symbol declared in (the dependency closure of) <code class="highlighter-rouge">&lt;domain&gt;</code>, whereas <code class="highlighter-rouge">&lt;term&gt;</code> has to be a well-formed <a href="objects.html">term</a> over symbols in <code class="highlighter-rouge">&lt;codomain&gt;</code> preserving typing judgments.</p>
+
+<h3 id="morphisms">Morphisms</h3>
+
+<p>The semantics of the large scale structure of developments in MMT is computed in the category of theories and theory <strong>morphisms</strong>.</p>
+
+<p>Atomic morphisms can be declared in two ways: via <a href="modules.html#Views">views</a> and <a href="declarations.html#Structures">structures</a>.
+Complex morphisms can be built in particular using composition.</p>
+
+<h4 id="implicit-morphisms">Implicit Morphisms</h4>
+
+<p>Every development in MMT yields a specific category of theories and morphisms.
+Among those, MMT distinguishes the <strong>implicit morphisms</strong>.
+For any two theories <code class="highlighter-rouge">A</code> and <code class="highlighter-rouge">B</code>, there may be at most one implicit morphism from <code class="highlighter-rouge">A</code> to <code class="highlighter-rouge">B</code>.
+The implicit morphisms are the following:</p>
+
+<ul>
+  <li>any view or structure preceded by the keyword <code class="highlighter-rouge">implicit</code></li>
+  <li>all includes</li>
+  <li>the identity morphism of all theories</li>
+  <li>all compositions of implciit morphisms</li>
+</ul>
+
+<p>Thus, technically the implicit morphisms form a thin broad subcategory of the category of theories and morphisms.</p>
+
+<p>The semantics of an implicit morphism <code class="highlighter-rouge">m</code> from <code class="highlighter-rouge">A</code> to <code class="highlighter-rouge">B</code> is that every declaration of <code class="highlighter-rouge">A</code> is also visible to <code class="highlighter-rouge">B</code>, i.e., any well-formed term <code class="highlighter-rouge">t</code> over <code class="highlighter-rouge">A</code> is also well-formed over <code class="highlighter-rouge">B</code>.
+The meaning of <code class="highlighter-rouge">t</code> in <code class="highlighter-rouge">B</code> is <code class="highlighter-rouge">m(t)</code>.</p>
+
+<p><strong>Examples</strong></p>
+
+<ul>
+  <li>The intended semantics of includes is induced by the above: an include from <code class="highlighter-rouge">A</code> to <code class="highlighter-rouge">B</code> is an implicit morphism, which maps every term to itself.
+  Thus, the effect of an include from <code class="highlighter-rouge">A</code> to <code class="highlighter-rouge">B</code> is that every term of <code class="highlighter-rouge">A</code> can be used in <code class="highlighter-rouge">B</code> with the same meaning.</li>
+  <li>Consider a user who would like to add a defined declaration <code class="highlighter-rouge">c:a=t</code> to a theory <code class="highlighter-rouge">T</code> that she does not have write access to.
+She could declare a theory <code class="highlighter-rouge">T2</code> that includes <code class="highlighter-rouge">T</code>. But then the new declaration would only be available in theories that use <code class="highlighter-rouge">T2</code>.
+Instead, she would like to extend <code class="highlighter-rouge">T</code> itself from the outside, i.e., without changing it.
+She can achieve that by declaring a theory <code class="highlighter-rouge">T2</code> that contains <code class="highlighter-rouge">c:a</code> and an implicit view from <code class="highlighter-rouge">T2</code> to <code class="highlighter-rouge">T</code> that maps <code class="highlighter-rouge">c=t</code>.
+Then she can use <code class="highlighter-rouge">T2?c</code> wherever <code class="highlighter-rouge">T</code> is used.</li>
+  <li><a href="https://link.springer.com/content/pdf/10.1007/978-3-319-08434-3_19.pdf">Realms</a> were introduced as a language feature for providing a single interface to a large set of theories. Realms can be realized in MMT by simply making all involved morphisms implicit.</li>
+</ul>
+
+				</div>
+			</div>
+		</div>
+	
+
+
+	<div class="container">
+		<footer class="container">
+
+    <hr />
+    <p>
+        MMT is developed and maintained mostly by <a href="http://kwarc.info/frabe/" target="_blank">Florian Rabe</a>. <br />
+        
+        This page is hosted via github pages and can be edited <a href="https://github.com/UniFormal/uniformal.github.io/edit/master/doc/language/modules.md" target="_blank">directly in the browser</a>. <br/>
+    </p>
+</footer>
+	</div>
+
+    <script src="https://comfreek.github.io/uniformal.github.io/lib/js/jquery-3.3.1.min.js"></script>
+    <script src="https://comfreek.github.io/uniformal.github.io/lib/js/bootstrap.min.js"></script>
+		<script src="https://comfreek.github.io/uniformal.github.io/lib/js/doc.js"></script>
+		<script src="https://comfreek.github.io/uniformal.github.io/lib/js/api.js"></script>
+	
+  </body>
+</html>

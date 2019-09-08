@@ -1,0 +1,421 @@
+<!doctype html>
+<html lang="en">
+	<!-- This is the layout used for all pages in the wiki-style documentation.
+        The wiki files must have "layout: doc" in their front matter.
+        This file can use page.NAME to refer to variables declared in the front matter
+        and content to refer to the body of the md file.
+   -->
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!--
+      Do not use base tag: <base href="/uniformal.github.io/" />
+      Since otherwise we could not keep links in the documentation relative anymore - without a hassle at least.
+      We would always have to prepend doc/ or something.
+
+      Hence, use e.g. `/uniformal.github.io/lib/css/bootstrap.min.css` to refer to assets in this file only.
+    -->
+    <link rel="icon" href="https://comfreek.github.io/uniformal.github.io/favicon.ico">
+
+    <title>MMT - Integration with LaTeXML</title>
+
+    <link href="https://comfreek.github.io/uniformal.github.io/lib/css/bootstrap.min.css" rel="stylesheet" />
+	  <link href="https://comfreek.github.io/uniformal.github.io/lib/css/doc.css" rel="stylesheet" />
+		<link href="https://comfreek.github.io/uniformal.github.io/lib/css/pygments-default.css" rel="stylesheet" />
+	
+  </head>
+  <body>
+	
+<nav class="navbar navbar-expand navbar-dark site-header" site-header >
+    <div class="container">
+        <a class="navbar-brand" href="/">
+            <img src="https://comfreek.github.io/uniformal.github.io/lib/css/img/logo_dark.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+            The MMT Language and System
+        </a>
+    </div>
+</nav>
+
+	
+		<div class="container-fluid main">
+			<div class="row">
+				<div class="col-12 col-md-3 col-xl-2">
+					<ul class="nav flex-column">
+						
+
+
+<div class="list-group">
+  
+    
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/"
+    
+>
+    Overview
+</a>
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/setup/">
+    Setting up MMT
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/tutorials/">
+    Tutorials
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/philosophy/">
+    The Philosophy behind MMT
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/language/">
+    The MMT Language
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/archives/">
+    MMT-Archives
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/api/">
+    The MMT API
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable active" href="https://comfreek.github.io/uniformal.github.io/doc/applications/">
+    Applications and Projects based on MMT
+</a>
+
+
+
+
+    <div class="list-group">
+        
+            
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/applications/ides.html">
+    IDEs
+</a>
+
+
+
+
+
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/applications/shell.html"
+    
+>
+    The MMT Shell
+</a>
+
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/applications/server.html"
+    
+>
+    The MMT Server
+</a>
+
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/applications/tgview.html"
+    
+>
+    TGView
+</a>
+
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/applications/latex.html"
+    
+>
+    LaTeX Processing
+</a>
+
+        
+    </div>
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/development/">
+    Development
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/community/"
+    
+>
+    Community & Communication
+</a>
+
+  
+    
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/contribs"
+    
+>
+    Contributed Articles
+</a>
+
+  
+</div>
+					</ul>
+				</div>
+				<div class="col-12 col-md-9 col-xl-8 content">
+					<h2>Integration with LaTeXML</h2>
+					<hr />
+	
+					<p>The MMT <code class="highlighter-rouge">rbuild</code> action allows to pass options to the target implementation. For the executable of a target the target name itself can be used as an option, i.e. <code class="highlighter-rouge">rbuild latexml --latexml=latexmlc ...</code>.
+Other options for <code class="highlighter-rouge">latexml</code> are <code class="highlighter-rouge">--latexmls=...</code>, <code class="highlighter-rouge">--profile=...</code>, <code class="highlighter-rouge">--expire=...</code>, <code class="highlighter-rouge">--port=...</code>, <code class="highlighter-rouge">--preload=...</code>, <code class="highlighter-rouge">--path=...</code>, <code class="highlighter-rouge">--timeout=...</code>, and <code class="highlighter-rouge">--pipe-worker-output</code>.</p>
+
+<p><code class="highlighter-rouge">--timeout=...</code> and <code class="highlighter-rouge">--pipe-worker-output</code> are also options for <code class="highlighter-rouge">pdflatex</code>. In order to change the executable for <code class="highlighter-rouge">pdflatex</code> from <code class="highlighter-rouge">xelatex</code> (the default) to <code class="highlighter-rouge">pdflatex</code> write:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mmt.jar rbuild pdflatex --force --pdflatex=pdflatex &lt;files&gt;
+</code></pre></div></div>
+
+<p>An alternative way is to use environment variables. The above options have precedence, but 
+settings for <code class="highlighter-rouge">--preload=...</code> and <code class="highlighter-rouge">--path=...</code> simply accumulate.</p>
+
+<p>There are no environment variable for the options <code class="highlighter-rouge">--timeout=...</code> (defaults to 300 seconds) and <code class="highlighter-rouge">--pipe-worker-output</code> (to show process output on stdout).</p>
+
+<p>The following environment variables can be set either in your shell or in your build.msl file using <code class="highlighter-rouge">envvar</code> in order to customize LaTeXML processing. For <code class="highlighter-rouge">envvar</code> the value of variables must be given within double quotes, i.e. <code class="highlighter-rouge">envvar LATEXMLEXPIRE "30"</code>. Use:</p>
+
+<ul>
+  <li>LATEXMLC to set the path to your LaTeXML client. The default is to use <code class="highlighter-rouge">/path/to/localmh/ext/perl5lib/bin/latexmlc</code>.</li>
+  <li>LATEXMLS to set the path to the LaTeXML server. The default is to use <code class="highlighter-rouge">/path/to/localmh/ext/perl5lib/bin/latexmls</code>.</li>
+  <li>LATEXMLPROFILE to set the <code class="highlighter-rouge">--profile=</code> argument of LaTeXML. The default is <code class="highlighter-rouge">stex-smglom-module</code>.</li>
+  <li>LATEXMLEXPIRE to set the <code class="highlighter-rouge">--expire=</code> argument of LaTeXML. The default is <code class="highlighter-rouge">600</code>. Setting it to <code class="highlighter-rouge">-1</code> avoids the server <code class="highlighter-rouge">latexmls</code> that is expected to be in the PATH augmented by <code class="highlighter-rouge">/path/to/localmh/ext/perl5lib/bin</code>.</li>
+  <li>LATEXMLPORT to set the <code class="highlighter-rouge">--port=</code> argument of LaTeXML. The default is between <code class="highlighter-rouge">3334</code> and <code class="highlighter-rouge">4333</code> depending on the archive.</li>
+  <li>LATEXMLPRELOADS to set a space-separated list of additional <code class="highlighter-rouge">--preload=</code> arguments. The default is none.</li>
+  <li>LATEXMLPATHS to set a space-separated list of additional <code class="highlighter-rouge">--path=</code> arguments. Despite this setting <code class="highlighter-rouge">/path/to/localmh/sty</code> is always passed as <code class="highlighter-rouge">--path=</code> argument.</li>
+</ul>
+
+<p>When creating .pdf files the variable PDFLATEX may be used to set the pdflatex binary. By default <code class="highlighter-rouge">xelatex</code> from your PATH will be used.</p>
+
+<p>Also the variables STEXSTYDIR, TEXINPUTS, and PERL5LIB influence the processing.
+By default they are set to <code class="highlighter-rouge">/path/to/localmh/ext/sTeX/sty</code>, <code class="highlighter-rouge">.//:/path/to/localmh/sty:/path/to/localmh/ext/sTeX/sty//:</code>, and <code class="highlighter-rouge">/path/to/localmh/ext/perl5lib/lib/perl5:/path/to/localmh/ext/LaTeXML/blib/lib</code> respectively. Given variables TEXINPUTS or PERL5LIB are extended at the front by these defaults. A user-defined STEXSTYDIR variable should denote a single directory and will be used as given.</p>
+
+<p>Note that the above absolute path <code class="highlighter-rouge">/path/to/localmh/</code> is just an example that may be different on your system. The folder <code class="highlighter-rouge">localmh</code> (that may even be called differently, too) will be computed from your input files.</p>
+
+<p>It is possible to exclude files from builds by adding them into the file <code class="highlighter-rouge">META-INF/MANIFEST.MF</code> under the key <code class="highlighter-rouge">no-sms</code>, <code class="highlighter-rouge">no-omdoc</code>, or <code class="highlighter-rouge">no-pdf</code>. The string value following any of these keys and the colon is interpreted as a space delimited list of regular expression. All regular expressions are compared to the short input file name (without path) in turn. If any regular expression (a java pattern) <code class="highlighter-rouge">matches</code> (or is illegal) the input file will not be built. A message <code class="highlighter-rouge">skipping ...</code> will be shown. Folders can not be excluded by this mechanism. (A java pattern <code class="highlighter-rouge">.*</code> matches everything.)</p>
+
+				</div>
+			</div>
+		</div>
+	
+
+
+	<div class="container">
+		<footer class="container">
+
+    <hr />
+    <p>
+        MMT is developed and maintained mostly by <a href="http://kwarc.info/frabe/" target="_blank">Florian Rabe</a>. <br />
+        
+        This page is hosted via github pages and can be edited <a href="https://github.com/UniFormal/uniformal.github.io/edit/master/doc/applications/latexml.md" target="_blank">directly in the browser</a>. <br/>
+    </p>
+</footer>
+	</div>
+
+    <script src="https://comfreek.github.io/uniformal.github.io/lib/js/jquery-3.3.1.min.js"></script>
+    <script src="https://comfreek.github.io/uniformal.github.io/lib/js/bootstrap.min.js"></script>
+		<script src="https://comfreek.github.io/uniformal.github.io/lib/js/doc.js"></script>
+		<script src="https://comfreek.github.io/uniformal.github.io/lib/js/api.js"></script>
+	
+  </body>
+</html>

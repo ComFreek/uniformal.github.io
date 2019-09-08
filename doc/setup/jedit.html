@@ -1,0 +1,515 @@
+<!doctype html>
+<html lang="en">
+	<!-- This is the layout used for all pages in the wiki-style documentation.
+        The wiki files must have "layout: doc" in their front matter.
+        This file can use page.NAME to refer to variables declared in the front matter
+        and content to refer to the body of the md file.
+   -->
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!--
+      Do not use base tag: <base href="/uniformal.github.io/" />
+      Since otherwise we could not keep links in the documentation relative anymore - without a hassle at least.
+      We would always have to prepend doc/ or something.
+
+      Hence, use e.g. `/uniformal.github.io/lib/css/bootstrap.min.css` to refer to assets in this file only.
+    -->
+    <link rel="icon" href="https://comfreek.github.io/uniformal.github.io/favicon.ico">
+
+    <title>MMT - Details on Setting up jEdit</title>
+
+    <link href="https://comfreek.github.io/uniformal.github.io/lib/css/bootstrap.min.css" rel="stylesheet" />
+	  <link href="https://comfreek.github.io/uniformal.github.io/lib/css/doc.css" rel="stylesheet" />
+		<link href="https://comfreek.github.io/uniformal.github.io/lib/css/pygments-default.css" rel="stylesheet" />
+	
+  </head>
+  <body>
+	
+<nav class="navbar navbar-expand navbar-dark site-header" site-header >
+    <div class="container">
+        <a class="navbar-brand" href="/">
+            <img src="https://comfreek.github.io/uniformal.github.io/lib/css/img/logo_dark.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+            The MMT Language and System
+        </a>
+    </div>
+</nav>
+
+	
+		<div class="container-fluid main">
+			<div class="row">
+				<div class="col-12 col-md-3 col-xl-2">
+					<ul class="nav flex-column">
+						
+
+
+<div class="list-group">
+  
+    
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/"
+    
+>
+    Overview
+</a>
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable active" href="https://comfreek.github.io/uniformal.github.io/doc/setup/">
+    Setting up MMT
+</a>
+
+
+
+
+    <div class="list-group">
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action active"
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/setup/jedit.html"
+    
+>
+    Details on Setting up jEdit
+</a>
+
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/setup/running.html"
+    
+>
+    Details on Running MMT
+</a>
+
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/setup/configure.html"
+    
+>
+    Configuring MMT
+</a>
+
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/setup/repo.html"
+    
+>
+    The Structure of the MMT Repository
+</a>
+
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/setup/sbt.html"
+    
+>
+    Details on Building with SBT
+</a>
+
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/setup/devel.html"
+    
+>
+    Developing MMT
+</a>
+
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/setup/license.html"
+    
+>
+    License for Using MMT
+</a>
+
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/setup/docker.html"
+    
+>
+    Docker Image
+</a>
+
+        
+    </div>
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/tutorials/">
+    Tutorials
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/philosophy/">
+    The Philosophy behind MMT
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/language/">
+    The MMT Language
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/archives/">
+    MMT-Archives
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/api/">
+    The MMT API
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/applications/">
+    Applications and Projects based on MMT
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/development/">
+    Development
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/community/"
+    
+>
+    Community & Communication
+</a>
+
+  
+    
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/contribs"
+    
+>
+    Contributed Articles
+</a>
+
+  
+</div>
+					</ul>
+				</div>
+				<div class="col-12 col-md-9 col-xl-8 content">
+					<h2>Details on Setting up jEdit</h2>
+					<hr />
+	
+					<p>The jEdit plugin based on MMT yields an IDE for MMT content.</p>
+
+<p>This section is about the setup of the jEdit plugin.
+The functionality is described <a href="../applications/jedit.html">here</a></p>
+
+<h3 id="installation">Installation</h3>
+
+<p>When running MMT for the first time, it will ask whether you want to setup the jEdit support.
+To do that, you have to install jEdit <em>before</em> you run MMT.
+Use the following instructions:</p>
+
+<ol>
+  <li>Install jEdit, for example from <a href="http://www.jedit.org/">http://www.jedit.org/</a> and run it at least once, so its config folder will be created (for setting up MMT).</li>
+  <li>If you have just installed jEdit to use it with MMT, MMT will automatically set some useful configurations in jEdit. However, if you already use jEdit for other reasons, MMT will not touch your jEdit configuration. In that case, you may want to set a few settings manually:
+    <ul>
+      <li>Set jEdit’s default encoding to UTF-8. (Many MMT example files use UTF-8.)</li>
+      <li>Set Sidekick to automatically parse a buffer on save. (Parsing on keystroke can occasionally be too much for MMT.)</li>
+      <li>Set abbreviations to expand on space. (MMT brings in a lot of abbreviations for for Unicode characters. Just write <code class="highlighter-rouge">j</code> instead of <code class="highlighter-rouge">\</code>, e.g., <code class="highlighter-rouge">jwedge</code>.</li>
+    </ul>
+  </li>
+  <li>It is not so easy for MMT to automatically set the font in jEdit because it depends on what fonts are installed on your system. Install a font that includes a good amount of unicode characters, such as GNU unifont, and set this font as the font for jEdit text areas. To set a font click on the <code class="highlighter-rouge">Utilities</code> menu, then <code class="highlighter-rouge">Global Options</code>, then <code class="highlighter-rouge">Text Area</code> on the left and change the <code class="highlighter-rouge">Text font</code> on the right.</li>
+  <li>Run MMT and follow the instructions to configure jEdit.</li>
+  <li>When running jEdit, if jEdit does not activate the MMT plugin automatically, activate it in the plugin manager dialog.</li>
+  <li>You can now use jEdit to open <code class="highlighter-rouge">.mmt</code>, e.g., the ons in the <code class="highlighter-rouge">MathHub/MMT/examples/source</code> folder produced during MMT setup.</li>
+</ol>
+
+<h3 id="dependencies-of-the-mmt-plugin">Dependencies of the MMT Plugin</h3>
+
+<p>The MMT plugin depends on the following other jEdit plugins</p>
+<ul>
+  <li>ErrorList</li>
+  <li>Console</li>
+  <li>SideKick</li>
+  <li>Hyperlinks</li>
+</ul>
+
+<p>During setup, MMT will try to automatically download and configure these so that normally no further steps are needed.
+However, if something goes wrong, you can also install these plugins manually: click on the <code class="highlighter-rouge">Plugins</code> menu, then <code class="highlighter-rouge">Plugin Manager</code>, then click on the <code class="highlighter-rouge">Install</code> tab, check the plugins you want to install and click <code class="highlighter-rouge">Install</code>.</p>
+
+<!--
+### Updating
+
+To update the plugin, just replace the changed jar(s) in jEdit's settings folder (`~/.jedit/jars` on linux, `<USER>AppData\Roaming\jEdit` on windows) and restart jEdit or reload the changed jars via jEdit's plugin manager dialog.
+
+The MMT code also provides the build target `sbt jedit/install` to replace the old jars in the jEdit settings folder. (Calling `mmt :jeditsetup" will additionally copy/uninstall configuration files.)
+--->
+
+<h3 id="options-of-the-mmt-plugin">Options of the MMT Plugin</h3>
+
+<p>Configuration the MMT plugin is optional. But some steps may be useful.</p>
+
+<ul>
+  <li>Go to the MMT pane of the jEdit plugin options dialog.</li>
+  <li>The startup file is an MMT script that is run when the MMT plugin is loaded (usually when jEdit is started).
+If this is empty, it defaults to <code class="highlighter-rouge">JEDIT/plugins/info.kwarc.mmt.jedit.MMTPlugin/startup.msl</code>.</li>
+  <li>The archives folder is a folder containing MMT archives that the plugin will load.</li>
+  <li>MMT provides some macros. You can bind them to specific combinations using the jEdit options dialog.</li>
+  <li>Pin the SideKick, Console and ErrorList windows to the sides of the main text area.</li>
+</ul>
+
+<h3 id="jedit-tips">jEdit Tips</h3>
+
+<p>It is advisable to make the following general jEdit configurations:</p>
+
+<p><strong>Abbreviations:</strong> Select the setting ‘expand abbreviations on space’ to activate the abbreviations that come with the plugin.</p>
+
+<p><strong>Parsing:</strong> Select the setting of the Sidekick plugin to automatically parse the buffer. This activates the parsing/type-checking of the MMT plugin and populates the SideKick tree and the ErrorList list. It is recommended to <em>deactivate</em> the menu option <code class="highlighter-rouge">parse on key</code> in the area <code class="highlighter-rouge">Auto parsing settings</code>, since parsing tends to defocus the text area making it difficult to type continuously.</p>
+
+<p><strong>Plugins:</strong> Browse the plugin manager and install all additional plugins you fancy. I recommend BufferTabs, CandyFolds, DirtyGutter, SuperAbbrevs, WhiteSpace, and XML.</p>
+
+<p><strong>Encoding:</strong> Set UTF-8 as your default encoding in the Options/Encodings.</p>
+
+<h3 id="building-from-within-jedit">Building from within jEdit</h3>
+
+<p>While using jEdit, the current files are constantly checked and maintained in memory.</p>
+
+<p>To store the results persistently, you need to build the files.
+This can be done by</p>
+
+<ul>
+  <li>the button in jEdit</li>
+  <li>running the shell-based <a href="../applications/building.html">build tool</a></li>
+  <li>running the build tool from within jEdit using the MMT console that.</li>
+</ul>
+
+				</div>
+			</div>
+		</div>
+	
+
+
+	<div class="container">
+		<footer class="container">
+
+    <hr />
+    <p>
+        MMT is developed and maintained mostly by <a href="http://kwarc.info/frabe/" target="_blank">Florian Rabe</a>. <br />
+        
+        This page is hosted via github pages and can be edited <a href="https://github.com/UniFormal/uniformal.github.io/edit/master/doc/setup/jedit.md" target="_blank">directly in the browser</a>. <br/>
+    </p>
+</footer>
+	</div>
+
+    <script src="https://comfreek.github.io/uniformal.github.io/lib/js/jquery-3.3.1.min.js"></script>
+    <script src="https://comfreek.github.io/uniformal.github.io/lib/js/bootstrap.min.js"></script>
+		<script src="https://comfreek.github.io/uniformal.github.io/lib/js/doc.js"></script>
+		<script src="https://comfreek.github.io/uniformal.github.io/lib/js/api.js"></script>
+	
+  </body>
+</html>

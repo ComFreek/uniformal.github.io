@@ -1,0 +1,486 @@
+<!doctype html>
+<html lang="en">
+	<!-- This is the layout used for all pages in the wiki-style documentation.
+        The wiki files must have "layout: doc" in their front matter.
+        This file can use page.NAME to refer to variables declared in the front matter
+        and content to refer to the body of the md file.
+   -->
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!--
+      Do not use base tag: <base href="/uniformal.github.io/" />
+      Since otherwise we could not keep links in the documentation relative anymore - without a hassle at least.
+      We would always have to prepend doc/ or something.
+
+      Hence, use e.g. `/uniformal.github.io/lib/css/bootstrap.min.css` to refer to assets in this file only.
+    -->
+    <link rel="icon" href="https://comfreek.github.io/uniformal.github.io/favicon.ico">
+
+    <title>MMT - Contributing</title>
+
+    <link href="https://comfreek.github.io/uniformal.github.io/lib/css/bootstrap.min.css" rel="stylesheet" />
+	  <link href="https://comfreek.github.io/uniformal.github.io/lib/css/doc.css" rel="stylesheet" />
+		<link href="https://comfreek.github.io/uniformal.github.io/lib/css/pygments-default.css" rel="stylesheet" />
+	
+  </head>
+  <body>
+	
+<nav class="navbar navbar-expand navbar-dark site-header" site-header >
+    <div class="container">
+        <a class="navbar-brand" href="/">
+            <img src="https://comfreek.github.io/uniformal.github.io/lib/css/img/logo_dark.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+            The MMT Language and System
+        </a>
+    </div>
+</nav>
+
+	
+		<div class="container-fluid main">
+			<div class="row">
+				<div class="col-12 col-md-3 col-xl-2">
+					<ul class="nav flex-column">
+						
+
+
+<div class="list-group">
+  
+    
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/"
+    
+>
+    Overview
+</a>
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/setup/">
+    Setting up MMT
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/tutorials/">
+    Tutorials
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/philosophy/">
+    The Philosophy behind MMT
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/language/">
+    The MMT Language
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/archives/">
+    MMT-Archives
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/api/">
+    The MMT API
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/applications/">
+    Applications and Projects based on MMT
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable active" href="https://comfreek.github.io/uniformal.github.io/doc/development/">
+    Development
+</a>
+
+
+
+
+    <div class="list-group">
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action active"
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/development/contributing.html"
+    
+>
+    Contributing to MMT
+</a>
+
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/development/releases.html"
+    
+>
+    Releases & Changelog
+</a>
+
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/development/testing.html"
+    
+>
+    Testing
+</a>
+
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/development/documentation.html"
+    
+>
+    Improving this Documentation
+</a>
+
+        
+    </div>
+
+
+  
+    
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/community/"
+    
+>
+    Community & Communication
+</a>
+
+  
+    
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/contribs"
+    
+>
+    Contributed Articles
+</a>
+
+  
+</div>
+					</ul>
+				</div>
+				<div class="col-12 col-md-9 col-xl-8 content">
+					<h2>Contributing</h2>
+					<hr />
+	
+					<p>This document explains the general development model of MMT. Before contributing to MMT, you should read this document to understand what is going on.</p>
+
+<h3 id="coding-style">Coding Style</h3>
+
+<p>See <a href="scala">here</a> for some code conventions.</p>
+
+<h3 id="branches">Branches</h3>
+
+<h4 id="main-branches">Main Branches</h4>
+
+<p>There are three central branches:</p>
+
+<ul>
+  <li><code class="highlighter-rouge">master</code>: main development line, used by developers, stable and including latest features</li>
+  <li><code class="highlighter-rouge">release</code>: used by external users, very stable, occasionally merged into from master</li>
+  <li><code class="highlighter-rouge">devel</code>: a branch of master that is periodically merged into master; this branch is under constant development by Florian</li>
+</ul>
+
+<p>Every MMT archive on MathHub has two corresponding branches master and release.
+For testing purposes, release branches of archives are tested against the release branch
+of MMT, and accordingly for master branches.</p>
+
+<h4 id="feature-branches">Feature Branches</h4>
+
+<p>MMT developers typically branch for individual features from <code class="highlighter-rouge">master</code> but may sometimes have to branch from devel.
+Usually this involves a discussion with Florian.
+In particular, inexperienced contributors and developers of cutting-edge features typically have to work with <code class="highlighter-rouge">devel</code> in order to collaborate with Florian.</p>
+
+<p>MMT developers merge their features into <code class="highlighter-rouge">devel</code> or <code class="highlighter-rouge">master</code> according to their own judgment.
+Usually this involves an informal discussion with core developers or a pull request.
+If they merge into master, they must also merge the resulting master into <code class="highlighter-rouge">devel</code>.</p>
+
+<h4 id="protections-and-tests">Protections and Tests</h4>
+
+<p>Pushes to <code class="highlighter-rouge">release</code> must pass the corresponding test(s).</p>
+
+<p>Pushes to <code class="highlighter-rouge">master</code> should pass the corresponding test(s). (This ‘should’ will probably become a ‘must’ in the future.)</p>
+
+<p>All three main branches are protected from force-pushes.</p>
+
+<p>The <code class="highlighter-rouge">sbt</code> build file contains the following tests:</p>
+
+<ul>
+  <li>release/build and release/test: build certain projects and certain archives that must work in releases</li>
+  <li>master/build and master/test: build certain projects and certain archives that should work on the master branch</li>
+</ul>
+
+<h3 id="git-workflows">Git workflows</h3>
+
+<p>Making changes in MMT is possible in two different ways, through making forks and making branches. Usually you should only contribute directly to a branch if you know what you are doing.</p>
+
+<p>One way of making changes is to make a <a href="https://help.github.com/articles/about-forks/">fork of the repository</a> and then create a pull request to merge the changes back into the <code class="highlighter-rouge">master</code> branch. A fork is a copy of the repository that can be used to make a changes without affecting the original code. Pull requests should only be made after the actual code compiles and should always go onto the master branch.</p>
+
+<h4 id="forking">Forking</h4>
+
+<p>External contributors are welcome to create forks.
+However, note that the MMT license forbids distributing forked versions.
+Therefore, forks are only useful if they are temporary. All changes in a fork should be reintegrated with the main project as fast as possible.</p>
+
+<p>Students in the MMT research group(s) should never work on a fork.
+Exceptions are only allowed with their advisor’s permission.
+Instead, they should ask for a branch to be created for them.</p>
+
+<h4 id="pushing-and-code-review">Pushing and Code Review</h4>
+
+<p>All code contributions to the MMT repository should be reviewed by one of the principal developers.
+For core MMT functionality, this is essentially Florian at the moment.
+There are two essential workflows:</p>
+
+<ul>
+  <li><strong>small commits</strong>: commits that repair bugs or mildly generalize functionality must pass through the <code class="highlighter-rouge">devel</code> branch, so that Florian can see, test, and review them. Commits should be accompanied by a meaningful message that explains what this commit tries to do and what it does to achieve that.</li>
+  <li><strong>large commits</strong>: introduce significant new functionality, generalize, or refactor existing functionality, and/or change APIs. Such commits <em>must</em> be accompanied with a MEP (MMT Extension proposal) that motivates the extended/changed functionality, details the (proposed) API changes and implementation, and discusses any invariants that are violated/required by the functionality at a level that is sufficient for MEP review by the MMT community. MEPs are usually prototyped in a feature branch. The specification can come before the implementation, or can be a result of the prototyping process. In the latter case, the MEP specification is part of the pull request that proposes to merge the functionality. In any case, the specification should be sufficient to serve as initial documentation if the MEP is accepted.</li>
+</ul>
+
+<h4 id="updating-the-release-branch">Updating the release branch</h4>
+
+<p>Before a release is made the version string stored in <a href="https://github.com/UniFormal/MMT/blob/master/src/mmt-api/resources/versioning/system.txt">src/mmt-api/resources/versioning/system.txt</a> should be increased appropriatly.</p>
+
+<p>Once such a change has landed on master, when then again use pull requests to mark a version of MMT as a release. 
+This time we merge from <code class="highlighter-rouge">master</code> onto <code class="highlighter-rouge">release</code>. 
+Again go to the main repository page and select <a href="https://github.com/UniFormal/MMT/compare/release...master">New pull request</a>. 
+Choose <code class="highlighter-rouge">release</code> as the base and <code class="highlighter-rouge">master</code> as the head. 
+Now write a title as well as a description of the changes that have been made since the last merge to the <code class="highlighter-rouge">release</code> branch. 
+Then create the pull request by clicking the “Create pull request” button.</p>
+
+<p>Only repository owners and administrators can merge this pull request.
+<!-- In order to ensure stability, this additionally requires a [review](https://help.github.com/articles/about-pull-request-reviews/) from a maintainer. To create a review, select the "view changes" button inside the newly created pull request. After looking at the changes made, you can create a review by clicking the "Review changes" button. You can then write a comment as well as either "approve" or "request changes" to the pull request. --></p>
+
+<p>Once <!-- someone has submitted an approving review and --> the travis tests have passed, the pull request can be merged by any core developer.</p>
+
+<h4 id="making-a-binary-release">Making a binary release</h4>
+
+<p>After the release branch has been updated, a binary release should be made. 
+For this we use GitHubs release system - all releases can be found on the <a href="https://github.com/UniFormal/MMT/releases">MMT release page</a>. 
+Making a release involves two steps, making a tag and uploading a jar that can be distributed to users.</p>
+
+<p>To create a new release, visit the <a href="https://github.com/UniFormal/MMT/releases/new">draft a new release</a> page. 
+In the tag version, make sure that the target is the <code class="highlighter-rouge">release</code> branch . 
+By convention, the name of the new tag is the MMT Version, e.g. <code class="highlighter-rouge">v12.0.0</code> for release 12. 
+The name should be <code class="highlighter-rouge">nth Git Release</code> (where n is increasing). 
+Optionally, a human readable description can be written for the release. 
+Finally, generate a fat jar locally and attach it to the release by dragging it into the attachment area below the description. 
+Then publish the release by clicking the <code class="highlighter-rouge">Publish release</code> button.</p>
+
+<h4 id="sources-and-useful-reading">Sources and Useful reading</h4>
+
+<p>In general GitHub documentation is very helpful for any general questions:</p>
+
+<ul>
+  <li><a href="https://help.github.com/articles/checking-out-pull-requests-locally">GitHub - Checking Out a Pull Request</a></li>
+  <li><a href="https://help.github.com/articles/about-protected-branches/">GitHub - About protected branches</a></li>
+  <li><a href="https://help.github.com/articles/about-pull-request-reviews/">GitHub - About pull request reviews</a></li>
+  <li><a href="https://help.github.com/articles/creating-releases/">GitHub - Creating Releases</a></li>
+</ul>
+
+<p>Furthermore parts of this README have been adapted from <a href="https://github.com/OpenJUB/contribution-guidelines/blob/master/github_usage.md">https://github.com/OpenJUB/contribution-guidelines/blob/master/github_usage.md</a></p>
+
+<!--  LocalWords:  devel sbt
+ -->
+
+				</div>
+			</div>
+		</div>
+	
+
+
+	<div class="container">
+		<footer class="container">
+
+    <hr />
+    <p>
+        MMT is developed and maintained mostly by <a href="http://kwarc.info/frabe/" target="_blank">Florian Rabe</a>. <br />
+        
+        This page is hosted via github pages and can be edited <a href="https://github.com/UniFormal/uniformal.github.io/edit/master/doc/development/contributing.md" target="_blank">directly in the browser</a>. <br/>
+    </p>
+</footer>
+	</div>
+
+    <script src="https://comfreek.github.io/uniformal.github.io/lib/js/jquery-3.3.1.min.js"></script>
+    <script src="https://comfreek.github.io/uniformal.github.io/lib/js/bootstrap.min.js"></script>
+		<script src="https://comfreek.github.io/uniformal.github.io/lib/js/doc.js"></script>
+		<script src="https://comfreek.github.io/uniformal.github.io/lib/js/api.js"></script>
+	
+  </body>
+</html>

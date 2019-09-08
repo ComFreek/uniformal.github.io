@@ -1,0 +1,489 @@
+<!doctype html>
+<html lang="en">
+	<!-- This is the layout used for all pages in the wiki-style documentation.
+        The wiki files must have "layout: doc" in their front matter.
+        This file can use page.NAME to refer to variables declared in the front matter
+        and content to refer to the body of the md file.
+   -->
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!--
+      Do not use base tag: <base href="/uniformal.github.io/" />
+      Since otherwise we could not keep links in the documentation relative anymore - without a hassle at least.
+      We would always have to prepend doc/ or something.
+
+      Hence, use e.g. `/uniformal.github.io/lib/css/bootstrap.min.css` to refer to assets in this file only.
+    -->
+    <link rel="icon" href="https://comfreek.github.io/uniformal.github.io/favicon.ico">
+
+    <title>MMT - General Methods for Rules</title>
+
+    <link href="https://comfreek.github.io/uniformal.github.io/lib/css/bootstrap.min.css" rel="stylesheet" />
+	  <link href="https://comfreek.github.io/uniformal.github.io/lib/css/doc.css" rel="stylesheet" />
+		<link href="https://comfreek.github.io/uniformal.github.io/lib/css/pygments-default.css" rel="stylesheet" />
+	
+  </head>
+  <body>
+	
+<nav class="navbar navbar-expand navbar-dark site-header" site-header >
+    <div class="container">
+        <a class="navbar-brand" href="/">
+            <img src="https://comfreek.github.io/uniformal.github.io/lib/css/img/logo_dark.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+            The MMT Language and System
+        </a>
+    </div>
+</nav>
+
+	
+		<div class="container-fluid main">
+			<div class="row">
+				<div class="col-12 col-md-3 col-xl-2">
+					<ul class="nav flex-column">
+						
+
+
+<div class="list-group">
+  
+    
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/"
+    
+>
+    Overview
+</a>
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/setup/">
+    Setting up MMT
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/tutorials/">
+    Tutorials
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/philosophy/">
+    The Philosophy behind MMT
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/language/">
+    The MMT Language
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/archives/">
+    MMT-Archives
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable active" href="https://comfreek.github.io/uniformal.github.io/doc/api/">
+    The MMT API
+</a>
+
+
+
+
+    <div class="list-group">
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/api/controller.html"
+    
+>
+    The Controller
+</a>
+
+        
+            
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/api/syntax/">
+    Data Structures for the MMT Language
+</a>
+
+
+
+
+
+        
+            
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/api/queries.html">
+    Queries
+</a>
+
+
+
+
+
+        
+            
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/api/extensions/">
+    Extensions
+</a>
+
+
+
+
+
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/api/log.html"
+    
+>
+    Logging
+</a>
+
+        
+            
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable active" href="https://comfreek.github.io/uniformal.github.io/doc/api/checking/">
+    Checking Judgements
+</a>
+
+
+
+
+    <div class="list-group">
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action active"
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/api/checking/general.html"
+    
+>
+    General Methods for Rules
+</a>
+
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/api/checking/judgements.html"
+    
+>
+    Available Judgements and their Invariants
+</a>
+
+        
+    </div>
+
+
+        
+    </div>
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/applications/">
+    Applications and Projects based on MMT
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/development/">
+    Development
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/community/"
+    
+>
+    Community & Communication
+</a>
+
+  
+    
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/contribs"
+    
+>
+    Contributed Articles
+</a>
+
+  
+</div>
+					</ul>
+				</div>
+				<div class="col-12 col-md-9 col-xl-8 content">
+					<h2>General Methods for Rules</h2>
+					<hr />
+	
+					<p>The following gives an overview for the most important objects passed to rules and the methods they provide. These are:</p>
+<ul>
+  <li>A <a href="apidoc://info.kwarc.mmt.api.checking.Solver"><code class="highlighter-rouge">checking.Solver</code></a> for recursive checking calls, simplifying terms, inferring types etc. and is described in more detail below.</li>
+  <li>A <a href="apidoc://info.kwarc.mmt.api.checking.History"><code class="highlighter-rouge">checking.History</code></a> documenting the solver’s actions. A reduced version of this object is presented to the user if a judgment fails. The command <code class="highlighter-rouge">history += s</code> extends the current history by a new string <code class="highlighter-rouge">s</code>, <code class="highlighter-rouge">history.branch</code> creates a new copy of the current history to pass on to recursive checks, <code class="highlighter-rouge">history+s</code> creates a new copy and appends line <code class="highlighter-rouge">s</code>. If the top most judgment check fails, the user is presented with those histories that lead to an error; the others are thrown away. Consequently, it is advised to branch the history for recursive checks to reduce the user output to only the relevant parts.</li>
+  <li>A <a href="apidoc://info.kwarc.mmt.api.objects.Stack"><code class="highlighter-rouge">objects.Stack</code></a> representing the current local context. It merely wraps around a <a href="apidoc://info.kwarc.mmt.api.objects.Stack">Context</a> (described <a href="../syntax/objects.html">here</a>). A stack can be extended by a <a href="apidoc://info.kwarc.mmt.api.objects.VarDecl"><code class="highlighter-rouge">objects.VarDecl</code></a> (described <a href="../syntax/objects.html">here</a>) <code class="highlighter-rouge">v</code> by letting <code class="highlighter-rouge">stack ++ v</code>.</li>
+</ul>
+
+<p>Both the stack and the history are usually <em>implicit</em> arguments.</p>
+
+<h3 id="generally-useful-methods">Generally useful methods:</h3>
+
+<p>It is strongly advised to always import <a href="apidoc://info.kwarc.mmt.api.objects.Conversions"><code class="highlighter-rouge">objects.Conversions._</code></a>, which provides helpful syntactic sugar for handling common operations such as substituting variables.</p>
+
+<ul>
+  <li><a href="apidoc:///info.kwarc.mmt.api.objects.Context$"><code class="highlighter-rouge">Context.pickFresh(context,name)</code></a> picks a fresh variable name <code class="highlighter-rouge">newname</code> (by default <code class="highlighter-rouge">name</code>) that is not already used in <code class="highlighter-rouge">context</code>, and returns it along with the <a href="apidoc:///info.kwarc.mmt.api.objects.Substitution"><code class="highlighter-rouge">objects.Substitution</code></a> <code class="highlighter-rouge">name/OMV(newname)</code>.</li>
+  <li>Given an <a href="apidoc://info.kwarc.mmt.api.LocalName"><code class="highlighter-rouge">api.LocalName</code></a> <code class="highlighter-rouge">ln</code> and a term <code class="highlighter-rouge">a</code>, then <code class="highlighter-rouge">ln % a</code> returns the <code class="highlighter-rouge">VarDecl</code> with name <code class="highlighter-rouge">ln</code> and type <code class="highlighter-rouge">a</code>.</li>
+  <li>Given a LocalName <code class="highlighter-rouge">ln</code> and a term <code class="highlighter-rouge">a</code>, then <code class="highlighter-rouge">ln / a</code> returns the substitution <code class="highlighter-rouge">ln/a</code>.</li>
+  <li>Given a term <code class="highlighter-rouge">a</code> and a substitution <code class="highlighter-rouge">s</code>, then <code class="highlighter-rouge">a ^? s</code> returns the result of applying <code class="highlighter-rouge">s</code> to <code class="highlighter-rouge">a</code></li>
+  <li>The last three often occur in combination, as in <code class="highlighter-rouge">stack ++ ln % (tp ^? (x / a))</code></li>
+</ul>
+
+<h3 id="solver-methods">Solver Methods</h3>
+
+<p>The <a href="apidoc://info.kwarc.mmt.api.checking.Solver"><code class="highlighter-rouge">checking.Solver</code></a> provides the following methods for rules:</p>
+<ul>
+  <li><code class="highlighter-rouge">solver.check</code> is the main method for recursive checks of rule premises. Takes a judgement (see <a href="judgements.html">here</a>) as argument. Note that a call to <code class="highlighter-rouge">solver.check(j)</code> implies that the judgement <code class="highlighter-rouge">j</code> is a <em>necessary</em> requirement for the current judgement. In particular, failure to prove <em>j</em> results in an error.</li>
+  <li><code class="highlighter-rouge">solver.tryToCheckWithoutDelay(j : Judgement*)</code>: Like <code class="highlighter-rouge">solver.check</code>, but without side effects. In particular, no unsolved variables are solved unless the judgements <code class="highlighter-rouge">j</code> are provable.</li>
+  <li><code class="highlighter-rouge">solver.inferType(tm : Term, covered : Boolean)</code> attempts to infer the type of <code class="highlighter-rouge">tm</code>. The additional argument <code class="highlighter-rouge">covered</code> denotes whether the term is already known to be well-typed, in which case some well-formedness checks can be skipped.</li>
+  <li><code class="highlighter-rouge">solver.inferTypeAndThen(tm : Term)(cont : Term =&gt; Boolean)</code> is useful for rules that return Booleans. If a type for <code class="highlighter-rouge">tm</code> can not be inferred yet due to unsolved variables, the current judgement will be delayed until the variables are solved during further checks. Afterwards, the continuation function will be called on the inferred type to check the current judgement.</li>
+  <li><code class="highlighter-rouge">solver.simplify(o : Obj)</code> aggressively simplifies <code class="highlighter-rouge">o</code> until all computation rules are exhausted.</li>
+  <li><code class="highlighter-rouge">solver.safeSimplifyUntil(tm : Term)(simple : Term =&gt; Option[A])</code> safely iterates one-step-simplification until <code class="highlighter-rouge">simple</code> (usually an unapply-method) returns <code class="highlighter-rouge">Some</code> on the result. This is primarily used to enforce a specific syntactic pattern on a term, if a rule requires a term to be e.g. a lambda expression (<code class="highlighter-rouge">solver.safeSimplifyUntil(tm)(Lambda.unapply)</code>). Returns both the simplified term as well as the result of <code class="highlighter-rouge">simple</code> on the result.</li>
+  <li><code class="highlighter-rouge">solver.getType</code> and <code class="highlighter-rouge">solver.getDef</code> take a <code class="highlighter-rouge">GlobalName</code> (see <a href="../syntax/uris.html">here</a>) for a constant and attempt to return its type or definiens (relative to the current context), respectively.</li>
+  <li><code class="highlighter-rouge">solver.error(s : String)</code> should always be used instead of returning <code class="highlighter-rouge">false</code>. This method a) returns <code class="highlighter-rouge">false</code> and b) registers <code class="highlighter-rouge">s</code> as the reason why the judgement failed, thus providing more detailed information to the user.</li>
+</ul>
+
+				</div>
+			</div>
+		</div>
+	
+
+
+	<div class="container">
+		<footer class="container">
+
+    <hr />
+    <p>
+        MMT is developed and maintained mostly by <a href="http://kwarc.info/frabe/" target="_blank">Florian Rabe</a>. <br />
+        
+        This page is hosted via github pages and can be edited <a href="https://github.com/UniFormal/uniformal.github.io/edit/master/doc/api/checking/general.md" target="_blank">directly in the browser</a>. <br/>
+    </p>
+</footer>
+	</div>
+
+    <script src="https://comfreek.github.io/uniformal.github.io/lib/js/jquery-3.3.1.min.js"></script>
+    <script src="https://comfreek.github.io/uniformal.github.io/lib/js/bootstrap.min.js"></script>
+		<script src="https://comfreek.github.io/uniformal.github.io/lib/js/doc.js"></script>
+		<script src="https://comfreek.github.io/uniformal.github.io/lib/js/api.js"></script>
+	
+  </body>
+</html>

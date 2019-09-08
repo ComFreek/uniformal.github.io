@@ -1,0 +1,446 @@
+<!doctype html>
+<html lang="en">
+	<!-- This is the layout used for all pages in the wiki-style documentation.
+        The wiki files must have "layout: doc" in their front matter.
+        This file can use page.NAME to refer to variables declared in the front matter
+        and content to refer to the body of the md file.
+   -->
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!--
+      Do not use base tag: <base href="/uniformal.github.io/" />
+      Since otherwise we could not keep links in the documentation relative anymore - without a hassle at least.
+      We would always have to prepend doc/ or something.
+
+      Hence, use e.g. `/uniformal.github.io/lib/css/bootstrap.min.css` to refer to assets in this file only.
+    -->
+    <link rel="icon" href="https://comfreek.github.io/uniformal.github.io/favicon.ico">
+
+    <title>MMT - Scala Conventions</title>
+
+    <link href="https://comfreek.github.io/uniformal.github.io/lib/css/bootstrap.min.css" rel="stylesheet" />
+	  <link href="https://comfreek.github.io/uniformal.github.io/lib/css/doc.css" rel="stylesheet" />
+		<link href="https://comfreek.github.io/uniformal.github.io/lib/css/pygments-default.css" rel="stylesheet" />
+	
+  </head>
+  <body>
+	
+<nav class="navbar navbar-expand navbar-dark site-header" site-header >
+    <div class="container">
+        <a class="navbar-brand" href="/">
+            <img src="https://comfreek.github.io/uniformal.github.io/lib/css/img/logo_dark.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+            The MMT Language and System
+        </a>
+    </div>
+</nav>
+
+	
+		<div class="container-fluid main">
+			<div class="row">
+				<div class="col-12 col-md-3 col-xl-2">
+					<ul class="nav flex-column">
+						
+
+
+<div class="list-group">
+  
+    
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/"
+    
+>
+    Overview
+</a>
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/setup/">
+    Setting up MMT
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/tutorials/">
+    Tutorials
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/philosophy/">
+    The Philosophy behind MMT
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/language/">
+    The MMT Language
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/archives/">
+    MMT-Archives
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/api/">
+    The MMT API
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/applications/">
+    Applications and Projects based on MMT
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable active" href="https://comfreek.github.io/uniformal.github.io/doc/development/">
+    Development
+</a>
+
+
+
+
+    <div class="list-group">
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/development/contributing.html"
+    
+>
+    Contributing to MMT
+</a>
+
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/development/releases.html"
+    
+>
+    Releases & Changelog
+</a>
+
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/development/testing.html"
+    
+>
+    Testing
+</a>
+
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/development/documentation.html"
+    
+>
+    Improving this Documentation
+</a>
+
+        
+    </div>
+
+
+  
+    
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/community/"
+    
+>
+    Community & Communication
+</a>
+
+  
+    
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/contribs"
+    
+>
+    Contributed Articles
+</a>
+
+  
+</div>
+					</ul>
+				</div>
+				<div class="col-12 col-md-9 col-xl-8 content">
+					<h2>Scala Conventions</h2>
+					<hr />
+	
+					<h3 id="basics">Basics</h3>
+
+<p>These rules apply strictly only to mmt-api.
+In other subprojects, especially those contributed by other programmers, the personal style of the subproject leader or the individual programmer may be chosen instead.</p>
+
+<p>Nobody should change styling of other programmers’ code if it is only a matter of personal style.</p>
+
+<p>Some of the following conventions may violate default settings in IDEs.
+Configure your IDEs accordingly and do not change styling recklessly.</p>
+
+<h4 id="indentation">Indentation</h4>
+
+<p>All indentation must be by spaces (no tabs).</p>
+
+<p>The depth of indentation is not fixed. It is typically 2-4 spaces.
+It does not have to be consistent throughtout a file.</p>
+
+<h4 id="imports">Imports</h4>
+
+<p>In the presence of <span class="code">info.kwarc.mmt.api._</span>
+write
+ <span class="code">import XXX</span>
+instead of
+<span class="code">import info.kwarc.mmt.api.XXX</span></p>
+
+<h4 id="method-types">Method types</h4>
+
+<p>Declare methods without arguments without brackets:
+<span class="code">def f: A</span>
+instead of
+<span class="code">def f(): A</span></p>
+
+<p>Declare non-abstract methods without return type as
+<span class="code">def f {…}</span>
+instead of
+<span class="code">def f : Unit = {…}</span></p>
+
+<h3 id="robustness-against-api-changes">Robustness against API changes</h3>
+
+<p>The MMT API changes frequently.
+Therefore, it is good to use a few tricks for more robust code, i.e., code that remains correct when the API changes.
+Several such tricks can be identified.</p>
+
+<h4 id="bundling-multiple-arguments-into-a-case-class">Bundling multiple arguments into a case class</h4>
+
+<p>A major component that takes a bunch of parameters for modifying its behavior should not list these individually.
+Instead, a new case class should be introduced to hold those arguments.</p>
+
+<p>That way we can later add a parameter to the case class without having to adapt all methods.</p>
+
+<p>Examples: the main interface methods for</p>
+<ul>
+  <li>parsing (case class: ParsingUnit and ParsingStream)</li>
+  <li>checking (case class: CheckingUnit and CheckingEnvironment)</li>
+  <li>building (case class: BuildTask)</li>
+  <li>etc.</li>
+</ul>
+
+<h4 id="keeping-the-set-of-fields-of-a-case-class-flexible">Keeping the set of fields of a case class flexible</h4>
+
+<p>When a small change to an object is needed, a copy method can be used.
+This are auto-generated by Scala for all case classes.</p>
+
+<p>Example for <span class="code">case class C(a: A, b: B); val c: C</span>: use <span class="code">c.copy(a=a’)</span> instead of <span class="code">C(a’, c.b)</span>.</p>
+
+<p>Similarly, when pattern-matching, it is preferable to use <span class="code">case c:C =&gt;</span> instead of <span class="code">case C(<em>,</em>) =&gt;</span>.</p>
+
+<p>That way the code remains correct if the case class changes.</p>
+
+<h3 id="robustness-against-semantic-errors">Robustness against semantic errors</h3>
+
+<h4 id="use-default-arguments-carefully">Use default arguments carefully</h4>
+
+<p>When adding a parameter to a class or function, do not give it a default value.
+Doing so masks errors in all previous calls to the function/class: many of those should not use the default value.
+The only way to find out is to force a typing error due to the missing argument.</p>
+
+<p>Instead, it is better to use default arguments in convenience methods in the companion object.
+(These should have a different signature than the primary constructor to avoid accidentally well-typed code.)</p>
+
+				</div>
+			</div>
+		</div>
+	
+
+
+	<div class="container">
+		<footer class="container">
+
+    <hr />
+    <p>
+        MMT is developed and maintained mostly by <a href="http://kwarc.info/frabe/" target="_blank">Florian Rabe</a>. <br />
+        
+        This page is hosted via github pages and can be edited <a href="https://github.com/UniFormal/uniformal.github.io/edit/master/doc/development/scala.md" target="_blank">directly in the browser</a>. <br/>
+    </p>
+</footer>
+	</div>
+
+    <script src="https://comfreek.github.io/uniformal.github.io/lib/js/jquery-3.3.1.min.js"></script>
+    <script src="https://comfreek.github.io/uniformal.github.io/lib/js/bootstrap.min.js"></script>
+		<script src="https://comfreek.github.io/uniformal.github.io/lib/js/doc.js"></script>
+		<script src="https://comfreek.github.io/uniformal.github.io/lib/js/api.js"></script>
+	
+  </body>
+</html>

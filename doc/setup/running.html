@@ -1,0 +1,498 @@
+<!doctype html>
+<html lang="en">
+	<!-- This is the layout used for all pages in the wiki-style documentation.
+        The wiki files must have "layout: doc" in their front matter.
+        This file can use page.NAME to refer to variables declared in the front matter
+        and content to refer to the body of the md file.
+   -->
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!--
+      Do not use base tag: <base href="/uniformal.github.io/" />
+      Since otherwise we could not keep links in the documentation relative anymore - without a hassle at least.
+      We would always have to prepend doc/ or something.
+
+      Hence, use e.g. `/uniformal.github.io/lib/css/bootstrap.min.css` to refer to assets in this file only.
+    -->
+    <link rel="icon" href="https://comfreek.github.io/uniformal.github.io/favicon.ico">
+
+    <title>MMT - Details on Running MMT</title>
+
+    <link href="https://comfreek.github.io/uniformal.github.io/lib/css/bootstrap.min.css" rel="stylesheet" />
+	  <link href="https://comfreek.github.io/uniformal.github.io/lib/css/doc.css" rel="stylesheet" />
+		<link href="https://comfreek.github.io/uniformal.github.io/lib/css/pygments-default.css" rel="stylesheet" />
+	
+  </head>
+  <body>
+	
+<nav class="navbar navbar-expand navbar-dark site-header" site-header >
+    <div class="container">
+        <a class="navbar-brand" href="/">
+            <img src="https://comfreek.github.io/uniformal.github.io/lib/css/img/logo_dark.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+            The MMT Language and System
+        </a>
+    </div>
+</nav>
+
+	
+		<div class="container-fluid main">
+			<div class="row">
+				<div class="col-12 col-md-3 col-xl-2">
+					<ul class="nav flex-column">
+						
+
+
+<div class="list-group">
+  
+    
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/"
+    
+>
+    Overview
+</a>
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable active" href="https://comfreek.github.io/uniformal.github.io/doc/setup/">
+    Setting up MMT
+</a>
+
+
+
+
+    <div class="list-group">
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/setup/jedit.html"
+    
+>
+    Details on Setting up jEdit
+</a>
+
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action active"
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/setup/running.html"
+    
+>
+    Details on Running MMT
+</a>
+
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/setup/configure.html"
+    
+>
+    Configuring MMT
+</a>
+
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/setup/repo.html"
+    
+>
+    The Structure of the MMT Repository
+</a>
+
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/setup/sbt.html"
+    
+>
+    Details on Building with SBT
+</a>
+
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/setup/devel.html"
+    
+>
+    Developing MMT
+</a>
+
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/setup/license.html"
+    
+>
+    License for Using MMT
+</a>
+
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/setup/docker.html"
+    
+>
+    Docker Image
+</a>
+
+        
+    </div>
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/tutorials/">
+    Tutorials
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/philosophy/">
+    The Philosophy behind MMT
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/language/">
+    The MMT Language
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/archives/">
+    MMT-Archives
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/api/">
+    The MMT API
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/applications/">
+    Applications and Projects based on MMT
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/development/">
+    Development
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/community/"
+    
+>
+    Community & Communication
+</a>
+
+  
+    
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/contribs"
+    
+>
+    Contributed Articles
+</a>
+
+  
+</div>
+					</ul>
+				</div>
+				<div class="col-12 col-md-9 col-xl-8 content">
+					<h2>Details on Running MMT</h2>
+					<hr />
+	
+					<p>After <a href="./">setting up</a> MMT, the jars in the <code class="highlighter-rouge">deploy</code> folder can be run normally via Java.
+The canonical way to do that is to run</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>java -jar MMT/deploy/mmt.jar
+</code></pre></div></div>
+
+<p>For convenience, the folder <code class="highlighter-rouge">MMT/deploy</code> contains shell scripts for Windows and Unix that are directly executable.</p>
+
+<p>However, to casually sample MMT, you should not execute MMT directly at all.
+Instead, you should setup <a href="jedit.html">jedit</a> and play with MMT example files.</p>
+
+<h3 id="run-modes">Run Modes</h3>
+
+<p>MMT can be used in 3 different modes</p>
+
+<ul>
+  <li><em>batch:</em> MMT executes its command-line arguments (if any).
+  This is the initial mode. When the command-line arguments have been executing, MMT transitions into interactive or server mode.</li>
+  <li><em>interactive:</em> MMT displays a shell and responds to commands interactively.
+  The end-of-input character transitions into server mode; the command exit terminates MMT completely.</li>
+  <li><em>server:</em> MMT waits for auxiliary threads (if any) to terminate and then terminates. This is typically run as a background thread.
+  Auxiliary threads may include in particular the MMT <a href="../applications/server.html">web server</a>.</li>
+</ul>
+
+<p>Depending on the command line arguments, MMT chooses whether it switches to interactive or server mode.
+In particular, without any arguments, it switches to interactive mode.</p>
+
+<h3 id="startup-code">Startup Code</h3>
+
+<p>Whenever MMT is run, it looks for a startup script in the location <code class="highlighter-rouge">deploy/startup.msl</code>.
+MMT also tries to load a configuration from <code class="highlighter-rouge">deploy/mmtrc</code> or from your OS-specific home directory.
+The latter is created during setup.</p>
+
+<p>This is particularly useful for registering extensions and archives that depend on machine-specific external paths.
+An example startup is provided in the file <code class="highlighter-rouge">deploy/startup.msl.example</code>.</p>
+
+<h3 id="customizing-mmt">Customizing MMT</h3>
+
+<p>Because MMT is <a href="../philosophy/independence.html">language and application-independent</a>, running MMT by itself does not do anything - MMT must be customized by defining a language and building an application on top of the MMT tool.
+The MMT system suite includes <a href="../applications/oaf.html">various language definitions</a> and <a href="../applications/">applications</a> to use.
+See the respective pages for instructions on loading individual languages and running individual applications.</p>
+
+<h3 id="other-ways-to-run-mmt-during-development">Other Ways to Run MMT during Development</h3>
+
+<p>Developers may also want to run MMT in different ways.</p>
+
+<h4 id="running-from-small-jar-files">Running from Small Jar Files</h4>
+
+<p>The <code class="highlighter-rouge">deploy</code> folder contains <code class="highlighter-rouge">mmt.jar</code>, which is simply the union of the individual jars in the <code class="highlighter-rouge">main</code> folder.
+When developing specific parts of MMT, it is usually sufficient to rebuild only the individual jar that was changed.</p>
+
+<p>The <code class="highlighter-rouge">deploy</code> folder contains shell scripts that automate running from these smaller jars:</p>
+
+<ul>
+  <li><code class="highlighter-rouge">mmt</code> (for Unix) and <code class="highlighter-rouge">mmt.bat</code> (for Windows): executes MMT commands and/or opens an <a href="../applications/shell.html">MMT shell</a>, <code class="highlighter-rouge">mmt -help</code> displays the available options</li>
+  <li><code class="highlighter-rouge">run-file.bat</code>: a convenience script for Windows that can be associated with MMT shell scripts.</li>
+</ul>
+
+<p>Users may wish to add the deploy folder to the PATH enviroment variable.</p>
+
+<h4 id="running-from-classes">Running from Classes</h4>
+
+<p>When working in an IDE, you usually want to run MMT directly from classes rather than building a jar file.</p>
+
+<p>For that, use the main class <code class="highlighter-rouge">info.kwarc.mmt.api.frontend.Run</code> in the project <code class="highlighter-rouge">mmt-api</code>.</p>
+
+<p>If you need to use additional projects, you can build those into classes as well or use the individual jars mentioned above.</p>
+
+
+				</div>
+			</div>
+		</div>
+	
+
+
+	<div class="container">
+		<footer class="container">
+
+    <hr />
+    <p>
+        MMT is developed and maintained mostly by <a href="http://kwarc.info/frabe/" target="_blank">Florian Rabe</a>. <br />
+        
+        This page is hosted via github pages and can be edited <a href="https://github.com/UniFormal/uniformal.github.io/edit/master/doc/setup/running.md" target="_blank">directly in the browser</a>. <br/>
+    </p>
+</footer>
+	</div>
+
+    <script src="https://comfreek.github.io/uniformal.github.io/lib/js/jquery-3.3.1.min.js"></script>
+    <script src="https://comfreek.github.io/uniformal.github.io/lib/js/bootstrap.min.js"></script>
+		<script src="https://comfreek.github.io/uniformal.github.io/lib/js/doc.js"></script>
+		<script src="https://comfreek.github.io/uniformal.github.io/lib/js/api.js"></script>
+	
+  </body>
+</html>

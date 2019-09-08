@@ -1,0 +1,827 @@
+<!doctype html>
+<html lang="en">
+	<!-- This is the layout used for all pages in the wiki-style documentation.
+        The wiki files must have "layout: doc" in their front matter.
+        This file can use page.NAME to refer to variables declared in the front matter
+        and content to refer to the body of the md file.
+   -->
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!--
+      Do not use base tag: <base href="/uniformal.github.io/" />
+      Since otherwise we could not keep links in the documentation relative anymore - without a hassle at least.
+      We would always have to prepend doc/ or something.
+
+      Hence, use e.g. `/uniformal.github.io/lib/css/bootstrap.min.css` to refer to assets in this file only.
+    -->
+    <link rel="icon" href="https://comfreek.github.io/uniformal.github.io/favicon.ico">
+
+    <title>MMT - Releases & Changelog</title>
+
+    <link href="https://comfreek.github.io/uniformal.github.io/lib/css/bootstrap.min.css" rel="stylesheet" />
+	  <link href="https://comfreek.github.io/uniformal.github.io/lib/css/doc.css" rel="stylesheet" />
+		<link href="https://comfreek.github.io/uniformal.github.io/lib/css/pygments-default.css" rel="stylesheet" />
+	
+  </head>
+  <body>
+	
+<nav class="navbar navbar-expand navbar-dark site-header" site-header >
+    <div class="container">
+        <a class="navbar-brand" href="/">
+            <img src="https://comfreek.github.io/uniformal.github.io/lib/css/img/logo_dark.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+            The MMT Language and System
+        </a>
+    </div>
+</nav>
+
+	
+		<div class="container-fluid main">
+			<div class="row">
+				<div class="col-12 col-md-3 col-xl-2">
+					<ul class="nav flex-column">
+						
+
+
+<div class="list-group">
+  
+    
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/"
+    
+>
+    Overview
+</a>
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/setup/">
+    Setting up MMT
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/tutorials/">
+    Tutorials
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/philosophy/">
+    The Philosophy behind MMT
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/language/">
+    The MMT Language
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/archives/">
+    MMT-Archives
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/api/">
+    The MMT API
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/applications/">
+    Applications and Projects based on MMT
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable active" href="https://comfreek.github.io/uniformal.github.io/doc/development/">
+    Development
+</a>
+
+
+
+
+    <div class="list-group">
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/development/contributing.html"
+    
+>
+    Contributing to MMT
+</a>
+
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action active"
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/development/releases.html"
+    
+>
+    Releases & Changelog
+</a>
+
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/development/testing.html"
+    
+>
+    Testing
+</a>
+
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/development/documentation.html"
+    
+>
+    Improving this Documentation
+</a>
+
+        
+    </div>
+
+
+  
+    
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/community/"
+    
+>
+    Community & Communication
+</a>
+
+  
+    
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/contribs"
+    
+>
+    Contributed Articles
+</a>
+
+  
+</div>
+					</ul>
+				</div>
+				<div class="col-12 col-md-9 col-xl-8 content">
+					<h2>Releases & Changelog</h2>
+					<hr />
+	
+					<p>Since Fall 2017, a new binary version of MMT is released roughly every six weeks. 
+See the <a href="https://github.com/UniFormal/MMT/milestones">development roadmap on GitHub</a> for scheduled improvements.
+To keep up-to-date, you can <a href="https://github.com/Uniformal/MMT/releases.atom">subscribe to the Atom Feed</a>.</p>
+
+<h3 id="changelog">Changelog</h3>
+
+<p>This document contains a changelog of existing as well as upcoming releases.</p>
+
+<h3 id="release-18">Release 18</h3>
+
+<p>Released planned for aobut <a href="https://github.com/UniFormal/MMT/releases/tag/v18.0.0">2nd September 2019</a>.</p>
+
+<ul>
+  <li>new language features
+    <ul>
+      <li>defined includes and realizations (akin to implementing interfaces), see the <a href="../language/implicit.html">documentation</a></li>
+      <li><code class="highlighter-rouge">total</code> keyword for structures</li>
+      <li>interpretation instruction declarations in documents allow changing the processing; currently used for namespace/import declarations, <code class="highlighter-rouge">fixmeta</code> keyword, document-global rule declarations</li>
+      <li>translation of notations along structures (qualifying the first delimiter with the structure name)</li>
+      <li>structural feature for inductive types and functions</li>
+    </ul>
+  </li>
+  <li>user interfaces
+    <ul>
+      <li>more abbreviations for Unicode characters and LaTeX commands, including ASCII art for Unicode characters (see the <a href="https://github.com/UniFormal/MMT/tree/master/src/mmt-api/resources/unicode]">translation tables</a></li>
+      <li>better display of infered types, implicit arguments, and normalized expressions; try hovering or the normalization action in jEdit</li>
+      <li>smarter name resolution to allow concrete syntax to refer to included constants</li>
+    </ul>
+  </li>
+  <li>implementation internals
+    <ul>
+      <li>completely rewritten handling of implicit morphisms to be more scalable for large highly-interrelated libraries (ideally not user-visible)</li>
+      <li>rewritten totality checking of views, total structures, realizations</li>
+    </ul>
+  </li>
+  <li>peripheral components and system integration
+    <ul>
+      <li>updates to Isabelle importer, now part of official Isabelle release, see Wenzel’s <a href="">blogpost</a></li>
+      <li>new exporter to ELPI that translates logic definitions into basic automated theorem provers for them, see the <a href="https://github.com/UniFormal/MMT/tree/master/src/mmt-lf/src/info/kwarc/mmt/lf/elpi">code</a> and the example exports of the <a href="https://gl.mathhub.info/MMT/LATIN2/">LATIN2</a> project</li>
+      <li>new project mmt-glf on merging GF and LF</li>
+    </ul>
+  </li>
+  <li>to co-released content
+    <ul>
+      <li>new reference project: <a href="https://gl.mathhub.info/MMT/LATIN2/">LATIN2</a> is the most modern form the MMT logic library defined in (extensions of) LF</li>
+      <li>notations for proof rules that mimic declarative proof languages</li>
+      <li>new formalizations of various state-of-the-art logics including CTT_QE, MAM, Sedel</li>
+    </ul>
+  </li>
+  <li>basics of an LSP Language Server</li>
+  <li>some improvements for MitM</li>
+  <li>Coq import reimplemented</li>
+</ul>
+
+<h3 id="release-17">Release 17</h3>
+
+<p>Released on <a href="https://github.com/UniFormal/MMT/releases/tag/v17.0.0">22nd May 2019</a>.</p>
+
+<ul>
+  <li>Overhaul of <code class="highlighter-rouge">mmt-stex</code> machinery
+    <ul>
+      <li>Interface is stable</li>
+      <li>Bug fixes &amp; performance improvements</li>
+    </ul>
+  </li>
+  <li>Minor REPL Server Improvements</li>
+  <li>Improvements to GAP support</li>
+  <li>mbgen improvements
+    <ul>
+      <li>added basic support for datasets that build on other datasets</li>
+      <li>metadata support for sql</li>
+    </ul>
+  </li>
+  <li>Improvements to Isabelle</li>
+  <li>Jupyter Server Bugfixes</li>
+</ul>
+
+<h3 id="release-16">Release 16</h3>
+
+<p>Released on <a href="https://github.com/UniFormal/MMT/releases/tag/v16.0.0">23rd March 2019</a>.</p>
+
+<ul>
+  <li>New primitive concept of derived modules (in analogy to derived declarations)</li>
+  <li>New declaration objects for diagrams and diagram operators (<a href="https://kwarc.info/people/frabe/Research/RS_diagops_19.pdf">paper</a>)</li>
+  <li>New importer for Coq library, based Sacerdoti Coen’s XML export <a href="https://kwarc.info/people/mkohlhase/submit/cicm19-coq.pdf">paper</a></li>
+  <li>Improvements to MMTTeX for putting MMT syntax into LaTeX files</li>
+  <li>First version of database generator for schemas written as MMT theories <a href="https://kwarc.info/people/mkohlhase/submit/cicm19-MDH.pdf">MBGen</a></li>
+  <li>First version of theory generalization (see <a href="https://uniformal.github.io/doc/applications/intellij.html#using-the-generalizer">here</a>)</li>
+  <li>Improvements to the <a href="https://github.com/UniFormal/mmt_jupyter_kernel">Jupyter Kernel</a></li>
+  <li>Improvements for TGView, ported to TypeScript in <a href="https://github.com/Uniformal/TGView">an external repository</a></li>
+  <li>Much improved documentation of package objects in mmt-api (can serve as entry points for reading API doc)</li>
+  <li>Lots of minor improvements and bugfixes as well as cleanup of Scala warning including deprecation warnings (now &lt; 100 warnings)</li>
+</ul>
+
+<h3 id="release-15">Release 15</h3>
+
+<p>Released on <a href="https://github.com/UniFormal/MMT/releases/tag/v15.0.0">18th December 2018</a>.</p>
+
+<ul>
+  <li>IDE Improvements
+    <ul>
+      <li>Support for the <a href="https://github.com/UniFormal/IntelliJ-MMT">MMT Plugin for the IntelliJ-IDE</a></li>
+      <li>added a Scala console to JEdit to interact with MMT’s internal classes from within jEdit</li>
+    </ul>
+  </li>
+  <li>New examples in <code class="highlighter-rouge">MMT/examples</code>
+    <ul>
+      <li>resource semantics of linear logic (<code class="highlighter-rouge">logic/linear.mmt</code>)</li>
+      <li>prototypical theorem prover (<code class="highlighter-rouge">logic/prover.mmt</code>)</li>
+      <li>proof irrelevance as a logical feature (<code class="highlighter-rouge">logic/pl.mmt</code>)</li>
+      <li>inductive functions on lists as special cases of rewrite rules (<code class="highlighter-rouge">lists.mmt</code>)</li>
+      <li>case study on implicit morphisms: lattice of theories of regular bands</li>
+    </ul>
+  </li>
+  <li>New Concrete link syntax
+    <ul>
+      <li>for includes that include a morphism expression as opposed to an MMT URI</li>
+    </ul>
+  </li>
+  <li>Added support for right-associative delimiters in mixfix notations
+    <ul>
+      <li>Use <code class="highlighter-rouge">%Rd</code> for delimiter <code class="highlighter-rouge">d</code> that associates to the right</li>
+    </ul>
+  </li>
+  <li>Cleanups and additions to various internal components
+    <ul>
+      <li>first steps towards implicit coercions</li>
+      <li>new class <code class="highlighter-rouge">DocumentLevel</code> (e.g., archive, folder, file, theory, etc.); every document now carries it level</li>
+      <li>new <code class="highlighter-rouge">elementEnd</code> calls after processing container elements in all MMT components</li>
+      <li>dropped distinction between declared and defined elements, container elements now inherit from <code class="highlighter-rouge">ModuleOrLink</code> class</li>
+      <li>re-implemented applicability check of checking rules</li>
+      <li>various cleanups of the MathHub API</li>
+    </ul>
+  </li>
+  <li>compatible with major reimplementations of archives:
+    <ul>
+      <li><code class="highlighter-rouge">LFX</code></li>
+      <li><code class="highlighter-rouge">MitM/Foundation</code></li>
+      <li><code class="highlighter-rouge">MitM/smglom</code></li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="release-14">Release 14</h3>
+
+<p>Released on <a href="https://github.com/UniFormal/MMT/releases/tag/v14.0.0">13th November 2018</a>.</p>
+
+<ul>
+  <li>MitM infrastructure for using MMT as system integration mediator (as used in the OpenDreamKit project)</li>
+  <li>major rewrite of the type checker to allow for head normalization with an arbitrary set of rules</li>
+  <li>MMT kernel for Jupyter; import/export of Jupyter notebooks</li>
+  <li>complete importer for Isabelle libraries by Makarius Wenzel (see <a href="https://sketis.net/2018/isabelle-mmt-export-of-isabelle-theories-and-import-as-omdoc-content">his blog post</a> for details)</li>
+  <li>OMDoc files now stored in compressed form using xz (requires clean rebuild of archives to remove old OMDoc files)</li>
+  <li>major progress on the IMPS importer</li>
+  <li>rework of the MathHub API</li>
+  <li>minor lmh cleanup</li>
+  <li>stopped using <code class="highlighter-rouge">sbt test</code> for integration tests (makes them more reproducible)</li>
+  <li>compatible with major reimplementations of archives:
+    <ul>
+      <li>LFX</li>
+      <li>MitM/Foundation</li>
+      <li>MitM/smglom</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="release-13">Release 13</h3>
+
+<p>Released on <a href="https://github.com/UniFormal/MMT/releases/tag/v13.0.0">30th August 2018</a>. (This release was delayed until August 30 to avoid new releases during conference season.)</p>
+
+<ul>
+  <li>new class AnnotationProvider for providing extra information on MMT declarations
+these are shown in particular in the jEdit gutter</li>
+  <li>first version of structural features for inductive types, record types</li>
+  <li>improved statistics generation</li>
+  <li>major progress on Isabelle importer</li>
+  <li>minor improvements of GAP/Sage-Imports and LMFDB-Plugin</li>
+</ul>
+
+<h3 id="release-12">Release 12</h3>
+
+<p>Released on <a href="https://github.com/UniFormal/MMT/releases/tag/v12.0.0">26th June 2018</a>.</p>
+
+<ul>
+  <li>Switched the IMPS importer to parser combinators</li>
+  <li>added a Python bridge to control MMT from Python (using Py4J), see python-mmt</li>
+  <li>started Isabelle importer (see mmt-isabelle)</li>
+  <li>MMT tasks now carry progress messages (currently sent by structure parser/checker/elaborator)</li>
+  <li>jEdit gutter contains marker indicating checking progress</li>
+  <li>stop button in jEdit toolbar to gracefully kill MMT processing of file</li>
+  <li>LaTeX-MMT integration works, see self-documenting example.pdf in latex-mmt</li>
+  <li>extensions can now add productions to the syntax of the MMT shell</li>
+  <li>various technical improvements and fixes</li>
+  <li>lmh can now handle non-archive repositories</li>
+  <li>new MathHub Extension</li>
+  <li>Dockerfile improvements</li>
+  <li>SBT dependency changes</li>
+</ul>
+
+<h4 id="release-11">Release 11</h4>
+
+<p>Released on <a href="https://github.com/UniFormal/MMT/releases/tag/v11.0.0">3rd May 2018</a>.</p>
+
+<ul>
+  <li>implemented a Jupyter Kernel based on MMT
+    <ul>
+      <li>updated MMT REPL Extension</li>
+    </ul>
+  </li>
+  <li>added Viewfinder</li>
+  <li>moved Dockerfile into main repository and enabled automatic builds</li>
+  <li>updated setup to be able to be run in automated scenarios</li>
+  <li><a href="https://github.com/UniFormal/TGView">TGView</a> updates
+    <ul>
+      <li>Added Redo-Button</li>
+      <li>Allow locking of nodes together</li>
+      <li>Added local graph editing</li>
+      <li>Added show/hide nodes manually</li>
+      <li>Added Show/Hide/Select nodes/edges by node-/edge-type</li>
+      <li>Added Save graph as JSON</li>
+    </ul>
+  </li>
+  <li>added importer for IMPS files</li>
+  <li>minor improvements and bug fixes</li>
+</ul>
+
+<h4 id="release-101">Release 10.1</h4>
+
+<p>Released on <a href="https://github.com/UniFormal/MMT/releases/tag/v10.1.0">11th April 2018</a>.</p>
+
+<p>This release is smaller than previous releases and mainly contains various bugfixes for use throughout the semester.</p>
+
+<ul>
+  <li>added an MMT-specific context menu to jEdit</li>
+  <li>an MMT Docker Container is now available at <a href="https://hub.docker.com/r/kwarc/mmt/">kwarc/mmt</a> on DockerHub</li>
+  <li>Deprecation of old delimiters and LF Arrows
+    <ul>
+      <li>systematic replacement across all existing archives</li>
+    </ul>
+  </li>
+  <li><a href="https://github.com/UniFormal/TGView">TGView</a> minor improvements</li>
+  <li>numerous bugfixes and cleanup</li>
+</ul>
+
+<h4 id="release-10">Release 10</h4>
+
+<p>Released on <a href="https://github.com/UniFormal/MMT/releases/tag/v10.0.0">16th March 2018</a>.</p>
+
+<p>This release is much more substantial than previous releases, including major new features, the promotion of several previously experimental features to official ones, and numerous fixes of minor issues that had accumulated over time.</p>
+
+<ul>
+  <li>complete overhaul of
+    <ul>
+      <li>strucuture level elaboration and type checking</li>
+      <li>handling of structure declarations in theories and morphisms</li>
+      <li>handling includes of parametric theories</li>
+    </ul>
+  </li>
+  <li>support for theory expressions (see MMT/examples)</li>
+  <li>smarter type inference for defined, untyped constants</li>
+  <li>simplifier now supports definition expansion (optionally)</li>
+  <li>new lexing rule for flexible string interpolation (see MMT/examples for strings and quotation)</li>
+  <li><a href="https://github.com/UniFormal/TGView">TGView</a> improved
+    <ul>
+      <li>allow sharing graphs via email, facebook, twitter, etc.</li>
+      <li>allow downloading as json and embedding in HTML</li>
+      <li>can upload custom graphs as json</li>
+    </ul>
+  </li>
+  <li>jEdit improvements
+    <ul>
+      <li>display of elaborated declarations in sidekick</li>
+      <li>display of rendered expressions as tooltips in sidekick</li>
+      <li>more precise highlighting of errors</li>
+      <li>jEdit action for normalization of the selected expression (bound to CS-N by default)</li>
+    </ul>
+  </li>
+  <li>travis test improvements
+    <ul>
+      <li>addition of proper test structure</li>
+      <li>cleaned up tests for API and LF</li>
+      <li>added alignment tests</li>
+      <li>preliminary co-versioning of archives and MMT system</li>
+    </ul>
+  </li>
+  <li>cleanup of localmh functionality
+    <ul>
+      <li>replaces previous <code class="highlighter-rouge">oaf</code> shell action</li>
+      <li>now possible to install multiple archives at once</li>
+    </ul>
+  </li>
+  <li>dependency Updates
+    <ul>
+      <li>upgrade sbt to 1.1.1</li>
+      <li>upgrade Scala to 2.12</li>
+      <li>upgrade tiscaf</li>
+      <li>remove non-funcational plugins: GuidedTours, leo</li>
+    </ul>
+  </li>
+  <li>proper versioning of MMT within sbt</li>
+  <li>use the MMT logo within the webserver</li>
+  <li>re-styling and documentation cleanup</li>
+  <li>lots of bugfixes and cleanup</li>
+</ul>
+
+<h4 id="release-9">Release 9</h4>
+
+<p>Released on <a href="https://github.com/UniFormal/MMT/releases/tag/v9.0.0">20th December 2017</a>.</p>
+
+<ul>
+  <li>Preliminary implementation of parametric theories (experimental!)</li>
+  <li>fixed lexing of float literals</li>
+  <li>TGView updated</li>
+  <li>Travis testing improved</li>
+  <li>Preliminary support for Java 9</li>
+  <li>Bumped scala version to 2.11.12</li>
+  <li>Simplifier improved</li>
+</ul>
+
+<h4 id="release-8">Release 8</h4>
+
+<p>Released on <a href="https://github.com/UniFormal/MMT/releases/tag/v8.0.0">6th Nov 2017</a>.</p>
+
+<ul>
+  <li>Views are now checked for totality</li>
+  <li>Improved Query error messages</li>
+  <li>Improved and redesigned graphviewer</li>
+  <li>Added set of alternative (higher unicode instead of lower ASCII) delimiters that allow for previewing .mmt files in github/gitlab</li>
+  <li>Fixed bug concerning higher unicode symbols in .mmt files</li>
+  <li>Improved SCSCP implementation</li>
+  <li>BuildQueue now better tracks build dependencies</li>
+  <li>Autocompletion in MMT shell</li>
+  <li>Added Singular importer to mmt-odk plugin</li>
+  <li>various bugfixes</li>
+</ul>
+
+<h4 id="release-7">Release 7</h4>
+
+<p>Released on <a href="https://github.com/UniFormal/MMT/releases/tag/v7.0.0">11th May 2017</a>.</p>
+
+<ul>
+  <li>New additions:
+    <ul>
+      <li>Views are allowed within Theories now</li>
+    </ul>
+  </li>
+  <li>Improvements:
+    <ul>
+      <li>Theory Combinators are now fully implemented</li>
+      <li>The MMT build manager now uses the catalogue to dereference logical dependencies, this improves the automated build of OAF libraries like the PVS library</li>
+      <li>Structures are now elaborated correctly</li>
+      <li>Refactoring of WebServer and ServerExtension Code</li>
+      <li>Improvements to lmfdb, Sage and GAP</li>
+      <li>Improvements to Client-Side Interactive Graph</li>
+      <li>Some problems with Elaboration in general fixed</li>
+    </ul>
+  </li>
+  <li>Miscellaneous other bug fixes and improvements</li>
+</ul>
+
+<h4 id="release-6">Release 6</h4>
+
+<p>Released on <a href="https://github.com/UniFormal/MMT/releases/tag/v6.0.0">13th April 2017</a>.</p>
+
+<ul>
+  <li>New additions:
+    <ul>
+      <li>Introduction of Theory Expressions</li>
+      <li>OpenDreamKit Importers: Sage, GAP</li>
+      <li>Client-Side Interactive Graph</li>
+      <li>new advanced REPL with a prompt and Tab Completion support</li>
+    </ul>
+  </li>
+  <li>Improvements:
+    <ul>
+      <li>Improvements to MathScheme Components</li>
+      <li>Improvements to the HTML Presenter</li>
+      <li>Improvements to PVS Components</li>
+      <li>Improvements of MMT termination behaviour</li>
+      <li>Rework of VarDecl class</li>
+    </ul>
+  </li>
+  <li>Miscellaneous other bug fixes and improvements</li>
+</ul>
+
+<h4 id="release-5">Release 5</h4>
+
+<p>Released on <a href="https://github.com/UniFormal/MMT/releases/tag/v5.0.0">22nd February 2017</a>.</p>
+
+<ul>
+  <li>New additions:
+    <ul>
+      <li>Initial version of Active Computation Extension</li>
+    </ul>
+  </li>
+  <li>Improvements:
+    <ul>
+      <li>Update to Travis Build Scripts</li>
+      <li>Webserver Improvements, including CORS support, hostname support, and client side libarary updates]</li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="release-4">Release 4</h4>
+
+<p>Released on <a href="https://github.com/UniFormal/MMT/releases/tag/v4.0.0">8th February 2017</a>.</p>
+
+<ul>
+  <li>Improvements to IMPS Parser</li>
+  <li>Improvements to PVS Importer</li>
+  <li>Improvements to Metamath Importer / Parser</li>
+  <li>Miscellaneous other bug fixes and improvements</li>
+</ul>
+
+<h4 id="release-3">Release 3</h4>
+
+<p>Released on <a href="https://github.com/UniFormal/MMT/releases/tag/v3.0.0">26th January 2017</a>.</p>
+
+<ul>
+  <li>New additions:
+    <ul>
+      <li>Introduction of Alignments and Concept Server along with translation</li>
+      <li>Initial version of IMPS Parser</li>
+      <li>Initial version of an SCSCP Server</li>
+    </ul>
+  </li>
+  <li>Improvements:
+    <ul>
+      <li>Refactoring of Parsing Infrastructure</li>
+      <li>Reworked to the Query Language, specifically w.r.t. Virtual Theories</li>
+      <li>Improvements to Mizar</li>
+    </ul>
+  </li>
+  <li>Miscellaneous other bug fixes and improvements</li>
+</ul>
+
+<h4 id="release-2">Release 2</h4>
+
+<p>Released on <a href="https://github.com/UniFormal/MMT/releases/tag/v2.0.0">30th August 2016</a>.</p>
+
+<ul>
+  <li>New additions:
+    <ul>
+      <li>Semantic Highlighting in jEdit</li>
+    </ul>
+  </li>
+  <li>Improvements:
+    <ul>
+      <li>Improvements of the Metamath Importer / Translator</li>
+      <li>Fixing of the lmfdb Virtual Theory</li>
+    </ul>
+  </li>
+  <li>Miscellaneous other bug fixes and improvements</li>
+</ul>
+
+<h4 id="release-1">Release 1</h4>
+
+<p>Released on <a href="https://github.com/UniFormal/MMT/releases/tag/v1.0.0">28th July 2016</a>.</p>
+
+<p>The first release of MMT on GitHub.</p>
+
+				</div>
+			</div>
+		</div>
+	
+
+
+	<div class="container">
+		<footer class="container">
+
+    <hr />
+    <p>
+        MMT is developed and maintained mostly by <a href="http://kwarc.info/frabe/" target="_blank">Florian Rabe</a>. <br />
+        
+        This page is hosted via github pages and can be edited <a href="https://github.com/UniFormal/uniformal.github.io/edit/master/doc/development/releases.md" target="_blank">directly in the browser</a>. <br/>
+    </p>
+</footer>
+	</div>
+
+    <script src="https://comfreek.github.io/uniformal.github.io/lib/js/jquery-3.3.1.min.js"></script>
+    <script src="https://comfreek.github.io/uniformal.github.io/lib/js/bootstrap.min.js"></script>
+		<script src="https://comfreek.github.io/uniformal.github.io/lib/js/doc.js"></script>
+		<script src="https://comfreek.github.io/uniformal.github.io/lib/js/api.js"></script>
+	
+  </body>
+</html>

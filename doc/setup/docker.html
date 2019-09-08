@@ -1,0 +1,479 @@
+<!doctype html>
+<html lang="en">
+	<!-- This is the layout used for all pages in the wiki-style documentation.
+        The wiki files must have "layout: doc" in their front matter.
+        This file can use page.NAME to refer to variables declared in the front matter
+        and content to refer to the body of the md file.
+   -->
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!--
+      Do not use base tag: <base href="/uniformal.github.io/" />
+      Since otherwise we could not keep links in the documentation relative anymore - without a hassle at least.
+      We would always have to prepend doc/ or something.
+
+      Hence, use e.g. `/uniformal.github.io/lib/css/bootstrap.min.css` to refer to assets in this file only.
+    -->
+    <link rel="icon" href="https://comfreek.github.io/uniformal.github.io/favicon.ico">
+
+    <title>MMT - MMT Docker</title>
+
+    <link href="https://comfreek.github.io/uniformal.github.io/lib/css/bootstrap.min.css" rel="stylesheet" />
+	  <link href="https://comfreek.github.io/uniformal.github.io/lib/css/doc.css" rel="stylesheet" />
+		<link href="https://comfreek.github.io/uniformal.github.io/lib/css/pygments-default.css" rel="stylesheet" />
+	
+  </head>
+  <body>
+	
+<nav class="navbar navbar-expand navbar-dark site-header" site-header >
+    <div class="container">
+        <a class="navbar-brand" href="/">
+            <img src="https://comfreek.github.io/uniformal.github.io/lib/css/img/logo_dark.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+            The MMT Language and System
+        </a>
+    </div>
+</nav>
+
+	
+		<div class="container-fluid main">
+			<div class="row">
+				<div class="col-12 col-md-3 col-xl-2">
+					<ul class="nav flex-column">
+						
+
+
+<div class="list-group">
+  
+    
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/"
+    
+>
+    Overview
+</a>
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable active" href="https://comfreek.github.io/uniformal.github.io/doc/setup/">
+    Setting up MMT
+</a>
+
+
+
+
+    <div class="list-group">
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/setup/jedit.html"
+    
+>
+    Details on Setting up jEdit
+</a>
+
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/setup/running.html"
+    
+>
+    Details on Running MMT
+</a>
+
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/setup/configure.html"
+    
+>
+    Configuring MMT
+</a>
+
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/setup/repo.html"
+    
+>
+    The Structure of the MMT Repository
+</a>
+
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/setup/sbt.html"
+    
+>
+    Details on Building with SBT
+</a>
+
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/setup/devel.html"
+    
+>
+    Developing MMT
+</a>
+
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/setup/license.html"
+    
+>
+    License for Using MMT
+</a>
+
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action active"
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/setup/docker.html"
+    
+>
+    Docker Image
+</a>
+
+        
+    </div>
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/tutorials/">
+    Tutorials
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/philosophy/">
+    The Philosophy behind MMT
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/language/">
+    The MMT Language
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/archives/">
+    MMT-Archives
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/api/">
+    The MMT API
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/applications/">
+    Applications and Projects based on MMT
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/development/">
+    Development
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/community/"
+    
+>
+    Community & Communication
+</a>
+
+  
+    
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/contribs"
+    
+>
+    Contributed Articles
+</a>
+
+  
+</div>
+					</ul>
+				</div>
+				<div class="col-12 col-md-9 col-xl-8 content">
+					<h2>MMT Docker</h2>
+					<hr />
+	
+					<p>The MMT Repository contains a <a href="https://www.docker.com">Dockerfile</a> for MMT. 
+It is published as <code class="highlighter-rouge">kwarc/mmt</code> under DockerHub and is an <a href="https://docs.docker.com/docker-cloud/builds/automated-build/">Automated Build</a>.</p>
+
+<h3 id="getting-started">Getting started</h3>
+
+<p>To start a temporary container with permanent volume for MMT content, use:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    docker run --rm -v mmt:/content/ -p 8080:8080 -t -i kwarc/mmt
+</code></pre></div></div>
+
+<p>This will run the newest MMT.jar and store all archives inside a new volume called mmt mounted under <code class="highlighter-rouge">/content/</code>. 
+The command can be run multiple times to (re-)start the container if neccessary.</p>
+
+<h3 id="storage">Storage</h3>
+
+<p>Inside the Image, the mmt.jar is stored under <code class="highlighter-rouge">/root/MMT/deploy/mmt.jar</code>. 
+Because of the default MMT file structure, this means that MMT expects archives under <code class="highlighter-rouge">/root/content/MathHub</code> and a configuration file under <code class="highlighter-rouge">/root/MMT/mmtrc</code>.</p>
+
+<p>To this end, a docker volume is mounted under <code class="highlighter-rouge">/config/</code>. 
+The <code class="highlighter-rouge">/root/content</code> folder is symlinked to it. 
+Furthermore, <code class="highlighter-rouge">/root/MMT/mmtrc</code> is symlinked to <code class="highlighter-rouge">/content/mmtrc</code>.</p>
+
+<p>This means when the above command is run the first time, and the volume is empty, it will run the <a href="https://uniformal.github.io/doc/setup/#setup-mmt">setup routine</a>. 
+All defaults can be accepted by the user as-is and a configuration file will be created. 
+Note that JEdit is not supported, and by accepting defaults, MMT will skip the JEdit Install Step.</p>
+
+<p>When re-creating the container with the same mounted volume, MMT will from then onwards automatically use the stored configuration. 
+Furthermore, it can be changed manually as desired by the end user, by editing the <code class="highlighter-rouge">mmtrc</code> file.</p>
+
+<h3 id="running-custom-commands">Running custom commands</h3>
+
+<p>By default, when the container is run with no arguments, it will simply start the MMT jar. 
+To override this behaviour, and e.g. start the <a href="https://uniformal.github.io/doc/applications/server.html">MMT Server</a> on port 8080 use the following command:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    docker run --rm -v mmt:/content/ -p 8080:8080 -t -i kwarc/mmt -i "server on 8080 0.0.0.0"
+</code></pre></div></div>
+
+<h3 id="caveats">Caveats</h3>
+
+<p>Because of the way docker works, any server running inside the docker container (including the MMT webserver) can not simply bind to localhost. This means that running <code class="highlighter-rouge">server on 8080</code> from the MMT shell has no effect. Instead, <code class="highlighter-rouge">server on 8080 0.0.0.0</code> should be used.</p>
+
+<h3 id="image-tags">Image Tags</h3>
+<ul>
+  <li><code class="highlighter-rouge">kwarc/mmt:release</code> The latest released version of MMT. Corresponds to the <code class="highlighter-rouge">release</code> branch.</li>
+  <li><code class="highlighter-rouge">kwarc/mmt:latest</code>: The latest working version of MMT. Corresponds to the <code class="highlighter-rouge">master</code> branch.</li>
+  <li><code class="highlighter-rouge">kwarc/mmt:devel</code>: The latest compiling version of MMT. Corresponds to the <code class="highlighter-rouge">devel</code> branch and may have several unfixed bugs.</li>
+  <li><code class="highlighter-rouge">kwarc/mmt:release_10</code>: MMT Release 10</li>
+</ul>
+
+				</div>
+			</div>
+		</div>
+	
+
+
+	<div class="container">
+		<footer class="container">
+
+    <hr />
+    <p>
+        MMT is developed and maintained mostly by <a href="http://kwarc.info/frabe/" target="_blank">Florian Rabe</a>. <br />
+        
+        This page is hosted via github pages and can be edited <a href="https://github.com/UniFormal/uniformal.github.io/edit/master/doc/setup/docker.md" target="_blank">directly in the browser</a>. <br/>
+    </p>
+</footer>
+	</div>
+
+    <script src="https://comfreek.github.io/uniformal.github.io/lib/js/jquery-3.3.1.min.js"></script>
+    <script src="https://comfreek.github.io/uniformal.github.io/lib/js/bootstrap.min.js"></script>
+		<script src="https://comfreek.github.io/uniformal.github.io/lib/js/doc.js"></script>
+		<script src="https://comfreek.github.io/uniformal.github.io/lib/js/api.js"></script>
+	
+  </body>
+</html>

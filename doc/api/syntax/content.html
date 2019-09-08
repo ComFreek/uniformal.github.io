@@ -1,0 +1,543 @@
+<!doctype html>
+<html lang="en">
+	<!-- This is the layout used for all pages in the wiki-style documentation.
+        The wiki files must have "layout: doc" in their front matter.
+        This file can use page.NAME to refer to variables declared in the front matter
+        and content to refer to the body of the md file.
+   -->
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!--
+      Do not use base tag: <base href="/uniformal.github.io/" />
+      Since otherwise we could not keep links in the documentation relative anymore - without a hassle at least.
+      We would always have to prepend doc/ or something.
+
+      Hence, use e.g. `/uniformal.github.io/lib/css/bootstrap.min.css` to refer to assets in this file only.
+    -->
+    <link rel="icon" href="https://comfreek.github.io/uniformal.github.io/favicon.ico">
+
+    <title>MMT - Content Elements</title>
+
+    <link href="https://comfreek.github.io/uniformal.github.io/lib/css/bootstrap.min.css" rel="stylesheet" />
+	  <link href="https://comfreek.github.io/uniformal.github.io/lib/css/doc.css" rel="stylesheet" />
+		<link href="https://comfreek.github.io/uniformal.github.io/lib/css/pygments-default.css" rel="stylesheet" />
+	
+  </head>
+  <body>
+	
+<nav class="navbar navbar-expand navbar-dark site-header" site-header >
+    <div class="container">
+        <a class="navbar-brand" href="/">
+            <img src="https://comfreek.github.io/uniformal.github.io/lib/css/img/logo_dark.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+            The MMT Language and System
+        </a>
+    </div>
+</nav>
+
+	
+		<div class="container-fluid main">
+			<div class="row">
+				<div class="col-12 col-md-3 col-xl-2">
+					<ul class="nav flex-column">
+						
+
+
+<div class="list-group">
+  
+    
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/"
+    
+>
+    Overview
+</a>
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/setup/">
+    Setting up MMT
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/tutorials/">
+    Tutorials
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/philosophy/">
+    The Philosophy behind MMT
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/language/">
+    The MMT Language
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/archives/">
+    MMT-Archives
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable active" href="https://comfreek.github.io/uniformal.github.io/doc/api/">
+    The MMT API
+</a>
+
+
+
+
+    <div class="list-group">
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/api/controller.html"
+    
+>
+    The Controller
+</a>
+
+        
+            
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable active" href="https://comfreek.github.io/uniformal.github.io/doc/api/syntax/">
+    Data Structures for the MMT Language
+</a>
+
+
+
+
+    <div class="list-group">
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/api/syntax/uris.html"
+    
+>
+    MMT URIs
+</a>
+
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/api/syntax/narrative.html"
+    
+>
+    Narrative Elements
+</a>
+
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action active"
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/api/syntax/content.html"
+    
+>
+    Content Elements
+</a>
+
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/api/syntax/objects.html"
+    
+>
+    Objects
+</a>
+
+        
+    </div>
+
+
+        
+            
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/api/queries.html">
+    Queries
+</a>
+
+
+
+
+
+        
+            
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/api/extensions/">
+    Extensions
+</a>
+
+
+
+
+
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/api/log.html"
+    
+>
+    Logging
+</a>
+
+        
+            
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/api/checking/">
+    Checking Judgements
+</a>
+
+
+
+
+
+        
+    </div>
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/applications/">
+    Applications and Projects based on MMT
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/development/">
+    Development
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/community/"
+    
+>
+    Community & Communication
+</a>
+
+  
+    
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/contribs"
+    
+>
+    Contributed Articles
+</a>
+
+  
+</div>
+					</ul>
+				</div>
+				<div class="col-12 col-md-9 col-xl-8 content">
+					<h2>Content Elements</h2>
+					<hr />
+	
+					<p><img src="/uniformal.github.io/doc/img/ContentElement.jpg" alt="data structures" />
+<strong><a href="apidoc://info.kwarc.mmt.api.ContentElement"><code class="highlighter-rouge">api.ContentElement</code></a></strong> can be roughly separated into two categories - <strong>declarations</strong> (constants and structures - includes are a special case of structures) and <strong>modules</strong> (theories and views). Both declarations can be <strong>links</strong> between two theories (structures and views) and can be a <strong>ContainerElement</strong> containing declarations (declared theories, structures and views). It provides the <code class="highlighter-rouge">foreachDeclaration</code> method that takes a function argument and applies it to all content elements recursively contained within it (including itself). The <code class="highlighter-rouge">path</code> method returns a <code class="highlighter-rouge">ContentPath</code>.</p>
+
+<h3 id="general">General</h3>
+
+<ul>
+  <li><strong><a href="apidoc://info.kwarc.mmt.api.modules.ModuleOrLink"><code class="highlighter-rouge">modules.ModuleOrLink</code></a></strong> is the trait governing all content elements that contain declarations (such as theories, views, structures). It provides the following useful methods:
+    <ul>
+      <li><code class="highlighter-rouge">add</code> adds a new Declaration to the body.</li>
+      <li><code class="highlighter-rouge">get</code> takes a LocalName and returns the declaration of that name. If no declaration by that name exists, it throws an error. The method <code class="highlighter-rouge">getO</code> does not, but returns an <code class="highlighter-rouge">Option[Declaration]</code> instead.</li>
+      <li><code class="highlighter-rouge">declares</code> takes a <code class="highlighter-rouge">LocalName</code> and returns a <code class="highlighter-rouge">bool</code> indicating, whether a declaration by that name exists in the body.</li>
+      <li><code class="highlighter-rouge">delete</code> takes a <code class="highlighter-rouge">LocalName</code> and deletes the declaration by that name from the body.</li>
+      <li><code class="highlighter-rouge">update</code> takes a <code class="highlighter-rouge">Declaration</code> and adds it to the body, if no declaration by that name already exists, or replaces the existing one otherwise.</li>
+      <li><code class="highlighter-rouge">getDeclarations</code> returns a <code class="highlighter-rouge">List[Declaration]</code> of all declarations in the body.
+All final extensions of <code class="highlighter-rouge">ModuleOrLink</code> can be <em>declared</em> or <em>defined</em>. Declared Modules/Links have no definiens and contain primitive declarations. Defined Modules/Links have a definiens (e.g. a theory expression) that can be <em>elaborated into</em> a list of declarations. In either case, the (primitive or elaborated) declarations are accessed via the above methods.</li>
+    </ul>
+  </li>
+  <li><strong><a href="apidoc://info.kwarc.mmt.api.modules.Link"><code class="highlighter-rouge">modules.Link</code></a></strong> is the trait for theory morphisms like views and structures. It has the methods <code class="highlighter-rouge">from</code> and <code class="highlighter-rouge">to</code> (returning <code class="highlighter-rouge">Term</code>) for domain and codomain, <code class="highlighter-rouge">codomainAsContext</code> and <code class="highlighter-rouge">toTerm</code>.</li>
+</ul>
+
+<h3 id="modules">Modules</h3>
+
+<ul>
+  <li><strong><a href="apidoc://info.kwarc.mmt.api.modules.Module"><code class="highlighter-rouge">modules.Module</code></a></strong> is the top level data structure for theories and views. The <code class="highlighter-rouge">path</code> method returns <code class="highlighter-rouge">MPath</code>. <a href="apidoc://info.kwarc.mmt.api.modules.DeclaredModule"><code class="highlighter-rouge">DeclaredModule</code></a> extends <code class="highlighter-rouge">Module</code> with a <code class="highlighter-rouge">Body</code>.</li>
+  <li>
+    <p><strong><a href="apidoc://info.kwarc.mmt.api.modules.Theory"><code class="highlighter-rouge">modules.Theory</code></a></strong> is the data structure representing theories. The class constructor takes as arguments the document/namespace containing the theory (<code class="highlighter-rouge">DPath</code>), its name (<code class="highlighter-rouge">LocalName</code>) and an optional meta theory (<code class="highlighter-rouge">Option[MPath]</code>).</p>
+
+    <p><code class="highlighter-rouge">Theory</code> provides the following useful methods:</p>
+
+    <ul>
+      <li><code class="highlighter-rouge">getConstants</code> yields those declarations in the body, that are constants (as <code class="highlighter-rouge">List[Constant]</code>).</li>
+      <li><code class="highlighter-rouge">getIncludes</code> yields a <code class="highlighter-rouge">List[MPath]</code> of the included theories, including the meta theory. <code class="highlighter-rouge">getIncludesWithoutMeta</code> does the same without the meta theory.</li>
+      <li><code class="highlighter-rouge">getNamedStructures</code> yields a <code class="highlighter-rouge">List[Structure]</code> of those structures that are <em>not</em> plain includes.</li>
+    </ul>
+  </li>
+  <li><strong><a href="apidoc://info.kwarc.mmt.api.modules.View"><code class="highlighter-rouge">modules.View</code></a></strong> simply combines <code class="highlighter-rouge">Link</code> and <code class="highlighter-rouge">Module</code>.</li>
+</ul>
+
+<h3 id="declarations">Declarations</h3>
+
+<ul>
+  <li><strong><a href="apidoc://info.kwarc.mmt.api.symbols.Declaration"><code class="highlighter-rouge">symbols.Declaration</code></a></strong> represents everything on the declaration level - this entails constants, structures, derived declarations and nested modules. The <code class="highlighter-rouge">home</code> method returns the containing module (as <code class="highlighter-rouge">Term</code>). The <code class="highlighter-rouge">path</code> method returns <code class="highlighter-rouge">GlobalName</code>.</li>
+  <li>
+    <p><strong><a href="apidoc://info.kwarc.mmt.api.symbols.Constant"><code class="highlighter-rouge">symbols.Constant</code></a></strong> represents a constant declaration. Constants are ultimately instantiated with the subclass <a href="apidoc://info.kwarc.mmt.api.symbols.FinalConstant"><code class="highlighter-rouge">FinalConstant</code></a>. Constants use <code class="highlighter-rouge">TermContainer</code>s to store their type and definiens (in their different states <code class="highlighter-rouge">read</code>, <code class="highlighter-rouge">parsed</code> and <code class="highlighter-rouge">analyzed</code>), which can be accessed by the methods <code class="highlighter-rouge">tpC</code> (for types) and <code class="highlighter-rouge">dfC</code> (for definitions). The methods <code class="highlighter-rouge">tp</code> and <code class="highlighter-rouge">df</code> circumvent the containers and directly yield their (ideally fully analyzed) type or definiens as <code class="highlighter-rouge">Option[Term]</code>.</p>
+
+    <p>The helper object <a href="apidoc://info.kwarc.mmt.api.symbols.Constant$"><code class="highlighter-rouge">symbols.Constant</code></a> has an apply method to conveniently create new instances of <code class="highlighter-rouge">FinalConstant</code>. It takes as arguments the containing home module (<code class="highlighter-rouge">Term</code>), the name of the constant (<code class="highlighter-rouge">LocalName</code>), and optionally aliases (<code class="highlighter-rouge">List[LocalName]</code>), type (<code class="highlighter-rouge">Option[Term]</code>), definition (<code class="highlighter-rouge">Option[Term]</code>), role (<code class="highlighter-rouge">Option[String]</code>) and notation (<code class="highlighter-rouge">NotationContainer</code>, by default a new empty one).</p>
+  </li>
+  <li>
+    <p><strong><a href="apidoc://info.kwarc.mmt.api.symbols.Structure"><code class="highlighter-rouge">symbols.Structure</code></a></strong> combines <code class="highlighter-rouge">Link</code> with <code class="highlighter-rouge">Declaration</code>. It has a <code class="highlighter-rouge">boolean</code> value <code class="highlighter-rouge">isInclude</code> signifying whether the structure is a simple theory include.</p>
+
+    <p>The helper objects <a href="apidoc://info.kwarc.mmt.api.symbols.Structure$"><code class="highlighter-rouge">symbols.Structure</code></a> and <a href="apidoc://info.kwarc.mmt.api.symbols.SimpleStructure$"><code class="highlighter-rouge">symbols.SimpleStructure</code></a> add convenient apply/unapply methods, where <code class="highlighter-rouge">Simple</code> indicates the case where the domain is an <code class="highlighter-rouge">MPath</code> (as opposed to a complex <a href="objects.html">term</a> representing a theory expression). The helper objects <a href="apidoc://info.kwarc.mmt.api.symbols.Include$"><code class="highlighter-rouge">symbols.Include</code></a> and <a href="apidoc://info.kwarc.mmt.api.symbols.PlainInclude$"><code class="highlighter-rouge">symbols.PlainInclude</code></a> offer apply/unapply methods for theory inclusions.</p>
+  </li>
+</ul>
+
+<h3 id="derived-content-elements">Derived Content Elements</h3>
+
+
+				</div>
+			</div>
+		</div>
+	
+
+
+	<div class="container">
+		<footer class="container">
+
+    <hr />
+    <p>
+        MMT is developed and maintained mostly by <a href="http://kwarc.info/frabe/" target="_blank">Florian Rabe</a>. <br />
+        
+        This page is hosted via github pages and can be edited <a href="https://github.com/UniFormal/uniformal.github.io/edit/master/doc/api/syntax/content.md" target="_blank">directly in the browser</a>. <br/>
+    </p>
+</footer>
+	</div>
+
+    <script src="https://comfreek.github.io/uniformal.github.io/lib/js/jquery-3.3.1.min.js"></script>
+    <script src="https://comfreek.github.io/uniformal.github.io/lib/js/bootstrap.min.js"></script>
+		<script src="https://comfreek.github.io/uniformal.github.io/lib/js/doc.js"></script>
+		<script src="https://comfreek.github.io/uniformal.github.io/lib/js/api.js"></script>
+	
+  </body>
+</html>

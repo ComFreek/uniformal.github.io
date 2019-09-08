@@ -1,0 +1,558 @@
+<!doctype html>
+<html lang="en">
+	<!-- This is the layout used for all pages in the wiki-style documentation.
+        The wiki files must have "layout: doc" in their front matter.
+        This file can use page.NAME to refer to variables declared in the front matter
+        and content to refer to the body of the md file.
+   -->
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!--
+      Do not use base tag: <base href="/uniformal.github.io/" />
+      Since otherwise we could not keep links in the documentation relative anymore - without a hassle at least.
+      We would always have to prepend doc/ or something.
+
+      Hence, use e.g. `/uniformal.github.io/lib/css/bootstrap.min.css` to refer to assets in this file only.
+    -->
+    <link rel="icon" href="https://comfreek.github.io/uniformal.github.io/favicon.ico">
+
+    <title>MMT - The jEdit IDE</title>
+
+    <link href="https://comfreek.github.io/uniformal.github.io/lib/css/bootstrap.min.css" rel="stylesheet" />
+	  <link href="https://comfreek.github.io/uniformal.github.io/lib/css/doc.css" rel="stylesheet" />
+		<link href="https://comfreek.github.io/uniformal.github.io/lib/css/pygments-default.css" rel="stylesheet" />
+	
+  </head>
+  <body>
+	
+<nav class="navbar navbar-expand navbar-dark site-header" site-header >
+    <div class="container">
+        <a class="navbar-brand" href="/">
+            <img src="https://comfreek.github.io/uniformal.github.io/lib/css/img/logo_dark.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+            The MMT Language and System
+        </a>
+    </div>
+</nav>
+
+	
+		<div class="container-fluid main">
+			<div class="row">
+				<div class="col-12 col-md-3 col-xl-2">
+					<ul class="nav flex-column">
+						
+
+
+<div class="list-group">
+  
+    
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/"
+    
+>
+    Overview
+</a>
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/setup/">
+    Setting up MMT
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/tutorials/">
+    Tutorials
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/philosophy/">
+    The Philosophy behind MMT
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/language/">
+    The MMT Language
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/archives/">
+    MMT-Archives
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/api/">
+    The MMT API
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable active" href="https://comfreek.github.io/uniformal.github.io/doc/applications/">
+    Applications and Projects based on MMT
+</a>
+
+
+
+
+    <div class="list-group">
+        
+            
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/applications/ides.html">
+    IDEs
+</a>
+
+
+
+
+
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/applications/shell.html"
+    
+>
+    The MMT Shell
+</a>
+
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/applications/server.html"
+    
+>
+    The MMT Server
+</a>
+
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/applications/tgview.html"
+    
+>
+    TGView
+</a>
+
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/applications/latex.html"
+    
+>
+    LaTeX Processing
+</a>
+
+        
+    </div>
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/development/">
+    Development
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/community/"
+    
+>
+    Community & Communication
+</a>
+
+  
+    
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/contribs"
+    
+>
+    Contributed Articles
+</a>
+
+  
+</div>
+					</ul>
+				</div>
+				<div class="col-12 col-md-9 col-xl-8 content">
+					<h2>The jEdit IDE</h2>
+					<hr />
+	
+					<p>The jEdit IDE allows to enter and edit MMT content manually.</p>
+
+<p>Installation instructions can be found <a href="../setup/jedit.html">here</a></p>
+
+<h3 id="functionality">Functionality</h3>
+
+<p>Unless otherwise mentioned, functionality that requires explicit human interaction can be triggered in several ways:</p>
+<ul>
+  <li>the <code class="highlighter-rouge">Plugin - MMT</code> menu of jEdit</li>
+  <li>the <code class="highlighter-rouge">MMT</code> group in the context menu when editing an MMT file</li>
+  <li>the group of MMT-related buttons in the toolbar</li>
+  <li>predefined keyboard shortcuts (see <code class="highlighter-rouge">Global Options - Shortcuts</code> and select the MMT Plugin)</li>
+</ul>
+
+<p>Most commands are internally realized as jEdit actions, and these actions can be called in a variety of user-customizable ways.
+See <code class="highlighter-rouge">Global Options - Shortcuts</code> for the list of actions (or https://github.com/UniFormal/MMT/blob/master/src/jEdit-mmt/src/resources/actions.xml if you want to see the internal names, which can be entered, e.g., in the jEdit Action bar).</p>
+
+<p><strong>Syntax Highlighting</strong></p>
+
+<p>The mode <code class="highlighter-rouge">mmt</code> is added for .mmt files, which provides syntax highlighting.
+Other mode-specific options including the appearance of the syntax highlighting can be configured via the generic jEdit options dialog.
+Most importantly, the mode assigns the token types OPERATOR and KEYWORDn. Additionally, the token types LITERAL1 to LITERAL4 are assigned to brackets at different levels.
+The token type COMMENT4 is reseved by MMT. It is assigned to all hidden, i.e., invisible, parts. Changes to its text style are ignored and overwritten.</p>
+
+<p><strong>Parsing and Type Checking</strong></p>
+
+<p>MMT files are automatically processed using the MMT parser and type-checker.
+This is called by Sidekick (see below), and the Sidekick options for the MMT mode allow configuring when type-checking occurs.</p>
+
+<p>If this gets stuck, MMT can be safely interrupted by pressing MMT’s stop button.</p>
+
+<p><strong>Computation</strong></p>
+
+<p>The normalize command fully computes the selected expression and shows the result.</p>
+
+<p><strong>Auto-Completion and Hole-Terms</strong></p>
+
+<p>Auto-completion is provided and can be configured via the Sidekick plugin. By default it is triggered by CTRL-Space.</p>
+
+<p>Basic auto-completion shows a list of constants that are currently in scope.</p>
+
+<p>But in conjunction with hole-terms, MMT performs unification to provide typing-aware auto-completion.
+A hole-term is a term of the form ≪T≫ for a type T.
+Type-checking treats it like an unknown term of type T.</p>
+
+<p>If the cursor is placed just before a hole-term, auto-completion runs the MMT theorem prover for a small depth and suggests terms that have the right type.
+This includes forward-search (generate closed terms of the right type) and backward-search (find functions that when applied return the right type). Options of the latter kind will, when selected, introduce new hole-terms for the arguments.
+This turns the system into a (very simple) interactive theorem prover.</p>
+
+<p>The type checker treats any occurrence of _ in MMT terms as a fresh unknown and tries to infer its value.
+This includes calling the (experimental and very weak) automated theorem prover of MMT.
+If successful, the term is inserted into the internal syntax (as shown by Sidekick) but the _ remains in the soruce.
+If the prove fails but the expected type of the subterm is found, a hole-term is introduced.
+In the latter case, the command introduce-hole can be used to replace _ with the hole-term in the source (e.g., in order to use auto-completion).</p>
+
+<p><strong>Building</strong></p>
+
+<p>The checking of MMT files happens entirely in memory.
+The build buttons can be used to store the OMDoc of the current file in the file system.
+Building from within jEdit is equivalent to building via the MMT shell.</p>
+
+<p><strong>Abbreviations</strong></p>
+
+<p>The file <code class="highlighter-rouge">abbrevs</code> (in jEdit’s config folder) contains a number of useful abbreviations to produce Unicode characters using Latex-like commands.
+For the most common Unicode characters, the abbreviation <code class="highlighter-rouge">jCOMMAND</code> produces the same character as <code class="highlighter-rouge">\COMMAND</code> in LaTeX.</p>
+
+<p>Additionally, a few shorter abbreviations are defined for commands that are awkwardly long in LaTeX.
+These are in particular the various arrows:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Arrows</th>
+      <th>short</th>
+      <th>long</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>single</strong></td>
+      <td>jTa</td>
+      <td>jTaa</td>
+    </tr>
+    <tr>
+      <td><strong>double</strong></td>
+      <td>jTA</td>
+      <td>jTAA</td>
+    </tr>
+    <tr>
+      <td><strong>squiggly</strong></td>
+      <td>jTs</td>
+      <td>jTss</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>Arrow tips T</th>
+      <th>left</th>
+      <th>right</th>
+      <th>left-right</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>plain</td>
+      <td>l</td>
+      <td>r</td>
+      <td>lr</td>
+    </tr>
+    <tr>
+      <td>hooked</td>
+      <td>hl</td>
+      <td>hr</td>
+      <td>hlr</td>
+    </tr>
+    <tr>
+      <td>with bar</td>
+      <td>bl</td>
+      <td>br</td>
+      <td>blr</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>where T in the first table determines the arrow tips and is given by an entry in the second table. Note that some combinations do not exist because they are not supported by Unicode.</p>
+
+<p>Every <em>user</em> can configure the details can be configured in jEdit’s <code class="highlighter-rouge">Extras &gt; Global Options &gt; Abbreviations</code> menu or by editing the <code class="highlighter-rouge">&lt;jedit&gt;/abbrevs</code> file.
+Every <em>developer</em> can configure the abbreviations that are available to every user (specifically: every user who runs the MMT setup or who reruns the jedit setup routine) by editing the file <code class="highlighter-rouge">src/jEdit-mmt/src/resources/plugin/abbrevs</code>.
+Users are welcome to submit pull requests to define further abbreviations.</p>
+
+<p><strong>Interpreter</strong></p>
+
+<p>An interpreter is also provided. The input is by default type-checked, and written into the scratchpad by assigning the expression to a constant. The command <code class="highlighter-rouge">!help</code> displays the help.
+To set the name of the scratch buffer, the command <code class="highlighter-rouge">!setname (name)</code> is used, and for setting the theory name inside the scratch buffer, the command <code class="highlighter-rouge">!theory (name)</code> is used.
+Type checking can be turned on and off by using <code class="highlighter-rouge">!check true</code> and <code class="highlighter-rouge">!check false</code>. In a similar manner, output to the scratchpad can be turned on and off by using <code class="highlighter-rouge">!output (true|false)</code>.</p>
+
+<h3 id="interaction-with-other-components">Interaction with Other Components</h3>
+
+<p>The MMT plugin integrates with jEdit core components and a number of other plugins. Many of these provide “dockable windows”. These are subwindows of the jEdit window, which you open separately via the respective plugin.</p>
+
+<p><strong>File System Browser:</strong> The plugin provides actions specific to jEdit file system browser. These are available in the browser’s plugin menu. This includes in particular actions for compiling files. Files do not have to be opened for this, and all errors will appear in the ErrorList.</p>
+
+<p><strong>Sidekick:</strong> The plugin provides a Sidekick parser (called “mmt”). Thus, the dockable window of the sidekick plugin provides an outline view and autocompletion for MMT files, both of which are synchronized with the current caret position. Parsing errors appear in the dockable window of the ErrorList plugin.</p>
+
+<p><img src="/uniformal.github.io/doc/img/screenshots/sidekick.png" alt="`Sidekick example`" /></p>
+
+<p><strong>ErrorList:</strong>
+The plugin provides an ErrorList error source (called “mmt”), which maintains compilation errors. These errors appear in the dockable window of the ErrorList plugin.</p>
+
+<p><img src="/uniformal.github.io/doc/img/screenshots/errorlist.png" alt="`Error list`" /></p>
+
+<p><strong>Hyperlinks:</strong>
+The plugin provides a Hyperlink source (called “mmt”). This displays the MMT URI of the identifier under the cursor as a tooltip and permits jumping to its declaration using Control-Click.
+Jumping only works if the destination is known to MMT. This is the case if the file has been build by MMT earlier or is currently open in jEdit.</p>
+
+<p><strong>Console:</strong>
+The plugin provides a Console (named “mmt”) for the Console plugin. This permits direct access to the <a href="shell.html">MMT shell</a> in the dockable Console window. It also provides a interpreter for writing MMT declarations into a scratchpad.</p>
+
+<p><img src="/uniformal.github.io/doc/img/screenshots/console.png" alt="`MMT console`" /></p>
+
+<p><img src="/uniformal.github.io/doc/img/screenshots/interpreter.png" alt="`MMT interpreter`" /></p>
+
+<p><strong>Context Menu:</strong>
+The plugin provides a user-extensible mode-specific context menu that is initialized with a common commands in the MMT mode.</p>
+
+<p><strong>Actions:</strong>
+The plugin provides a number of jEdit actions. These can be bound to any key, menu item, or toolbar button via the generic jEdit options dialog. By default, they are available in the MMT plugin menu.</p>
+
+				</div>
+			</div>
+		</div>
+	
+
+
+	<div class="container">
+		<footer class="container">
+
+    <hr />
+    <p>
+        MMT is developed and maintained mostly by <a href="http://kwarc.info/frabe/" target="_blank">Florian Rabe</a>. <br />
+        
+        This page is hosted via github pages and can be edited <a href="https://github.com/UniFormal/uniformal.github.io/edit/master/doc/applications/jedit.md" target="_blank">directly in the browser</a>. <br/>
+    </p>
+</footer>
+	</div>
+
+    <script src="https://comfreek.github.io/uniformal.github.io/lib/js/jquery-3.3.1.min.js"></script>
+    <script src="https://comfreek.github.io/uniformal.github.io/lib/js/bootstrap.min.js"></script>
+		<script src="https://comfreek.github.io/uniformal.github.io/lib/js/doc.js"></script>
+		<script src="https://comfreek.github.io/uniformal.github.io/lib/js/api.js"></script>
+	
+  </body>
+</html>

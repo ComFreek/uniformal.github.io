@@ -1,0 +1,491 @@
+<!doctype html>
+<html lang="en">
+	<!-- This is the layout used for all pages in the wiki-style documentation.
+        The wiki files must have "layout: doc" in their front matter.
+        This file can use page.NAME to refer to variables declared in the front matter
+        and content to refer to the body of the md file.
+   -->
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!--
+      Do not use base tag: <base href="/uniformal.github.io/" />
+      Since otherwise we could not keep links in the documentation relative anymore - without a hassle at least.
+      We would always have to prepend doc/ or something.
+
+      Hence, use e.g. `/uniformal.github.io/lib/css/bootstrap.min.css` to refer to assets in this file only.
+    -->
+    <link rel="icon" href="https://comfreek.github.io/uniformal.github.io/favicon.ico">
+
+    <title>MMT - Available Judgements and their Invariants</title>
+
+    <link href="https://comfreek.github.io/uniformal.github.io/lib/css/bootstrap.min.css" rel="stylesheet" />
+	  <link href="https://comfreek.github.io/uniformal.github.io/lib/css/doc.css" rel="stylesheet" />
+		<link href="https://comfreek.github.io/uniformal.github.io/lib/css/pygments-default.css" rel="stylesheet" />
+	
+  </head>
+  <body>
+	
+<nav class="navbar navbar-expand navbar-dark site-header" site-header >
+    <div class="container">
+        <a class="navbar-brand" href="/">
+            <img src="https://comfreek.github.io/uniformal.github.io/lib/css/img/logo_dark.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+            The MMT Language and System
+        </a>
+    </div>
+</nav>
+
+	
+		<div class="container-fluid main">
+			<div class="row">
+				<div class="col-12 col-md-3 col-xl-2">
+					<ul class="nav flex-column">
+						
+
+
+<div class="list-group">
+  
+    
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/"
+    
+>
+    Overview
+</a>
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/setup/">
+    Setting up MMT
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/tutorials/">
+    Tutorials
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/philosophy/">
+    The Philosophy behind MMT
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/language/">
+    The MMT Language
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/archives/">
+    MMT-Archives
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable active" href="https://comfreek.github.io/uniformal.github.io/doc/api/">
+    The MMT API
+</a>
+
+
+
+
+    <div class="list-group">
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/api/controller.html"
+    
+>
+    The Controller
+</a>
+
+        
+            
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/api/syntax/">
+    Data Structures for the MMT Language
+</a>
+
+
+
+
+
+        
+            
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/api/queries.html">
+    Queries
+</a>
+
+
+
+
+
+        
+            
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/api/extensions/">
+    Extensions
+</a>
+
+
+
+
+
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/api/log.html"
+    
+>
+    Logging
+</a>
+
+        
+            
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable active" href="https://comfreek.github.io/uniformal.github.io/doc/api/checking/">
+    Checking Judgements
+</a>
+
+
+
+
+    <div class="list-group">
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/api/checking/general.html"
+    
+>
+    General Methods for Rules
+</a>
+
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action active"
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/api/checking/judgements.html"
+    
+>
+    Available Judgements and their Invariants
+</a>
+
+        
+    </div>
+
+
+        
+    </div>
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/applications/">
+    Applications and Projects based on MMT
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/development/">
+    Development
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/community/"
+    
+>
+    Community & Communication
+</a>
+
+  
+    
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/contribs"
+    
+>
+    Contributed Articles
+</a>
+
+  
+</div>
+					</ul>
+				</div>
+				<div class="col-12 col-md-9 col-xl-8 content">
+					<h2>Available Judgements and their Invariants</h2>
+					<hr />
+	
+					<p>This document gives an overview of the classes corrsponding to the judgements described <a href="index.html">here</a>, and the corresponding invariants to be maintained by corresponding rules.</p>
+
+<p>The available rule classes are described <a href="???">here</a>. By <em>exhaustively applying rules</em> to a (pair of) term <code class="highlighter-rouge">t</code>, we mean: Iteratively simplify <code class="highlighter-rouge">t</code> until a rule of the required kind is applicable. If so, apply the rule to the simplified term. Notably, this entails fully simplifying a term if no rules are applicable, which can be computationally expensive. If no rules are applicable, the solver will continue any alternative strategy using the original, unsimplified term.</p>
+
+<ul>
+  <li><code class="highlighter-rouge">G ctx</code>: <a href="apidoc://info.kwarc.mmt.api.objects.IsContext"><code class="highlighter-rouge">objects.IsContext</code></a><code class="highlighter-rouge">(stack:Stack, G:Context)</code> - checks whether <code class="highlighter-rouge">stack++G</code> is a well-formed context, assuming <code class="highlighter-rouge">stack</code> is a well-formed context.</li>
+  <li><code class="highlighter-rouge">Inh T</code>: <a href="apidoc://info.kwarc.mmt.api.objects.Inhabitable"><code class="highlighter-rouge">objects.Inhabitable</code></a><code class="highlighter-rouge">(stack:Stack, T:Term)</code> - checks whether <code class="highlighter-rouge">T</code> is inhabitable, i.e. may occur on the right side of a typing judgement. Assumes that <code class="highlighter-rouge">stack</code> is a well-formed context. This judgement is checked by exhaustively applying all <code class="highlighter-rouge">InhabitableRule</code>s. If no rules are applicable, the solver will attempt to infer the type <code class="highlighter-rouge">T'</code> of <code class="highlighter-rouge">T</code> and check <code class="highlighter-rouge">Univ T'</code>.</li>
+  <li><code class="highlighter-rouge">Univ T</code>: <a href="apidoc://info.kwarc.mmt.api.objects.Universe"><code class="highlighter-rouge">objects.Universe</code></a><code class="highlighter-rouge">(stack:Stack, U:Term)</code> - checks whether <code class="highlighter-rouge">U</code> is a universe, i.e. is inhabitable and all <code class="highlighter-rouge">T:U</code> are inhabitable. Assumes that <code class="highlighter-rouge">stack</code> is a well-formed context. This judgement is checked by exhaustively applying all <code class="highlighter-rouge">UniverseRule</code>s.</li>
+  <li><code class="highlighter-rouge">t1 = t2 [:T]</code>: <a href="apidoc://info.kwarc.mmt.api.objects.Equality"><code class="highlighter-rouge">objects.Equality</code></a><code class="highlighter-rouge">(stack:Stack, t1:Term, t2:Term, T:Option[Term])</code> - checks whether <code class="highlighter-rouge">t1</code> and <code class="highlighter-rouge">t2</code> are equal under optional type <code class="highlighter-rouge">T</code>. Both <code class="highlighter-rouge">t1</code> and <code class="highlighter-rouge">t2</code> are assumed to be well-typed. This judgement is checked by
+    <ul>
+      <li>aggressively simplifying both <code class="highlighter-rouge">t1</code> and <code class="highlighter-rouge">t2</code> and checking syntactic equality.</li>
+      <li>checking whether the judgement <code class="highlighter-rouge">t1=t2</code> allows for solving variables in either term.</li>
+      <li>exhaustively applying all <code class="highlighter-rouge">TermBasedEqualityRule</code>s.</li>
+      <li>exhaustively applying all <code class="highlighter-rouge">TypeBasedEqualityRule</code>s. If no type is provided, the type of <code class="highlighter-rouge">t1</code> is first inferred. If type inferrence for <code class="highlighter-rouge">t1</code> fails, the type of <code class="highlighter-rouge">t2</code> is inferred instead.</li>
+      <li>If <code class="highlighter-rouge">t1=f(args)</code> and <code class="highlighter-rouge">t2=f'(args')</code> and <code class="highlighter-rouge">args</code> and <code class="highlighter-rouge">args'</code> have the same length, congruence reasoning is attempted by checking <code class="highlighter-rouge">f=f'</code> and <code class="highlighter-rouge">args=args'</code>.</li>
+    </ul>
+  </li>
+  <li><code class="highlighter-rouge">t :&lt;= T</code>: <a href="apidoc://info.kwarc.mmt.api.objects.Typing"><code class="highlighter-rouge">objects.Typing</code></a><code class="highlighter-rouge">(stack:Stack, t:Term, T:Term, tpSymb:Option[GlobalName])</code> - checks whether <code class="highlighter-rouge">t</code> has type <code class="highlighter-rouge">T</code> (for optional typing relation <code class="highlighter-rouge">tpSymb</code>). Assumes that <code class="highlighter-rouge">T</code> is well-typed and implies that a) <code class="highlighter-rouge">t</code> is well-typed and b) <code class="highlighter-rouge">T</code> is inhabitable. This judgement is checked thusly:
+    <ul>
+      <li>If <code class="highlighter-rouge">t</code> is a variable, its type <code class="highlighter-rouge">T'</code> is looked up in the current context and <code class="highlighter-rouge">T' &lt;: T</code> is checked.</li>
+      <li>If <code class="highlighter-rouge">t</code> is a symbol reference, the type <code class="highlighter-rouge">T'</code> of the corresponding constant is looked up and <code class="highlighter-rouge">T' &lt;: T</code> is checked.</li>
+      <li>Otherwise, all <code class="highlighter-rouge">TypingRule</code>s are applied exhaustively.</li>
+      <li>If no typing rules are applicable, the principal type <code class="highlighter-rouge">T'</code> of <code class="highlighter-rouge">t</code> is inferred and <code class="highlighter-rouge">T' &lt;: T</code> is checked.</li>
+    </ul>
+  </li>
+  <li><code class="highlighter-rouge">T1 &lt;: T2</code>: <a href="apidoc://info.kwarc.mmt.api.objects.Subtyping"><code class="highlighter-rouge">objects.Subtyping</code></a><code class="highlighter-rouge">(stack:Stack, T1:Term, T2:Term)</code> - checks whether <code class="highlighter-rouge">T1</code> is a subtype of <code class="highlighter-rouge">T2</code>. Assumes that both <code class="highlighter-rouge">T1</code> and <code class="highlighter-rouge">T2</code> are well-typed and implies that both <code class="highlighter-rouge">T1</code> and <code class="highlighter-rouge">T2</code> are inhabitable. This judgement is checked by:
+    <ul>
+      <li>Head-normalizing both terms and checking syntactic equality.</li>
+      <li>Exhaustively applying all <code class="highlighter-rouge">SubtypingRule</code>s.</li>
+      <li>Deferring to the equality judgement <code class="highlighter-rouge">T1 = T2</code>.</li>
+    </ul>
+  </li>
+  <li><code class="highlighter-rouge">Prov T</code>: <a href="apidoc://info.kwarc.mmt.api.objects.Inhabited"><code class="highlighter-rouge">objects.Inhabited</code></a><code class="highlighter-rouge">(stack:Stack, T:Term)</code> - defers to a <code class="highlighter-rouge">Prover</code> extension to find a term <code class="highlighter-rouge">t</code> with <code class="highlighter-rouge">t:T</code>. A default implementation resorts to a simple lookup in the current context for named constants or variables of type <code class="highlighter-rouge">T</code> with limited search for LF functions (if included in the current context).</li>
+</ul>
+
+<p>The remaining judgements <code class="highlighter-rouge">t1 ~&gt; t2</code> and <code class="highlighter-rouge">t :=&gt; T</code> correspond to simplification and type inferrence and are used throughout the above algorithms.</p>
+
+				</div>
+			</div>
+		</div>
+	
+
+
+	<div class="container">
+		<footer class="container">
+
+    <hr />
+    <p>
+        MMT is developed and maintained mostly by <a href="http://kwarc.info/frabe/" target="_blank">Florian Rabe</a>. <br />
+        
+        This page is hosted via github pages and can be edited <a href="https://github.com/UniFormal/uniformal.github.io/edit/master/doc/api/checking/judgements.md" target="_blank">directly in the browser</a>. <br/>
+    </p>
+</footer>
+	</div>
+
+    <script src="https://comfreek.github.io/uniformal.github.io/lib/js/jquery-3.3.1.min.js"></script>
+    <script src="https://comfreek.github.io/uniformal.github.io/lib/js/bootstrap.min.js"></script>
+		<script src="https://comfreek.github.io/uniformal.github.io/lib/js/doc.js"></script>
+		<script src="https://comfreek.github.io/uniformal.github.io/lib/js/api.js"></script>
+	
+  </body>
+</html>

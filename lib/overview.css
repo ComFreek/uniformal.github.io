@@ -1,0 +1,295 @@
+/**
+  ==================
+  COLOR SCHEME
+  ==================
+**/
+
+.aspect {
+   background-color: #f0ad4e;
+   border-color: #eb961e;
+}
+
+.aspect li.selected {
+  background-color: #efc74d;
+}
+
+.area {
+   background-color: #428bca;
+   border-color: #3072ab;
+}
+
+.area li.selected {
+  background-color: #44b8ca;
+}
+
+.diagram .details-container {
+   background-color: #5cb85c;
+   border-color: #449c44;
+}
+
+/**
+  ==================
+  MAIN
+  ==================
+**/
+
+body {
+    /* For the layout */
+    height: 100%;
+    margin: 0;
+
+    /* Font family and size */
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 2vh;
+
+    /* looks better */
+    cursor: default !important;
+    overflow: hidden;
+}
+
+.wrapper {
+  min-height: 100%;
+  margin-top: 0;
+  margin-bottom: -25vh;
+}
+
+/**
+  ==================
+  Header : 25vh
+  ==================
+**/
+
+.header {
+    /* white and centered */
+    text-align: center;
+    max-height: 25vh;
+}
+
+/**
+  TITLE: 15vh
+**/
+.header h1 {
+    /* a box of at most two lines */
+    box-sizing: border-box;
+    overflow: hidden;
+    max-height: 14vh;
+
+    /* don't mess with the sizes */
+    font-size: 4vh;
+    line-height: 4.5vh;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+
+    font-weight: 500;
+}
+
+/**
+  BUTTONS: 7vh
+**/
+
+.header .buttons {
+
+  /* a box of at most two lines */
+  box-sizing: border-box;
+  display: block;
+
+  max-height: 7vh;
+  margin-bottom: 1vh;
+
+  /* font-size */
+  font-size: 2vh;
+  line-height: 3vh;
+}
+
+.header .buttons a {
+  /* Border + Padding */
+  box-sizing: border-box;
+  padding: .4vh;
+
+  border: 1px solid;
+  border-color: #ccc;
+  border-radius: 4px;
+
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+
+  /* color and text-style */
+  text-decoration: none;
+  color: #333;
+  background-color: #fff;
+}
+
+.header .buttons a:hover {
+    /* Almost-black on gray */
+    color: #333;
+    background-color: #e6e6e6;
+    border-color: #adadad;
+}
+
+.header .buttons a:focus {
+    /* Almost-black on gray */
+    color: #333;
+    background-color: #e6e6e6;
+    border-color: #8c8c8c;
+}
+
+/**
+  SUBTITLE: 8vh
+**/
+
+.header .subtitle-wrapper {
+  /* to serve as alignment for the children */
+  position: relative;
+
+  /* Don't mess with the sizes */
+  box-sizing: border-box;
+  overflow: hidden;
+  display: block;
+
+  /* don't mess with the sizes */
+  height: 8vh;
+  font-size: 2vh;
+}
+
+.header .subtitle {
+  /** position at the parent */
+  position: absolute;
+  top: 0;
+
+  /* Display as a block */
+  display: block;
+
+  /* Margin left and right: 2 */
+  width: 96vw;
+  margin-right: 2vw;
+  margin-left: 2vw;
+
+  /* A border */
+  border-radius: 2vw;
+
+  /* padding for the text */
+  padding-top: .5vh;
+  padding-bottom: .5vh;
+
+ -webkit-transition: opacity 500ms;
+  transition: opacity 500ms;
+}
+
+.header .subtitle.active {
+   opacity: 1;
+}
+
+.header .subtitle.passive {
+   opacity: 0;
+}
+
+/**
+  ==================
+  CONTENT : 75vh
+  ==================
+**/
+
+.diagram {
+    /* Position */
+    position: absolute;
+    top: 22vh;
+    bottom: 0;
+
+    /* Width and Height */
+    width: 100vw;
+    height: 75vh;
+
+    font-size: 1.5vh;
+}
+
+.diagram table {
+  /* Height and position */
+  width: 100vw;
+  height: 75vh;
+
+  /* for the overflow, show nothing */
+  overflow: hidden;
+  border-spacing: 0.5vw;
+}
+
+.diagram tr {
+  /* each row is 25% */
+  height: 25vh;
+}
+
+.diagram td {
+  /* each column is 30% */
+  width: 30vw;
+  padding: 1vw;
+
+  vertical-align: center;
+  text-align: justify;
+}
+
+.diagram .active, .diagram .passive {
+  /* fade in-and-out */
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+
+
+.diagram .passive {
+  /* Hidden elements are black-and-white */
+  opacity: 0.5;
+
+  -webkit-filter: grayscale(95%);
+  filter:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' ><filter id='gray95'><feColorMatrix in='SourceGraphic' type='saturate' values='0.95' /></filter></svg>#gray95");
+  filter:grayscale(95%);
+}
+
+.diagram td.center {
+   padding: 1vw;
+   vertical-align: middle;
+}
+
+.diagram .area, .diagram .aspect {
+   border-width: 2px;
+   border-style: solid;
+   border-radius: 50px;
+}
+
+.aspect li, .area li {
+  display: block;
+
+  font-size: 1.5vh;
+  padding-top: .25vh;
+  padding-left: .5vw;
+  padding-right: .5vw;
+  padding-bottom: .25vh;
+  line-height: 2vh;
+}
+
+.area ul, .aspect ul {
+  padding-left:0;
+}
+
+.diagram .title {
+   font-weight: bold;
+   font-size: large;
+}
+
+.diagram .tagline {
+   font-style: italic;
+   font-size: larger;
+}
+
+.diagram .details-container {
+   border-style: solid;
+   border-width: 1px;
+   border-radius: 10px;
+}
+
+.details[data-id=default] {
+   display: block;
+}
+
+.details {
+   display: none;
+   text-align: left;
+   padding: 1vw;
+}

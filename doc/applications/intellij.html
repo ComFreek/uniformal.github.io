@@ -1,0 +1,499 @@
+<!doctype html>
+<html lang="en">
+	<!-- This is the layout used for all pages in the wiki-style documentation.
+        The wiki files must have "layout: doc" in their front matter.
+        This file can use page.NAME to refer to variables declared in the front matter
+        and content to refer to the body of the md file.
+   -->
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!--
+      Do not use base tag: <base href="/uniformal.github.io/" />
+      Since otherwise we could not keep links in the documentation relative anymore - without a hassle at least.
+      We would always have to prepend doc/ or something.
+
+      Hence, use e.g. `/uniformal.github.io/lib/css/bootstrap.min.css` to refer to assets in this file only.
+    -->
+    <link rel="icon" href="https://comfreek.github.io/uniformal.github.io/favicon.ico">
+
+    <title>MMT - The IntelliJ IDE</title>
+
+    <link href="https://comfreek.github.io/uniformal.github.io/lib/css/bootstrap.min.css" rel="stylesheet" />
+	  <link href="https://comfreek.github.io/uniformal.github.io/lib/css/doc.css" rel="stylesheet" />
+		<link href="https://comfreek.github.io/uniformal.github.io/lib/css/pygments-default.css" rel="stylesheet" />
+	
+  </head>
+  <body>
+	
+<nav class="navbar navbar-expand navbar-dark site-header" site-header >
+    <div class="container">
+        <a class="navbar-brand" href="/">
+            <img src="https://comfreek.github.io/uniformal.github.io/lib/css/img/logo_dark.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+            The MMT Language and System
+        </a>
+    </div>
+</nav>
+
+	
+		<div class="container-fluid main">
+			<div class="row">
+				<div class="col-12 col-md-3 col-xl-2">
+					<ul class="nav flex-column">
+						
+
+
+<div class="list-group">
+  
+    
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/"
+    
+>
+    Overview
+</a>
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/setup/">
+    Setting up MMT
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/tutorials/">
+    Tutorials
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/philosophy/">
+    The Philosophy behind MMT
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/language/">
+    The MMT Language
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/archives/">
+    MMT-Archives
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/api/">
+    The MMT API
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable active" href="https://comfreek.github.io/uniformal.github.io/doc/applications/">
+    Applications and Projects based on MMT
+</a>
+
+
+
+
+    <div class="list-group">
+        
+            
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/applications/ides.html">
+    IDEs
+</a>
+
+
+
+
+
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/applications/shell.html"
+    
+>
+    The MMT Shell
+</a>
+
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/applications/server.html"
+    
+>
+    The MMT Server
+</a>
+
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/applications/tgview.html"
+    
+>
+    TGView
+</a>
+
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/applications/latex.html"
+    
+>
+    LaTeX Processing
+</a>
+
+        
+    </div>
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/development/">
+    Development
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/community/"
+    
+>
+    Community & Communication
+</a>
+
+  
+    
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/contribs"
+    
+>
+    Contributed Articles
+</a>
+
+  
+</div>
+					</ul>
+				</div>
+				<div class="col-12 col-md-9 col-xl-8 content">
+					<h2>The IntelliJ IDE</h2>
+					<hr />
+	
+					<p><a href="https://www.jetbrains.com/idea/">IntelliJ IDEA</a> is a multi-purpose Java-based IDE. An MMT plugin adding functionality for creating, type checking MMT sources is available.</p>
+
+<h2 id="installation">Installation</h2>
+
+<h3 id="plugin">Plugin</h3>
+
+<p>In IntelliJ go to <em>File</em> -&gt; <em>Settings</em> -&gt; <em>Plugins</em> and search in <em>IntelliJ’s marketplace</em> for “mmt”.</p>
+
+<p>Alternatively, you can install the plugin by extracting <a href="https://github.com/UniFormal/IntelliJ-MMT/tree/master/build/distributions">the latest version in UniFormal/IntelliJ-MMT</a> to <code class="highlighter-rouge">&lt;IntelliJ IDEA settings directory&gt;/config/plugins</code>. The settings directory depends on your operating system and can be found in <a href="https://intellij-support.jetbrains.com/hc/en-us/articles/206544519-Directories-used-by-the-IDE-to-store-settings-caches-plugins-and-logs">IntelliJ’s article on it</a>.</p>
+
+<h3 id="ide-font-setup">IDE Font setup</h3>
+
+<p>Since MMT files make heavy use of Unicode math charcters, be sure to have a font installed supporting it and IntelliJ using it. You can do so as follows:</p>
+
+<ol>
+  <li>Download and install GNU Unifont: http://unifoundry.com/unifont/index.html</li>
+  <li>In IntelliJ IDEA go to <em>File</em> -&gt; <em>Settings</em> -&gt; <em>Editor</em> -&gt; <em>Font</em> and choose “Unifont” as the fallback font.</li>
+  <li>For developers: if you print MMT surface syntax to the console (e.g. using the MMTSyntaxPresenter class), you might want to use the same font in the console: under <em>File</em> -&gt; <em>Settings</em> -&gt; <em>Editor</em> -&gt; <em>Color Scheme</em> -&gt; <em>Console Font</em> choose “Unifont” as the “Font” (not fallback font in this case!)</li>
+</ol>
+
+<h2 id="usage">Usage</h2>
+
+<h3 id="initial-project-setup">Initial project setup</h3>
+
+<ol>
+  <li>Set up a new MathHub-project in IntelliJ (this will contain all your MMT archives, an .msl-file and an mmtrc). You may choose a preexisting folder with MMT archives; these will <strong>not</strong> be overwritten.</li>
+  <li>Under <em>File</em> -&gt; <em>Settings</em> -&gt; <em>Editor</em> -&gt; <em>File Encodings</em> set the “project encoding” to “UTF-8”. It is recommended to set the global encoding and any other encoding you see on the settings page to “UTF-8” as well. Also choose “Create UTF-8 files: with NO BOM”.</li>
+</ol>
+
+<h3 id="getting-data-to-work-with">Getting data to work with</h3>
+
+<ul>
+  <li>In the project-view on the left, select the <em>MathHub</em> view to get an overview over all available MMT archives on 
+<a href="http://gl.mathhub.info">MathHub</a>. You can <em>git clone</em> them via right-clicking an archive and choosing <em>Install archive</em>. Note: on Windows, <code class="highlighter-rouge">lmh</code> (a tool to pull archives from MathHub) uses  the command <code class="highlighter-rouge">sh --login -c git ...</code>. Thus, you need to have <code class="highlighter-rouge">sh</code> as well as <code class="highlighter-rouge">git</code> on your PATH. This is easiest accomplished by having installed Git the usual way and adding <code class="highlighter-rouge">C:\Program Files\Git\bin</code> – which contains <code class="highlighter-rouge">sh</code> to your PATH.</li>
+</ul>
+
+<h3 id="notes-on-automatic-type-checking">Notes on automatic type checking</h3>
+
+<ul>
+  <li>By default, the Plugin does <strong>not</strong> type check the terms of an open <em>mmt</em>-file, since doing so is computationally expensive and inconvenvient for the user. Type checking can be easily activated and deactivated in the <em>Errors</em> panel of the MMT tool window (View -&gt; Tool Windows -&gt; MMT)</li>
+  <li>The <em>Document Tree</em> (on the left border of the IntelliJ-Window) only shows the syntax tree of the document that has been type checked last. To see the tree for the currently opened document, check the <em>Type Checking</em> checkbox in the <em>Errors</em> panel. Automatically navigating the syntax tree by caret position in the document can be turned on and off with the corresponding check box at the top of the <em>Document Tree</em> panel.</li>
+</ul>
+
+<h3 id="refactoring-tool-generalizer">Refactoring tool ‘Generalizer’</h3>
+
+<p>The “Generalizer” is a new component shipped with the release of MMT 16.0.0.</p>
+
+<p><strong>Example file for generalization:</strong></p>
+
+<div class="detail"><pre>namespace http://cds.omdoc.org/theorysplittest/generalization/metricAndNormedSpaces❚
+import base http://mathhub.info/MitM/Foundation❚
+
+/T A theory extendinding MitM/Foundation's "Math" theory for some needed operators in the examples, namely &lt; and ≥ on ℕ and ℝ.❚
+theory OurMath : base:?Math =
+  less_than_reals: ℝ ⟶ ℝ ⟶ prop❘ # 1 &lt; 2❙
+  geq_nats: ℕ ⟶ ℕ ⟶ prop❘# 1 ≥ 2❙
+❚
+
+theory MetricSpace : ?OurMath =
+  X : type❙
+  d: X ⟶ X ⟶ ℝ❙
+❚
+
+theory NormedVectorspace : ?OurMath =
+  Y: type❙
+  norm: Y ⟶ ℝ❙
+  minus: Y ⟶ Y ⟶ Y ❘ # 1 - 2❙
+❚
+
+view NormedAsMetricSpace : ?MetricSpace -&gt; ?NormedVectorspace =
+  X = Y❙
+  d = [a, b] norm (a - b)❙
+❚
+
+theory NormedVectorspaceThms : ?OurMath =
+  include ?NormedVectorspace❙
+
+  not_rewritable = [a] norm (a - a)❙
+
+  cauchy: (ℕ ⟶ Y) ⟶ prop ❘ = [f] ∀[ɛ: ℝ] ∃[N: ℕ] ∀[n: ℕ] ∀[m: ℕ] (n ≥ N ∧ m ≥ N) ⇒ ((norm ((f n) - (f m))) &lt; ɛ)❙
+  convergent_to: (ℕ ⟶ Y) ⟶ Y ⟶ prop ❘ = [f, y] ∀[ɛ: ℝ] ∃[N: ℕ] ∀[n: ℕ] (n ≥ N) ⇒ ((norm ((f n) - y)) &lt; ɛ)❙
+
+  f: ℕ ⟶ Y❙
+  f_is_cauchy: ⊦ cauchy f❙
+
+  my_y: Y❙
+  f_convergent: ⊦ convergent_to f my_y❙
+
+  in_ball: Y ⟶ Y ⟶ ℝ ⟶ prop ❘ = [y,center,radius] (norm (y - center)) &lt; radius❙
+
+  /T Actually only for ɛ &gt; 0❙
+  center_always_in_ball: ⊦ ∀[y: Y] ∀[ɛ: ℝ] in_ball y y ɛ❙
+
+  ball_convergent_to: (ℕ ⟶ Y) ⟶ Y ⟶ prop ❘ = [f, y] ∀[ɛ: ℝ] ∃[N: ℕ] ∀[n: ℕ] (n ≥ N) ⇒ in_ball (f n) y ɛ❙
+
+  decl_mentinioning_prev_decl_in_rewrite_spot: ℝ ❘ = norm (my_y - my_y)❙
+  rewrite_variable_name_clash_with_morphism: Y ⟶ Y ⟶ ℝ ❘ = [a, b] norm (a - b)❙
+❚</pre></div>
+
+<ol>
+  <li>Typecheck your files which contain the affected theories and views.</li>
+  <li>Enter MPaths in the input boxes. E.g. for the example file, take:
+    <ul>
+      <li><code class="highlighter-rouge">http://cds.omdoc.org/theorysplittest/generalization/metricAndNormedSpaces?NormedVectorspaceThms</code> as the input theory</li>
+      <li><code class="highlighter-rouge">http://cds.omdoc.org/theorysplittest/generalization/metricAndNormedSpaces?NormedVectorspace</code> as the to-be-generalized part</li>
+      <li><code class="highlighter-rouge">http://cds.omdoc.org/theorysplittest/generalization/metricAndNormedSpaces?MetricSpace</code> as the generalization of that part</li>
+      <li><code class="highlighter-rouge">http://cds.omdoc.org/theorysplittest/generalization/metricAndNormedSpaces?NormedAsMetricSpaces</code> as the specialization morphism</li>
+    </ul>
+  </li>
+  <li>Click <code class="highlighter-rouge">Generalize</code></li>
+</ol>
+
+				</div>
+			</div>
+		</div>
+	
+
+
+	<div class="container">
+		<footer class="container">
+
+    <hr />
+    <p>
+        MMT is developed and maintained mostly by <a href="http://kwarc.info/frabe/" target="_blank">Florian Rabe</a>. <br />
+        
+        This page is hosted via github pages and can be edited <a href="https://github.com/UniFormal/uniformal.github.io/edit/master/doc/applications/intellij.md" target="_blank">directly in the browser</a>. <br/>
+    </p>
+</footer>
+	</div>
+
+    <script src="https://comfreek.github.io/uniformal.github.io/lib/js/jquery-3.3.1.min.js"></script>
+    <script src="https://comfreek.github.io/uniformal.github.io/lib/js/bootstrap.min.js"></script>
+		<script src="https://comfreek.github.io/uniformal.github.io/lib/js/doc.js"></script>
+		<script src="https://comfreek.github.io/uniformal.github.io/lib/js/api.js"></script>
+	
+  </body>
+</html>

@@ -1,0 +1,523 @@
+<!doctype html>
+<html lang="en">
+	<!-- This is the layout used for all pages in the wiki-style documentation.
+        The wiki files must have "layout: doc" in their front matter.
+        This file can use page.NAME to refer to variables declared in the front matter
+        and content to refer to the body of the md file.
+   -->
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!--
+      Do not use base tag: <base href="/uniformal.github.io/" />
+      Since otherwise we could not keep links in the documentation relative anymore - without a hassle at least.
+      We would always have to prepend doc/ or something.
+
+      Hence, use e.g. `/uniformal.github.io/lib/css/bootstrap.min.css` to refer to assets in this file only.
+    -->
+    <link rel="icon" href="https://comfreek.github.io/uniformal.github.io/favicon.ico">
+
+    <title>MMT - The Local MathHub Tool (LMH)</title>
+
+    <link href="https://comfreek.github.io/uniformal.github.io/lib/css/bootstrap.min.css" rel="stylesheet" />
+	  <link href="https://comfreek.github.io/uniformal.github.io/lib/css/doc.css" rel="stylesheet" />
+		<link href="https://comfreek.github.io/uniformal.github.io/lib/css/pygments-default.css" rel="stylesheet" />
+	
+  </head>
+  <body>
+	
+<nav class="navbar navbar-expand navbar-dark site-header" site-header >
+    <div class="container">
+        <a class="navbar-brand" href="/">
+            <img src="https://comfreek.github.io/uniformal.github.io/lib/css/img/logo_dark.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+            The MMT Language and System
+        </a>
+    </div>
+</nav>
+
+	
+		<div class="container-fluid main">
+			<div class="row">
+				<div class="col-12 col-md-3 col-xl-2">
+					<ul class="nav flex-column">
+						
+
+
+<div class="list-group">
+  
+    
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/"
+    
+>
+    Overview
+</a>
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/setup/">
+    Setting up MMT
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/tutorials/">
+    Tutorials
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/philosophy/">
+    The Philosophy behind MMT
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/language/">
+    The MMT Language
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable active" href="https://comfreek.github.io/uniformal.github.io/doc/archives/">
+    MMT-Archives
+</a>
+
+
+
+
+    <div class="list-group">
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/archives/building.html"
+    
+>
+    The Build System
+</a>
+
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/archives/oaf.html"
+    
+>
+    The OAF Project
+</a>
+
+        
+            
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable active" href="https://comfreek.github.io/uniformal.github.io/doc/archives/Mathhub">
+    Installing and Publishing Archives using MathHub
+</a>
+
+
+
+
+    <div class="list-group">
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action active"
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/archives/Mathhub/lmh.html"
+    
+>
+    The Local MathHub Tool (LMH)
+</a>
+
+        
+    </div>
+
+
+        
+    </div>
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/api/">
+    The MMT API
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/applications/">
+    Applications and Projects based on MMT
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/development/">
+    Development
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/community/"
+    
+>
+    Community & Communication
+</a>
+
+  
+    
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/contribs"
+    
+>
+    Contributed Articles
+</a>
+
+  
+</div>
+					</ul>
+				</div>
+				<div class="col-12 col-md-9 col-xl-8 content">
+					<h2>The Local MathHub Tool (LMH)</h2>
+					<hr />
+	
+					<p>The Local MathHub (lmh) functionality in MMT provides local commands to install libraries
+and archives
+from and publish content to <a href="https://mathhub.info">MathHub.info</a>, a versioned hosting system and user
+portal for OMDoc/MMT content.</p>
+
+<h3 id="configuring-local-folders">Configuring local folders</h3>
+<p>Before using any lmh functionality, a local folder needs to be configured to store archives in.</p>
+
+<p>This is configured in the <a href="doc/setup/running">mmtrc</a> file automatically during setup,
+however it can also be done manually on the MMT shell by typing <code class="highlighter-rouge">lmh root &lt;path&gt;</code>.</p>
+
+<p>Furthermore, MMT archives can be cloned using ssh or https.
+The difference is only relevant if you want to publish archives, or want to access non-public repositories.</p>
+
+<p>The default method to clone archives is https. 
+To enable ssh, type <code class="highlighter-rouge">lmh root &lt;path&gt; ssh</code> on the shell, to enable ssh for the current session. 
+To make this change permanent, change the appropriate line in the configuration file to say “ssh” instaed of “https” (if neither is present, append ` ssh<code class="highlighter-rouge"> to the end of the line). 
+To view the current lmh configuration, type </code>show lmh`</p>
+
+<h3 id="installing-an-archive">Installing an archive</h3>
+
+<p>To install an archive and the dependencies (recursively), type</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>lmh install &lt;name of archive&gt;
+</code></pre></div></div>
+
+<p>If an archive already exists locally, then lmh will update the existing copy of the archive and afterwards do the same for any dependencies. 
+This includes installing new dependencies if needed.</p>
+
+<p>LMH also allows installing a specific branch of an archive. The syntax for this is:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>lmh install &lt;name of archive&gt;@&lt;version&gt;
+</code></pre></div></div>
+
+<p>Archvies are versioned using git. 
+A version of an archive can be a branch name or a git commit hash (Technically anything that is a ref in git).
+When a non-existing version of the archive is specified, lmh will display a warning message and then fall back to the default version. 
+If <code class="highlighter-rouge">lmh install</code> with a specific version is called on an archive that is already installed, it will make sure to update to the specified version.</p>
+
+<p>When an archive is installed with a specific version, it’s dependencies are also installed in the same version.</p>
+
+<p><code class="highlighter-rouge">lmh install</code> also allows installing multiple archives at once. 
+This can be achieved, by simply providing multiple arguments. 
+For example</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>lmh install MMT/urtheories@master MMT/LFX@devel
+</code></pre></div></div>
+
+<p>will install the <code class="highlighter-rouge">MMT/urtheories</code> archive of version master (as described above) and the <code class="highlighter-rouge">MMT/LFX</code> archive in version devel. 
+When a non-existing version of an archive is specified, t</p>
+
+<p>It is also possible to use wildcards in this specification, or install an entire group at once. 
+For example</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>lmh install MMT
+</code></pre></div></div>
+
+<p>and</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>lmh install MMT/*
+</code></pre></div></div>
+
+<p>will both install all archives from the <code class="highlighter-rouge">MMT</code> group.</p>
+
+<p>Wildcards can be combined with using specific versions. 
+When a version is specified to a wildcard, it is applied to all archives of that group.</p>
+
+<p>For efficieny reasons and to work around cycles in the archive dependency graph, whenever an archive occurs more than once in an <code class="highlighter-rouge">lmh install</code> procedure, it is only installed / updated once. 
+This leads to undefined behaviour when conflicting versions are specified. 
+The current implementation of this command will use the version of the archive when it is first encountered (either explicitly in the arguments, or the first dependency tree it occurs in), but this is an implementation detail and may change in the future.</p>
+
+<h3 id="updating-archives">Updating archives</h3>
+
+<p>To update a set of archives, you can use</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>lmh pull &lt;name of archives&gt;
+</code></pre></div></div>
+
+<p>Again wildcards can be used, but these only match against archives that are already installed. 
+Internally, the update behaviour of <code class="highlighter-rouge">lmh pull</code> is the same as the one of <code class="highlighter-rouge">lmh install</code>, and internally the same function calls are used.</p>
+
+<h3 id="managing-archives">Managing Archives</h3>
+
+<p>To see which archives are installed locally, use the <code class="highlighter-rouge">lmh ls</code> command.
+It optionally takes the name of an archive or library, and will restrict output to the matching archives.
+It also shows the version numbers of locally installed archives.</p>
+
+<p>To see which archives are available, use the <code class="highlighter-rouge">lmh search</code> command.
+It functions exactly like the <code class="highlighter-rouge">lmh ls</code>, however it searches remotely for archives on
+<code class="highlighter-rouge">http:.//gl.MathHub.info</code> instead of locally.</p>
+
+<h4 id="switching-branches">Switching branches</h4>
+
+<p>To use a specific version of an archive the command</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>lmh use &lt; name of archive &gt;@&lt; version &gt;
+</code></pre></div></div>
+
+<p>can be used. 
+This command supports wildcards (against local archives). 
+The command works exactly like <code class="highlighter-rouge">lmh install</code>, except that it does not recursively install any dependencies.</p>
+
+<p>For example</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>lmh use *@devel
+</code></pre></div></div>
+
+<p>will switch all installed archives to the devel branch.</p>
+
+<h3 id="proposal-to-improve-lmh">Proposal to improve LMH</h3>
+
+<p>** Everything below is a proposal and not yet implemented **</p>
+
+<h4 id="freezing-dependencies-proposal">Freezing dependencies (PROPOSAL)</h4>
+
+<p>Sometimes it is desired to be able to use the current versions of all archives. 
+By convention, this is done for every release so that users can rely on a specific release working independent of future changes to the archives.</p>
+
+<p>It is possible to freeze the current versions of archives and store these versions in a file. 
+This can be achieved by</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>lmh freeze local &lt; filename &gt; [&lt;archives&gt;]
+</code></pre></div></div>
+
+<p>which will store the current versions, that is their commit hashes) of the given archives inside the specified file.</p>
+
+<p>To restore archives from a specific file, use</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>lmh restore &lt; filename &gt;
+</code></pre></div></div>
+
+<p>This internally expands into a call to <code class="highlighter-rouge">lmh use</code>. 
+It should be noted that afterwards, calls to <code class="highlighter-rouge">lmh pull</code> will not work update archives anymore – the versions are frozen in place. 
+To properly update archives from a specific branch</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>lmh use *@&lt;name of branch&gt;
+</code></pre></div></div>
+
+<p>can be used to restore the normal behaviour.</p>
+
+<p>It is possible to furthermore store the current versions of all archives on gitlab. 
+This can be achieved by using</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>lmh freeze remote &lt; filename &gt; [&lt;archives&gt;]
+</code></pre></div></div>
+
+<p>and be restored accordingly.</p>
+
+				</div>
+			</div>
+		</div>
+	
+
+
+	<div class="container">
+		<footer class="container">
+
+    <hr />
+    <p>
+        MMT is developed and maintained mostly by <a href="http://kwarc.info/frabe/" target="_blank">Florian Rabe</a>. <br />
+        
+        This page is hosted via github pages and can be edited <a href="https://github.com/UniFormal/uniformal.github.io/edit/master/doc/archives/Mathhub/lmh.md" target="_blank">directly in the browser</a>. <br/>
+    </p>
+</footer>
+	</div>
+
+    <script src="https://comfreek.github.io/uniformal.github.io/lib/js/jquery-3.3.1.min.js"></script>
+    <script src="https://comfreek.github.io/uniformal.github.io/lib/js/bootstrap.min.js"></script>
+		<script src="https://comfreek.github.io/uniformal.github.io/lib/js/doc.js"></script>
+		<script src="https://comfreek.github.io/uniformal.github.io/lib/js/api.js"></script>
+	
+  </body>
+</html>

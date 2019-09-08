@@ -1,0 +1,432 @@
+<!doctype html>
+<html lang="en">
+	<!-- This is the layout used for all pages in the wiki-style documentation.
+        The wiki files must have "layout: doc" in their front matter.
+        This file can use page.NAME to refer to variables declared in the front matter
+        and content to refer to the body of the md file.
+   -->
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!--
+      Do not use base tag: <base href="/uniformal.github.io/" />
+      Since otherwise we could not keep links in the documentation relative anymore - without a hassle at least.
+      We would always have to prepend doc/ or something.
+
+      Hence, use e.g. `/uniformal.github.io/lib/css/bootstrap.min.css` to refer to assets in this file only.
+    -->
+    <link rel="icon" href="https://comfreek.github.io/uniformal.github.io/favicon.ico">
+
+    <title>MMT - Testing</title>
+
+    <link href="https://comfreek.github.io/uniformal.github.io/lib/css/bootstrap.min.css" rel="stylesheet" />
+	  <link href="https://comfreek.github.io/uniformal.github.io/lib/css/doc.css" rel="stylesheet" />
+		<link href="https://comfreek.github.io/uniformal.github.io/lib/css/pygments-default.css" rel="stylesheet" />
+	
+  </head>
+  <body>
+	
+<nav class="navbar navbar-expand navbar-dark site-header" site-header >
+    <div class="container">
+        <a class="navbar-brand" href="/">
+            <img src="https://comfreek.github.io/uniformal.github.io/lib/css/img/logo_dark.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+            The MMT Language and System
+        </a>
+    </div>
+</nav>
+
+	
+		<div class="container-fluid main">
+			<div class="row">
+				<div class="col-12 col-md-3 col-xl-2">
+					<ul class="nav flex-column">
+						
+
+
+<div class="list-group">
+  
+    
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/"
+    
+>
+    Overview
+</a>
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/setup/">
+    Setting up MMT
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/tutorials/">
+    Tutorials
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/philosophy/">
+    The Philosophy behind MMT
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/language/">
+    The MMT Language
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/archives/">
+    MMT-Archives
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/api/">
+    The MMT API
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/applications/">
+    Applications and Projects based on MMT
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable active" href="https://comfreek.github.io/uniformal.github.io/doc/development/">
+    Development
+</a>
+
+
+
+
+    <div class="list-group">
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/development/contributing.html"
+    
+>
+    Contributing to MMT
+</a>
+
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/development/releases.html"
+    
+>
+    Releases & Changelog
+</a>
+
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action active"
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/development/testing.html"
+    
+>
+    Testing
+</a>
+
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/development/documentation.html"
+    
+>
+    Improving this Documentation
+</a>
+
+        
+    </div>
+
+
+  
+    
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/community/"
+    
+>
+    Community & Communication
+</a>
+
+  
+    
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/contribs"
+    
+>
+    Contributed Articles
+</a>
+
+  
+</div>
+					</ul>
+				</div>
+				<div class="col-12 col-md-9 col-xl-8 content">
+					<h2>Testing</h2>
+					<hr />
+	
+					<p>MMT undergoes a limited amount of automated testing, to make sure that it functions properly.</p>
+
+<p>It particular, two kinds of tests exist:</p>
+
+<ul>
+  <li>unit tests</li>
+  <li>integration tests</li>
+</ul>
+
+<h4 id="unit-tests">Unit Tests</h4>
+
+<p>An MMT Unit Test is a test that tests exactly one component of the MMT Source Code. 
+They are implemented as standard scala unit tests, and do not need a fully running MMT instance. 
+In particular, they do not depend on any archives.</p>
+
+<p>The unit tests can be run with:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    sbt test
+</code></pre></div></div>
+
+<p>Historically, MMT has been largely untested. 
+Hence only a couple of these exist.</p>
+
+<h4 id="integration-tests">Integration Tests</h4>
+
+<p>Several large MMT Integration tests exist. 
+When run, these:</p>
+
+<ul>
+  <li>setup a new MMT environment from scratch (i.e. creating a new configuration file, installing <code class="highlighter-rouge">MMT/urtheories</code> etc)</li>
+  <li>install additional archives required for testing (and use the devel version if needed)</li>
+  <li>make sure that content within an archive builds and typechecks properly</li>
+</ul>
+
+<p>Integration tests are implemented as a subclass of the <code class="highlighter-rouge">MMTIntegrationTest</code> class. 
+At the time of writing, the following Integration Tests exist:</p>
+
+<ul>
+  <li><code class="highlighter-rouge">info.kwarc.mmt.api.test.APITest</code></li>
+  <li><code class="highlighter-rouge">info.kwarc.mmt.lf.LFTest</code></li>
+  <li><code class="highlighter-rouge">info.kwarc.mmt.odk.ODKTest</code></li>
+  <li><code class="highlighter-rouge">info.kwarc.mmt.odk.MitMTest</code></li>
+</ul>
+
+<p>To run an integration test, simply run the appropriate class. 
+From command line this can be done with e.g.:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>java -cp deploy/mmt.jar info.kwarc.mmt.api.test.APITest
+</code></pre></div></div>
+
+<p>The tests will exit with a return code of <code class="highlighter-rouge">0</code> iff they are successfull and no errors occur.</p>
+
+<p>Furthermore the tests will try to automatically determine if they are being run from the <code class="highlighter-rouge">devel</code> or <code class="highlighter-rouge">master</code> branch. 
+If this is not possible (for example when just running from a downloaded jar), then this can be specified manually:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># use the devel version of archives</span>
+<span class="nv">TEST_USE_DEVEL</span><span class="o">=</span>1 java <span class="nt">-cp</span> deploy/mmt.jar info.kwarc.mmt.api.test.APITest
+
+<span class="c"># use the default (master) version of archives</span>
+<span class="nv">TEST_USE_DEVEL</span><span class="o">=</span>0 java <span class="nt">-cp</span> deploy/mmt.jar info.kwarc.mmt.api.test.APITest
+</code></pre></div></div>
+
+<h4 id="travis">Travis</h4>
+
+<p>Travis CI automatically runs both unit and integration tests after every commit.</p>
+
+				</div>
+			</div>
+		</div>
+	
+
+
+	<div class="container">
+		<footer class="container">
+
+    <hr />
+    <p>
+        MMT is developed and maintained mostly by <a href="http://kwarc.info/frabe/" target="_blank">Florian Rabe</a>. <br />
+        
+        This page is hosted via github pages and can be edited <a href="https://github.com/UniFormal/uniformal.github.io/edit/master/doc/development/testing.md" target="_blank">directly in the browser</a>. <br/>
+    </p>
+</footer>
+	</div>
+
+    <script src="https://comfreek.github.io/uniformal.github.io/lib/js/jquery-3.3.1.min.js"></script>
+    <script src="https://comfreek.github.io/uniformal.github.io/lib/js/bootstrap.min.js"></script>
+		<script src="https://comfreek.github.io/uniformal.github.io/lib/js/doc.js"></script>
+		<script src="https://comfreek.github.io/uniformal.github.io/lib/js/api.js"></script>
+	
+  </body>
+</html>

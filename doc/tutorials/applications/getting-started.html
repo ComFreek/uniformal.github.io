@@ -1,0 +1,533 @@
+<!doctype html>
+<html lang="en">
+	<!-- This is the layout used for all pages in the wiki-style documentation.
+        The wiki files must have "layout: doc" in their front matter.
+        This file can use page.NAME to refer to variables declared in the front matter
+        and content to refer to the body of the md file.
+   -->
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!--
+      Do not use base tag: <base href="/uniformal.github.io/" />
+      Since otherwise we could not keep links in the documentation relative anymore - without a hassle at least.
+      We would always have to prepend doc/ or something.
+
+      Hence, use e.g. `/uniformal.github.io/lib/css/bootstrap.min.css` to refer to assets in this file only.
+    -->
+    <link rel="icon" href="https://comfreek.github.io/uniformal.github.io/favicon.ico">
+
+    <title>MMT - Getting Started as an MMT API User</title>
+
+    <link href="https://comfreek.github.io/uniformal.github.io/lib/css/bootstrap.min.css" rel="stylesheet" />
+	  <link href="https://comfreek.github.io/uniformal.github.io/lib/css/doc.css" rel="stylesheet" />
+		<link href="https://comfreek.github.io/uniformal.github.io/lib/css/pygments-default.css" rel="stylesheet" />
+	
+  </head>
+  <body>
+	
+<nav class="navbar navbar-expand navbar-dark site-header" site-header >
+    <div class="container">
+        <a class="navbar-brand" href="/">
+            <img src="https://comfreek.github.io/uniformal.github.io/lib/css/img/logo_dark.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+            The MMT Language and System
+        </a>
+    </div>
+</nav>
+
+	
+		<div class="container-fluid main">
+			<div class="row">
+				<div class="col-12 col-md-3 col-xl-2">
+					<ul class="nav flex-column">
+						
+
+
+<div class="list-group">
+  
+    
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/"
+    
+>
+    Overview
+</a>
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/setup/">
+    Setting up MMT
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable active" href="https://comfreek.github.io/uniformal.github.io/doc/tutorials/">
+    Tutorials
+</a>
+
+
+
+
+    <div class="list-group">
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/tutorials/prototyping/"
+    
+>
+    Language Design in MMT
+</a>
+
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/tutorials/applications/getting-started"
+    
+>
+    Getting Started as an MMT API user
+</a>
+
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/tutorials/applications/application-development"
+    
+>
+    Application Development with MMT
+</a>
+
+        
+            
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/tutorials/jedit/">
+    Writing MMT Documents with jEdit
+</a>
+
+
+
+
+
+        
+    </div>
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/philosophy/">
+    The Philosophy behind MMT
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/language/">
+    The MMT Language
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/archives/">
+    MMT-Archives
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/api/">
+    The MMT API
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/applications/">
+    Applications and Projects based on MMT
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/development/">
+    Development
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/community/"
+    
+>
+    Community & Communication
+</a>
+
+  
+    
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/contribs"
+    
+>
+    Contributed Articles
+</a>
+
+  
+</div>
+					</ul>
+				</div>
+				<div class="col-12 col-md-9 col-xl-8 content">
+					<h2>Getting Started as an MMT API User</h2>
+					<hr />
+	
+					<p>This document gets you quickly started with setting up a Scala project using the MMT API as a dependency and presents a simple example showing how to list all theories of an archive.</p>
+
+<ul>
+  <li>
+    <p>Audience: Users who want to use the MMT API to query or manipulate knowledge, and possibly have a basic understanding of concepts within MMT (documents, theories, declarations); Users who want to build <em>on top</em> of MMT using the MMT API as a dependency.</p>
+  </li>
+  <li>
+    <p>Non-audience: Users who want to do formalization. They will find a fitting getting started guide: <a href="../../setup/">here</a>; users who want to get started developing the MMT API <em>itself</em>. These should refer to <a href="../../setup/devel">this page</a>.</p>
+  </li>
+</ul>
+
+<p>Table of Contents:</p>
+
+<!-- TOC -->
+
+<ul>
+  <li><a href="#i-installation-of-java-scala-and-your-favorite-ide">I Installation of Java, Scala and your favorite IDE</a></li>
+  <li><a href="#ii-project-setup">II Project Setup</a>
+    <ul>
+      <li><a href="#ii1-intellij-project">II.1 IntelliJ Project</a></li>
+      <li><a href="#ii2-download-mmt-archives">II.2 Download MMT archive(s)</a></li>
+      <li><a href="#ii3-commit-to-version-control">II.3 Commit to version control</a></li>
+    </ul>
+  </li>
+  <li><a href="#iii-a-basic-example-listing-all-theories-of-an-archive">III A basic example: listing all theories of an archive</a></li>
+</ul>
+
+<!-- /TOC -->
+
+<p>Note: Some code snippets are presented without necessary error checking, e.g. files are not closed when exceptions appear.</p>
+
+<h3 id="i-installation-of-java-scala-and-your-favorite-ide">I Installation of Java, Scala and your favorite IDE</h3>
+
+<p>MMT is written in Scala, but can in principle be used from any other JVM-based language.
+In fact, there was <a href="https://github.com/UniFormal/MMTPy">a wrapper for Python</a>, which is discontinued, though.
+For simplicity we will stick to Scala in this tutorial.</p>
+
+<ol>
+  <li>
+    <p>Install a JDK (Java Development Kid) if not already done.<br />
+E.g. OpenJDK: <a href="https://jdk.java.net/">https://jdk.java.net/</a></p>
+  </li>
+  <li>
+    <p>Install a Java IDE, we recommend <a href="https://www.jetbrains.com/idea/">IntelliJ IDEA</a> as the IDE.<br />
+For formalizing things in MMT there is a plugin for that IDE =&gt; recommended</p>
+  </li>
+  <li>
+    <p>Install the Scala plugin for IntelliJ IDEA.<br />
+Probably you were prompted to do so during the installation in step 2. Otherwise, open IntelliJ IDEA and install the plugin there. It is advisable to choose a Scala version equal or greater to the one MMT is built with, e.g. the latest Scala version available as a plugin. The Scala version used for building and releasing MMT can be found in MMT’s repo in <a href="https://github.com/UniFormal/MMT/blob/master/src/build.sbt#L33">src/built.sbt</a> (search for “scalaVersion”).</p>
+  </li>
+</ol>
+
+<h3 id="ii-project-setup">II Project Setup</h3>
+
+<p>The following steps can be repeated whenever you would like to start a new project making use of the MMT API.</p>
+
+<h4 id="ii1-intellij-project">II.1 IntelliJ Project</h4>
+
+<ol>
+  <li>Open IntelliJ IDEA and create a new “Scala, SBT-based” project. Use Git as a VCS.</li>
+  <li>When done, open <code class="highlighter-rouge">build.sbt</code> from your project folder and include MMT as a dependency (last line):
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>name := "code"
+
+version := "0.1"
+
+scalaVersion := "2.12.8"
+
+libraryDependencies += "mmt" % "mmt" % "15.0.0" from "https://github.com/UniFormal/MMT/releases/download/v15.0.0/mmt.jar"
+   
+// Not sure if needed if one depends on the MMT JAR, see https://github.com/UniFormal/MMT/issues/447
+libraryDependencies += "org.scala-lang.modules" %% "scala-parser-combinators" % "1.1.1"
+</code></pre></div>    </div>
+    <p>You should probably leave <code class="highlighter-rouge">scalaVersion</code> untouched if you have another one in your file. Also adapt “15.0.0.0” and <code class="highlighter-rouge">mmt.jar</code> URI to the latest release, see <a href="https://github.com/UniFormal/MMT/releases">list of all MMT releases</a>.</p>
+  </li>
+  <li>Confirm syncing the changes back to your project. IntelliJ IDEA will automatically prompt you to do so.</li>
+</ol>
+
+<p>Recommended optional steps:</p>
+
+<ol>
+  <li>
+    <p>Download “MMT sources” from the same release as used above to a favorite location of yours, e.g. for the <a href="https://github.com/UniFormal/MMT/releases/tag/v15.0.0">15th Git release</a> you will find a link <a href="https://github.com/UniFormal/MMT/archive/v15.0.0.zip">“Source code (zip)”</a> there.</p>
+  </li>
+  <li>In your project above open the project pane on the left and under <code class="highlighter-rouge">External Libraries</code> click on <code class="highlighter-rouge">sbt: mmt:mmt:15.0.0.jar</code>.</li>
+  <li>Navigate down all the content of that JAR and choose a file arbitrarily. You will be prompted to add sources.</li>
+  <li>Confirm and use the path to the downloaded ZIP from second-to-last step.</li>
+</ol>
+
+<h4 id="ii2-download-mmt-archives">II.2 Download MMT archive(s)</h4>
+
+<ol>
+  <li>Create the folder <code class="highlighter-rouge">&lt;your-project&gt;/archives/MathHub/MMT</code></li>
+  <li><code class="highlighter-rouge">cd archives/MathHub/MMT &amp;&amp; git submodule add https://gl.mathhub.info/MMT/urtheories.git</code></li>
+</ol>
+
+<p>Note that most archives on https://gl.mathhub.info/MMT have their build output committed. During the build of an archive, the so-called relational information is created, which is needed for querying all theories, for instance.\</p>
+
+<p>TODO: Add note on how to re-build an archive using the API. It’s possible to do so using <a href="https://uniformal.github.io/doc/setup/running.html">the command line of MMT</a>.</p>
+
+<h4 id="ii3-commit-to-version-control">II.3 Commit to version control</h4>
+
+<p>For example if you use Git:</p>
+
+<p><code class="highlighter-rouge">git add --all &amp;&amp; git commit -m "First commit"</code></p>
+
+<p>Advanced users are potentially interested in using <a href="https://github.com/github/gitignore/blob/master/Global/JetBrains.gitignore">gitignore/JetBrains.gitignore</a>.</p>
+
+<h3 id="iii-a-basic-example-listing-all-theories-of-an-archive">III A basic example: listing all theories of an archive</h3>
+
+<ol>
+  <li>Create a new package under <code class="highlighter-rouge">src/main/scala/</code>, e.g. <code class="highlighter-rouge">com.example.mmtapi</code>.</li>
+  <li>Create a new file <code class="highlighter-rouge">Test.scala</code> <em>there</em> and copy-paste the following contents to it:
+    <div class="language-scala highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">package</span> <span class="nn">com.example.mmtapi</span>
+
+<span class="k">import</span> <span class="nn">java.io.File</span>
+
+<span class="k">import</span> <span class="nn">info.kwarc.mmt.api.frontend.</span><span class="o">{</span><span class="nc">ConsoleHandler</span><span class="o">,</span> <span class="nc">Controller</span><span class="o">}</span>
+<span class="k">import</span> <span class="nn">info.kwarc.mmt.api.ontology.IsTheory</span>
+<span class="k">import</span> <span class="nn">info.kwarc.mmt.api.utils.FilePath</span>
+
+<span class="k">object</span> <span class="nc">Test</span> <span class="o">{</span>
+  <span class="k">def</span> <span class="n">main</span><span class="o">(</span><span class="n">args</span><span class="k">:</span> <span class="kt">Array</span><span class="o">[</span><span class="kt">String</span><span class="o">])</span><span class="k">:</span> <span class="kt">Unit</span> <span class="o">=</span> <span class="o">{</span>
+    <span class="k">val</span> <span class="n">ctrl</span> <span class="k">=</span> <span class="k">new</span> <span class="nc">Controller</span><span class="o">()</span>
+    <span class="c1">// All logging goes to console
+</span>    <span class="n">ctrl</span><span class="o">.</span><span class="n">report</span><span class="o">.</span><span class="n">addHandler</span><span class="o">(</span><span class="nc">ConsoleHandler</span><span class="o">)</span>
+
+    <span class="k">val</span> <span class="n">mmtArchiveHome</span> <span class="k">=</span> <span class="n">ctrl</span><span class="o">.</span><span class="n">getHome</span> <span class="o">/</span> <span class="s">"archives"</span> <span class="o">/</span> <span class="s">"MathHub"</span> <span class="o">/</span> <span class="s">"MMT"</span>
+    <span class="n">ctrl</span><span class="o">.</span><span class="n">addArchive</span><span class="o">(</span><span class="n">mmtArchiveHome</span> <span class="o">/</span> <span class="s">"urtheories"</span><span class="o">)</span>
+
+    <span class="c1">// The identifier "MMT/urtheories" is specified in "MMT/urtheories/META-INF/MANIFEST.MF"
+</span>    <span class="c1">// In general every archive specified its ID there.
+</span>    <span class="k">val</span> <span class="n">urtheoriesArchive</span> <span class="k">=</span> <span class="n">ctrl</span><span class="o">.</span><span class="n">backend</span><span class="o">.</span><span class="n">getArchive</span><span class="o">(</span><span class="s">"MMT/urtheories"</span><span class="o">).</span><span class="n">get</span>
+    <span class="c1">// The next two lines trigger processing of the whole archive and make the data
+</span>    <span class="c1">// available in ctrl.depstore, the dependency store - among others.
+</span>    <span class="n">urtheoriesArchive</span><span class="o">.</span><span class="n">allContent</span>
+    <span class="n">urtheoriesArchive</span><span class="o">.</span><span class="n">readRelational</span><span class="o">(</span><span class="nc">FilePath</span><span class="o">(</span><span class="s">"/"</span><span class="o">),</span> <span class="n">ctrl</span><span class="o">,</span> <span class="s">"rel"</span><span class="o">)</span>
+
+    <span class="c1">// Get and print all individual ("inds") objects which are a theory
+</span>    <span class="k">val</span> <span class="n">theories</span> <span class="k">=</span> <span class="n">ctrl</span><span class="o">.</span><span class="n">depstore</span><span class="o">.</span><span class="n">getInds</span><span class="o">(</span><span class="nc">IsTheory</span><span class="o">)</span>
+    <span class="n">theories</span> <span class="n">foreach</span> <span class="n">println</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div>    </div>
+  </li>
+  <li>Run <code class="highlighter-rouge">Test.main</code> by clicking on the green downwards triangle next to the line <code class="highlighter-rouge">def main(args...</code>. The expected output is something like
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>user: opened archive &lt;your-project&gt;\archives\MathHub\MMT\urtheories
+user: ... with realizations in folder &lt;your-project&gt;\archives\MathHub\MMT\urtheories\bin
+http://cds.omdoc.org/urtheories?Bool
+http://cds.omdoc.org/urtheories?Dedukti
+http://cds.omdoc.org/urtheories?External
+http://cds.omdoc.org/urtheories?StringInterpolationExample
+http://cds.omdoc.org/urtheories/reflection?LFReflection
+http://cds.omdoc.org/urtheories?Strings
+http://cds.omdoc.org/urtheories?PolyDiff
+http://cds.omdoc.org/urtheories?Subtyping
+[...]
+
+Process finished with exit code 0
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+				</div>
+			</div>
+		</div>
+	
+
+
+	<div class="container">
+		<footer class="container">
+
+    <hr />
+    <p>
+        MMT is developed and maintained mostly by <a href="http://kwarc.info/frabe/" target="_blank">Florian Rabe</a>. <br />
+        
+        This page is hosted via github pages and can be edited <a href="https://github.com/UniFormal/uniformal.github.io/edit/master/doc/tutorials/applications/getting-started.md" target="_blank">directly in the browser</a>. <br/>
+    </p>
+</footer>
+	</div>
+
+    <script src="https://comfreek.github.io/uniformal.github.io/lib/js/jquery-3.3.1.min.js"></script>
+    <script src="https://comfreek.github.io/uniformal.github.io/lib/js/bootstrap.min.js"></script>
+		<script src="https://comfreek.github.io/uniformal.github.io/lib/js/doc.js"></script>
+		<script src="https://comfreek.github.io/uniformal.github.io/lib/js/api.js"></script>
+	
+  </body>
+</html>

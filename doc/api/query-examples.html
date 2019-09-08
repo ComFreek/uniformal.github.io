@@ -1,0 +1,565 @@
+<!doctype html>
+<html lang="en">
+	<!-- This is the layout used for all pages in the wiki-style documentation.
+        The wiki files must have "layout: doc" in their front matter.
+        This file can use page.NAME to refer to variables declared in the front matter
+        and content to refer to the body of the md file.
+   -->
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!--
+      Do not use base tag: <base href="/uniformal.github.io/" />
+      Since otherwise we could not keep links in the documentation relative anymore - without a hassle at least.
+      We would always have to prepend doc/ or something.
+
+      Hence, use e.g. `/uniformal.github.io/lib/css/bootstrap.min.css` to refer to assets in this file only.
+    -->
+    <link rel="icon" href="https://comfreek.github.io/uniformal.github.io/favicon.ico">
+
+    <title>MMT - Basic Query Examples with the MMT API</title>
+
+    <link href="https://comfreek.github.io/uniformal.github.io/lib/css/bootstrap.min.css" rel="stylesheet" />
+	  <link href="https://comfreek.github.io/uniformal.github.io/lib/css/doc.css" rel="stylesheet" />
+		<link href="https://comfreek.github.io/uniformal.github.io/lib/css/pygments-default.css" rel="stylesheet" />
+	
+  </head>
+  <body>
+	
+<nav class="navbar navbar-expand navbar-dark site-header" site-header >
+    <div class="container">
+        <a class="navbar-brand" href="/">
+            <img src="https://comfreek.github.io/uniformal.github.io/lib/css/img/logo_dark.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+            The MMT Language and System
+        </a>
+    </div>
+</nav>
+
+	
+		<div class="container-fluid main">
+			<div class="row">
+				<div class="col-12 col-md-3 col-xl-2">
+					<ul class="nav flex-column">
+						
+
+
+<div class="list-group">
+  
+    
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/"
+    
+>
+    Overview
+</a>
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/setup/">
+    Setting up MMT
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/tutorials/">
+    Tutorials
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/philosophy/">
+    The Philosophy behind MMT
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/language/">
+    The MMT Language
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/archives/">
+    MMT-Archives
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable active" href="https://comfreek.github.io/uniformal.github.io/doc/api/">
+    The MMT API
+</a>
+
+
+
+
+    <div class="list-group">
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/api/controller.html"
+    
+>
+    The Controller
+</a>
+
+        
+            
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/api/syntax/">
+    Data Structures for the MMT Language
+</a>
+
+
+
+
+
+        
+            
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/api/queries.html">
+    Queries
+</a>
+
+
+
+
+
+        
+            
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/api/extensions/">
+    Extensions
+</a>
+
+
+
+
+
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/api/log.html"
+    
+>
+    Logging
+</a>
+
+        
+            
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/api/checking/">
+    Checking Judgements
+</a>
+
+
+
+
+
+        
+    </div>
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/applications/">
+    Applications and Projects based on MMT
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/development/">
+    Development
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/community/"
+    
+>
+    Community & Communication
+</a>
+
+  
+    
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/contribs"
+    
+>
+    Contributed Articles
+</a>
+
+  
+</div>
+					</ul>
+				</div>
+				<div class="col-12 col-md-9 col-xl-8 content">
+					<h2>Basic Query Examples with the MMT API</h2>
+					<hr />
+	
+					<p>This document shows several query examples. It is assumed that you know how to incorporate the code snippets into your code, otherwise see the <a href="/uniformal.github.io/doc/tutorials/applications/getting-started.html">getting started with the MMT API tutorial</a>. Especially, the archives you are querying from need to have been built beforehand and their relational information read. This is explained in the tutorial and most importantly its accompanying code as well.</p>
+
+<!-- TOC -->
+
+<ul>
+  <li><a href="#i-listing-all-declarations-of-a-theory">I Listing all declarations of a theory</a></li>
+  <li><a href="#ii-getting-a-specific-declaration-of-a-theory">II Getting a specific declaration of a theory</a></li>
+  <li><a href="#iii-getting-all-theories-includedimported-by-theory-x">III Getting all theories included/imported by theory X</a></li>
+  <li><a href="#iv-getting-all-theories-including-theory-x">IV Getting all theories including theory X</a></li>
+  <li><a href="#v-for-a-document-get-all-dependency-documents">V For a document get all dependency documents</a></li>
+  <li><a href="#vi-get-all-documents-relying-on-theory-x">VI Get all documents relying on theory X</a></li>
+</ul>
+
+<!-- /TOC -->
+
+<h3 id="i-listing-all-declarations-of-a-theory">I Listing all declarations of a theory</h3>
+
+<p>Expanding on the code above:</p>
+<div class="language-scala highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">val</span> <span class="n">boolTheory</span> <span class="k">=</span> <span class="n">ctrl</span><span class="o">.</span><span class="n">get</span><span class="o">(</span><span class="nc">DPath</span><span class="o">(</span><span class="nc">URI</span><span class="o">(</span><span class="s">"http://cds.omdoc.org/urtheories"</span><span class="o">))</span> <span class="o">?</span> <span class="s">"Bool"</span><span class="o">)</span>
+<span class="n">boolTheory</span><span class="o">.</span><span class="n">getDeclarations</span> <span class="n">foreach</span> <span class="n">println</span>
+</code></pre></div></div>
+
+<p>First, we have to query our desired theory by its path. We got path used above from the console output of the last example.
+The document <a href="../language/uris.html">MMT URIs</a> features more information on these URIs/paths.</p>
+
+<h3 id="ii-getting-a-specific-declaration-of-a-theory">II Getting a specific declaration of a theory</h3>
+
+<div class="language-scala highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">val</span> <span class="n">boolTheory</span> <span class="k">=</span> <span class="n">ctrl</span><span class="o">.</span><span class="n">get</span><span class="o">(</span><span class="nc">DPath</span><span class="o">(</span><span class="nc">URI</span><span class="o">(</span><span class="s">"http://cds.omdoc.org/urtheories"</span><span class="o">))</span> <span class="o">?</span> <span class="s">"Bool"</span><span class="o">)</span>
+<span class="k">val</span> <span class="n">falseSymbol</span> <span class="k">=</span> <span class="n">boolTheory</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">asInstanceOf</span><span class="o">[</span><span class="kt">MPath</span><span class="o">]</span> <span class="o">?</span> <span class="s">"FALSE"</span>
+
+<span class="n">println</span><span class="o">(</span><span class="n">ctrl</span><span class="o">.</span><span class="n">get</span><span class="o">(</span><span class="n">falseSymbol</span><span class="o">))</span>
+</code></pre></div></div>
+
+<h3 id="iii-getting-all-theories-includedimported-by-theory-x">III Getting all theories included/imported by theory X</h3>
+
+<ul>
+  <li><code class="highlighter-rouge">Includes</code>: <code class="highlighter-rouge">S ~ T</code> in the relation iff. <code class="highlighter-rouge">S</code> contains <code class="highlighter-rouge">include T</code>.</li>
+  <li><code class="highlighter-rouge">RelationExp.HasStructureFrom</code>: <code class="highlighter-rouge">S ~ T</code> iff. <code class="highlighter-rouge">S</code> contains <code class="highlighter-rouge">structure T</code>.</li>
+  <li>Both: <code class="highlighter-rouge">RelationExp.Imports</code>: <code class="highlighter-rouge">S ~ T</code> in the relation iff. <code class="highlighter-rouge">S</code> imports (i.e. includes/structures from) <code class="highlighter-rouge">T</code>.</li>
+</ul>
+
+<div class="language-scala highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">val</span> <span class="n">boolTheoryPath</span> <span class="k">=</span> <span class="nc">DPath</span><span class="o">(</span><span class="nc">URI</span><span class="o">(</span><span class="s">"http://cds.omdoc.org/urtheories"</span><span class="o">))</span> <span class="o">?</span> <span class="s">"Bool"</span>
+
+<span class="c1">// only inclusions
+</span><span class="n">ctrl</span><span class="o">.</span><span class="n">depstore</span><span class="o">.</span><span class="n">querySet</span><span class="o">(</span><span class="n">boolTheoryPath</span><span class="o">,</span> <span class="nc">Includes</span><span class="o">)</span>
+
+<span class="c1">// only structures
+</span><span class="n">ctrl</span><span class="o">.</span><span class="n">depstore</span><span class="o">.</span><span class="n">querySet</span><span class="o">(</span><span class="n">boolTheoryPath</span><span class="o">,</span> <span class="nc">RelationExp</span><span class="o">.</span><span class="nc">HasStructureFrom</span><span class="o">)</span>
+
+<span class="c1">// both
+</span><span class="n">ctrl</span><span class="o">.</span><span class="n">depstore</span><span class="o">.</span><span class="n">querySet</span><span class="o">(</span><span class="n">boolTheoryPath</span><span class="o">,</span> <span class="nc">RelationExp</span><span class="o">.</span><span class="nc">Imports</span><span class="o">)</span>
+
+<span class="c1">// Hint: RelationExp.Imports is defined as
+</span><span class="nc">RelationExp</span><span class="o">.</span><span class="nc">Imports</span> <span class="k">=</span> <span class="nc">Choice</span><span class="o">(+</span><span class="nc">Includes</span><span class="o">,</span> <span class="nc">RelationExp</span><span class="o">.</span><span class="nc">HasStructureFrom</span><span class="o">)</span>
+<span class="c1">// Choice builds the union of both relations
+// TODO: Explain the relevance of +.
+</span></code></pre></div></div>
+
+<p>Output of the import query above:</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Set(http://cds.omdoc.org/urtheories?Typed, http://cds.omdoc.org/urtheories?TypedConstants, http://cds.omdoc.org/urtheories?ModExp, http://cds.omdoc.org/urtheories?TermsTypesKinds, http://cds.omdoc.org/mmt?Errors, http://cds.omdoc.org/urtheories?Kinded, http://cds.omdoc.org/urtheories?KindedConstants, http://cds.omdoc.org/mmt?mmt)
+</code></pre></div></div>
+
+<h3 id="iv-getting-all-theories-including-theory-x">IV Getting all theories including theory X</h3>
+
+<p>You can use the same relations as in I.3, but now swap their direction, e.g. use <code class="highlighter-rouge">-RelationExp.Imports</code> instead of <code class="highlighter-rouge">RelationExp.Imports</code>:</p>
+
+<p>The minus sign in <code class="highlighter-rouge">-RelationExp.Imports</code> swaps the relation. Initially we had <code class="highlighter-rouge">S ~ T</code> in the relation iff. <code class="highlighter-rouge">S</code> imports <code class="highlighter-rouge">T</code>. By swapping we get <code class="highlighter-rouge">S ~ T</code> iff. <code class="highlighter-rouge">T</code> imports <code class="highlighter-rouge">S</code> (or equivalently: <code class="highlighter-rouge">S</code> is imported by <code class="highlighter-rouge">T</code>).</p>
+
+<div class="language-scala highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">val</span> <span class="n">boolTheoryPath</span> <span class="k">=</span> <span class="nc">DPath</span><span class="o">(</span><span class="nc">URI</span><span class="o">(</span><span class="s">"http://cds.omdoc.org/urtheories"</span><span class="o">))</span> <span class="o">?</span> <span class="s">"Bool"</span>
+<span class="n">ctrl</span><span class="o">.</span><span class="n">depstore</span><span class="o">.</span><span class="n">querySet</span><span class="o">(</span><span class="n">boolTheoryPath</span><span class="o">,</span> <span class="o">-</span><span class="nc">RelationExp</span><span class="o">.</span><span class="nc">Imports</span><span class="o">))</span>
+</code></pre></div></div>
+
+<p>Output:</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Set(http://cds.omdoc.org/urtheories?LFS, http://cds.omdoc.org/urtheories?Ded, http://cds.omdoc.org/urtheories?DHOL)
+</code></pre></div></div>
+
+<h3 id="v-for-a-document-get-all-dependency-documents">V For a document get all dependency documents</h3>
+
+<blockquote>
+  <p>For a given document <code class="highlighter-rouge">doc</code> get all documents it directly depends on.</p>
+</blockquote>
+
+<p>E.g. if theory T in <code class="highlighter-rouge">doc</code> includes theory S in <code class="highlighter-rouge">doc2</code>, then get <code class="highlighter-rouge">doc2</code> should be within the result set. Also, the result set should contain <code class="highlighter-rouge">doc</code> itself.</p>
+
+<p>Code:</p>
+
+<div class="language-scala highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">val</span> <span class="n">boolTheoryDocument</span> <span class="k">=</span> <span class="nc">DPath</span><span class="o">(</span><span class="nc">URI</span><span class="o">(</span><span class="s">"http://docs.omdoc.org/urtheories/primitive_types/bool.omdoc"</span><span class="o">))</span>
+
+<span class="c1">// Alternative way to query that document would be:
+// val boolTheoryPath = DPath(URI("http://cds.omdoc.org/urtheories")) ? "Bool"
+// val boolTheoryDocument = ctrl.depstore.queryList(boolTheoryPath, -Declares).head
+</span>
+<span class="c1">// doc1 ~ doc2 iff. doc1 depends (directly) on doc2
+</span><span class="k">val</span> <span class="n">documentDependencyRelation</span> <span class="k">=</span> <span class="nc">Declares</span> <span class="o">*</span> <span class="nc">HasType</span><span class="o">(</span><span class="nc">IsTheory</span><span class="o">)</span> <span class="o">*</span> <span class="o">(</span><span class="nc">RelationExp</span><span class="o">.</span><span class="nc">Imports</span> <span class="o">|</span> <span class="nc">Reflexive</span><span class="o">)</span> <span class="o">*</span> <span class="o">-</span><span class="nc">Declares</span>
+
+<span class="k">val</span> <span class="n">docDeps</span> <span class="k">=</span> <span class="n">ctrl</span><span class="o">.</span><span class="n">depstore</span><span class="o">.</span><span class="n">querySet</span><span class="o">(</span><span class="n">boolTheoryDocument</span><span class="o">,</span> <span class="n">documentDependencyRelation</span><span class="o">)</span>
+<span class="n">println</span><span class="o">(</span><span class="n">docDeps</span><span class="o">)</span>
+</code></pre></div></div>
+
+<p>Output:</p>
+
+<blockquote>
+  <p>Set(http://docs.omdoc.org/urtheories/module-expressions.omdoc, http://docs.omdoc.org/urtheories/meta.omdoc, http://docs.omdoc.org/urtheories/lf.omdoc, http://docs.omdoc.org/urtheories/primitive_types/bool.omdoc)</p>
+</blockquote>
+
+<p>Step-by-step explanation:</p>
+
+<ul>
+  <li><code class="highlighter-rouge">+Declares</code>: For a given document get all things it declares</li>
+  <li><code class="highlighter-rouge">* HasType(IsTheory)</code>: Limit those things to theories. Call that set X.</li>
+  <li><code class="highlighter-rouge">* (Imports | Reflexive)</code>: Consider all the theories imported (= included/structured from) by one theory within X. Add them to X. (“Add them” instead of “replace X by that new set” because of Reflexive.)</li>
+  <li><code class="highlighter-rouge">* -Declares</code>: Now consider all things (e.g. documents) declaring a theory in X.</li>
+</ul>
+
+<p>Exercise for the reader: What if the result set should not contain <code class="highlighter-rouge">doc</code>?</p>
+
+<p><span class="detail">The easiest solution would be to employ the “remove” method on the (immutable) set: <code class="highlighter-rouge">docDeps - boolTheoryDocument</code></span></p>
+
+<p>Exercise II: Why does omitting <code class="highlighter-rouge">| Reflexive</code> part not work?</p>
+
+<p><span class="detail">Because our bool document contains multiple theories, let’s call them A, B, C.
+(You can have a look at that document if you really want to know the exact names.)
+B includes A, hence “B is a theory declared in the bool document importing a theory A from the bool document”, hence the bool document is contained in the result set.</span></p>
+
+<p>Exercise III: How to get all indirect document dependencies as well?</p>
+
+<p><span class="detail"><code class="highlighter-rouge">ctrl.depstore.querySet(boolTheoryDocument, Transitive(documentDependencyRelation))</code></span></p>
+
+<h3 id="vi-get-all-documents-relying-on-theory-x">VI Get all documents relying on theory X</h3>
+
+<div class="language-scala highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">val</span> <span class="n">boolTheoryPath</span> <span class="k">=</span> <span class="nc">DPath</span><span class="o">(</span><span class="nc">URI</span><span class="o">(</span><span class="s">"http://cds.omdoc.org/urtheories"</span><span class="o">))</span> <span class="o">?</span> <span class="s">"Bool"</span>
+
+<span class="c1">// From the previous section
+</span><span class="k">val</span> <span class="n">documentDependencyRelation</span> <span class="k">=</span> <span class="nc">Declares</span> <span class="o">*</span> <span class="nc">HasType</span><span class="o">(</span><span class="nc">IsTheory</span><span class="o">)</span> <span class="o">*</span> <span class="o">(</span><span class="nc">RelationExp</span><span class="o">.</span><span class="nc">Imports</span> <span class="o">|</span> <span class="nc">Reflexive</span><span class="o">)</span> <span class="o">*</span> <span class="o">-</span><span class="nc">Declares</span>
+<span class="k">val</span> <span class="n">transitiveDocumentDependencies</span> <span class="k">=</span> <span class="nc">Transitive</span><span class="o">(</span><span class="n">documentDependencyRelation</span><span class="o">)</span>
+
+<span class="k">val</span> <span class="n">docs</span> <span class="k">=</span> <span class="n">ctrl</span><span class="o">.</span><span class="n">depstore</span><span class="o">.</span><span class="n">querySet</span><span class="o">(</span><span class="n">boolTheoryPath</span><span class="o">,</span> <span class="nc">Transitive</span><span class="o">(-</span><span class="nc">RelationExp</span><span class="o">.</span><span class="nc">Imports</span><span class="o">)</span> <span class="o">*</span> <span class="o">-</span><span class="nc">Declares</span> <span class="o">*</span> <span class="o">-</span><span class="n">transitiveDocumentDependencies</span><span class="o">)</span>
+
+<span class="n">println</span><span class="o">(</span><span class="n">docs</span><span class="o">)</span>
+</code></pre></div></div>
+
+<p>Output:</p>
+
+<blockquote>
+  <p>Set(http://docs.omdoc.org/urtheories/sequences.omdoc, http://docs.omdoc.org/urtheories/primitive_types/bool.omdoc)</p>
+</blockquote>
+
+				</div>
+			</div>
+		</div>
+	
+
+
+	<div class="container">
+		<footer class="container">
+
+    <hr />
+    <p>
+        MMT is developed and maintained mostly by <a href="http://kwarc.info/frabe/" target="_blank">Florian Rabe</a>. <br />
+        
+        This page is hosted via github pages and can be edited <a href="https://github.com/UniFormal/uniformal.github.io/edit/master/doc/api/query-examples.md" target="_blank">directly in the browser</a>. <br/>
+    </p>
+</footer>
+	</div>
+
+    <script src="https://comfreek.github.io/uniformal.github.io/lib/js/jquery-3.3.1.min.js"></script>
+    <script src="https://comfreek.github.io/uniformal.github.io/lib/js/bootstrap.min.js"></script>
+		<script src="https://comfreek.github.io/uniformal.github.io/lib/js/doc.js"></script>
+		<script src="https://comfreek.github.io/uniformal.github.io/lib/js/api.js"></script>
+	
+  </body>
+</html>

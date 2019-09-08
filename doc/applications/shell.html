@@ -1,0 +1,533 @@
+<!doctype html>
+<html lang="en">
+	<!-- This is the layout used for all pages in the wiki-style documentation.
+        The wiki files must have "layout: doc" in their front matter.
+        This file can use page.NAME to refer to variables declared in the front matter
+        and content to refer to the body of the md file.
+   -->
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!--
+      Do not use base tag: <base href="/uniformal.github.io/" />
+      Since otherwise we could not keep links in the documentation relative anymore - without a hassle at least.
+      We would always have to prepend doc/ or something.
+
+      Hence, use e.g. `/uniformal.github.io/lib/css/bootstrap.min.css` to refer to assets in this file only.
+    -->
+    <link rel="icon" href="https://comfreek.github.io/uniformal.github.io/favicon.ico">
+
+    <title>MMT - The MMT Shell</title>
+
+    <link href="https://comfreek.github.io/uniformal.github.io/lib/css/bootstrap.min.css" rel="stylesheet" />
+	  <link href="https://comfreek.github.io/uniformal.github.io/lib/css/doc.css" rel="stylesheet" />
+		<link href="https://comfreek.github.io/uniformal.github.io/lib/css/pygments-default.css" rel="stylesheet" />
+	
+  </head>
+  <body>
+	
+<nav class="navbar navbar-expand navbar-dark site-header" site-header >
+    <div class="container">
+        <a class="navbar-brand" href="/">
+            <img src="https://comfreek.github.io/uniformal.github.io/lib/css/img/logo_dark.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+            The MMT Language and System
+        </a>
+    </div>
+</nav>
+
+	
+		<div class="container-fluid main">
+			<div class="row">
+				<div class="col-12 col-md-3 col-xl-2">
+					<ul class="nav flex-column">
+						
+
+
+<div class="list-group">
+  
+    
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/"
+    
+>
+    Overview
+</a>
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/setup/">
+    Setting up MMT
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/tutorials/">
+    Tutorials
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/philosophy/">
+    The Philosophy behind MMT
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/language/">
+    The MMT Language
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/archives/">
+    MMT-Archives
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/api/">
+    The MMT API
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable active" href="https://comfreek.github.io/uniformal.github.io/doc/applications/">
+    Applications and Projects based on MMT
+</a>
+
+
+
+
+    <div class="list-group">
+        
+            
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/applications/ides.html">
+    IDEs
+</a>
+
+
+
+
+
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action active"
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/applications/shell.html"
+    
+>
+    The MMT Shell
+</a>
+
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/applications/server.html"
+    
+>
+    The MMT Server
+</a>
+
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/applications/tgview.html"
+    
+>
+    TGView
+</a>
+
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/applications/latex.html"
+    
+>
+    LaTeX Processing
+</a>
+
+        
+    </div>
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/development/">
+    Development
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/community/"
+    
+>
+    Community & Communication
+</a>
+
+  
+    
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/contribs"
+    
+>
+    Contributed Articles
+</a>
+
+  
+</div>
+					</ul>
+				</div>
+				<div class="col-12 col-md-9 col-xl-8 content">
+					<h2>The MMT Shell</h2>
+					<hr />
+	
+					<p>The MMT shell is invoked by <a href="../setup/running.html">running</a> mmt.</p>
+
+<h3 id="shell-commands">Shell Commands</h3>
+<p>The language of shell commands is implemented by the <a href="apidoc://info.kwarc.mmt.api.frontend.Action"><code class="highlighter-rouge">info.kwarc.mmt.api.frontend.Action</code></a> class.
+Each subclass comes with scaladoc and can be best understood by browsing the known subclasses in the API documentation.</p>
+
+<p>The up-to-date context-free grammar for shell commands is part of the constructor parser in the companion object <code class="highlighter-rouge">Action</code> and can be best understood by reading the source code.</p>
+
+<h3 id="ansi-formatting-in-the-mmt-shell">ANSI Formatting in the MMT Shell</h3>
+<p>Some shell output uses <a href="https://en.wikipedia.org/wiki/ANSI_escape_code">ANSI escapes</a> for highlighting. To display the formating, you can use <a href="https://github.com/adoxa/ansicon">ansicon</a> for the windows console or <a href="http://mihai-nita.net/2013/06/03/eclipse-plugin-ansi-in-console/">ansi console</a> for the eclipse console. (Both are optional and very easy to install and use.) Unix shells should understand it natively.</p>
+
+<h3 id="mmt-scripts">MMT Scripts</h3>
+<p>An MMT script is a text file containing one shell command per line. (Empty lines are allowed, lines starting with // are ignored.)
+The customary file ending for MMT scripts is <code class="highlighter-rouge">.msl</code>.
+These scripts can be run with the file command below.</p>
+
+<h3 id="individual-shell-commands">Individual Shell Commands</h3>
+<p>The following documents some important individual commands.
+This documentation uses upper case names for argument types.
+Some common argument types are:</p>
+
+<ul>
+  <li><code class="highlighter-rouge">FILE</code>: a file name (relative to the current directory)</li>
+  <li><code class="highlighter-rouge">FOLDER</code>: a folder name (relative to the current directory)</li>
+  <li><code class="highlighter-rouge">U</code>: an MMT URI (relative to the current base URI)</li>
+  <li><code class="highlighter-rouge">STRING</code>: a string</li>
+</ul>
+
+<h4 id="basic-commands">Basic Commands</h4>
+
+<ul>
+  <li><code class="highlighter-rouge">exit</code>: exits MMT (releases all resources and terminates all spawned threads).</li>
+  <li><code class="highlighter-rouge">extension STRING</code>: registers the <a href="../api/extensions/">extension</a> whose qualified Java class name is <code class="highlighter-rouge">STRING</code>. The class must be on the class Java path already.</li>
+  <li><code class="highlighter-rouge">base URI</code>: sets the base URI to U.</li>
+  <li><code class="highlighter-rouge">scala</code>: drops to the scala shell. Within the scala shell, some special features are available:
+    <ul>
+      <li>The variable controller is bound to the MMT controller, which gives users full access to the internal MMT state.</li>
+      <li>MMT interpolations is active: for example, the string <code class="highlighter-rouge">mmt"TERM"</code> parses <code class="highlighter-rouge">TERM</code> as an MMT term and returns the resulting object.</li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="logging">Logging</h4>
+<p>See <a href="../api/log.html">log</a> for the logging model.</p>
+
+<ul>
+  <li><code class="highlighter-rouge">log console</code>: adds standard output as a logging receiver.</li>
+  <li><code class="highlighter-rouge">log file FILE</code>: adds the file FILE as a logging receiver.</li>
+  <li><code class="highlighter-rouge">log filets FILE</code>: as above but adds timestamps to all log messages.</li>
+  <li><code class="highlighter-rouge">log+ STRING</code>: switches logging on for the component with id STRING.</li>
+  <li><code class="highlighter-rouge">log- STRING</code>: switches logging off for the component with id STRING.</li>
+</ul>
+
+<h4 id="defining-make-style-targets">Defining make-style targets</h4>
+
+<ul>
+  <li><code class="highlighter-rouge">file FILE [STRING]</code>: runs the shell file <code class="highlighter-rouge">FILE</code> (which in particular registers all macro definitions in FILE); if provided, immediately runs one of those macros.</li>
+  <li><code class="highlighter-rouge">define STRING</code>: begins the definition of a named macro.</li>
+  <li><code class="highlighter-rouge">end</code>: ends the current macro definition.</li>
+  <li><code class="highlighter-rouge">do STRING [FOLDER]</code>: runs the previously registered macro (FOLDER can be used to disambiguate between multiple macros of the same name defined in different folders)</li>
+</ul>
+
+<h4 id="working-with-mmt-content">Working with MMT content</h4>
+<p>MMT reads content automatically by searching for the needed <a href="../api/uris.html">MMT URI</a> on the math path (see below).
+Therefore, there are only a few commands for directly accessing content.</p>
+
+<ul>
+  <li><code class="highlighter-rouge">read FILE</code>: reads a file into memory. Usually this is not necessary because resources are read automatically on demand.</li>
+  <li><code class="highlighter-rouge">get U [CONTENT] [PRESENT] OUTPUT</code>: retrieves the resource with MMT URI <code class="highlighter-rouge">U</code> and applies various operations to it. This command is largely superseded by the <a href="server.html">HTTP interface</a> but occasionally useful to run on the shell.
+    <ul>
+      <li><code class="highlighter-rouge">CONTENT</code> can be
+        <ul>
+          <li>omitted: simply retrieves <code class="highlighter-rouge">U</code></li>
+          <li><code class="highlighter-rouge">closure</code>: computes the dependency closure of U and retrieves all elements in it</li>
+          <li><code class="highlighter-rouge">elaborate</code>: retrieves <code class="highlighter-rouge">U</code> and elaborates it</li>
+          <li><code class="highlighter-rouge">component STRING</code>: retrieves the component <code class="highlighter-rouge">STRING</code> of <code class="highlighter-rouge">U</code></li>
+        </ul>
+      </li>
+      <li><code class="highlighter-rouge">PRESENT</code> can be
+        <ul>
+          <li>omitted: presentation as text</li>
+          <li><code class="highlighter-rouge">present STYLE</code>: presentation using the style <code class="highlighter-rouge">STYLE</code></li>
+        </ul>
+      </li>
+      <li><code class="highlighter-rouge">OUTPUT</code> can be
+        <ul>
+          <li><code class="highlighter-rouge">print</code>: print to standard output</li>
+          <li><code class="highlighter-rouge">write FILE</code>: write to file <code class="highlighter-rouge">FILE</code></li>
+          <li><code class="highlighter-rouge">window STRING</code>: output to a separate window with id <code class="highlighter-rouge">STRING</code>.
+  If the id has not been used before, a new window is created; size and position of the created windows can be controlled by other shell commands</li>
+          <li><code class="highlighter-rouge">respond</code>: no output (useful for programmers who wish to access the result programmatically)</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><code class="highlighter-rouge">navigate U</code>: does nothing itself but sends the navigation event to all registered change listener <a href="../api/extensions/">extensions</a>, which include the <a href="gui.html">GUI</a> (if started).</li>
+  <li><code class="highlighter-rouge">clear</code>: removes all content from memory.</li>
+</ul>
+
+<h4 id="the-math-path">The Math Path</h4>
+<p>The math path maintains a catalog that maps <a href="../api/uris.html">MMT URIs</a> to physical locations.
+Several commands exist to add entries to the math path.</p>
+
+<ul>
+  <li><code class="highlighter-rouge">mathpath archive FILE</code>: adds the location of an MMT archive.
+The path is searched recursively and registers all found archive folders and mar files.</li>
+  <li><code class="highlighter-rouge">mathpath local</code>: adds the local file system, i.e., file:// URIs are mapped to themselves.</li>
+  <li><code class="highlighter-rouge">mathpath fs FILE U</code>: adds a catalog entry that maps every URI of the form <code class="highlighter-rouge">U/REST</code> to the physical location <code class="highlighter-rouge">FILE/REST</code> on the local file system.</li>
+  <li><code class="highlighter-rouge">mathpath java FILE</code>: adds a catalog entry for modules written directly in Scala/Java. URIs are interpreted as fully qualified Java class names.</li>
+</ul>
+
+<h4 id="archives-and-building">Archives and Building</h4>
+
+<ul>
+  <li><code class="highlighter-rouge">archive ID relational</code>: loads the relational knowledge into memory.</li>
+  <li><code class="highlighter-rouge">build ID TARGET</code>: runs a build target. See the documentation of the <a href="building.html">build tool</a> for details on running build commands on archives.</li>
+</ul>
+
+<h4 id="remote-archives">Remote Archives</h4>
+
+<ul>
+  <li><code class="highlighter-rouge">oaf root FOLDER URI</code>: sets a local folder as the root for git-clones of archives in the <a href="oaf.html">OAF</a>.</li>
+  <li><code class="highlighter-rouge">oaf clone GROUP/REPOS</code>: git-clones the archive <code class="highlighter-rouge">URI/GROUP/REPOS</code> into <code class="highlighter-rouge">FOLDER/GROUP/REPOS</code> and recursively clones its dependencies.</li>
+  <li><code class="highlighter-rouge">oaf pull</code>: git-pulls (git pull origin master) all repositories in <code class="highlighter-rouge">FOLDER</code>.</li>
+  <li><code class="highlighter-rouge">oaf pushes</code>: git-pushes all repositories in <code class="highlighter-rouge">FOLDER</code>.</li>
+  <li><code class="highlighter-rouge">oaf setremote</code>: configures the remote URI of all repositories in <code class="highlighter-rouge">FOLDER</code> (useful to switch from https to ssh or when the location of the server has changed).</li>
+</ul>
+
+<h4 id="remote-administration">Remote Administration</h4>
+
+<ul>
+  <li><code class="highlighter-rouge">remote ID COMMAND</code>: executes a command on a remote MMT client that connected via the remote admin extension</li>
+</ul>
+
+<p>See <a href="apidoc://info.kwarc.mmt.api.web.RemoteActionServer"><code class="highlighter-rouge">web.RemoteActionServer</code></a> for details.</p>
+
+<h4 id="applications">Applications</h4>
+<p>Note that <a href="gui.html">GUI</a> and <a href="server.html">HTTP server</a> run in separate threads. MMT will not terminate if these threads are still active.</p>
+
+<ul>
+  <li><code class="highlighter-rouge">server on PORT</code>: starts the <a href="server.html">HTTP server</a> at the port <code class="highlighter-rouge">PORT</code>.</li>
+  <li><code class="highlighter-rouge">server off</code>: stops the HTTP server.</li>
+  <li><code class="highlighter-rouge">gui on</code>: starts the <a href="gui.html">MMT GUI</a>.</li>
+  <li><code class="highlighter-rouge">gui off</code>: stops the MMT GUI.</li>
+</ul>
+
+				</div>
+			</div>
+		</div>
+	
+
+
+	<div class="container">
+		<footer class="container">
+
+    <hr />
+    <p>
+        MMT is developed and maintained mostly by <a href="http://kwarc.info/frabe/" target="_blank">Florian Rabe</a>. <br />
+        
+        This page is hosted via github pages and can be edited <a href="https://github.com/UniFormal/uniformal.github.io/edit/master/doc/applications/shell.md" target="_blank">directly in the browser</a>. <br/>
+    </p>
+</footer>
+	</div>
+
+    <script src="https://comfreek.github.io/uniformal.github.io/lib/js/jquery-3.3.1.min.js"></script>
+    <script src="https://comfreek.github.io/uniformal.github.io/lib/js/bootstrap.min.js"></script>
+		<script src="https://comfreek.github.io/uniformal.github.io/lib/js/doc.js"></script>
+		<script src="https://comfreek.github.io/uniformal.github.io/lib/js/api.js"></script>
+	
+  </body>
+</html>

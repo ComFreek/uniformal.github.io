@@ -1,0 +1,537 @@
+<!doctype html>
+<html lang="en">
+	<!-- This is the layout used for all pages in the wiki-style documentation.
+        The wiki files must have "layout: doc" in their front matter.
+        This file can use page.NAME to refer to variables declared in the front matter
+        and content to refer to the body of the md file.
+   -->
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!--
+      Do not use base tag: <base href="/uniformal.github.io/" />
+      Since otherwise we could not keep links in the documentation relative anymore - without a hassle at least.
+      We would always have to prepend doc/ or something.
+
+      Hence, use e.g. `/uniformal.github.io/lib/css/bootstrap.min.css` to refer to assets in this file only.
+    -->
+    <link rel="icon" href="https://comfreek.github.io/uniformal.github.io/favicon.ico">
+
+    <title>MMT - The MMT Language</title>
+
+    <link href="https://comfreek.github.io/uniformal.github.io/lib/css/bootstrap.min.css" rel="stylesheet" />
+	  <link href="https://comfreek.github.io/uniformal.github.io/lib/css/doc.css" rel="stylesheet" />
+		<link href="https://comfreek.github.io/uniformal.github.io/lib/css/pygments-default.css" rel="stylesheet" />
+	
+  </head>
+  <body>
+	
+<nav class="navbar navbar-expand navbar-dark site-header" site-header >
+    <div class="container">
+        <a class="navbar-brand" href="/">
+            <img src="https://comfreek.github.io/uniformal.github.io/lib/css/img/logo_dark.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+            The MMT Language and System
+        </a>
+    </div>
+</nav>
+
+	
+		<div class="container-fluid main">
+			<div class="row">
+				<div class="col-12 col-md-3 col-xl-2">
+					<ul class="nav flex-column">
+						
+
+
+<div class="list-group">
+  
+    
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/"
+    
+>
+    Overview
+</a>
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/setup/">
+    Setting up MMT
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/tutorials/">
+    Tutorials
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/philosophy/">
+    The Philosophy behind MMT
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable active" href="https://comfreek.github.io/uniformal.github.io/doc/language/">
+    The MMT Language
+</a>
+
+
+
+
+    <div class="list-group">
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/language/uris.html"
+    
+>
+    MMT URIs
+</a>
+
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/language/namespaces.html"
+    
+>
+    Documents and Namespaces
+</a>
+
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/language/modules.html"
+    
+>
+    Modules
+</a>
+
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/language/declarations.html"
+    
+>
+    Symbol Declarations
+</a>
+
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/language/objects.html"
+    
+>
+    Terms
+</a>
+
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/language/delimiters.html"
+    
+>
+    Structural Delimiters
+</a>
+
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/language/informal.html"
+    
+>
+    Flexiformal Representations
+</a>
+
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/language/literals.html"
+    
+>
+    Generic Literals
+</a>
+
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/language/overloading.html"
+    
+>
+    Overloading
+</a>
+
+        
+    </div>
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/archives/">
+    MMT-Archives
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/api/">
+    The MMT API
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/applications/">
+    Applications and Projects based on MMT
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/development/">
+    Development
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/community/"
+    
+>
+    Community & Communication
+</a>
+
+  
+    
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/contribs"
+    
+>
+    Contributed Articles
+</a>
+
+  
+</div>
+					</ul>
+				</div>
+				<div class="col-12 col-md-9 col-xl-8 content">
+					<h2>The MMT Language</h2>
+					<hr />
+	
+					<p>This sections gives an overview of the <strong>general language structure</strong> of MMT.
+To be more concrete, it also explains one specific <strong>concrete syntax</strong>, which is the main syntax used to write MMT content natively.
+A description of MMT’s <strong>abstract syntax</strong> and the corrseponding internal data structures can be found <a href="../api/syntax">here</a></p>
+
+<p>MMT is a language for formal mathematics that pays special attention to <a href="../philosophy/independence.html"><em>foundation-independence</em></a>, scalability, and modularity.
+MMT follows the <a href="http://www.omdoc.org/">OMDoc</a> philosophy and will be integrated into the upcoming OMDoc 2 format.
+The following describes the general principles of MMT.</p>
+
+<p>The goals of OMDoc and MMT are to provide a web-scalable environment in which all mathematics can be represented in a way that supports both rigorous mathematical and logical tools as well as knowledge management services (e.g., databases, notation management, document management, change management).</p>
+
+<p>The key features of the MMT language are</p>
+
+<ul>
+  <li>a module system for declarative languages that combines expressivity with simplicity,</li>
+  <li>a foundation- and logic-independent semantics,</li>
+  <li>a design that incorporates web-scalability.</li>
+</ul>
+
+<h3 id="mmts-4-levels-of-knowledge">MMT’s 4 Levels of Knowledge</h3>
+
+<p>MMT organizes knowledge along the following four levels.
+All 4 levels are interconnected through the use of identifiers: the <a href="../api/uris.html">MMT URI</a>.</p>
+
+<ul>
+  <li>
+    <p><a href="namespaces.html"><strong>Documents</strong></a>: Documents are semantically transparent groupings of <em>modules</em>.
+ In the simplest case, they serve as <em>namespaces</em> giving the modules declared in them globally unique MMT URIs.</p>
+  </li>
+  <li><a href="modules.html"><strong>Modules</strong></a>: Modules are the semantically relevant toplevel declarations.
+    <ul>
+      <li><a href="modules.html#theories"><em>Theories</em></a> encapsulate mathematical contexts.</li>
+      <li><em>Theory morphisms</em> translate between theories either by representation (<a href="modules.html#views"><em>views</em></a>) or by inheritance (<a href="declarations.html#structures"><em>structures</em></a>).</li>
+    </ul>
+
+    <p>The body of a module is a list of <em>symbol declarations</em>.
+The module system permits combining, translating, instantiating modules. The semantics of the module system is defined by <em>flattening</em>, i.e., computing the induced body.</p>
+  </li>
+  <li><a href="declarations.html"><strong>Symbols</strong></a>: Symbols are the smallest fragments of a document that have semantically relevant <a href="../api/uris.html">identifiers</a>.
+    <ul>
+      <li><a href="declarations.html#constants"><em>Constants</em></a> represent named atomic mathematical objects such as function symbols, predicate symbols, sort/type symbols, axioms, theorems, judgments, inference rules.</li>
+      <li><a href="declarations.html#structures"><em>Structures</em></a> are instantiations of other modules.</li>
+    </ul>
+  </li>
+  <li><a href="objects.html"><strong>Objects</strong></a>: Objects differ from the other levels in that they do not have an MMT URI.
+They are mathematical expressions formed from
+    <ul>
+      <li>the <em>symbols</em> that are in scope (referenced via MMT URI)</li>
+      <li>application, binding, and similar operations</li>
+      <li><em>contexts</em> that introduce bound variables and substitutions for them</li>
+      <li>the <em>variables</em> in some context (referenced by their name)</li>
+      <li><a href="literals.html"><em>literals</em></a> such as integers, floats, etc.
+MMT follows the <a href="http://www.openmath.org">OpenMath</a> data model for objects.
+However, contrary to OpenMath, MMT uses formal theories and type systems that determine the well-typed objects.</li>
+    </ul>
+
+    <p>At all levels, knowledge may be [informal].</p>
+  </li>
+</ul>
+
+<h3 id="structural-levels-vs-objects">Structural Levels vs. Objects</h3>
+
+<p>Document, module, and symbol level are jointly called <strong>structural levels</strong>.
+They share the following features:</p>
+
+<ul>
+  <li>There are infinitely many possible declarations, but ony finitely many are actually made (by writing them in some source file or otherwise stating them).</li>
+  <li>Each declaration that is actually made (and only those) witnesses the existence a concept or thing.
+Thus, declarations can be seen as actions that give birth to objects.</li>
+  <li>Each declaration has a unique MMT URI through which it can be referenced.
+The URI can also be seen as the name of the object that the declaration introduces.</li>
+  <li>The syntax tree of all declarations yields a tree of nested containers (in particular documents and modules) with atomic declarations (constants) at the leaves.</li>
+  <li>Each declaration is attributed with some objects (e.g., the domain and codomain of a theory morphism or the type of a constant).</li>
+</ul>
+
+<p><strong>Objects</strong> differ from the structural declarations as follows:</p>
+
+<ul>
+  <li>There are infinitely many objects, and every one of them is meaningful independent of whether it is written down somewhere.</li>
+  <li>Objects have syntax trees, whose inner nodes are constructors or operations, and whose leaves are identifiers (MMT URIs).</li>
+  <li>Objects are anonymous, and the object itself is needed to refer to it.</li>
+  <li>Objects are subject to an equality relation.
+In many applications, two objects are considered the same if their equality can be proved.</li>
+</ul>
+
+<p>Sometimes structural levels and objects are distinguished as outer and inner syntax, respectively.</p>
+
+<p>The distinction is very important in practice also: Many algorithms proceed fundamentally differently for the two.
+This is because the structural levels introduce new identifiers and thus, e.g., new notations and typing rules, which then determine how objects must be processed.</p>
+
+<p>For example, parsing the structural levels can use keywords and simple top-down parsers, whereas the notations and precedences involved parsing objects demand more sophisticated parsers.</p>
+
+				</div>
+			</div>
+		</div>
+	
+
+
+	<div class="container">
+		<footer class="container">
+
+    <hr />
+    <p>
+        MMT is developed and maintained mostly by <a href="http://kwarc.info/frabe/" target="_blank">Florian Rabe</a>. <br />
+        
+        This page is hosted via github pages and can be edited <a href="https://github.com/UniFormal/uniformal.github.io/edit/master/doc/language/index.md" target="_blank">directly in the browser</a>. <br/>
+    </p>
+</footer>
+	</div>
+
+    <script src="https://comfreek.github.io/uniformal.github.io/lib/js/jquery-3.3.1.min.js"></script>
+    <script src="https://comfreek.github.io/uniformal.github.io/lib/js/bootstrap.min.js"></script>
+		<script src="https://comfreek.github.io/uniformal.github.io/lib/js/doc.js"></script>
+		<script src="https://comfreek.github.io/uniformal.github.io/lib/js/api.js"></script>
+	
+  </body>
+</html>

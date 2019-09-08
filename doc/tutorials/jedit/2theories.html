@@ -1,0 +1,516 @@
+<!doctype html>
+<html lang="en">
+	<!-- This is the layout used for all pages in the wiki-style documentation.
+        The wiki files must have "layout: doc" in their front matter.
+        This file can use page.NAME to refer to variables declared in the front matter
+        and content to refer to the body of the md file.
+   -->
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!--
+      Do not use base tag: <base href="/uniformal.github.io/" />
+      Since otherwise we could not keep links in the documentation relative anymore - without a hassle at least.
+      We would always have to prepend doc/ or something.
+
+      Hence, use e.g. `/uniformal.github.io/lib/css/bootstrap.min.css` to refer to assets in this file only.
+    -->
+    <link rel="icon" href="https://comfreek.github.io/uniformal.github.io/favicon.ico">
+
+    <title>MMT - 2 - A First Theory</title>
+
+    <link href="https://comfreek.github.io/uniformal.github.io/lib/css/bootstrap.min.css" rel="stylesheet" />
+	  <link href="https://comfreek.github.io/uniformal.github.io/lib/css/doc.css" rel="stylesheet" />
+		<link href="https://comfreek.github.io/uniformal.github.io/lib/css/pygments-default.css" rel="stylesheet" />
+	
+  </head>
+  <body>
+	
+<nav class="navbar navbar-expand navbar-dark site-header" site-header >
+    <div class="container">
+        <a class="navbar-brand" href="/">
+            <img src="https://comfreek.github.io/uniformal.github.io/lib/css/img/logo_dark.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+            The MMT Language and System
+        </a>
+    </div>
+</nav>
+
+	
+		<div class="container-fluid main">
+			<div class="row">
+				<div class="col-12 col-md-3 col-xl-2">
+					<ul class="nav flex-column">
+						
+
+
+<div class="list-group">
+  
+    
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/"
+    
+>
+    Overview
+</a>
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/setup/">
+    Setting up MMT
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable active" href="https://comfreek.github.io/uniformal.github.io/doc/tutorials/">
+    Tutorials
+</a>
+
+
+
+
+    <div class="list-group">
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/tutorials/prototyping/"
+    
+>
+    Language Design in MMT
+</a>
+
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/tutorials/applications/getting-started"
+    
+>
+    Getting Started as an MMT API user
+</a>
+
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/tutorials/applications/application-development"
+    
+>
+    Application Development with MMT
+</a>
+
+        
+            
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable active" href="https://comfreek.github.io/uniformal.github.io/doc/tutorials/jedit/">
+    Writing MMT Documents with jEdit
+</a>
+
+
+
+
+    <div class="list-group">
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/tutorials/jedit/1archives.html"
+    
+>
+    1 - Creating Archives
+</a>
+
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action active"
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/tutorials/jedit/2theories.html"
+    
+>
+    2 - A First Theory
+</a>
+
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/tutorials/jedit/3LF.html"
+    
+>
+    3 - LF and Judgments-as-Types
+</a>
+
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/tutorials/jedit/4natded.html"
+    
+>
+    4 - Natural Deduction for Intuitionistic Propositional Logic
+</a>
+
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/tutorials/jedit/5structures.html"
+    
+>
+    5 - Structures, Lambda, Pi and Implicit Arguments
+</a>
+
+        
+    </div>
+
+
+        
+    </div>
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/philosophy/">
+    The Philosophy behind MMT
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/language/">
+    The MMT Language
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/archives/">
+    MMT-Archives
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/api/">
+    The MMT API
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/applications/">
+    Applications and Projects based on MMT
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/development/">
+    Development
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/community/"
+    
+>
+    Community & Communication
+</a>
+
+  
+    
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/contribs"
+    
+>
+    Contributed Articles
+</a>
+
+  
+</div>
+					</ul>
+				</div>
+				<div class="col-12 col-md-9 col-xl-8 content">
+					<h2>2 - A First Theory</h2>
+					<hr />
+	
+					<p><a href="1archives.html">&lt; 1 - Creating Archives</a></p>
+
+<p>We can now open the <code class="highlighter-rouge">fol.mmt</code> file in <code class="highlighter-rouge">source</code> with <a href="../../applications/jedit.html">jEdit</a>. If you haven’t done so already, I recommend you read the sections on <a href="../../language/delimiters.html">delimiters</a>, <a href="../../language/modules.html#theories">theories</a> and <a href="../../language/declarations.html#constants">constants</a> now, so you know how to produce our following basic theory:</p>
+
+<p><img src="/uniformal.github.io/doc/img/tut01/theory1.png" alt="`theory Logic : ur:?LF = prop : type \US # o \RS	proof : o → type \US # ⊦ 1 prec -100 \RS \GS`" /></p>
+
+<p>(if abbreviations are activated in jEdit, the <code class="highlighter-rouge">→</code> symbol can be produced with the abbreviation <code class="highlighter-rouge">jra</code> and the <code class="highlighter-rouge">⊦</code> symbol with <code class="highlighter-rouge">jvdash</code>)</p>
+
+<p>This code first introduces a new theory named <code class="highlighter-rouge">Logic</code> - delimited by <img src="/uniformal.github.io/doc/img/GS.png" alt="`\RS`" /> - with meta theory <code class="highlighter-rouge">ur:?LF</code>. The abbrivation <code class="highlighter-rouge">ur</code> expands to the <a href="../../uris.html">URI</a> <code class="highlighter-rouge">http://cds.omdoc.org/urtheories/</code> - the namespace of the urtheories archive, which contains the theory <code class="highlighter-rouge">LF</code>. The fully qualified URI is thus <code class="highlighter-rouge">http://cds.omdoc.org/urtheories?LF</code> (which we could have written instead). We will go into the details of LF <a href="3LF.html">later</a>.</p>
+
+<p>The full URI of our new theory is made up of its name (<code class="highlighter-rouge">Logic</code>) and the namespace declared in the <code class="highlighter-rouge">MANIFEST.MF</code> file, i.e. <code class="highlighter-rouge">http://kwarc.github.io/MMT?Logic</code>.</p>
+
+<p>This theory contains two constants:</p>
+
+<ul>
+  <li><code class="highlighter-rouge">prop</code> with type <code class="highlighter-rouge">type</code>. <code class="highlighter-rouge">type</code> is provided by LF and is a <em>universe</em>, which means every symbol with type <code class="highlighter-rouge">type</code> is <em>inhabitable</em> (i.e. may occur to the right side of a typing judgment). <code class="highlighter-rouge">prop</code> will be the type of our propositions. We give it an optional notation <code class="highlighter-rouge">o</code> for brevity.</li>
+  <li><code class="highlighter-rouge">proof</code> with type <code class="highlighter-rouge">o → type</code> and notation <code class="highlighter-rouge">⊦ 1</code>. <code class="highlighter-rouge">→</code> is the simple function type constructor and again provided by LF. <code class="highlighter-rouge">o</code> is just a notation for <code class="highlighter-rouge">prop</code>, so <code class="highlighter-rouge">proof</code> is a function that maps propositions to types (more on that later). We give the notation a very low precedence.</li>
+</ul>
+
+<p>We can now parse the document and have MMT type check it. If parse-on-key is not activated (see <a href="../../setup/jedit.html">here</a>), you can press the parse button (arrow symbol to the top left of the screenshot below) in SideKick, after which it will show the document tree:</p>
+
+<p><img src="/uniformal.github.io/doc/img/tut01/sidekick.png" alt="Sidekick" /></p>
+
+<p>Unlike SideKick, the ErrorList window should show nothing - meaning the document type checks correctly. Let’s see what happens, if we introduce a simple typo in the type of <code class="highlighter-rouge">proof</code>, by changing it to <code class="highlighter-rouge">o → tupe</code>. This is what the ErrorList should show now:</p>
+
+<p><img src="/uniformal.github.io/doc/img/tut01/errorlist.png" alt="ErrorList" /></p>
+
+<p>We will look at the details of the error message, after we’ve looked at LF and its rules. For now, we will remove the typo and continue with a theory specifying the <em>syntax</em> of propositional logic. On the basis of the theory we already have, what’s missing are the usual logical connectives <code class="highlighter-rouge">∧</code> (<code class="highlighter-rouge">jwedge</code>), <code class="highlighter-rouge">∨</code> (<code class="highlighter-rouge">jvee</code>), <code class="highlighter-rouge">⇒</code> (<code class="highlighter-rouge">jrA</code>), <code class="highlighter-rouge">¬</code> (<code class="highlighter-rouge">jneg</code>) and <code class="highlighter-rouge">⇔</code> (<code class="highlighter-rouge">jLeftrightarrow</code>), and constants <code class="highlighter-rouge">⊤</code> (<code class="highlighter-rouge">jtop</code>) and <code class="highlighter-rouge">⊥</code> (<code class="highlighter-rouge">jbot</code>).</p>
+
+<p>For the sake of modularity, we will put those in a new theory, like so:</p>
+
+<p><img src="/uniformal.github.io/doc/img/tut01/theory2.png" alt="`theory PLSyntax : ur:?LF =	include ?Logic \RS True	: o	\US # ⊤	\RS False : o	\US # ⊥	\RS not : o → o \US # ¬ 1 prec 50 \RS and : o → o → o \US # 1 ∧ 2 prec 45 \RS or : o → o → o \US # 1 ∨ 2 prec 40 \RS	imp	: o → o → o \US # 1 ⇒ 2 prec 35 \RS equiv	: o → o → o \US # 1 ⇔ 2 prec 30 \RS \GS`" /></p>
+
+<p>So we specify the connectives as functions between propositions - e.g. <code class="highlighter-rouge">and</code> takes two propositions (of type <code class="highlighter-rouge">o</code>=<code class="highlighter-rouge">prop</code>) and returns a new proposition. We assign precedences according to standard mathematical convention - e.g. <code class="highlighter-rouge">∧</code> binds stronger than e.g. <code class="highlighter-rouge">⇒</code>. Constants don’t need a precedence. The <code class="highlighter-rouge">include</code>-statement makes sure, that the previously declared symbol <code class="highlighter-rouge">o</code> is available in this new theory.</p>
+
+<p>We can test this, by looking at the syntax tree in SideKick. Let’s add a new constant to our theory:</p>
+
+<p><img src="/uniformal.github.io/doc/img/tut01/testconstant.png" alt="`test = A ∧ B ⇒ ¬ C ∨ A ∧ B \RS`" /></p>
+
+<p>After pressing the parse-button, SideKick should show the following tree:</p>
+
+<p><img src="/uniformal.github.io/doc/img/tut01/sidekick2.png" alt="SideKick" /></p>
+
+<p>This tells us:</p>
+
+<ul>
+  <li>MMT has correctly inferred the type of <code class="highlighter-rouge">test</code> as <code class="highlighter-rouge">prop</code>,</li>
+  <li>MMT does not know the symbols <code class="highlighter-rouge">A</code>, <code class="highlighter-rouge">B</code> and <code class="highlighter-rouge">C</code>, so it considers them <em>free variables</em> and (correctly) infers their types as <code class="highlighter-rouge">prop</code>,</li>
+  <li>MMT parses the term correctly as <code class="highlighter-rouge">(A ∧ B) ⇒ ((¬ C) ∨ (A ∧ B))</code>.</li>
+</ul>
+
+<p>It should be noted, that notations are always <em>optional</em> - we neither have to provide notations for new constants, nor do we have to use them after declaring them. We can always just use the name of the constant itself as a notation. The <code class="highlighter-rouge">test</code> constant above could have just as well been declared as:</p>
+
+<p><img src="/uniformal.github.io/doc/img/tut01/testconstant2.png" alt="`test = imp (and A B) (or (not C) (and A B)) \RS`" /></p>
+
+<p>You can check the syntax trees for both variants in SideKick and verify, that they indeed match.</p>
+
+<hr />
+
+<p><a href="3LF.html">&gt; 3 - LF and Judgments-as-Types</a></p>
+
+				</div>
+			</div>
+		</div>
+	
+
+
+	<div class="container">
+		<footer class="container">
+
+    <hr />
+    <p>
+        MMT is developed and maintained mostly by <a href="http://kwarc.info/frabe/" target="_blank">Florian Rabe</a>. <br />
+        
+        This page is hosted via github pages and can be edited <a href="https://github.com/UniFormal/uniformal.github.io/edit/master/doc/tutorials/jedit/2theories.md" target="_blank">directly in the browser</a>. <br/>
+    </p>
+</footer>
+	</div>
+
+    <script src="https://comfreek.github.io/uniformal.github.io/lib/js/jquery-3.3.1.min.js"></script>
+    <script src="https://comfreek.github.io/uniformal.github.io/lib/js/bootstrap.min.js"></script>
+		<script src="https://comfreek.github.io/uniformal.github.io/lib/js/doc.js"></script>
+		<script src="https://comfreek.github.io/uniformal.github.io/lib/js/api.js"></script>
+	
+  </body>
+</html>

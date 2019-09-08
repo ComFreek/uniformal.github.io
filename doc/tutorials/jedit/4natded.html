@@ -1,0 +1,556 @@
+<!doctype html>
+<html lang="en">
+	<!-- This is the layout used for all pages in the wiki-style documentation.
+        The wiki files must have "layout: doc" in their front matter.
+        This file can use page.NAME to refer to variables declared in the front matter
+        and content to refer to the body of the md file.
+   -->
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!--
+      Do not use base tag: <base href="/uniformal.github.io/" />
+      Since otherwise we could not keep links in the documentation relative anymore - without a hassle at least.
+      We would always have to prepend doc/ or something.
+
+      Hence, use e.g. `/uniformal.github.io/lib/css/bootstrap.min.css` to refer to assets in this file only.
+    -->
+    <link rel="icon" href="https://comfreek.github.io/uniformal.github.io/favicon.ico">
+
+    <title>MMT - 4 - Natural Deduction for Intuitionistic Propositional Logic</title>
+
+    <link href="https://comfreek.github.io/uniformal.github.io/lib/css/bootstrap.min.css" rel="stylesheet" />
+	  <link href="https://comfreek.github.io/uniformal.github.io/lib/css/doc.css" rel="stylesheet" />
+		<link href="https://comfreek.github.io/uniformal.github.io/lib/css/pygments-default.css" rel="stylesheet" />
+	
+  </head>
+  <body>
+	
+<nav class="navbar navbar-expand navbar-dark site-header" site-header >
+    <div class="container">
+        <a class="navbar-brand" href="/">
+            <img src="https://comfreek.github.io/uniformal.github.io/lib/css/img/logo_dark.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+            The MMT Language and System
+        </a>
+    </div>
+</nav>
+
+	
+		<div class="container-fluid main">
+			<div class="row">
+				<div class="col-12 col-md-3 col-xl-2">
+					<ul class="nav flex-column">
+						
+
+
+<div class="list-group">
+  
+    
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/"
+    
+>
+    Overview
+</a>
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/setup/">
+    Setting up MMT
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable active" href="https://comfreek.github.io/uniformal.github.io/doc/tutorials/">
+    Tutorials
+</a>
+
+
+
+
+    <div class="list-group">
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/tutorials/prototyping/"
+    
+>
+    Language Design in MMT
+</a>
+
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/tutorials/applications/getting-started"
+    
+>
+    Getting Started as an MMT API user
+</a>
+
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/tutorials/applications/application-development"
+    
+>
+    Application Development with MMT
+</a>
+
+        
+            
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable active" href="https://comfreek.github.io/uniformal.github.io/doc/tutorials/jedit/">
+    Writing MMT Documents with jEdit
+</a>
+
+
+
+
+    <div class="list-group">
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/tutorials/jedit/1archives.html"
+    
+>
+    1 - Creating Archives
+</a>
+
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/tutorials/jedit/2theories.html"
+    
+>
+    2 - A First Theory
+</a>
+
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/tutorials/jedit/3LF.html"
+    
+>
+    3 - LF and Judgments-as-Types
+</a>
+
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action active"
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/tutorials/jedit/4natded.html"
+    
+>
+    4 - Natural Deduction for Intuitionistic Propositional Logic
+</a>
+
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/tutorials/jedit/5structures.html"
+    
+>
+    5 - Structures, Lambda, Pi and Implicit Arguments
+</a>
+
+        
+    </div>
+
+
+        
+    </div>
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/philosophy/">
+    The Philosophy behind MMT
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/language/">
+    The MMT Language
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/archives/">
+    MMT-Archives
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/api/">
+    The MMT API
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/applications/">
+    Applications and Projects based on MMT
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/development/">
+    Development
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/community/"
+    
+>
+    Community & Communication
+</a>
+
+  
+    
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/contribs"
+    
+>
+    Contributed Articles
+</a>
+
+  
+</div>
+					</ul>
+				</div>
+				<div class="col-12 col-md-9 col-xl-8 content">
+					<h2>4 - Natural Deduction for Intuitionistic Propositional Logic</h2>
+					<hr />
+	
+					<p><a href="3LF.html">&lt; 3 - LF and Judgments-as-Types</a></p>
+
+<p>In this section, we will look at the natural deduction calculus for intuitionistic propositional logic. If you already know the calculus, you can safely skip this section.</p>
+
+<p><a href="https://en.wikipedia.org/wiki/Intuitionistic_logic">Intuitionistic logic</a> is a constructive fragment of classical logic - i.e. syntactically identical, but the law of the excluded middle <code class="highlighter-rouge">A ∨ ¬A</code> is omitted.</p>
+
+<p><strong>Natural Deduction</strong> calculi follow the idea that we give for each logical connective <em>introduction</em> and <em>elimination</em> rules.</p>
+
+<p>Introduction rules tell us, when we are allowed to <em>introduce</em> an instance of the connective. e.g. the introduction rule for <code class="highlighter-rouge">∧</code> is pretty straight-forward:</p>
+
+<p><img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Cdfrac%7B%5Cvdash%20A%5Cquad%20%5Cvdash%20B%7D%7B%5Cvdash%20A%20%5Cwedge%20B%7D" alt="`\dfrac{\vdash A\quad \vdash B}{\vdash A \wedge B}`" /></p>
+
+<blockquote>
+  <p>If <code class="highlighter-rouge">A</code> is provable and <code class="highlighter-rouge">B</code> is provable, then <code class="highlighter-rouge">A∧B</code> is provable.</p>
+</blockquote>
+
+<p>Conversely, elimination rules allow us to <em>get rid</em> of the connective. In the case of <code class="highlighter-rouge">∧</code>, there are two ways to do that:</p>
+
+<p><img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Cdfrac%7B%5Cvdash%20A%5Cwedge%20B%7D%7B%5Cvdash%20A%7D" alt="`\dfrac{\vdash A\wedge B}{\vdash A}`" />  and <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Cdfrac%7B%5Cvdash%20A%5Cwedge%20B%7D%7B%5Cvdash%20B%7D" alt="`\dfrac{\vdash A\wedge B}{\vdash A}`" /></p>
+
+<blockquote>
+  <p>If <code class="highlighter-rouge">A∧B</code> is provable, then <code class="highlighter-rouge">A</code> is provable.<br />
+If <code class="highlighter-rouge">A∧B</code> is provable, then <code class="highlighter-rouge">B</code> is provable.</p>
+</blockquote>
+
+<p>Since we use judgments-as-types, these three rules correspond to the following three function types:</p>
+
+<p><img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Cvdash%20A%5C%3B%20%5Cto%5C%3B%20%5Cvdash%20B%5C%3B%5Cto%5C%3B%5Cvdash%20A%5Cwedge%20B" alt="`\vdash A \to \vdash B \to \vdash A\wedge B`" /><br />
+<img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Cvdash%20A%5Cwedge%20B%5C%3B%20%5Cto%5C%3B%5Cvdash%20A" alt="`\vdash A \wedge B \to \vdash A`" /><br />
+<img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Cvdash%20A%5Cwedge%20B%5C%3B%20%5Cto%5C%3B%5Cvdash%20B" alt="`\vdash A \wedge B \to \vdash B`" /></p>
+
+<p>Noticably, the function arrows in these types lend themselves to be interpreted just like implications: We can read e.g. the first rule as</p>
+
+<blockquote>
+  <p>If <code class="highlighter-rouge">A</code> is provable, then (if <code class="highlighter-rouge">B</code> is provable, then <code class="highlighter-rouge">A∧B</code> is provable).</p>
+</blockquote>
+
+<p>This is no coincidence - this correspondence between a logical connective and a type constructor is known as <em>Curry-Howard-Isomorphism</em> (or <em>propositions-as-types</em>), and we will (rather trivially) prove this isomorphism later in MMT using <a href="../../language/modules.html#views">views</a>.</p>
+
+<p>However, the types above don’t quite work in LF, for the simple reason, that <code class="highlighter-rouge">A</code> and <code class="highlighter-rouge">B</code> are free variables. The proof rules are valid for <em>any</em> propositions <code class="highlighter-rouge">A</code>, <code class="highlighter-rouge">B</code>, so to avoid them being free variables, we can instead declare a <em>function</em> that takes two proposition <code class="highlighter-rouge">A</code>,<code class="highlighter-rouge">B</code> and returns the functions corresponding to the rules. For that, we finally need the dependend function types:</p>
+
+<p><img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Cprod_%7BA%3Aprop%7D%5Cprod_%7BB%3Aprop%7D%5Cvdash%20A%5C%3B%20%5Cto%5C%3B%20%5Cvdash%20B%5C%3B%5Cto%5C%3B%5Cvdash%20A%5Cwedge%20B" alt="`\prod_{A:prop}\prod_{B:prop}\vdash A \to \vdash B \to \vdash A\wedge B`" /><br />
+<img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Cprod_%7BA%3Aprop%7D%5Cprod_%7BB%3Aprop%7D%5Cvdash%20A%5Cwedge%20B%5C%3B%20%5Cto%5C%3B%5Cvdash%20A" alt="`\prod_{A:prop}\prod_{B:prop}\vdash A \wedge B \to \vdash A`" /><br />
+<img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Cprod_%7BA%3Aprop%7D%5Cprod_%7BB%3Aprop%7D%5Cvdash%20A%5Cwedge%20B%5C%3B%20%5Cto%5C%3B%5Cvdash%20B" alt="`\prod_{A:prop}\prod_{B:prop}\vdash A \wedge B \to \vdash B`" /></p>
+
+<p>Again, noticably, the dependent functions here lend themselves to be read like a “for all” - e.g. we can read the first rule as</p>
+
+<blockquote>
+  <p>For all <code class="highlighter-rouge">A:prop</code>, for all <code class="highlighter-rouge">B:prop</code>: If <code class="highlighter-rouge">A</code> is provable, then (if <code class="highlighter-rouge">B</code> is provable, then <code class="highlighter-rouge">A∧B</code> is provable).</p>
+</blockquote>
+
+<h4 id="the-proof-rules">The Proof Rules</h4>
+
+<p>The full set of rules of the natural deduction calculus is:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Symbol</th>
+      <th>Introduction Rule(s)</th>
+      <th>Elimination Rule(s)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="highlighter-rouge">⊤</code></td>
+      <td><img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Cdfrac%7B%5C%20%7D%7B%5Cvdash%5Ctop%7D" alt="`\dfrac{\ }{\vdash\top}`" /></td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">⊥</code></td>
+      <td>None</td>
+      <td><img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Cdfrac%7B%5Cvdash%5Cbot%7D%7B%5Cvdash%20A%7D" alt="`\dfrac{\vdash\bot}{\vdash A}`" /></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">¬</code></td>
+      <td><img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Cdfrac%7B%5Cbegin%7Bmatrix%7D%5BA%5D%5C%5C%20%5Cvdots%20%5C%5C%20%5Cvdash%5Cbot%5Cend%7Bmatrix%7D%7D%7B%5Cvdash%5Cneg%20A%7D" alt="`\dfrac{\begin{matrix}[A]\ \vdots \ \vdash\bot\end{matrix}}{\vdash\neg A}`" /></td>
+      <td><img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Cdfrac%7B%5Cvdash%20A%5Cquad%5Cvdash%20%5Cneg%20A%7D%7B%5Cvdash%5Cbot%7D" alt="`\dfrac{\vdash A\quad\vdash \neg A}{\vdash\bot}`" /></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">∧</code></td>
+      <td><img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Cdfrac%7B%5Cvdash%20A%5Cquad%20%5Cvdash%20B%7D%7B%5Cvdash%20A%20%5Cwedge%20B%7D" alt="`\dfrac{\vdash A\quad \vdash B}{\vdash A \wedge B}`" /></td>
+      <td><img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Cdfrac%7B%5Cvdash%20A%5Cwedge%20B%7D%7B%5Cvdash%20A%7D" alt="`\dfrac{\vdash A\wedge B}{\vdash A}`" /> and   <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Cdfrac%7B%5Cvdash%20A%5Cwedge%20B%7D%7B%5Cvdash%20B%7D" alt="`\dfrac{\vdash A\wedge B}{\vdash A}`" /></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">∨</code></td>
+      <td><img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Cdfrac%7B%5Cvdash%20A%7D%7B%5Cvdash%20A%20%5Cvee%20B%7D" alt="`\dfrac{\vdash A}{\vdash A \vee B}`" /> and <img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Cdfrac%7B%5Cvdash%20B%7D%7B%5Cvdash%20A%20%5Cvee%20B%7D" alt="`\dfrac{\vdash b}{\vdash A \vee B}`" /></td>
+      <td><img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Cdfrac%7B%5Cbegin%7Bmatrix%7D%5BA%5D%5C%5C%20%5Cvdots%5C%5C%20%5Cvdash%20C%5Cend%7Bmatrix%7D%5Cquad%5Cbegin%7Bmatrix%7D%5BB%5D%5C%5C%20%5Cvdots%5C%5C%20%5Cvdash%20C%5Cend%7Bmatrix%7D%5Cquad%5Cbegin%7Bmatrix%7D%5C%20%5C%5C%20%5C%20%5C%5C%20%5Cvdash%20A%5Cvee%20B%5Cend%7Bmatrix%7D%7D%7B%5Cvdash%20C%7D" alt="`\dfrac{\begin{matrix}[A]\ \vdots\ \vdash C\end{matrix}\quad\begin{matrix}[B]\ \vdots\ \vdash C\end{matrix}\quad\begin{matrix}\ \ \ \ \vdash A\vee B\end{matrix}}{\vdash C}`" /></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">⇒</code></td>
+      <td><img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Cdfrac%7B%5Cbegin%7Bmatrix%7D%5BA%5D%5C%5C%20%5Cvdots%5C%5C%20%5Cvdash%20B%5Cend%7Bmatrix%7D%7D%7B%5Cvdash%20A%20%5CRightarrow%20B%7D" alt="`\dfrac{\begin{matrix}[A]\ \vdots\ \vdash B\end{matrix}}{\vdash A \Rightarrow B}`" /></td>
+      <td><img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Cdfrac%7B%5Cvdash%20A%5CRightarrow%20B%5Cquad%5Cvdash%20A%7D%7B%5Cvdash%20B%7D" alt="`\dfrac{\vdash A\Rightarrow B\quad\vdash A}{\vdash B}`" /></td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<p><a href="5structures.html">&gt; 5 - Structures, Lambda, Pi and Implicit Arguments</a></p>
+
+				</div>
+			</div>
+		</div>
+	
+
+
+	<div class="container">
+		<footer class="container">
+
+    <hr />
+    <p>
+        MMT is developed and maintained mostly by <a href="http://kwarc.info/frabe/" target="_blank">Florian Rabe</a>. <br />
+        
+        This page is hosted via github pages and can be edited <a href="https://github.com/UniFormal/uniformal.github.io/edit/master/doc/tutorials/jedit/4natded.md" target="_blank">directly in the browser</a>. <br/>
+    </p>
+</footer>
+	</div>
+
+    <script src="https://comfreek.github.io/uniformal.github.io/lib/js/jquery-3.3.1.min.js"></script>
+    <script src="https://comfreek.github.io/uniformal.github.io/lib/js/bootstrap.min.js"></script>
+		<script src="https://comfreek.github.io/uniformal.github.io/lib/js/doc.js"></script>
+		<script src="https://comfreek.github.io/uniformal.github.io/lib/js/api.js"></script>
+	
+  </body>
+</html>

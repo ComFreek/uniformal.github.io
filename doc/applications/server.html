@@ -1,0 +1,463 @@
+<!doctype html>
+<html lang="en">
+	<!-- This is the layout used for all pages in the wiki-style documentation.
+        The wiki files must have "layout: doc" in their front matter.
+        This file can use page.NAME to refer to variables declared in the front matter
+        and content to refer to the body of the md file.
+   -->
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!--
+      Do not use base tag: <base href="/uniformal.github.io/" />
+      Since otherwise we could not keep links in the documentation relative anymore - without a hassle at least.
+      We would always have to prepend doc/ or something.
+
+      Hence, use e.g. `/uniformal.github.io/lib/css/bootstrap.min.css` to refer to assets in this file only.
+    -->
+    <link rel="icon" href="https://comfreek.github.io/uniformal.github.io/favicon.ico">
+
+    <title>MMT - The MMT Server</title>
+
+    <link href="https://comfreek.github.io/uniformal.github.io/lib/css/bootstrap.min.css" rel="stylesheet" />
+	  <link href="https://comfreek.github.io/uniformal.github.io/lib/css/doc.css" rel="stylesheet" />
+		<link href="https://comfreek.github.io/uniformal.github.io/lib/css/pygments-default.css" rel="stylesheet" />
+	
+  </head>
+  <body>
+	
+<nav class="navbar navbar-expand navbar-dark site-header" site-header >
+    <div class="container">
+        <a class="navbar-brand" href="/">
+            <img src="https://comfreek.github.io/uniformal.github.io/lib/css/img/logo_dark.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+            The MMT Language and System
+        </a>
+    </div>
+</nav>
+
+	
+		<div class="container-fluid main">
+			<div class="row">
+				<div class="col-12 col-md-3 col-xl-2">
+					<ul class="nav flex-column">
+						
+
+
+<div class="list-group">
+  
+    
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/"
+    
+>
+    Overview
+</a>
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/setup/">
+    Setting up MMT
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/tutorials/">
+    Tutorials
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/philosophy/">
+    The Philosophy behind MMT
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/language/">
+    The MMT Language
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/archives/">
+    MMT-Archives
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/api/">
+    The MMT API
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable active" href="https://comfreek.github.io/uniformal.github.io/doc/applications/">
+    Applications and Projects based on MMT
+</a>
+
+
+
+
+    <div class="list-group">
+        
+            
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/applications/ides.html">
+    IDEs
+</a>
+
+
+
+
+
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/applications/shell.html"
+    
+>
+    The MMT Shell
+</a>
+
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action active"
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/applications/server.html"
+    
+>
+    The MMT Server
+</a>
+
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/applications/tgview.html"
+    
+>
+    TGView
+</a>
+
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/applications/latex.html"
+    
+>
+    LaTeX Processing
+</a>
+
+        
+    </div>
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/development/">
+    Development
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/community/"
+    
+>
+    Community & Communication
+</a>
+
+  
+    
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/contribs"
+    
+>
+    Contributed Articles
+</a>
+
+  
+</div>
+					</ul>
+				</div>
+				<div class="col-12 col-md-9 col-xl-8 content">
+					<h2>The MMT Server</h2>
+					<hr />
+	
+					<p>The MMT HTTP server is started using the command <code class="highlighter-rouge">server on PORT [HOSTNAME]</code> in the shell. <code class="highlighter-rouge">server off</code> switches it off.
+When running this command, an HTTP Server will be started on <code class="highlighter-rouge">PORT</code>, by default this will only be reachable on <code class="highlighter-rouge">localhost</code>, but if desired a different <code class="highlighter-rouge">HOSTNAME</code> can be specified by giving the appropriate argument. 
+In the following, we assume that no such argument is given, however all URIs will still work exactly the same if this is not the case.</p>
+
+<p>Individual services are available as <code class="highlighter-rouge">localhost:PORT/:SERVICE</code>. These may take arguments via a <code class="highlighter-rouge">?QUERY</code> or via the HTTP BODY.
+Each <em>SERVICE</em> is defined by a <a href="../api/extensions.html">Server extension</a>.</p>
+
+<h4 id="services">Services</h4>
+<p>Some services are available by default, which can be browsed in the <a href="apidoc://info.kwarc.mmt.api.web.ServerExtension">API documentation</a>.</p>
+
+<ul>
+  <li><code class="highlighter-rouge">mmt</code>: retrieves the knowledge item whose <a href="../api/uris.html">MMT URI</a> is QUERY. The URI may be followed with <code class="highlighter-rouge">present STYLE</code> to choose a presentation style. The default is OMDoc XML.</li>
+  <li><code class="highlighter-rouge">query</code>: interprets the BODY as a <a href="../api/queries.html">QMT query</a> and returns the results.</li>
+  <li><code class="highlighter-rouge">svg</code>: serves the theory graph as an SVG element for the MMT document whose URI is <code class="highlighter-rouge">QUERY</code>.</li>
+  <li><code class="highlighter-rouge">admin</code>: interprets the query as an <a href="shell.html">MMT shell command</a> and executes it</li>
+</ul>
+
+<p>Note that logical algorithms like parsing, computation, etc. are exposed as special cases of QMT queries.</p>
+
+<h3 id="the-mmt-web-site">The MMT Web Site</h3>
+
+<p>The web browser is available at <code class="highlighter-rouge">localhost:PORT</code> after starting the HTTP server. Optionally, <code class="highlighter-rouge">localhost:PORT?MMTURI</code> can be used to set the initial page.</p>
+
+<p>The web browser focuses on displaying the MMT content as HTML5 with presentation MathML and interactive JavaScript.
+Some features are:</p>
+
+<ul>
+  <li>The <strong>sidebar</strong> shows the hierarchy of documents and the theories defined within them.
+    <ul>
+      <li><em>Clicking</em> on a document/theory loads it into the main area.</li>
+      <li><em>Double-clicking</em> on a document loads its theory graph into the graph window. (If the graph window is not open yet, it is opened as a separate browser window.)</li>
+      <li>The tree can be expanded further below the theories. Then it will show all knowledge in relation to that theory via the MMT ontology. For example, this shows views into or out of the theory.</li>
+    </ul>
+  </li>
+  <li>The <strong>main area</strong> shows an MMT document or theory.
+    <ul>
+      <li>Nested documents and theories can be expanded in place by clicking on the keyword. Afterwards they can be folded in the same way.</li>
+      <li>Included theories can be loaded in place by clicking on the theory.</li>
+      <li>Each document/theory has a right-click menu that permits setting display options for the whole document/theory.</li>
+    </ul>
+  </li>
+  <li><strong>Mathematical formulas</strong> in the main area show a variety of interactive behavior.
+    <ul>
+      <li><em>Hovering</em> over
+        <ul>
+          <li>an <em>expression</em> selects the respective subexpression.</li>
+          <li>a <em>symbol</em> shows its full MMT URI as a tooltip.</li>
+          <li>a <em>variable</em> selects its declaration.</li>
+        </ul>
+      </li>
+      <li>The <em>right-click menu</em> permits setting visibility options for the selected subexpression.
+  These show/hide parts of the expression that were infered by the system:
+        <ul>
+          <li><em>reconstructed types</em>: the omitted types of bound variables</li>
+          <li><em>implicit arguments</em>: the omitted arguments to operator applications</li>
+          <li><em>redundant brackets</em>: brackets that are not needed due to operator precedences</li>
+        </ul>
+      </li>
+      <li>The right-click menu permits retrieving additional information from the server about <em>subexpressions</em>.
+  This is displayed in a non-modal dialog window:
+        <ul>
+          <li>The type/definiens of the symbol under the cursor.</li>
+          <li>The type of the selected subexpressions. This type is computed dynamically on the server.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>The <strong>graph view</strong> is a separate browser window showing a theory graph (as SVG).
+    <ul>
+      <li><em>Clicking</em> on a theory or view opens it in the main area.</li>
+      <li>The <em>mouse wheel</em> can be used for zooming.</li>
+      <li><em>Dragging</em> the mouse can be used for panning.</li>
+    </ul>
+  </li>
+</ul>
+
+				</div>
+			</div>
+		</div>
+	
+
+
+	<div class="container">
+		<footer class="container">
+
+    <hr />
+    <p>
+        MMT is developed and maintained mostly by <a href="http://kwarc.info/frabe/" target="_blank">Florian Rabe</a>. <br />
+        
+        This page is hosted via github pages and can be edited <a href="https://github.com/UniFormal/uniformal.github.io/edit/master/doc/applications/server.md" target="_blank">directly in the browser</a>. <br/>
+    </p>
+</footer>
+	</div>
+
+    <script src="https://comfreek.github.io/uniformal.github.io/lib/js/jquery-3.3.1.min.js"></script>
+    <script src="https://comfreek.github.io/uniformal.github.io/lib/js/bootstrap.min.js"></script>
+		<script src="https://comfreek.github.io/uniformal.github.io/lib/js/doc.js"></script>
+		<script src="https://comfreek.github.io/uniformal.github.io/lib/js/api.js"></script>
+	
+  </body>
+</html>

@@ -1,0 +1,518 @@
+<!doctype html>
+<html lang="en">
+	<!-- This is the layout used for all pages in the wiki-style documentation.
+        The wiki files must have "layout: doc" in their front matter.
+        This file can use page.NAME to refer to variables declared in the front matter
+        and content to refer to the body of the md file.
+   -->
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!--
+      Do not use base tag: <base href="/uniformal.github.io/" />
+      Since otherwise we could not keep links in the documentation relative anymore - without a hassle at least.
+      We would always have to prepend doc/ or something.
+
+      Hence, use e.g. `/uniformal.github.io/lib/css/bootstrap.min.css` to refer to assets in this file only.
+    -->
+    <link rel="icon" href="https://comfreek.github.io/uniformal.github.io/favicon.ico">
+
+    <title>MMT - MMT Objects</title>
+
+    <link href="https://comfreek.github.io/uniformal.github.io/lib/css/bootstrap.min.css" rel="stylesheet" />
+	  <link href="https://comfreek.github.io/uniformal.github.io/lib/css/doc.css" rel="stylesheet" />
+		<link href="https://comfreek.github.io/uniformal.github.io/lib/css/pygments-default.css" rel="stylesheet" />
+	
+  </head>
+  <body>
+	
+<nav class="navbar navbar-expand navbar-dark site-header" site-header >
+    <div class="container">
+        <a class="navbar-brand" href="/">
+            <img src="https://comfreek.github.io/uniformal.github.io/lib/css/img/logo_dark.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+            The MMT Language and System
+        </a>
+    </div>
+</nav>
+
+	
+		<div class="container-fluid main">
+			<div class="row">
+				<div class="col-12 col-md-3 col-xl-2">
+					<ul class="nav flex-column">
+						
+
+
+<div class="list-group">
+  
+    
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/"
+    
+>
+    Overview
+</a>
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/setup/">
+    Setting up MMT
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/tutorials/">
+    Tutorials
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/philosophy/">
+    The Philosophy behind MMT
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/language/">
+    The MMT Language
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/archives/">
+    MMT-Archives
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable active" href="https://comfreek.github.io/uniformal.github.io/doc/api/">
+    The MMT API
+</a>
+
+
+
+
+    <div class="list-group">
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/api/controller.html"
+    
+>
+    The Controller
+</a>
+
+        
+            
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable active" href="https://comfreek.github.io/uniformal.github.io/doc/api/syntax/">
+    Data Structures for the MMT Language
+</a>
+
+
+
+
+    <div class="list-group">
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/api/syntax/uris.html"
+    
+>
+    MMT URIs
+</a>
+
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/api/syntax/narrative.html"
+    
+>
+    Narrative Elements
+</a>
+
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/api/syntax/content.html"
+    
+>
+    Content Elements
+</a>
+
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action active"
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/api/syntax/objects.html"
+    
+>
+    Objects
+</a>
+
+        
+    </div>
+
+
+        
+            
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/api/queries.html">
+    Queries
+</a>
+
+
+
+
+
+        
+            
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/api/extensions/">
+    Extensions
+</a>
+
+
+
+
+
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/api/log.html"
+    
+>
+    Logging
+</a>
+
+        
+            
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/api/checking/">
+    Checking Judgements
+</a>
+
+
+
+
+
+        
+    </div>
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/applications/">
+    Applications and Projects based on MMT
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/development/">
+    Development
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/community/"
+    
+>
+    Community & Communication
+</a>
+
+  
+    
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/contribs"
+    
+>
+    Contributed Articles
+</a>
+
+  
+</div>
+					</ul>
+				</div>
+				<div class="col-12 col-md-9 col-xl-8 content">
+					<h2>MMT Objects</h2>
+					<hr />
+	
+					<p><img src="/uniformal.github.io/doc/img/Term.jpg" alt="data structures" />
+<a href="apidoc://info.kwarc.mmt.api.objects.Obj"><code class="highlighter-rouge">objects.Obj</code></a> is the top level datastructure for all objects.
+These are terms, variable declarations and contexts.</p>
+
+<ul>
+  <li><strong><a href="apidoc://info.kwarc.mmt.api.objects.Term"><code class="highlighter-rouge">objects.Term</code></a></strong> has the following important subclasses, all of which are scala case classes:
+    <ul>
+      <li><strong><a href="apidoc://info.kwarc.mmt.api.objects.OMID"><code class="highlighter-rouge">OMID</code></a>/<a href="apidoc://info.kwarc.mmt.api.objects.OMS$"><code class="highlighter-rouge">OMS</code></a></strong>: <code class="highlighter-rouge">OMID</code> is the case class for references to content symbols taking a <code class="highlighter-rouge">ContentPath</code> as argument. <code class="highlighter-rouge">OMS</code> is a helper object (with convenience apply/unapply methods) for the case, where the path references a declaration, i.e. is a <code class="highlighter-rouge">GlobalName</code>.</li>
+      <li><strong><a href="apidoc://info.kwarc.mmt.api.objects.OMA"><code class="highlighter-rouge">OMA</code></a></strong>: <code class="highlighter-rouge">OMA</code>s represent function applications. As such, the <code class="highlighter-rouge">OMA</code> case class takes a function (<code class="highlighter-rouge">Term</code>) and the argument terms (<code class="highlighter-rouge">List[Term]</code>) as arguments.</li>
+      <li><strong><a href="apidoc://info.kwarc.mmt.api.objects.OMBINDC"><code class="highlighter-rouge">OMBINDC</code></a>/<a href="apidoc://info.kwarc.mmt.api.objects.OMBIND$"><code class="highlighter-rouge">OMBIND</code></a></strong>: <code class="highlighter-rouge">OMBINDC</code> is the case class for complex binding terms, again with a convenience object <code class="highlighter-rouge">OMBIND</code> (for the case, where the scope of the binder is exactly one term). It wraps around the binder (<code class="highlighter-rouge">Term</code>), a context (<code class="highlighter-rouge">Context</code>, for the bound variables) and a body (<code class="highlighter-rouge">Term</code>; the scope of the binder) as arguments.</li>
+      <li>
+        <p><strong><a href="apidoc://info.kwarc.mmt.api.objects.OMV"><code class="highlighter-rouge">OMV</code></a></strong>: An <code class="highlighter-rouge">OMV</code> is a reference to a variable. The case class takes the <code class="highlighter-rouge">LocalName</code> of the referenced variable (or a <code class="highlighter-rouge">string</code>) as argument.</p>
+
+        <p><code class="highlighter-rouge">OMV</code>s can be substituted by arbitrary terms in an object. For <code class="highlighter-rouge">v:OMV</code>, <code class="highlighter-rouge">t:Term</code> and <code class="highlighter-rouge">s:Obj</code>, the expression <code class="highlighter-rouge">v/t</code> yields a Substitution of <code class="highlighter-rouge">v</code> by <code class="highlighter-rouge">t</code>, which can be applied to <code class="highlighter-rouge">s</code> with the expression <code class="highlighter-rouge">s ^? (v/t)</code>.</p>
+      </li>
+      <li><strong><a href="apidoc://info.kwarc.mmt.api.objects.OMLITTrait"><code class="highlighter-rouge">OMLITTrait</code></a></strong>: the trait being used by all <a href="../../language/literals.html">literals</a>. It has a <code class="highlighter-rouge">synType</code> method that returns its syntactic type. There are two variants of <code class="highlighter-rouge">OMLIT</code>, differing mostly in their <code class="highlighter-rouge">value</code> method:
+        <ul>
+          <li>An <a href="apidoc://info.kwarc.mmt.api.objects.OMLIT"><code class="highlighter-rouge">OMLIT</code></a> has a known <em>[RealizedType]TODO</em> and its <code class="highlighter-rouge">value</code> method returns the corresponding type of its semantic type (declared as <code class="highlighter-rouge">Any</code>).</li>
+          <li>An <a href="apidoc://info.kwarc.mmt.api.objects.UnknownOMLIT"><code class="highlighter-rouge">UnkownOMLIT</code></a>** has no (yet) known semantic type - the latter is usually inferred during type checking, so this usually only occurs between parsing and checking. Its <code class="highlighter-rouge">value</code> method returns the unparsed string of the literal value.</li>
+        </ul>
+      </li>
+    </ul>
+
+    <p>Many of the content objects have <code class="highlighter-rouge">toTerm</code> methods, that return the appropriate terms to reference these on the object level - usually an <code class="highlighter-rouge">OMID</code> (in the case of constants or modules), in the case of variable declarations an <code class="highlighter-rouge">OMV</code>. Similarly, terms have a <code class="highlighter-rouge">toMPath</code> method, that returns a path to a module in the case, where the term is a reference to a module (or a declaration within one).</p>
+
+    <p>The class <a href="apidoc://info.kwarc.mmt.api.objects.Traverser"><code class="highlighter-rouge">objects.Traverser</code></a> can be used to perform operations recursively on a term. A good example implementation of a traverser is <a href="apidoc://info.kwarc.mmt.api.objects.PushMorphs"><code class="highlighter-rouge">objects.PushMorphs</code></a>.</p>
+  </li>
+  <li><strong><a href="apidoc://info.kwarc.mmt.api.objects.VarDecl"><code class="highlighter-rouge">objects.VarDecl</code></a></strong>: represents a variable declaration. The case class takes a name (<code class="highlighter-rouge">LocalName</code>) and optionally a type (<code class="highlighter-rouge">Option[Term]</code>), definition (<code class="highlighter-rouge">Option[Term]</code>) and notation (<code class="highlighter-rouge">Option[TextNotation]</code>) as arguments.</li>
+  <li><strong><a href="apidoc://info.kwarc.mmt.api.objects.Context"><code class="highlighter-rouge">objects.Context</code></a></strong>: represents a list of variable declarations. In fact, implicit conversion methods declared in the Context <a href="apidoc://info.kwarc.mmt.api.objects.Context$">companion object</a> allow for using any
+instance of <code class="highlighter-rouge">List[VarDecl]</code> as a <code class="highlighter-rouge">Context</code> and the other way around.</li>
+</ul>
+
+				</div>
+			</div>
+		</div>
+	
+
+
+	<div class="container">
+		<footer class="container">
+
+    <hr />
+    <p>
+        MMT is developed and maintained mostly by <a href="http://kwarc.info/frabe/" target="_blank">Florian Rabe</a>. <br />
+        
+        This page is hosted via github pages and can be edited <a href="https://github.com/UniFormal/uniformal.github.io/edit/master/doc/api/syntax/objects.md" target="_blank">directly in the browser</a>. <br/>
+    </p>
+</footer>
+	</div>
+
+    <script src="https://comfreek.github.io/uniformal.github.io/lib/js/jquery-3.3.1.min.js"></script>
+    <script src="https://comfreek.github.io/uniformal.github.io/lib/js/bootstrap.min.js"></script>
+		<script src="https://comfreek.github.io/uniformal.github.io/lib/js/doc.js"></script>
+		<script src="https://comfreek.github.io/uniformal.github.io/lib/js/api.js"></script>
+	
+  </body>
+</html>

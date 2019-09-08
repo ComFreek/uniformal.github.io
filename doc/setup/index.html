@@ -1,0 +1,560 @@
+<!doctype html>
+<html lang="en">
+	<!-- This is the layout used for all pages in the wiki-style documentation.
+        The wiki files must have "layout: doc" in their front matter.
+        This file can use page.NAME to refer to variables declared in the front matter
+        and content to refer to the body of the md file.
+   -->
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!--
+      Do not use base tag: <base href="/uniformal.github.io/" />
+      Since otherwise we could not keep links in the documentation relative anymore - without a hassle at least.
+      We would always have to prepend doc/ or something.
+
+      Hence, use e.g. `/uniformal.github.io/lib/css/bootstrap.min.css` to refer to assets in this file only.
+    -->
+    <link rel="icon" href="https://comfreek.github.io/uniformal.github.io/favicon.ico">
+
+    <title>MMT - Setting up MMT</title>
+
+    <link href="https://comfreek.github.io/uniformal.github.io/lib/css/bootstrap.min.css" rel="stylesheet" />
+	  <link href="https://comfreek.github.io/uniformal.github.io/lib/css/doc.css" rel="stylesheet" />
+		<link href="https://comfreek.github.io/uniformal.github.io/lib/css/pygments-default.css" rel="stylesheet" />
+	
+  </head>
+  <body>
+	
+<nav class="navbar navbar-expand navbar-dark site-header" site-header >
+    <div class="container">
+        <a class="navbar-brand" href="/">
+            <img src="https://comfreek.github.io/uniformal.github.io/lib/css/img/logo_dark.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+            The MMT Language and System
+        </a>
+    </div>
+</nav>
+
+	
+		<div class="container-fluid main">
+			<div class="row">
+				<div class="col-12 col-md-3 col-xl-2">
+					<ul class="nav flex-column">
+						
+
+
+<div class="list-group">
+  
+    
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/"
+    
+>
+    Overview
+</a>
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable active" href="https://comfreek.github.io/uniformal.github.io/doc/setup/">
+    Setting up MMT
+</a>
+
+
+
+
+    <div class="list-group">
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/setup/jedit.html"
+    
+>
+    Details on Setting up jEdit
+</a>
+
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/setup/running.html"
+    
+>
+    Details on Running MMT
+</a>
+
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/setup/configure.html"
+    
+>
+    Configuring MMT
+</a>
+
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/setup/repo.html"
+    
+>
+    The Structure of the MMT Repository
+</a>
+
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/setup/sbt.html"
+    
+>
+    Details on Building with SBT
+</a>
+
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/setup/devel.html"
+    
+>
+    Developing MMT
+</a>
+
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/setup/license.html"
+    
+>
+    License for Using MMT
+</a>
+
+        
+            
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/setup/docker.html"
+    
+>
+    Docker Image
+</a>
+
+        
+    </div>
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/tutorials/">
+    Tutorials
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/philosophy/">
+    The Philosophy behind MMT
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/language/">
+    The MMT Language
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/archives/">
+    MMT-Archives
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/api/">
+    The MMT API
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/applications/">
+    Applications and Projects based on MMT
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+
+
+
+
+
+<a class="list-group-item list-group-item-action expandable " href="https://comfreek.github.io/uniformal.github.io/doc/development/">
+    Development
+</a>
+
+
+
+
+
+  
+    
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/community/"
+    
+>
+    Community & Communication
+</a>
+
+  
+    
+
+
+    
+
+
+
+<a class="list-group-item list-group-item-action "
+    
+        href="https://comfreek.github.io/uniformal.github.io/doc/contribs"
+    
+>
+    Contributed Articles
+</a>
+
+  
+</div>
+					</ul>
+				</div>
+				<div class="col-12 col-md-9 col-xl-8 content">
+					<h2>Setting up MMT</h2>
+					<hr />
+	
+					<p>To obtain and set up MMT, perform the following steps:</p>
+
+<h3 id="1-install-java-if-you-havent-already">1) Install Java (if you haven’t already)</h3>
+
+<p>MMT targets <code class="highlighter-rouge">Java 8</code> (both <code class="highlighter-rouge">OpenJDK</code> and <code class="highlighter-rouge">OracleJDK</code> are supported), and preliminary support for <code class="highlighter-rouge">Java 9</code> exists. <code class="highlighter-rouge">Java 11</code> works as well. <code class="highlighter-rouge">Java 7</code> is no longer officially supported.</p>
+
+<h3 id="2-install-an-mmt-development-ide-jedit-or-intellij-idea-if-you-havent-already">2) Install an MMT development IDE (jEdit or IntelliJ IDEA, if you haven’t already)</h3>
+
+<p>This step is optional but highly recommended if you want to write or view MMT files.
+If you just want to sample MMT, you should definitely do it with an IDE.</p>
+
+<h4 id="1-intellij-idea-recommended">1. IntelliJ IDEA (recommended)</h4>
+
+<p>Install IntelliJ IDEA (both the community and Ultimate versions work) and then refer to <a href="https://uniformal.github.io/doc/applications/intellij.html">the IntelliJ IDEA MMT plugin page</a> for installation of the plugin.</p>
+
+<h4 id="2-jedit">2. jEdit</h4>
+
+<p><a href="http://jedit.org/">jEdit</a> is a Java-based text editor.
+MMT includes a jEdit plugin, which turns jEdit into an IDE for MMT.</p>
+
+<p>Concretely:</p>
+
+<ul>
+  <li>Download and install jEdit.</li>
+  <li>Run jEdit once and close it again.
+(That allows MMT to automatically find the jEdit installation and configure it to work with MMT.)</li>
+</ul>
+
+<h3 id="3-install-git">3) Install Git</h3>
+
+<p>MMT uses git internally, so make sure it is installed.</p>
+
+<h3 id="4-install-mmt">4) Install MMT</h3>
+
+<p>There are two options for this step:</p>
+
+<h4 id="a-casual-users-download-the-binary-distribution">a) Casual Users: Download the Binary Distribution</h4>
+
+<p>The file <code class="highlighter-rouge">mmt.jar</code> provides a self-contained executable file.</p>
+
+<p><code class="highlighter-rouge">mmt.jar</code> is released roughly every 2 months.
+A list of releases can be found on the <a href="https://github.com/UniFormal/MMT/releases/">GitHub Releases page</a>. 
+The latest one can be downloaded by clicking the top most item on the list.</p>
+
+<h4 id="b-advanced-users-clone-the-source-distribution-and-build-mmt-yourself">b) Advanced Users: Clone the Source Distribution and Build MMT Yourself</h4>
+
+<p>Clone the <a href="https://github.com/UniFormal/MMT">MMT repository</a> from GitHub:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone git@github.com:UniFormal/MMT.git
+</code></pre></div></div>
+
+<p>Alternatively, if you do not have ssh keys set up, use</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone https://github.com/UniFormal/MMT.git`
+</code></pre></div></div>
+
+<p>A detailed explanation of the contents of the repository is available <a href="repo.html">here</a>.</p>
+
+<p>MMT is currently built for <code class="highlighter-rouge">Scala 2.12.3</code> (incuded in the repository) and building is done with sbt (the Scala build tool).
+If you do not have sbt, you can get it <a href="http://www.scala-sbt.org/">here</a>.</p>
+
+<p>To build, execute</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd MMT/src
+sbt mmt/deploy
+</code></pre></div></div>
+<p>(Detailed instructions for building can be found <a href="https://uniformal.github.io/doc/setup/sbt.html">here</a>, including a possible error you may encounter and its solution).</p>
+
+<p>This creates many files, in particular the file <code class="highlighter-rouge">mmt.jar</code> in the folder <code class="highlighter-rouge">../deploy/</code>.</p>
+
+<p>Change to that directory:</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd ../deploy/
+</code></pre></div></div>
+
+<p>Besides <code class="highlighter-rouge">mmt.jar</code>, this directory contains executable scripts (for Windows and Unix) to for running MMT.</p>
+
+<h3 id="5-set-up-mmt">5) Set Up MMT</h3>
+
+<p>If you only want to use MMT from within IntelliJ IDEA, you can skip this step.</p>
+
+<p>In the previous, you obtained the file <code class="highlighter-rouge">mmt.jar</code> (by downloading or building).</p>
+
+<p>To start setup, open a shell, navigate to the folder MMT/deploy and run <code class="highlighter-rouge">java -jar mmt.jar</code>.<br />
+On Windows, this assumes that <code class="highlighter-rouge">git</code> can be called from within <code class="highlighter-rouge">sh</code>, which means <code class="highlighter-rouge">sh</code> has to be in your PATH; depending on how you installed <code class="highlighter-rouge">git</code>, this may already be the case. If it is not in your PATH, you can also directly issue the <code class="highlighter-rouge">java -jar mmt.jar</code> command from within Git Bash from an existing <a href="https://gitforwindows.org/">Git for Windows</a> installation.</p>
+
+<p>This triggers the setup dialog which does the following:</p>
+
+<ol>
+  <li>asks for a directory into which MMT should be installed</li>
+  <li>checks out some example content repositories into that directory (This requires git and internet access.),</li>
+  <li>determines the location of your jEdit settings directory and - if it exists - adds the MMT plugin to jEdit.</li>
+</ol>
+
+<p>Further instructions for setting up jEdit are available <a href="jedit.html">here</a>.</p>
+
+<h3 id="6-run-mmt">6) Run MMT</h3>
+
+<p>If you want to use MMT via an IDE, you do not have to run MMT itself.
+It will act as a plugin within jEdit or IntelliJ: just start jEdit and open <code class="highlighter-rouge">.mmt</code> files, or start a new <em>MathHub</em>-project within IntelliJ.</p>
+
+<p>Developers or advanced users may want to run MMT directly for various other <a href="../applications/">applications</a>.
+The canonical way for this is to run <code class="highlighter-rouge">java -jar mmt.jar</code>.
+(This responds with a simple setup dialog if MMT not installed, and drops to a shell otherwise.)
+But depending on your OS and configuration, double-clicking or executing <code class="highlighter-rouge">mmt.jar</code> may also work.</p>
+
+<p>Additional instructions for running MMT are available <a href="running.html">here</a>.</p>
+
+<h3 id="later-update-mmt">Later: Update MMT</h3>
+
+<p>This step is not part of the initial setup.
+It is only needed later when updating your MMT installation to the latest release.</p>
+
+<p>To update MMT, replace the file <code class="highlighter-rouge">mmt.jar</code>, i.e.,</p>
+
+<ul>
+  <li>binary distribution: download the new file and save it over <code class="highlighter-rouge">deploy/mmt.jar</code></li>
+  <li>source distribution: update your working copy and rebuild.</li>
+</ul>
+
+<p>To rerun setup, execute</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>java -jar mmt.jar :setup
+</code></pre></div></div>
+
+<p>However, rerunning the full setup is usually not necessary. 
+To update your jEdit instance, execute</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>java -jar mmt.jar :jeditsetup install
+</code></pre></div></div>
+
+				</div>
+			</div>
+		</div>
+	
+
+
+	<div class="container">
+		<footer class="container">
+
+    <hr />
+    <p>
+        MMT is developed and maintained mostly by <a href="http://kwarc.info/frabe/" target="_blank">Florian Rabe</a>. <br />
+        
+        This page is hosted via github pages and can be edited <a href="https://github.com/UniFormal/uniformal.github.io/edit/master/doc/setup/index.md" target="_blank">directly in the browser</a>. <br/>
+    </p>
+</footer>
+	</div>
+
+    <script src="https://comfreek.github.io/uniformal.github.io/lib/js/jquery-3.3.1.min.js"></script>
+    <script src="https://comfreek.github.io/uniformal.github.io/lib/js/bootstrap.min.js"></script>
+		<script src="https://comfreek.github.io/uniformal.github.io/lib/js/doc.js"></script>
+		<script src="https://comfreek.github.io/uniformal.github.io/lib/js/api.js"></script>
+	
+  </body>
+</html>
